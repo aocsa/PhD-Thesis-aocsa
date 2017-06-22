@@ -17,7 +17,7 @@ La Minería de Datos (Data Mining) es un área de investigación dentro en un co
 
 \begin{figure}[htp]
 \centering
-\includegraphics[width=0.99\columnwidth]{Parte3/design/KDD-process.pdf}
+\includegraphics[width=0.99\columnwidth]{chapter3/KDD-process.pdf}
 \caption{Etapas del proceso KDD. Figura adaptada de \cite{Fayyad:1996:DMK:257938.257942}.}
 \label{fig:processoKDD}
 \end{figure}
@@ -57,7 +57,7 @@ La etapa de minería de datos incluye la definición de las tareas de minería a
     Ahora formularemos esta idea matemáticamente, vamos a definir nuestro modelo como una función $h(X,\theta)$ la entrada $X$ es un ejemplo expresado en forma de vector. Por ejemplo, si $X$ fuera una imagen en escala de grises, los componentes del vector serían las intensidades de los píxeles en cada posición, como se muestra en la Fig.~\ref{fig:gscale}.
     \begin{figure}[htp]
         \centering
-        \includegraphics[scale=0.3]{mteorico/grayscale.png}
+        \includegraphics[scale=0.3]{chapter3/grayscale.png}
         \caption{Vectorización de una imagen}
         \source{Fundamentals of Deep Learning, \cite{dlBook}}
         \label{fig:gscale}
@@ -81,7 +81,7 @@ La etapa de minería de datos incluye la definición de las tareas de minería a
     Un vector de parámetros $\theta$ posiciona correctamente el clasificador por lo que se pueden realizar predicciones correctas. En la mayoría de los casos, hay muchos (o incluso un número infinito) posibles opciones para $\theta$ que son óptimas. Afortunadamente para nosotros, la mayoría de las veces estas alternativas están tan cerca una del otra que la diferencia en su rendimiento es insignificante. Si este no fuera el caso, podemos utilizar más datos para nuestra elección de $\theta$, \cite{dlBook}.
     \begin{figure}[htp]
         \centering
-        \includegraphics[scale=0.23]{mteorico/sampleData.png}
+        \includegraphics[scale=0.23]{chapter3/sampleData.png}
         \caption{Ejemplo de clasificador lineal}
         \label{fig:sdata}
         \source{Fundamentals of Deep Learning, \cite{dlBook}}
@@ -178,7 +178,7 @@ Recientemente, el aprendizaje profundo, especialmente para las CNN, produjo el e
     Si se trata de abordar el problema de la clasificación de imágenes utilizando redes neuronales comunes, puede presentarse con rapidez un desafío desalentador, que se puede ver en la Fig.~\ref{fig:fc_dont_scale}. Para datos de entrada de poca dimensión una red neuronal puede funcionar bien, pero para imágenes de mayor dimensión y de mayor complejidad contar con una red totalmente conectada no produce buenos resultados.
     \begin{figure}[htp]
         \centering
-        \includegraphics[scale=0.35]{mteorico/fc_dont_scale.png}
+        \includegraphics[scale=0.35]{chapter3/fc_dont_scale.png}
         \caption{La densidad de conexiones se incrementa según el tamaño de la imagen}
         \label{fig:fc_dont_scale}
         \source{Fundamentals of Deep Learning, \cite{dlBook}}
@@ -187,7 +187,7 @@ Recientemente, el aprendizaje profundo, especialmente para las CNN, produjo el e
     Tomando como base el funcionamiento de la visión humana, capas de una red de convolución tienen neuronas dispuestas en tres dimensiones, por lo que las capas tienen una anchura, altura y profundidad, como se muestra en la Fig.~\ref{fig:convnet_scheme}. Como veremos, las neuronas de una capa única de convolución solo conectan a una región pequeña de la capa precedente, por lo que evitan el derroche de las neuronas totalmente conectadas. El proceso de una convolución puede expresarse fácilmente, procesa un volumen de información de 3 dimensiones para producir un nuevo volumen de 3 dimensiones \cite{dlBook}.
     \begin{figure}[htp]
         \centering
-        \includegraphics[scale=0.32]{mteorico/convnet_scheme.png}
+        \includegraphics[scale=0.32]{chapter3/convnet_scheme.png}
         \caption{Capas de una red convolutiva}
         \label{fig:convnet_scheme}
         \source{Fundamentals of Deep Learning, \cite{dlBook}}
@@ -196,7 +196,7 @@ Recientemente, el aprendizaje profundo, especialmente para las CNN, produjo el e
     Para entender el proceso de convolución debemos conocer el termino filtro, que es esencialmente un detector de característica, que para entender su funcionamiento, se considerar la Fig.~\ref{fig:image_no_filter}, \cite{dlBook}.
     \begin{figure}[htp]
         \centering
-        \includegraphics[scale=0.23]{mteorico/image_no_filter.png}
+        \includegraphics[scale=0.23]{chapter3/image_no_filter.png}
         \caption{Imagen en blanco y negro}
         \label{fig:image_no_filter}
         \source{Fundamentals of Deep Learning, \cite{dlBook}}
@@ -205,7 +205,7 @@ Recientemente, el aprendizaje profundo, especialmente para las CNN, produjo el e
     Dado el caso que se requiera detectar líneas verticales y horizontales en una imagen. Una solución sería el uso de un detector de características, como se muestra en la Fig.~\ref{fig:image_two_filter}. Por ejemplo, para detectar líneas verticales, se puede utilizar el detector de característica de la parte superior de la imagen, es podría deslizarse a través de la totalidad de la imagen para verificar si existe alguna coincidencia, en la matriz de la parte superior derecha de la Fig.~\ref{fig:image_two_filter} se puede verificar el resultado, si hay una coincidencia se sombrea la casilla de negro y si no lo hay se deja en blanco. Este resultado es el mapa de características, que indica el lugar donde se han encontrado las característica que se buscaban en la imagen original. Se puede hacer el mismo tratamiento para el detector de línea horizontal (parte inferior de la imagen), dando como resultado el mapa de características de la esquina inferior derecha, \cite{NIPS2010_0550, dlBook}.
     \begin{figure}[htp]
         \centering
-        \includegraphics[scale=0.4]{mteorico/image_two_filter.png}
+        \includegraphics[scale=0.4]{chapter3/image_two_filter.png}
         \caption{Filtros para detectar lineas horizontales y verticales}
         \label{fig:image_two_filter}
         \source{Fundamentals of Deep Learning, \cite{dlBook}}
@@ -214,7 +214,7 @@ Recientemente, el aprendizaje profundo, especialmente para las CNN, produjo el e
     Esta operación es llamada convolución, se toma un filtro para multiplicarlos sobre el área entera de una imagen de entrada. Los filtros representan distintas combinaciones de conexiones (se resalta una de estas combinaciones en la Fig.~\ref{fig:conv_neuron}), en esta figura las conexiones con las mismas tonalidades mantienen sus mismos pesos a través de todas las neuronas de entrada, se puede lograr esto mediante la inicialización de todas las conexiones en un grupo con pesos idénticos y siempre corrigiendo los pequeños cambios de peso, la capa de salida es el mapa de características generado por este filtro \cite{dlBook}.
     \begin{figure}[htp]
         \centering
-        \includegraphics[scale=0.3]{mteorico/conv_neuron.png}
+        \includegraphics[scale=0.3]{chapter3/conv_neuron.png}
         \caption{Representación de un filtro y su mapa de características resultante}
         \label{fig:conv_neuron}
         \source{Fundamentals of Deep Learning, \cite{dlBook}}
@@ -229,7 +229,7 @@ Recientemente, el aprendizaje profundo, especialmente para las CNN, produjo el e
 	En concreto, los filtros no sólo operan en un único mapa de características. Operan en todo el volumen de mapas de características que se han generado en una capa particular. Si se considera una situación en la que se desea detectar una cara en una capa particular de una red de convolución, y se han acumulado tres mapas de características, uno para los ojos, uno para la nariz, y uno para la boca. Para tomar tomar una decisión sobre la existencia de una cara, se debe combinar pruebas sobre múltiples mapas de características. Esto es igualmente necesario para una imagen de entrada con tres canales de color (RGB), por lo que requieren tres secciones en el volumen de entrada (una sección para cada canal). Como resultado, los mapas de características deben ser capaces de operar sobre los volúmenes de datos de 3 dimensiones (ancho, alto y profundidad). Esto se muestra a continuación en la Fig.~\ref{fig:color_conv}. Cada célula en el volumen de entrada es una neurona. Una porción local se multiplica con un filtro (que corresponde a los pesos en la capa de convolución) para producir una neurona en la siguiente capa volumétrica de las neuronas, \cite{dlBook}.
 	\begin{figure}[htp]
         \centering
-        \includegraphics[scale=0.3]{mteorico/color_conv.png}
+        \includegraphics[scale=0.3]{chapter3/color_conv.png}
         \caption{Convolución de una imagen a color RGB}
         \label{fig:color_conv}
         \source{Fundamentals of Deep Learning, \cite{dlBook}}
@@ -238,7 +238,7 @@ Recientemente, el aprendizaje profundo, especialmente para las CNN, produjo el e
 	Como se ha observado anteriormente, una capa de convolución (que consiste en un conjunto de filtros) convierte un volumen de valores en otro volumen de valores. La profundidad del filtro corresponde a la profundidad del volumen de entrada. Esto es para que el filtro pueda combinar la información de todas las características que se han aprendido. La profundidad de el volumen de salida de una capa convolucional, equivalente al número de filtros en esa capa, debido a que cada filtro produce una porción del volumen de datos. Visualizamos estas relaciones en la Fig.~\ref{fig:conv_depth}
 	\begin{figure}[htp]
         \centering
-        \includegraphics[scale=0.3]{mteorico/conv_depth.png}
+        \includegraphics[scale=0.3]{chapter3/conv_depth.png}
         \caption{Visualización en 3d de una convolución}
         \label{fig:conv_depth}
         \source{Fundamentals of Deep Learning, \cite{dlBook}}
@@ -250,7 +250,7 @@ Recientemente, el aprendizaje profundo, especialmente para las CNN, produjo el e
     Para reducir la dimensionalidad de los mapas de características y afinar las características localizadas, a veces es necesario insertar una capa de agrupación máxima después de una capa de convolución. La idea esencial detrás de la agrupación máxima es dividir cada mapa de características en porciones de igual tamaño. Entonces se crea un mapa de características condensado, en concreto se define una celda que representa a toda una porción del mapa de características, calculando el valor máximo de la porción para propagar este valor máximo en la celda correspondiente del mapa de características condensado. Este proceso se ilustra en la Fig.~\ref{fig:max_pooling}, a continuación \cite{dlBook}:
 	\begin{figure}[htp]
         \centering
-        \includegraphics[scale=0.4]{mteorico/max_pooling.png}
+        \includegraphics[scale=0.4]{chapter3/max_pooling.png}
         \caption{Reducción de parámetros utilizando agrupación máxima}
         \label{fig:max_pooling}
         \source{Fundamentals of Deep Learning, \cite{dlBook}}
@@ -276,7 +276,7 @@ Recientemente, el aprendizaje profundo, especialmente para las CNN, produjo el e
     En \cite{Le15atutorial}, se considera el siguiente ejemplo, se desea desarrollar un programa para enviar algunos datos del teléfono móvil a la nube. Para limitar el uso de la red, se debe optimizar cada \textit{bit} de datos que vamos a enviar. Los datos son una colección de puntos, cada uno tiene dos dimensiones, como se ve en la Fig.~\ref{fig:aenco1}
     \begin{figure}[htp]
         \centering
-        \includegraphics[scale=0.37]{mteorico/aenco1.png}
+        \includegraphics[scale=0.37]{chapter3/aenco1.png}
         \caption{Puntos en un plano 2d}
         \label{fig:aenco1}
         \source{\cite{Le15atutorial}}
@@ -312,7 +312,7 @@ Recientemente, el aprendizaje profundo, especialmente para las CNN, produjo el e
     En la Fig.~\ref{fig:aenco2}, Se observa como se trata de comprimir datos de 4 dimensiones a 2 dimensiones utilizando una red neuronal con una capa oculta. La función de activación de la capa oculta es no lineal. Si los datos fueran altamente no lineales, se podría añadir más capas ocultas a la red para tener un auto-codificador profundo.
     \begin{figure}[htp]
         \centering
-        \includegraphics[scale=0.49]{mteorico/aenco2.png}
+        \includegraphics[scale=0.49]{chapter3/aenco2.png}
         \caption{Arquitectura de auto-codificador no lineal}
         \label{fig:aenco2}
         \source{\cite{Le15atutorial}}
