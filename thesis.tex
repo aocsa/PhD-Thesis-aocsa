@@ -1,0 +1,197 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      This is thesis.tex.  You have to  put this file in       % 
+%              the same directory with your thesis files.       %
+%                Written by M. Imran 2001/06/18                 % 
+%                 No Copyright for this file                    % 
+%                 Save your time and enjoy it                   % 
+%                                                               % 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,twoside]{dmathesis}
+%% uncommand the following line to print equation labels next to
+%% equation numbers. 
+
+\usepackage[spanish]{babel}
+
+ 
+% referencias coma na pagina anterior, etc
+\usepackage{bookman}
+%\usepackage[T1]{fontenc}
+
+%\usepackage[brazil]{varioref}
+%\usepackage[verbose,a4paper,nohead,left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
+
+% acentuação
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{xspace}
+%\usepackage{chicago}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\usepackage{fancybox}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[bbgreekl]{mathbbol}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{paralist}
+\usepackage[pdftex, plainpages=false, hyperfootnotes=false]{hyperref}
+
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
+\usepackage{courier}
+\usepackage{color}
+\usepackage{subfigure}
+\definecolor{red}{rgb}{0.9,0.1,0.1}
+\definecolor{blue}{rgb}{0,0.1,0.8}
+
+\definecolor{darkgreen}{rgb}{0,0.6,0.1}
+\definecolor{gray}{rgb}{0.75,0.75,0.75}
+
+
+\usepackage{acronym}
+
+\usepackage[ruled,vlined,portugues,algochapter]{algorithm2e}
+%\usepackage{algorithmic-pt}  % Algoritmos em Portugues
+\usepackage{eqparbox,array}
+
+\usepackage[sf,outermarks,clearempty]{titlesec}
+
+\usepackage{comment}
+\usepackage{fontenc}
+\usepackage{inputenc}
+\usepackage{listing}
+\usepackage{listings}
+\usepackage{framed}
+
+
+%\lstset{language=C++,captionpos=t,tabsize=2,frame=lines,keywordstyle=\color{blue},commentstyle=\color{lightdark},stringstyle=\color{red},breaklines=true,showstringspaces=false,basicstyle=\footnotesize}
+
+\lstset{language=C++,basicstyle=\footnotesize\rmfamily, % Standardschrift
+         numbers=left,               % Ort der Zeilennummern
+         numberstyle=\tiny,          % Stil der Zeilennummern
+         numbersep=5pt,              % Abstand der Nummern zum Text
+         tabsize=3,                  % Groesse von Tabs
+         extendedchars=true,         %
+         breaklines=true,            % Zeilen werden Umgebrochen
+         frame=b,
+         keywordstyle=[1]\textbf,    % Stil der Keywords
+         stringstyle=\color{white}\ttfamily, % Farbe der String
+         showspaces=false,           % Leerzeichen anzeigen ?
+         showtabs=false,             % Tabs anzeigen ?
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         rulesepcolor=\color{gray},
+         columns=fullflexible,
+         %extendedchar=true,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false,      % Leerzeichen in Strings anzeigen ?
+    emph={synchronizeThreadGroup}, emphstyle={\textbf},
+    emph={[2]atomicInc}, emphstyle={[2]\textbf},
+    emph={[3]startThreads}, emphstyle={[3]\textbf},
+    emph={[4]end}, emphstyle={[4]\textbf},
+    emph={[5]algorithm}, emphstyle={[5]\textbf},
+    emph={[6]deviceMem},emphstyle={[6]\textbf},
+    emph={[7]kernel},emphstyle={[7]\textbf},
+    emph={[8]to},emphstyle={[8]\textbf},
+    emph={[9]then},emphstyle={[9]\textbf},
+    emph={[10]procedure},emphstyle={[10]\textbf},
+    emph={[11]dataset},emphstyle={[11]\textbf},
+    emph={[12]shared},emphstyle={[12]\textbf},
+    emph={[13]Entrada},emphstyle={[13]\textbf},
+    emph={[14]Saida},emphstyle={[14]\textbf},
+    emph={[15]foreach},emphstyle={[15]\textbf},
+    emph={[16]atomicExch},emphstyle={[16]\textbf},
+    emph={[17]atomicMin},emphstyle={[17]\textbf},
+    emph={[18]shared},emphstyle={[18]\textbf}
+ }
+
+\renewcommand\algorithmiccomment[1]{%
+    {// \small{\textit{#1}}}%
+}
+
+
+\acrodef{CBIR}{Content-based image retrieval}
+\acrodef{MAM}{Metric Access Method}
+\acrodef{AM}{Access Method}
+\acrodef{SAM}{Spatial Access Method}
+\acrodef{MST} {Minimum Spanning Tree}
+\acrodef{IR} {Information Retrieval}
+\acrodef{NDC} {Number of Distance Calculations}
+\acrodef{LAESA} {Linear Approximating Eliminating Search Algorithm}
+\acrodef{AESA} {Approximating Eliminating Search Algorithm}
+\acrodef{RNG} {Relative Neighborhood Graph}
+\acrodef{DT} {Delaunay Triangulation}
+\acrodef{GG} {Gabriel Graph}
+\acrodef{UG} {Urquhart Graph}
+\acrodef{SAT} {Spacial Approximation Tree}
+\acrodef{RNDF} {Relative Neighborhood Density Factor}
+\acrodef{NN} {Nearest Neighbor}
+\acrodef{NAG} {Neighborhood Approximation Graph}
+\acrodef{HRG} {Hyperspherical Region Graph}
+\acrodef{NA-Graph} {Neighborhood Approximation Graph}
+\acrodef{DA} {Disk Access}
+\acrodef{DTW} {Dynamic Time Warping}
+\acrodef{LSH} {Locality Sensitive Hashing}
+\acrodef{CNN} {Convolutional Neural Network}
+\acrodef{CNNs} {Convolutional Neural Networks}
+
+%\newcommand{ \Correction }[ 1 ] {\textcolor{black}{#1}}
+%\newcommand{ \NewMaterial }[ 1 ] {\textcolor{black}{#1}}
+%\newcommand{ \ConnectDots }[ 1 ] {\textcolor{black}{#1}}
+%\newcommand{ \NewMaterialGPU }[ 1 ] {\textcolor{black}{#1}}
+%\newcommand{ \Error }[ 1 ] {\textcolor{black}{#1}}
+
+
+\acrodef{CBIR} {Content-based Image Retrieval}
+\acrodef{MAM}  {Métodos de Acceso Métrico}
+\acrodef{SAM}  {Métodos de Acceso Espacial}
+\acrodef{MAE}  {Métodos de Acesso Espaciais}
+
+\acrodef{DTW}  {Dynamic Time Warping}
+\acrodef{LSH}  {Locality Sensitive Hashing}
+
+
+\usepackage{showlabel}
+%% The following is to control the format of your thesis
+\input{format}
+
+%% File to be included while running latex.
+\includeonly{chapter1,chapter2,chapter3%
+                 ,chapter4,chapter5,chapter6,ref,append}
+
+\begin{document}
+%% Front page of thesis
+\input{frontpage}
+
+%% Main text
+% set page number starts from 1
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%% To ensure the equation counter works correctly
+\eqlabon
+\eqlaboff
+%\onehalfspace
+
+\include{chapter1}
+\include{chapter2}
+%\include{chapter3}
+%\include{chapter4}
+%\include{chapter5}
+%\include{chapter6}
+
+\bibliographystyle{plain}
+\bibliography{references}
+\include{append}
+
+
+\end{document}

@@ -1,0 +1,85 @@
+\setcounter{equation}{0}
+\chapter{Introducción}
+\hrule \bigskip \vspace*{1cm}
+%------------------------------------------------------------------------
+
+\section{Consideraciones iniciales}
+
+La creciente disponibilidad de datos en diversos dominios, tales  como multimedia, internet, la biología, entre  otros,  ha creado  la necesidad  de desarrollar  técnicas y métodos capaces de descubrir  conocimientos  en grandes volúmenes de datos complejos, motivando  varios  trabajos en las áreas  de base  de datos,  minería de datos  y recuperación  de la información. Esto ha impulsado el desarrollo de técnicas escalables y eficientes para organizar y recuperar estos tipos de datos complejos. Las búsquedas por similitud han sido el enfoque tradicional para la recuperación de la información. Considerando que la similitud es el criterio instintivo por el cual las personas hacen comparaciones, las comunidades de recuperación de información usan la similitud para organizar y recuperar estos datos.    Sin embargo, causa algunas dificultades en representar datos complejos y también con la escalabilidad de los algoritmos cuando la dimensionalidad de los datos es muy alta (más conocido como la ``maldición de la alta dimensionalidad''). Aunque muchos trabajos de investigación se han llevado a cabo en el desarrollo de estructuras y algoritmos eficientes de búsqueda sólo unos pocos presentan una garantía teórica de estabilidad asintótica para datos de alta dimensión \cite{5459466,CiteULike:7399806}.
+
+Muchas soluciones responden a consultas por similitud aprovechando estructuras de índices. Los árboles son las estructuras de índice más comunes para estos dominios. Estas soluciones basadas en jerarquías pueden ser superadas mediante búsqueda secuencial en casos particulares, pues sucede que cuando los datos están en altas  dimensiones  la mayor parte del tiempo pasado se usa en la etapa de filtrado  \cite{WhatsWrong}. No todas las aplicaciones requieren respuestas precisas. Por lo tanto,  soluciones aproximadas son preferibles para reducir los efectos de la ``maldición de la alta dimensionalidad''. Estas soluciones aproximadas se aplican en problemas a gran escala donde la velocidad es más importante que la exactitud. En este contexto, necesitamos optimizar el equilibrio entre el tiempo y la calidad de los resultados.
+
+Uno de los pocos enfoques que aseguran una solución aproximada con el coste de búsqueda sublineal para datos de alta dimensión es \textit{Locality Sensitive Hashing} (LSH) \cite{lsh}. LSH se basa en la idea de que la cercanía entre dos objetos suele ser preservada en una operación de proyección aleatoria. En otras palabras, si dos objetos están cerca  en su espacio original, entonces estos dos objetos permanecerán cerca después de una operación de proyección escalar. Sin embargo, presenta algunas dificultades para consultas kNN aproximadas, en particular, relacionadas con la dependencia de los parámetros del dominio y la calidad de los resultados. Por lo tanto, en dominios complejos, en particular, en problemas con datos con alta dimensión, una solución aproximada con un sólido análisis teórico puede ser la mejor opción en muchas áreas de aplicación debido a su eficiencia en tiempo y espacio.
+
+Por otro lado, también es necesario métodos que permitan obtener información y conocimiento útil a partir de los datos. La minería de datos es un proceso iterativo para el descubrimiento del conocimiento en este conjuntos de datos, realiza una búsqueda y descubrimiento de patrones dentro de estos datos, a pesar que la minería de datos abarca un amplio rango de aplicaciones, muchas de las técnicas utilizadas en la minería de datos son utilizados también en el Aprendizaje de Automático (Machine Learning, ML) que trata de extraer información o conocimiento de un conjunto de ejemplos, viendo similitudes entre los datos, y a su vez generalizando estas similitudes con los otros ejemplos. ML puede dividirse en dos tipos de aprendizaje: aprendizaje supervisado y no supervisado. El primero es aquella en la que se tiene un conjunto de datos que sirve como datos de entrenamiento para un algoritmo, y otro conjunto de datos para realizar las pruebas sobre el algoritmo ya entrenado. El segundo trabaja sobre datos en los cuales se trata de ver relaciones entre los datos para después agruparlos mediante una medida de distancia o similitud \cite{aggarwal2015data}.
+
+En la linea de \textit{Machine Learning} las imágenes se describen a menudo mediante las características visuales o vectores característica.  Sin embargo, estas características manuales no pueden revelar el significado semántico de alto nivel (etiquetas o tags) de las imágenes, y a menudo limitan el rendimiento de la recuperación de imágenes \cite{Li:2015:RSS:2881665.2882186}. Así, para obtener esta información semántica tenemos que trabajar con la información de la etiqueta y procesar los datos en un modo supervisado. Inspirado por recientes avances en \acf{CNN} para problemas de clasificación en varios dominios de aplicaci\'on \cite{ImageNet,NIPS2013_5207,LiuWJJC12}, muchos métodos resolvieron el problema de la precisión en la recuperación de informaci\'on utilizando CNN como extractor de características para luego construir un código hash compacto de preservación de similitud para la recuperación rápida de imágenes.   \textit{Hashing} es ampliamente usado para recuperar imágenes a gran escala, así como las búsquedas de video y documentos porque la representación compacta de una código hash es esencial para el almacenamiento de datos y es eficiente para  recuperar información \cite{conf/cvpr/ShenSLS15}. % Sin embargo, algunos inconvenientes basados en estos métodos de \textit{hashing} supervisados no se han resuelto completamente, y se describen a continuación.
+
+\section{Definición del problema}
+
+ 
+Los  algoritmos de búsqueda aproximada  basados en \textit{hashing} son propuestos para consultar en conjuntos de datos  alta dimensiones debido a su velocidad de recuperación y bajo costo de almacenamiento.  Por otro lado, en problemas donde se tiene grandes volúmenes de datos etiquetados las técnicas de aprendizaje profundo, como las redes convolucionales, se muestran más adecuadas conforme el número de ejemplos por clases crece. Estudios recientes, promueven el uso de la \acf{CNN} con técnicas de  \textit{hashing} para mejorar la precisión de la búsqueda de los k-vecinos más cercanos - KNN.  Sin embargo, aun hay retos que resolver para encontrar una solución práctica y eficiente para indexar características  CNN:
+
+\begin{itemize}
+  \item La necesidad de un proceso de entrenamiento intenso para lograr resultados precisos.
+
+  \item  La dependencia crítica de los parámetros, pues los algoritmos dependen de  estos parámetros  para una proyección en un subespacio sin perdida de información.
+
+  \item  Uso adecuado de la informaci\'on sem\'antica de las  última capas de una red CNN.
+
+  \item  Existe una relación entre el error de clasificación y el error de cuantificación en una red CNN: las activaciones de capas inferiores son más generales \cite{DBLP:journals/corr/YosinskiCBL14}, a la vez que el entrenamiento es más eficaz. Sin embargo, estas capas inferiores tienen mapas de activaciones más grandes (cientos/miles de  nodos), las cuales son más difíciles de codificar, lo que conduce a un compromiso.
+ 
+\end{itemize}
+
+Por otro lado, en problemas de gran escala con grandes volúmenes de datos las técnicas de aprendizaje profundo,  se muestran más adecuadas conforme el número de ejemplos por clases crece. Además, para tareas de procesamiento y clasificación de los datos  ahora se puede usar el alto rendimiento de las GPUs.   En problemas de gran escala, arquitecturas secuenciales (CPUs) imponen limitaciones de desempeño. Por lo tanto, recurrir a las soluciones basadas en GPU es una manera de superar tales limitaciones de desempeño.
+ 
+
+\section{Objetivos}\label{objs}
+
+
+\begin{itemize}
+  \item  Estudiar y desarrollar  m\'etodos óptimos de proyección  en subespacios usando la teoría fractal.  El objetivo es   mostrar que un buen algoritmo de reducción de dimensionalidad  proyecta los datos en un espacio de características con dimensionalidad cercana a la dimensionalidad fractal (FD).
+
+  \item  Estudiar y desarrollar un nuevo m\'etodo de \textit{hashing} supervisado que sea independiente de los parámetros dominio y  diseñado para realizar una búsqueda  aproximada escalable.    La idea es usar análisis fractal para la optimización de parámetros de dominio para poder integrar los métodos de aprendizaje profundo, vía redes convolucionales como extractor de características y las técnicas de búsqueda aproximada como esquema de recuperación de información.
+\end{itemize}
+ 
+
+\section{Principales contribuciones}
+
+ 
+
+Las contribuciones de nuestro trabajo son las siguientes:
+\begin{itemize}
+
+    \item  Estudiar y desarrollar  m\'etodos óptimos de proyecci\'on en subespacios. Desarrollaremos un conjunto de experimentos que muestren el uso de teoría fractal como herramienta para encontrar  el subespacio óptimo  de indexaci\'on.    Estos estudios serán   descritos en el la sección 5.2 del capítulo 5.
+
+  \item Proponemos un nuevo m\'etodo, llamado \textit{Deep Fractal based  Hashing} (DAsH), diseñado para realizar una búsqueda aproximada escalable mediante un esquema de \textit{hash} supervisado. Este m\'etodo es descrito en la seccio\'on 6.2 del cap\'itulo 6.
+\end{itemize}
+
+\section{Organización de la tesis}
+
+Se propone  una  posible  organización de  la  tesis,  se debe  tener  presente  que  se propone  la aplicación  del nueva propuesta o a un caso de estudio.
+
+\bigskip
+\begin{enumerate}
+	\item Introducción
+	\item Fundamentos Teóricos
+	\begin{itemize}
+		\item Consultas por similitud
+		\item Deep Learning
+		\item Teoría Fractal
+	\end{itemize}
+	\item Optimizaci\'on de la representaci\'on de datos
+	\item Deep Fractal based Hashing - DAsH
+	\item Experimentos
+	\begin{itemize}
+		\item Materiales y métodos
+		\item Representaci\'on de datos
+		\item Recuperaci\'on de informaci\'on
+		\item Discusión y análisis de resultados
+
+	\end{itemize}
+	\item Conclusiones y Trabajos Futuros
+\end{enumerate}
+
+
