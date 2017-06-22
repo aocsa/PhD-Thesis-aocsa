@@ -25,12 +25,12 @@ Un modelo de  LSH es ilustrado en la Figura  \ref{fig:search_model} (b), donde c
 \centering
 \subfigure[]
     {
-    \includegraphics[width=0.32\columnwidth]{images/candidate_regions.png}%\label{fig:slimbe:a}
+    \includegraphics[width=0.32\columnwidth]{chapter2/candidate_regions.png}%\label{fig:slimbe:a}
     \label{fig:am_model}
     }
 \subfigure[]
     {
-    \includegraphics[width=0.37\columnwidth]{images/lsh_basic_gray.pdf}%\label{fig:slimbe:a}
+    \includegraphics[width=0.37\columnwidth]{chapter2/lsh_basic_gray.pdf}%\label{fig:slimbe:a}
     \label{fig:lsh_model}
      }
 \caption{Unificación del modelo de consulta por similitud. (a) Los Métodos de Acceso Métricos (MAMs). (b)  \textit{Locality Sensitive Hashing} (LSH).}
@@ -89,7 +89,7 @@ Las funciones de distancia métrica mas común para medir la similitud entre ele
 
 \begin{figure}[htp]
 \centering
-\includegraphics[width=0.9\columnwidth]{images/lpnorms.pdf}
+\includegraphics[width=0.9\columnwidth]{chapter2/lpnorms.pdf}
 \caption{(a) Formas geométricas que ilustran la delimitación de una  región de búsqueda de acuerdo con la métrica $L_p$ utilizada. (b) Ejemplo de consulta por rango para diferentes métricas de la  familia $L_p$.}
 \label{fig:lpnorms}
 \end{figure}
@@ -114,7 +114,7 @@ En la Figura \ref{fig:rangeQuery} se representa una consulta por rango en un esp
 
 \begin{figure}[htp]
 \centering
-\includegraphics[width=0.3\columnwidth]{images/range_query.pdf}
+\includegraphics[width=0.3\columnwidth]{chapter2/range_query.pdf}
 \caption{Ejemplo de consulta por rango.}
 \label{fig:rangeQuery}
 \end{figure}
@@ -130,7 +130,7 @@ La Figura \ref{fig:knnQuery} ejemplifica una consulta kNN en un espacio bi-dimen
 
 \begin{figure}[htp]
 \centering
-\includegraphics[width=0.28\columnwidth]{images/knn_query.pdf}
+\includegraphics[width=0.28\columnwidth]{chapter2/knn_query.pdf}
 \caption{Ejemplo  de consulta de los k-vecinos más cercanos.}
 \label{fig:knnQuery}
 \end{figure}
@@ -143,7 +143,7 @@ Tal como la búsqueda a los $k$-vecinos más cercanos (kNN), este puede ser rest
 
 \begin{figure}[ht]
 \centering
- \includegraphics[width=0.85\columnwidth]{images/knnGraph.pdf}
+ \includegraphics[width=0.85\columnwidth]{chapter2/knnGraph.pdf}
 \caption{Ejemplo  de consulta AllkNN para un conjunto de datos bidimensional.}
 \label{fig:knn_allknn}
 \end{figure}
@@ -162,7 +162,7 @@ Consulta que busca recuperar los objetos cercanos a $q$ que se encuentran dentro
 La Figura \ref{fig:AproximateRangeQuery} ejemplifica una consulta de este tipo para $L_2$. Los elementos dentro del radio de consulta  $(1 + \varepsilon)\times r$ componen la respuesta aproximada.
 \begin{figure}[htp]
 \centering
-\includegraphics[width=0.32\columnwidth]{images/app-range_query.pdf}
+\includegraphics[width=0.32\columnwidth]{chapter2/app-range_query.pdf}
 \caption{Ejemplo de consulta  por  rango aproximada.}
 \label{fig:AproximateRangeQuery}
 \end{figure}
@@ -185,7 +185,7 @@ La búsqueda $(1 + \varepsilon)-kNN$  para los $k$ elementos  mas similares a $q
 El factor $(1 + \varepsilon)$  es usualmente llamado  \textbf{factor de aproximación}, y indica que el conjunto de la solución $C'$ está dentro de un \textbf{error relativo}  $\varepsilon$  a la respuesta exacta.  Ver Figura \ref{fig:nearbyKnnQuery}.
 \begin{figure}[htp]
 \centering
-\includegraphics[width=0.85\columnwidth]{images/nearby_knn_query.pdf}
+\includegraphics[width=0.85\columnwidth]{chapter2/nearby_knn_query.pdf}
 \caption{Búsqueda aproximada 5-NN. (a) busca exacta. (b) busca aproximada.  }
 \label{fig:nearbyKnnQuery}
 \end{figure}
@@ -238,7 +238,7 @@ El esquema propuesto en \cite{Datar2004} fue proyectado para trabajar con distri
 La ecuación \ref{eq:lsh} tiene una interpretación simple. Considere la Figura \ref{fig:quantization}: $\vec{p_1}$ y $\vec{p_2}$ son dos vectores en $\mathbf{R}^2$, $\vec{a}$ es un vector normal unitario e $b$ es un número randomico real. A inclinación de la recta pasando por el origen coincide con la dirección de $\vec{a}$. Así, $\vec{p_1}$  es proyectado sobre la línea $\vec{a}$  calculando el producto escalar  $\vec{a} \cdot \vec{p_1}$. Esa proyección es cuantizada en intervalos de tamaño fijo  $\omega$, definiendo el punto A. El mismo procedimiento es repetido para $\vec{p_2}$, definido el punto B.
 
 \begin{figure}[htp]\centering
-\includegraphics[width=0.3\columnwidth]{images/lsh_projection.pdf}
+\includegraphics[width=0.3\columnwidth]{chapter2/lsh_projection.pdf}
 \caption{Interpretación geométrica de proyección de los  vectores $\vec{p_1}$ y $\vec{p_2}$ en LSH.}
 \label{fig:quantization}
 \end{figure}
