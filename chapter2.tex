@@ -69,7 +69,7 @@ Si los objetos del dominio $S$ corresponden a los vectores de valores numéricos
 
 Las funciones de distancia métrica mas común para medir la similitud entre elementos en un Espacio Multidimensional son de la familia $L_p$, o Minkowski, definidas por:
 
-\begin{equation}
+\begin{equation}\label{lpnorm}
  L_p ((x_1,...,x_n), (y_1,...,y_n)) = (\sum_{i=1}^{n} |x_i - y_i|^p)^{1/p}
 \end{equation}
 
@@ -134,22 +134,7 @@ La Figura \ref{fig:knnQuery} ejemplifica una consulta kNN en un espacio bi-dimen
 \caption{Ejemplo  de consulta de los k-vecinos más cercanos.}
 \label{fig:knnQuery}
 \end{figure}
-
-\paragraph{Consulta a todos los $k$-vecinos más cercanos - $All-kNN (Q, k)$ }
-
-Consulta que busca recuperar todos los $k$ objetos más cercanos a todos los objetos de búsqueda $q \in Q$, en donde $Q$ es el conjunto de datos original, o sea $Q=S$.
-
-Tal como la búsqueda a los $k$-vecinos más cercanos (kNN), este puede ser restringido a la búsqueda de más cercano (NN), este tipo de consulta (AllkNN) puede también  ser reducida a un tipo de consulta AllNN. En esta consulta, todos los vecinos más cercanos a los elementos de $Q$ son buscados, y apenas aquellos cuya distancia sea diferente a cero son retornados, o sea, no se puede retornar como conjunto de respuesta elementos iguales al conjunto de objetos de consulta. La Figura \ref{fig:knn_allknn}  ilustra la noción de consulta AllkNN para un conjunto de datos bi-dimensional.
-
-\begin{figure}[ht]
-\centering
- \includegraphics[width=0.85\columnwidth]{chapter2/knnGraph.pdf}
-\caption{Ejemplo  de consulta AllkNN para un conjunto de datos bidimensional.}
-\label{fig:knn_allknn}
-\end{figure}
-
-Para las consultas por similitud, de interés en este trabajo, una solución obvia es la búsqueda secuencial, en que cada elemento del conjunto de datos es comparado en relación al objeto de consulta. Sin embargo, una solución de fuerza bruta apenas es aceptable para pequeñas base de datos, siendo inviable para problemas de gran escala, como por ejemplo la búsqueda de imágenes por contenido en la Web. Así mismo, como será discutido en la Sección 2.4, al algunas aplicaciones la búsqueda kNN exacta es tan costosa que, muchas veces, las soluciones aproximadas son aceptables. En esos casos, la utilización de las siguientes definiciones serán usadas.
-
+ 
 
 \paragraph{Consulta por rango aproximada - $(1 + \varepsilon)  Rq(q, r)$}
 
@@ -190,11 +175,7 @@ El factor $(1 + \varepsilon)$  es usualmente llamado  \textbf{factor de aproxima
 \label{fig:nearbyKnnQuery}
 \end{figure}
 
-
-\paragraph{Consulta Aproximada a todos los $k$-vecinos más cercanos - $(1 + \varepsilon) - AllkNN(Q, k)$}
-
-Este tipo de consulta aproximada está basado en la definición exacta de AllkNN y la consulta aproximada $(1 + \varepsilon)  kNN(q, k)$. Así, en este problema, utilizando la definición aproximada de búsqueda kNN, se busca los $k$-vecinos más cercanos a cada objeto $q \ in Q$, en donde $Q$ es el conjunto de datos original, ósea $Q = S$.
-
+ 
 
 \section{La Maldición  de la alta Dimensionalidad} \label{sec:madicao-dimensionalidade}
 
@@ -204,12 +185,18 @@ Para dimensiones moderadas, la mayoría de los métodos ejecutas las consultas d
 
 El problemas de ``la maldición de la alta dimensionalidad'' fue estudiado originalmente por Bellman \cite{citeulike:Bellman}, observando que particiones del espacio de soluciones en problemas de optimización son ineficientes en problema con datos en altas dimensiones. Los efectos de ``maldición'' en Métodos de Acceso Espaciales (MAEs) y Métodos de Acceso Métricos (MAMs) son discutidos en  \cite{aleman_high_dimensional, WhatsWrong, DBLP:journals/corr/abs-0906-0391}.
 
+%\section{Soluciones Aproximadas}\label{sec:solucoes-aproximadas}
+\section{Búsqueda aproximada  de los vecinos más cercanos (ANN)}
 
-\section{Soluciones Aproximadas}\label{sec:solucoes-aproximadas}
+En esta sección   definimos formalmente el problema de la búsqueda del vecino más cercano (Nearest Neighbor search - NN). Se examinará entonces la versión simplificada de la búsqueda NN conocida como búsqueda NN aproximada, el campo en el que se basa esta tesis, y describirá cómo difiere de los algoritmos alternativos para resolver el problema de búsqueda NN.
 
-La literatura sobre los métodos de búsqueda por similitud es bastante grande, con decenas de métodos y centenas de variantes. A pesar de haber una evidente producción científica en esta área, a gran cantidad de publicaciones hace difícil explorar exhaustivamente el estado del arte de esta área. Así el objetivo de esta sección   es describir todos los métodos de indexación, mas si los más relevantes para esta investigación, pues como será revisado en el Capítulo \ref{sec:proposta}  la propuesta de este trabajo se centra en soluciones aproximadas de búsqueda por similitud basado en proyección en sub-espacios.
+Los trabajos descritos en este capitulo todos comparten la definición del mismo problema. Dado un conjunto de datos X que consiste de N puntos ($X \in R ^ {NxD} = [x_1, x_2,..., x_N]^T$), donde cada punto $x_i \in R^D$ es un vector D-dimensional de valores reales (vector característica). El objetivo es construir un conjunto de $m$ funciones hash $\{ h_m : R^D \rightarrow {0, 1}\}_{m=1}^K$ cuya salida puede ser concatenada como [$h_1(x_i), h_2(x_i), ..., h_\Nhashfunctions(x_i)$]  el cual cumple la función de codificar el vector característica.  Para codificar se necesitan funciones \textit{hash} que preserven la similitud del espacio original.  
+ 
+La búsqueda de vecinos más cercanos se puede definir como el problema de recuperar el punto de datos más cercano $ NN(q) $ para una consulta $ q \in R^D$ en un conjunto de datos de $N$ puntos  $ [x_1. x_2 , ..., x_N]^T $ donde $x_i \in R^D$. La similitud entre los puntos   se define por una función de distancia  $\{ d(.,.) : R^D \times R^D  \}$.   Es fácil generalizar esta definición de problema para devolver los vecinos $K$ más cercanos a la consulta. Esta variante se conoce   como búsqueda k-NN y es un componente fundamental en una amplia gama de diferentes métodos de aprendizaje de máquinas. La función de distancia $d(x,y)$ entre los puntos de datos se suele calcular utilizando una métrica de distancia genérica como la $l_p - norm$ (Ecuación \ref{lpnorm}).
 
-
+Para buscar $NNs$ a una consulta necesitamos construir una estructura de datos o algoritmo que tome nuestra noción seleccionada de distancia y recupera los puntos de datos que están cerca de la consulta bajo esa métrica de distancia específica. La búsqueda por fuerza bruta es un algoritmo sencillo para resolver el problema de búsqueda del vecino más cercano con cualquier métrica de distancia deseada. En la búsqueda por fuerza bruta se calcula la distancia a todos los puntos en la base de datos y los puntos  con la menor distancia a la consulta son devueltos como el vecino más cercano. Las ventajas de la búsqueda de la fuerza bruta son su simplicidad de la puesta en práctica y su garantía que los vecinos más cercanos   serán recuperados eventualmente. Sin embargo, comparar exhaustivamente la consulta con cada punto en la base de datos da una complejidad temporal $O (ND)$ que hace rápidamente la búsqueda de fuerza bruta intratable para la búsqueda de vecinos más cercanos a través de conjuntos de datos con muchos puntos de datos (N) y una dimensionalidad moderada a alta (RE). En esta situación, se requiere un enfoque más informado del problema de búsqueda del vecino más cercano.\\
+ 
+En la  sección \ref{sec:lsh}, introduciremos el método \textit{Locality Sensitive Hashing (LSH)}, una familiar de algoritmos que proveen un método para resolver búsqueda aproximada de los vecinos mas próximos con un tiempo de consulta constante. 
 
 \subsection{\textit{Locality Sensitive Hashing}}\label{sec:lsh}
 
@@ -299,8 +286,162 @@ En ese mismo escenario,  la técnica LSH Multi-level \cite{DBLP:journals/jidm/Oc
 Recientemente, en \cite{taoLSBLSH}  los autores propusieron el método LSB-Forest. Este trabajo mejor la técnica LSH-Forest, y a fin de garantizar la calidad y eficiencia de recuperación de datos multidimensionales, utiliza representaciones basadas en \textit{space-filling curves} y arboles B. De ese modo, los valores \textit{hash} son representado como valores unidimensionales usando tanto la proyección LSH como las curvas Z. Además, varios arboles B son usados para indexas los datos con el objetivo de mejorar la calidad de los resultados. Una desventaja de los arboles LSB es que usa lecturas/escrituras randomicas, lo que conlleva requiere un número considerable de accesos a disco cuando el conjunto de datos es grande. Para resolver ese problema, el método HashFile \cite{lshHashFile}  fue propuesto. Como será detallado en la siguiente sección, en comparación a los métodos actuales LSH, el método HashFile solo divide recursivamente los \textit{buckets} densos para alcanzar particiones mas equilibradas. Cada \textit{bucket} almacena un número fijo de objetos, mas el método aprovecha la lectura secuencial en vez de usar el acceso randomico, como es el caso en los arboles  B. Este método esta basado en conceptos de proyección aleatoria (\textit{Random Projection}).
  
  
+
+\subsection{LSH con Projección Aleatória}\label{sec:hashfile}
+
+El método HashFile \cite{lshHashFile}  fue propuesto para responder consultas kNN exactas en el espacio $L_1$  y consultas aproximadas en el espacio $L_2$. El método combina las ventajas de la proyección aleatoria  y la  lectura secuencial. Al contrario de otros métodos basado en LSH, en donde cada  \textit{bucket} es asociado a una concatenación de $m$ valores \textit{hash}, este método particiona recursivamente  los \textit{buckets}  densos que son organizados en un estructura jerárquica. Note que al contrario de  la mayoría  de los métodos LSH, este método solo necesita de un sub-indice para garantizar resultados de calidad. De ese modo, dado un objeto de consulta $q$, el algoritmo de búsqueda solo explorar los \textit{buckets} que están cerca al objeto de consulta usando el esquema de búsqueda $\textit{top-down}$. Los \textit{top-down}. Los\textit{buckets}   candidatos en cada nodo son almacenados secuencialmente  en orden creciente  a su valor \textit{hash}  y  pueden ser eficientemente  cargados a memoria principal. Los resultados muestran que este método supera métodos recientes, que representan el estado del arte en métodos de indexación, para consultas kNN exactas y aproximadas.
+
+\subsubsection{Projección Aleatória}
+
+La proyección aleatoria es un método de reducción de la dimensionalidad de los datos que es computacionalmente eficiente y suficientemente preciso. Dado un conjunto de datos $S$ con $N$ puntos de dimensión $n$ y una matriz aleatoria  $ R_{n \times k} $, la proyección es calculada de la siguiente manera.
+
+\begin{equation}
+S'_{N \times k} = S_{N \times n} \times R _{n \times k}
+\end{equation}
+
+La proyección resulta en un conjunto de datos  $S'$ k-dimensional con $N$ puntos. La proyección aleatoria puede preservar la distancia Euclideana en un espacio reducido, lo que es especificado por el Lema Jonhson-Lindenstrauss.
+
+
+\paragraph*{Lema de Jonhson-Lindenstrauss:} Dado $\epsilon > 0$ e um inteiro $N$, seja $k$ um inteiro positivo tal que $k \geq k_0 = O (\epsilon^{-2}log N)$. Para cada conjunto $S$ de $N$ pontos  em $\mathbb{R}^n$, existe $f: \mathbb{R}^n \rightarrow  \mathbb{R}^k$   tal que para todo $u,v \in S$, tem-se:
+
+\begin{equation}\label{eq:JL-lemma}
+  (1 - \epsilon) \parallel u - v \parallel^2 \leq \parallel f(u) - f(v) \parallel^2 \leq (1 + \epsilon)\parallel u - v \parallel^2
+\end{equation}
+
+En los últimos años, el Lema de Jonhson-Lindenstrauss (JL) ha sido útil en la resolución de una variedad de problemas. La idea es la siguiente: al obtener una baja representación dimensional de los datos, JL acelera cierto algoritmo de forma significativa, en especial los algoritmos cuyo tiempo de ejecución dependen exponencialmente de la dimensión del espacio de trabajo (hay una serie de problemas prácticos para los cuales los algoritmos más conocidos tienen ese comportamiento). Al mismo tiempo, JL provee una garantía de conservación de la proximidad después de una operación de proyección sobre cada par de distancias y generalmente es suficiente para establecer que la solución encontrada en el espacio reducido es una buena aproximación de la solución optima en el espacio original.
+
+Algunos ejemplos de aplicación fueron presentado en \cite{Indyk:1998:ANN:276698.276876}. Por ejemplo, Indyk y Motwani mostraron que el Lema JL es útil para resolver el problema de búsqueda aproximada al vecino más cercano, donde después de algunos procedimiento de pre-procesamiento del conjunto de datos, consultas de este tipo son respondidas: Dado un punto arbitrario $x$ y un punto $y \in P$, para cada punto $z \in P$ se satisface $ \|x - z\| \geq (1 - \epsilon)\|x - y\|$.
+
+\subsubsection{Restricción de la distancia para consultas kNN usando $L_1$}
+
+Supongo que  $\mathcal{H}$  es una función \textit{hash}  derivada de  $R_{n \times k}$   tal que esta mapea un objeto $o$
+ de dimensión $n$ en un valor unidimensional.
+
+\begin{equation}\label{eq:hashfile}
+\mathcal{H}(o) = \lfloor \Sigma_{i=1}^n h_i \cdot o_i \rfloor
+\end{equation}
+
+Dado que cada elemento $h_i$  está dentro de $\mathcal{H}$  para valores randomicos $\{-1,0,1\}$,  se puede   fácilmente  alcanzar un \textit{lower bound} para consultas con la  distancia $L_1$.
+
+\paragraph*{Limite Inferior para $L_1$} Dado dos puntos $x$ y $y$ de dimensión $n$, y una función  \textit{hash} $\mathcal{H} : \mathbb{R}^n \rightarrow \mathbb{R}^1$ con  $h_i \in \{-1,0,1\}$, se tiene.
+
+\begin{equation}\label{eq:LBL1}
+ \parallel x - y \parallel_{L_1} \geq | \mathcal{H}(x) - \mathcal{H}(y) | - 1
+\end{equation}
+
+Así, una proyección aleatoria puede ser usada para particionar un gran volumen de datos en \textit{buckets}, en un espacio unidimensional. Las páginas en disco pueden ser almacenados secuencialmente en orden creciente al valor \textit{hash}. Así, dado un punto de consulta $q$ y la distancia $\lambda$ al vecino más próximo ya encontrados, si el valor \textit{hash} de $q$ y $h_q$, entonces de acuerdo con la relación presentada en la Ecuación \ref{eq:LBL1}, solo las páginas con valor \textit{hash} entre $[ h_q - \lambda, h_q + \lambda]$ necesitan ser accesadas. Los demás puntos fuera del intervalo pueden ser seguramente podados.
+
+\subsubsection{Restricción de la distancia para consulta kNN aproximada usando $L_2$}
+
+\paragraph*{Limite Inferior para $L_2$} Dado dos puntos $x$ y $y$ de dimensión $n$, y una función  \textit{hash} $\mathcal{H}_w(o) = \lfloor  \frac{ \vec{h_i} \cdot \vec{o_i}}{w} \rfloor  $, se tiene.
+
+\begin{equation}\label{eq:LBL2}
+ \parallel x - y \parallel_{L_2} \geq  (1 - \epsilon) w (| \mathcal{H}(x) - \mathcal{H}(y) | - 1)
+\end{equation}
+
+Básicamente para poder reducir los datos en valores unidimensionales, la Ecuación\ref{eq:lsh} es adaptada para trabajar como una extensión de proyección aleatoria. Las páginas en el disco también pueden ser almacenadas secuencialmente en orden creciente al valor \textit{hash}. Así, dado un punto de consulta $q$ y una distancia   $\lambda$  al vecino más próximo ya encontrado, si el valor \textit{hash} de $q$ es $h_q$, entonces de acuerdo con la relación representada en la ecuación \ref{eq:LBL2}, las páginas con valor \textit{hash}  entre $[ h_q - \lambda, h_q + \lambda]$ son una buena aproximación de los datos que necesitan ser accesadas.
+
+\subsubsection{Construcción del índice}
+
+El método HashFile es construido siguiendo el esquema \textit{top-down}. Inicialmente, una función  \textit{hash}  es generada en el nodo raíz y se crea un archivo en disco para almacenar los datos. Dado que no es posible predecir la gama de valore  \textit{hash} , no se puede atribuir una colección de páginas de tamaño fijo con antecedencia. Así, apenas una página es reservada con un intervalo $(\infty,\infty)$. El tamaño de la página es fijo $B$, indicando que ella puede acomodar hasta $B$ puntos. Los primero $B$  objetos pueden ser insertados con éxito en esa página. Ahora, un nuevo objeto puede ser insertado en base a su valor \textit{hash}. Como nuevos objetos son insertados de forma continua, una operación de división ocurre y esos intervalos \textit{hash} se hacen menores. Finalmente, un objeto puede ser mapeado para un \textit{bucket} lleno donde los puntos tienen un mismo valor \textit{hash} y por tanto no puede ser dividido. Para insertar un nuevo objeto, se crea un nodo hijo con una nueva función \textit{hash}. Los puntos en esa página son extraído y son re-mapeados junto con un nuevo objeto en el nodo hijo.
+
+La Figura   \ref{fig:HashFile_structure} ilustra un ejemplo de la estructura del árbol del método HashFile, así como la estructura lógica de un nodo interno del árbol. El árbol es construido por la inserción continua de los datos. Cuando un \textit{bucket} en el nodo padre no puede ser divido más, nodos hijos son creado para particionar el \textit{bucket} más denso. Por tanto, cada nodo interno contiene una lista de nodos hijos, como es ilustrado en la figura del ejemplo. Cada bloque representa una página con un intervalo \textit{hash}  $[l_i, h_i]$.
+
+\begin{figure}[h]
+\centering
+ \includegraphics[width=0.65\columnwidth]{images/HashFilestructure.pdf}
+\caption{Estrutura del nodo HashFile. Figura adaptada de \cite{lshHashFile}.}
+\label{fig:HashFile_structure}
+\end{figure}
+
+
+\begin{lstlisting}[mathescape, frame=single, label=alg:HashFile,caption=Consulta kNN aproximada usando HashFile]
+algorithm $ApproximateNN$($q, \lambda$)
+    $init$ $\delta$
+    $\delta$ := $ApproximateNNInNode$($q, root, \delta, \lambda$)
+    return $\delta$
+end.
+procedure [$\delta$] = $ApproximateNNInNode$($q, node, \delta, \lambda$)
+    $h_q := node.\textit{hash}(q)$
+    for cada nó $child$ do
+        $wdist := |child.hash\_value - h_q|$
+        if $wdist < \lambda$ then
+            insertar $child$ en el $heap$ ordenado por $wdist$
+        end if
+    end for
+    for cada página em disco $p_i$ do
+        buscar la lista de paginas de $p_{start}$ a $p_{end}$ en disco entre los intervalor $[h_q - \lambda, h_q + \lambda]$
+    end for
+    cargar las páginas entre $[h_q - \lambda, h_q + \lambda]$ en el bloque $B$
+    for cada objeto $o$ en $B$ do
+        $dist := \|o - q\|_{L_2}$
+        if dist < $\delta$ then
+            $\delta := dist$
+        end if
+    end for
+end.
+\end{lstlisting}
+\begin{comment}
+\begin{lstlisting}[mathescape, frame=single, label=alg:HashFile,caption=Consulta kNN aproximada usando HashFile]
+ApproximateNNInNode($q, node, \delta, \lambda$)
+    $h_q = node.\textit{hash}(q)$
+    for each child node $child$ do
+        $wdist = |child.\textit{hash}value - h_q|$
+        if $wdist < \lambda$ then
+            add child to the heap ordered by $wdist$
+    for each disk page $pi$ in increasing order do
+        find the list of pages from $p_{start}$ to $p_{end}$ so that their intervals intersect with $[h_q - \lambda, h_q + \lambda]$
+    load the $block$ of pages into memory
+    for each object $o$ in the $block$ do
+        $dist = \|o - q\|_{L_2}$
+        if dist < $\delta$ then
+            $\delta = dist$
+    return $\delta$
+end.
+ApproximateNN($q, \lambda$)
+    init $\delta$
+    $\delta$ := ApproximateNNInNode ($q, root, \delta, \lambda$)
+    return $\delta$
+end.
+\end{lstlisting}
+\end{comment}
+
+\begin{figure}[h]
+\centering
+ \includegraphics[width=0.7\columnwidth]{images/HashFilequery.pdf}
+\caption{Busca kNN aproximada en un nodo  HashFile.  Figura adaptada de \cite{lshHashFile}.}
+\label{fig:HashFile}
+\end{figure}
+
+
+
+\subsubsection{Consulta kNN Aproximada}
+
+En el método LSH, cada tabla  \textit{hash} esta asociada  a un conjunto de $m$ funciones \textit{hash}. Intuitivamente, se puede considerar que todos los \textit{buckets} están organizados en un árbol con altura equilibrada en que la longitud del camino desde la raíz hasta los nodos hoja es siempre $m$. Cuando $m$ aumenta, el tamaño del \textit{bucket} es menor y es más probable que objetos próximos sean mapeado en \textit{buckets} vecinos y por tanto no sean cubiertos por el algoritmo de busqueda. Así, ampliando el espacio de búsqueda, inspeccionando \textit{buckets} vecinos se puede mejorar significativamente la calidad de los resultados \cite{multiprobe}.
+
+Inspirados por esa idea, los autores del método HashFile propusieron un método flexible e eficaz para el proceso de consulta kNN. Los usuarios pueden especificar un parámetro $\lambda$ para determinar el espacio de búsqueda. Si un objeto de consulta $q$ es mapeado para un valor \textit{hash}  $h_q$, entonces solo es necesario explorar los \textit{buckets} vecinos que tengan intersección con el intervalo \textit{hash}  $[h_q - \lambda, h_q + \lambda]$. Note que $\lambda$  especifica el intervalo de consulta en vez del número de \textit{buckets}  vecinos. En el ejemplo ilustrado en la Figura \ref{fig:HashFile} el objeto de consulta $q$ es mapeado en el \textit{bucket}  $B_5$ con el valor 9. Cuando $\lambda=1$, los \textit{buckets} {$B_4, B_5, B_6$} son explorados. Todos los puntos en el \textit{bucket} $B_6$  son procesados secuencialmente. Dado los \textit{buckets} $B_4$ e $B_5$  correspondientes a los nodos hijos, ellos son procesados en la misma forma que el nodo padre. Para $\lambda=3$, los  \textit{buckets} {$B_2, B_3, B_4, B_5, B_6, B_7$} son explorados. Dados que los \textit{buckets}  {$B_2, B_6, B_4$} son almacenados secuencialmente, ellos pueden ser cargados en la memoria principal y luego usar una búsqueda secuencial. El pseudocódigo para responder consultas kNN aproximad es mostrado en el Algoritmo \ref{alg:HashFile}.
+
+
+
+
+  
+Por otro lado, es  sabido que los hiperplanos que generar LSH tienden  poco  poder de discriminación conforme el numero de funciones \textit{hash} crece y además muchas tablas son requeridas para un nivel adecuado de precisión. Esta ineficiencia es debido a su naturaleza de procesamiento de manera independiente a los datos, donde los hiperplanos \textit{hash} son generado sin saber nada sobre la distribución de los datos.  Este problema  ha sido recientemente investigado en muchos métodos basados en \textit{hash} para permitir aprender funciones \textit{hash} adaptadas a la distribución de los datos. Estos métodos serán  discutidas en la siguiente sección. 
+
+\section{Otros métodos de codificación  para la búsqueda del vecino más cercano}
+
+En esta sección se revisa las investigaciones anteriores relacionadas en el campo de la codificación binaria para búsquedas ANN basadas en hash. En la Sección ***2.4.1 vimos que uno de los dos pasos cruciales en la generación de hashcodes binarios basados en LSH implican la conversión de proyecciones de valor real en bits binarios. En esta sección se hara un estudio en profundidad de los algoritmos propuestos recientemente para reducir la pérdida de información resultante de la discretización de números reales en binarios, y específicamente los métodos que no solo toman la función de signo de la ecuación ***2.7. En términos generales, la cuantificación se refiere al proceso de reducir la cardinalidad de una representación (como los números en la línea real) a un conjunto Finito y discreto de símbolos (por ejemplo, bits binarios). La cuantificación ha sido estudiado particularmente en el campo de la teoría de la información \cite{Gray} y también ha encontrado amplia aplicación en la ingeniería dada la imposibilidad de almacenar y manipular valores numéricos con una precisión infinita. Esta revisión necesariamente solo se centra en los métodos de cuantificación que se han utilizado específicamente en métodos de búsqueda ANN basado en hashing.\\
+
+Se han propuesto dos categorías principales de cuantificación para la búsqueda del vecino más cercano: cuantificación  escalar y vectorial, que se diferencian por si la entrada y la salida de la cuantificación es una cantidad escalar o vectorial. \\
  
- %%% Aqui lo nuevo :(
+La cuantificación escalar es aplicada con frecuencia para cuantificar los valores reales (proyecciones) que resultan del producto punto del vector de características de cada punto de datos sobre los vectores normales, a un conjunto de Hiperplanos  aleatorios que dividan el espacio de características (Figura \ref{fig:figura1}).\\
+ 
+ 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1.0\textwidth]{chapter2/LSH_1.JPG}
+\caption{En el contexto de la búsqueda de vecinos más cercanos se emplean típicamente dos variaciones de cuantificación: la cuantificación vectorial (Figura (a)) divide el espacio de características en células de Voronoi (Jegou et al., 2011).Los centroidos están marcados con una cruz blanca mientras que los puntos de datos se muestran como puntos negros. La distancia entre la consulta y los puntos de la base de datos se calcula determinando la distancia a sus centroides más cercanos. Por el contrario, la cuantificación escalar (figura (b)) se utiliza frecuentemente para binarizar una proyección de valor real resultante de un producto punto de un punto de datos con un vector normal de hiperplano.El espacio se divide con múltiples hiperplanos y cada uno suele aportar 1 bit al hashcode final. El hashcode es efectivamente el índice de la región en forma de politopo que contiene el punto de datos asociado. Los puntos de datos que aparecen en este ejemplo son una proyección PCA 2D del conjunto de datos de imagen CIFAR-10.}
+\label{fig:figura1}
+\end{figure}
 
 
 \section{Consideraciones Finales}
