@@ -88,8 +88,9 @@ La figura \ref{fig:ima4} muestra un conjunto de $6561$ puntos en el triangulo de
 La dimensión fractal fue calculada por el algoritmo box-counting(), el cual tiene un coste lineal respecto al número de elementos en el conjunto de datos  \cite{DBLP:journals/jidm/TrainaTF10}. Este algoritmo es descrito en la siguiente sección. 
 
 \section{Algoritmo de Calculo de la Dimensión Fractal}
+ 
+Esta sección presenta un algoritmo para calcular la dimensión fractal D de cualquier conjunto dado de puntos en cualquier espacio E-dimensional. Una manera práctica de estimar D a partir de un conjunto de datos espaciales está utilizando el método de "recuento de cajas"  \cite{schroederpower}. Teóricamente, este método da una aproximación cercana a la dimensión fractal  \cite{DBLP:journals/jidm/TrainaTF10} \cite{traina1999distance}. Uno de los mejores algoritmos publicados para calcular D de un conjunto de datos es un algoritmo O (N log (N)), donde N es el número de puntos en el conjunto de datos \cite{belussi1998estimating}.  
 
-Esta sección presenta el algoritmo de \textit{box-counting} para calcular la dimensión fractal $D$ de cualquier conjunto dados  en  un  espacio E-dimensional. Una manera práctica de estimar D a partir de un conjunto de datos espaciales está utilizando el método de "recuento de cajas" [Schroeder 1991] \cite{schroeder}. Teóricamente, este método da una aproximación cercana a la dimensión fractal, y nuestros experimentos mostraron que efectivamente [Traina Jr. et al. 2000; 1999a] \cite{traina2000} \cite{traina1999}. Uno de los mejores algoritmos publicados para calcular D de un conjunto de datos es un algoritmo O (N log (N)), donde N es el número de puntos en el conjunto de datos [Belussi y Faloutsos 1995]\cite{belussi}. \\
 
 Sin embargo, hemos desarrollado un nuevo, muy rápido, O (N) algoritmo para su implementación, que se presenta a continuación. Considere el espacio de direcciones de un conjunto de puntos en un espacio E-dimensional e imponga una E-rejilla con cuadrículas de tamaño de lado r. Centrándose en la i-ésima célula, sea $C r, i$ el recuento ('ocupaciones') de los puntos 2 en cada celda. Luego, calcule el valor $S (r) = i C r, i$. La dimensión fractal es la derivada de log $(S (r))$ con respecto al logaritmo del radio. \\
 
@@ -150,3 +151,8 @@ Una vez, por lo que es realmente muy rápido. El algoritmo \ref{alg:algo1} resum
 \end{algorithm}
  
 A medida que aumenta el lado de la cuadrícula, también aumenta el número de punteros a celdas vacías. Por lo tanto, para los conjuntos de datos de alta dimensión vale la pena mantener las celdas como listas enlazadas en lugar de arrays. Implementamos esta estructura como un objeto en C ++, usando una matriz para conjuntos de datos con la dimensión de incrustación menos o igual a tres, y usando una lista vinculada para conjuntos de datos con mayor dimensionalidad.	\\
+
+
+\section{Consideraciones Finales}
+
+****A medida que aumenta el lado de la cuadrícula, también aumenta el número de punteros a celdas vacías. Por lo tanto, para los conjuntos de datos de alta dimensión vale la pena mantener las celdas como listas enlazadas en lugar de arrays. Implementamos esta estructura como un objeto en C ++, usando una matriz para conjuntos de datos con la dimensión de incrustación menos o igual a tres, y usando una lista vinculada para conjuntos de datos con mayor dimensionalidad.	\\

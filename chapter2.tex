@@ -98,13 +98,13 @@ La Figura \ref{fig:lpnorms}(a)  ilustra,  las distancias de la familia  $L_p$, e
 
 La Figura \ref{fig:lpnorms}(b) representa un conjunto de objetos en un  espacio bi-dimensional, un objeto de consulta $q$, un radio de consulta $r$, los conjuntos de respuesta y tres métricas utilizadas: $L_1$, $L_2$ e $L_{\infty}$.
 
-La distancia de coseno presentada en la Ecuación \ref{eq:2_3} es otra métrica de distancia popular para la búsqueda de $NN$ que ha demostrado ser particularmente eficaz para la recuperación de documentos \cite{Manning,Ravichandran}.
+La \textbf{distancia de coseno} presentada en la Ecuación \ref{eq:2_3} es otra métrica de distancia popular para la búsqueda de $NN$ que ha demostrado ser particularmente eficaz para la recuperación de documentos \cite{Manning,Ravichandran}.
 
 \begin{equation}\label{eq:2_3}
 	    d_{cosine}(X_i,X_j) = 1 - \frac{\sum\nolimits_{k=1}^{D} x_{ik} x_{jk}}{\sqrt{\sum\nolimits_{k=1}^{D} x_{ik}^2}\sqrt{\sum\nolimits_{k=1}^{D} x_{jk}^2}}
 \end{equation}
 
-También encontraremos la distancia de Hamming ampliamente en esta tesis, ya que es la métrica por defecto para comparar cadenas binarias (Ecuación \ref{eq:2_4})
+También encontraremos la \textbf{distancia de Hamming} ampliamente en esta tesis, ya que es la métrica por defecto para comparar cadenas binarias (Ecuación \ref{eq:2_4})
 
 \begin{equation}\label{eq:2_4}
 	   d_{hamming}(b_i,b_j) = \sum_{k=1}^{D} \delta[b_{ik} \neq b_{jk}]
