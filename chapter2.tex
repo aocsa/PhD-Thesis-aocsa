@@ -452,7 +452,7 @@ La Figura \ref{fig:cuda_NN_search} (a) presenta las proyecciones de una consulta
   
 Por otro lado, es  sabido que los hiperplanos que generar LSH tienden  poco  poder de discriminación conforme el numero de funciones \textit{hash} crece y además muchas tablas son requeridas para un nivel adecuado de precisión. Esta ineficiencia es debido a su naturaleza de procesamiento de manera independiente a los datos, donde los hiperplanos \textit{hash} son generado sin saber nada sobre la distribución de los datos.  Este problema  ha sido recientemente investigado en muchos métodos basados en \textit{hash} para permitir aprender funciones \textit{hash} adaptadas a la distribución de los datos. Estos métodos serán  discutidas en la siguiente sección. 
 
-\section{Otros métodos de codificación  para la búsqueda del vecino más cercano}
+%\section{Otros métodos de codificación  para la búsqueda del vecino más cercano}
  
  %% FALTA AQUI UN RESUMEN :(
  
@@ -463,5 +463,6 @@ Como fue discutido en este capitulo,  soluciones exactas para  resolver el probl
 
 Muchas técnicas exactas y aproximadas, como los Métodos de Acceso Métricos (MAMs) y los métodos basados en \textit{Locality Sensitive Hashing} (LSH) y sus extensiones, fueron propuestas para resolver búsquedas en altas dimensiones.  Entre ellas, los métodos basado en LSH son de las pocas técnicas con garantía teórica de costo sub-linear. No obstante, muchas de sus implementaciones actuales presentan dificultades para ser implementados en problemas reales, como por ejemplo, tareas de minería de datos que dependen de algoritmo de búsqueda al vecino más próximo. He aquí el potencial de los métodos aproximados de búsqueda kNN.
 
-Aún considerando soluciones aproximadas como una vía para acelerar consultas por similitud, problemas como la búsqueda AllkNN en altas dimensiones aun son considerados imprácticos debido a su alto costo computacional. Para desarrollar soluciones de alto desempeño para tareas que demanden grandes recursos de computación, se necesita la utilización de nuevos esquemas de programación. Una forma para atacar esa restricción es mejorar el tiempo de ejecución de las técnicas de recuperación de datos y emplear técnicas de computación GPGPU, como es descrito en el Capítulo 5.
+Aún considerando soluciones aproximadas como una vía para mejorar la precisión y desempeño  de las consultas por similitud, problemas como la búsqueda AllkNN en altas dimensiones aun son considerados poco prácticos debido a su alto costo computacional. Estudios recientes, promueven el uso de la \acf{CNN} con técnicas de  \textit{hashing} para mejorar la precisión de la búsqueda de los k-vecinos más cercanos - KNN.  Sin embargo, aun hay retos que resolver para encontrar una solución práctica y eficiente para indexar este tipo de características, como es descrito en el Capitulo 6. 
 
+  
