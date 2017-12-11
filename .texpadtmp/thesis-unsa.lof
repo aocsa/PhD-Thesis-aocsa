@@ -1,0 +1,33 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Unificaci\IeC {\'o}n del modelo de consulta por similitud. (a) Los M\IeC {\'e}todos de Acceso M\IeC {\'e}tricos (MAMs). (b) \textit {Locality Sensitive Hashing} (LSH).}}{9}{figure.26}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces (a) Formas geom\IeC {\'e}tricas que ilustran la delimitaci\IeC {\'o}n de una regi\IeC {\'o}n de b\IeC {\'u}squeda de acuerdo con la m\IeC {\'e}trica $L_p$ utilizada. (b) Ejemplo de consulta por rango para diferentes m\IeC {\'e}tricas de la familia $L_p$.}}{11}{figure.32}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Ejemplo de consulta por rango.}}{12}{figure.37}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Ejemplo de consulta de los k-vecinos m\IeC {\'a}s cercanos.}}{13}{figure.39}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Ejemplo de consulta por rango aproximada.}}{13}{figure.41}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces B\IeC {\'u}squeda aproximada 5-NN. (a) busca exacta. (b) busca aproximada. }}{14}{figure.44}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Interpretaci\IeC {\'o}n geom\IeC {\'e}trica de proyecci\IeC {\'o}n de los vectores $\mathaccentV {vec}17E{p_1}$ y $\mathaccentV {vec}17E{p_2}$ en LSH.}}{17}{figure.49}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Estrutura del nodo HashFile. Figura adaptada de \cite {lshHashFile}.}}{22}{figure.82}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Representaci\IeC {\'o}n de las proyecciones de una consulta por similitud aproximada en HashFile en (a), en (b) se verifica su estructura l\IeC {\'o}gica correspondiente.}}{24}{figure.108}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Etapas del proceso KDD. Figura adaptada de \cite {Fayyad:1996:DMK:257938.257942}.}}{29}{figure.114}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Perceptr\IeC {\'o}n \cite {aggarwal2015data}.}}{31}{figure.123}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Perceptr\IeC {\'o}n Multicapa \cite {aggarwal2015data}.}}{32}{figure.124}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Puntos en un plano 2d}}{37}{figure.130}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Arquitectura de auto-codificador no lineal}}{38}{figure.134}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Pasos del proceso de construcci\IeC {\'o}n del triangulo de $Sierpinsky$}}{42}{figure.138}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Algunos ejemplos de fractales (a y b) fractales geom\IeC {\'e}tricos y (c) fractales algebraicos}}{42}{figure.139}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Una linea embebida en dos o tres dimensiones donde $D=1$.}}{43}{figure.140}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces El gr\IeC {\'a}fico de conteo de cajas para el triangulo de $Sierpinki$.}}{45}{figure.144}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Representaci\IeC {\'o}n de celdas de cuadr\IeC {\'\i }cula en espacios de 2 y 3 dimensiones. }}{46}{figure.146}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Ejemplo de la estructura de datos utilizada para calcular la Suma de Ocupaciones de un conjunto de datos con 5 puntos (con tres niveles de resoluci\IeC {\'o}n) }}{47}{figure.147}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Hashing para la b\IeC {\'u}squeda del vecino m\IeC {\'a}s cercano. Comprimir un conjunto de vectores $(x_i)^{n}_{i=1}, x_i \in \mathbf {R}^d $ }}{51}{figure.154}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Supervised Hashing: comprime un conjunto de vectores y sus etiquetas $((x_i,y_2))^{n}_{i=1}, x_1\in \mathbb {R}^{d}, y_1 \in \{1,...,L\} $.}}{52}{figure.155}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Dimensiones Fractal para diferentes m\IeC {\'e}todos de reducci\IeC {\'o}n de dimensionalidad .}}{55}{figure.164}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces DAsH. Proceso de entrenamiento e indexaci\IeC {\'o}n. }}{64}{figure.176}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces DAsH. Proceso de recuperaci\IeC {\'o}n. }}{65}{figure.177}
+\addvspace {10\p@ }

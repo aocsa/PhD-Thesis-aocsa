@@ -1,0 +1,74 @@
+\select@language {spanish}
+\contentsline {section}{Resumen}{\es@scroman {iii}}{chapter*.2}
+\contentsline {section}{Abstract}{\es@scroman {v}}{chapter*.3}
+\contentsline {section}{\IeC {\'I}ndice}{\es@scroman {vii}}{chapter*.3}
+\contentsline {section}{Lista de Figuras}{\es@scroman {ix}}{chapter*.4}
+\contentsline {section}{Lista de Tabelas}{1}{chapter*.6}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{3}{chapter.7}
+\contentsline {section}{\numberline {1.1}Consideraciones iniciales}{3}{section.8}
+\contentsline {section}{\numberline {1.2}Definici\IeC {\'o}n del problema}{5}{section.10}
+\contentsline {section}{\numberline {1.3}Objetivos}{6}{section.11}
+\contentsline {section}{\numberline {1.4}Principales contribuciones}{6}{section.12}
+\contentsline {section}{\numberline {1.5}Organizaci\IeC {\'o}n de la tesis}{6}{section.13}
+\contentsline {chapter}{\numberline {2}Consultas por similitud}{7}{chapter.22}
+\contentsline {section}{\numberline {2.1}Consideraciones iniciales}{7}{section.23}
+\contentsline {section}{\numberline {2.2}Dominio de datos}{9}{section.27}
+\contentsline {subsection}{\numberline {2.2.1}Espacios M\IeC {\'e}tricos}{9}{subsection.28}
+\contentsline {subsection}{\numberline {2.2.2}Espacios Multidimensionales}{10}{subsection.29}
+\contentsline {section}{\numberline {2.3}Consultas por Similitud}{11}{section.35}
+\contentsline {paragraph}{Consulta por radio (\textit {range query} Rq (q, r))}{12}{section.35}
+\contentsline {paragraph}{Consulta de los k-vecinos m\IeC {\'a}s cercanos (\textit {k-Nearest neighbor query} - $kNN (q, k)$)}{12}{figure.37}
+\contentsline {paragraph}{Consulta por rango aproximada - $(1 + \varepsilon ) Rq(q, r)$}{12}{figure.39}
+\contentsline {paragraph}{Consulta Aproximada a los $k$-vecinos m\IeC {\'a}s cercanos - $(1 + \varepsilon ) - kNN(q, k)$}{13}{figure.41}
+\contentsline {section}{\numberline {2.4}La Maldici\IeC {\'o}n de la alta Dimensionalidad}{14}{section.45}
+\contentsline {section}{\numberline {2.5}B\IeC {\'u}squeda aproximada de los vecinos m\IeC {\'a}s cercanos (ANN)}{14}{section.46}
+\contentsline {subsection}{\numberline {2.5.1}\textit {Locality Sensitive Hashing}}{15}{subsection.47}
+\contentsline {paragraph}{Definici\IeC {\'o}n}{16}{subsection.47}
+\contentsline {subsection}{\numberline {2.5.2}LSH con Projecci\IeC {\'o}n Aleat\IeC {\'o}ria}{20}{subsection.77}
+\contentsline {subsubsection}{Projecci\IeC {\'o}n Aleat\IeC {\'o}ria}{20}{subsection.77}
+\contentsline {subsubsection}{Restricci\IeC {\'o}n de la distancia para consultas kNN usando $L_1$}{21}{equation.79}
+\contentsline {subsubsection}{Construcci\IeC {\'o}n del \IeC {\'\i }ndice}{21}{equation.81}
+\contentsline {subsubsection}{Consulta kNN Aproximada}{23}{lstnumber.107}
+\contentsline {section}{\numberline {2.6}Consideraciones Finales}{24}{section.109}
+\contentsline {chapter}{\numberline {3}Miner\IeC {\'\i }a de Datos \& \textit {Deep Learning}}{27}{chapter.110}
+\contentsline {section}{\numberline {3.1}Consideraciones Iniciales}{27}{section.111}
+\contentsline {section}{\numberline {3.2}KDD y Mineria de Datos}{28}{section.113}
+\contentsline {section}{\numberline {3.3}Aprendizaje de M\IeC {\'a}quina -- \textit {Machine Learning} }{30}{section.121}
+\contentsline {subsection}{\numberline {3.3.1}Redes Neuronales}{30}{subsection.122}
+\contentsline {subsection}{\numberline {3.3.2}Redes Neuronales Convolutivas (CNN)}{32}{subsection.125}
+\contentsline {subsection}{\numberline {3.3.3}Capas CNN}{33}{subsection.126}
+\contentsline {subsection}{\numberline {3.3.4}Aplicaciones de {Redes Neuronales Convolutivas (CNN)}}{34}{subsection.127}
+\contentsline {subsection}{\numberline {3.3.5}Aprendizaje no Supervisado}{36}{subsection.128}
+\contentsline {subsubsection}{Auto-codificadores}{36}{subsection.128}
+\contentsline {subsection}{\numberline {3.3.6}Compresi\IeC {\'o}n de data}{37}{subsection.129}
+\contentsline {section}{\numberline {3.4}Consideraciones Finales}{39}{section.135}
+\contentsline {chapter}{\numberline {4}Teor\IeC {\'\i }a Fractal}{41}{chapter.136}
+\contentsline {section}{\numberline {4.1}Consideraciones Iniciales}{41}{section.137}
+\contentsline {section}{\numberline {4.2}Dimensi\IeC {\'o}n fractal}{43}{section.141}
+\contentsline {section}{\numberline {4.3}Algoritmo de Calculo de la Dimensi\IeC {\'o}n Fractal}{45}{section.145}
+\contentsline {section}{\numberline {4.4}Consideraciones Finales}{48}{section.149}
+\contentsline {chapter}{\numberline {5}B\IeC {\'u}squeda aproximada v\IeC {\'\i }a \textit {deep hashing}: Desempe\IeC {\~n}o de m\IeC {\'e}todos de representaci\IeC {\'o}n y recuperaci\IeC {\'o}n}{49}{chapter.150}
+\contentsline {section}{\numberline {5.1}Consideraciones Iniciales}{49}{section.151}
+\contentsline {subsection}{\numberline {5.1.1}Approximate Nearest Neighbors \& Deep Hashing}{50}{subsection.153}
+\contentsline {subsubsection}{Hashing para la B\IeC {\'u}squeda del Vecino m\IeC {\'a}s Cercano}{50}{subsection.153}
+\contentsline {subsubsection}{Supervised Hashing}{52}{figure.154}
+\contentsline {subsection}{\numberline {5.1.2}Protocolos de evaluaci\IeC {\'o}n de recuperaci\IeC {\'o}n}{52}{subsection.156}
+\contentsline {subsubsection}{Protocolos de evaluaci\IeC {\'o}n de SSH y SH}{52}{subsection.156}
+\contentsline {subsubsection}{Representaci\IeC {\'o}n de datos y medidas de similitud}{53}{subsection.156}
+\contentsline {subsection}{\numberline {5.1.3}Dimensi\IeC {\'o}n fractal y reducci\IeC {\'o}n de dimensionalidad}{54}{subsection.157}
+\contentsline {subsubsection}{Teor\IeC {\'\i }a Fractal}{54}{subsection.157}
+\contentsline {subsection}{\numberline {5.1.4}Comparaci\IeC {\'o}n de representaciones de datos}{54}{subsection.159}
+\contentsline {subsubsection}{Dimensi\IeC {\'o}n fractal y reducci\IeC {\'o}n de dimensionalidad}{54}{subsection.159}
+\contentsline {subsection}{\numberline {5.1.5}Comparaci\IeC {\'o}n del rendimiento de recuperaci\IeC {\'o}n}{57}{subsection.167}
+\contentsline {section}{\numberline {5.2}Conclusions}{58}{section.170}
+\contentsline {chapter}{\numberline {6}Deep Fractal based Hashing - DAsH}{61}{chapter.171}
+\contentsline {section}{\numberline {6.1}Consideraciones Iniciales}{61}{section.172}
+\contentsline {subsection}{\numberline {6.1.1}Teoria del Fractal}{63}{subsection.173}
+\contentsline {section}{\numberline {6.2}Deep Fractal based Hashing - DAsH}{63}{section.175}
+\contentsline {subsection}{\numberline {6.2.1}Usando Fractales para estimar los par\IeC {\'a}metros LSH}{65}{subsection.178}
+\contentsline {section}{\numberline {6.3}Experimentos}{66}{section.184}
+\contentsline {subsection}{\numberline {6.3.1}Experimento 1: Sintonizaci\IeC {\'o}n de par\IeC {\'a}metros LSH}{66}{subsection.185}
+\contentsline {subsection}{\numberline {6.3.2}Rendimiento de Recuperaci\IeC {\'o}n}{67}{subsection.187}
+\contentsline {section}{\numberline {6.4}Conclusions}{67}{section.189}
+\contentsline {chapter}{\numberline {7}Conclusiones y Trabajos Futuros}{69}{chapter.190}
+\contentsline {chapter}{Referencias Bibliogr\IeC {\'a}ficas}{70}{chapter.190}

@@ -1,0 +1,57 @@
+\BOOKMARK [1][-]{chapter*.2}{Resumen}{}% 1
+\BOOKMARK [1][-]{chapter*.3}{Abstract}{}% 2
+\BOOKMARK [1][-]{chapter*.3}{\315ndice}{}% 3
+\BOOKMARK [1][-]{chapter*.4}{Lista de Figuras}{}% 4
+\BOOKMARK [1][-]{chapter*.6}{Lista de Tabelas}{}% 5
+\BOOKMARK [0][-]{chapter.7}{Introducci\363n}{}% 6
+\BOOKMARK [1][-]{section.8}{Consideraciones iniciales}{chapter.7}% 7
+\BOOKMARK [1][-]{section.10}{Definici\363n del problema}{chapter.7}% 8
+\BOOKMARK [1][-]{section.11}{Objetivos}{chapter.7}% 9
+\BOOKMARK [1][-]{section.12}{Principales contribuciones}{chapter.7}% 10
+\BOOKMARK [1][-]{section.13}{Organizaci\363n de la tesis}{chapter.7}% 11
+\BOOKMARK [0][-]{chapter.22}{Consultas por similitud}{}% 12
+\BOOKMARK [1][-]{section.23}{Consideraciones iniciales}{chapter.22}% 13
+\BOOKMARK [1][-]{section.27}{Dominio de datos}{chapter.22}% 14
+\BOOKMARK [2][-]{subsection.28}{Espacios M\351tricos}{section.27}% 15
+\BOOKMARK [2][-]{subsection.29}{Espacios Multidimensionales}{section.27}% 16
+\BOOKMARK [1][-]{section.35}{Consultas por Similitud}{chapter.22}% 17
+\BOOKMARK [1][-]{section.45}{La Maldici\363n de la alta Dimensionalidad}{chapter.22}% 18
+\BOOKMARK [1][-]{section.46}{B\372squeda aproximada de los vecinos m\341s cercanos \(ANN\)}{chapter.22}% 19
+\BOOKMARK [2][-]{subsection.47}{Locality Sensitive Hashing}{section.46}% 20
+\BOOKMARK [2][-]{subsection.77}{LSH con Projecci\363n Aleat\363ria}{section.46}% 21
+\BOOKMARK [1][-]{section.109}{Consideraciones Finales}{chapter.22}% 22
+\BOOKMARK [0][-]{chapter.110}{Miner\355a de Datos \046 Deep Learning}{}% 23
+\BOOKMARK [1][-]{section.111}{Consideraciones Iniciales}{chapter.110}% 24
+\BOOKMARK [1][-]{section.113}{KDD y Mineria de Datos}{chapter.110}% 25
+\BOOKMARK [1][-]{section.121}{Aprendizaje de M\341quina \205 Machine Learning }{chapter.110}% 26
+\BOOKMARK [2][-]{subsection.122}{Redes Neuronales}{section.121}% 27
+\BOOKMARK [2][-]{subsection.125}{Redes Neuronales Convolutivas \(CNN\)}{section.121}% 28
+\BOOKMARK [2][-]{subsection.126}{Capas CNN}{section.121}% 29
+\BOOKMARK [2][-]{subsection.127}{Aplicaciones de Redes Neuronales Convolutivas \(CNN\)}{section.121}% 30
+\BOOKMARK [2][-]{subsection.128}{Aprendizaje no Supervisado}{section.121}% 31
+\BOOKMARK [2][-]{subsection.129}{Compresi\363n de data}{section.121}% 32
+\BOOKMARK [1][-]{section.135}{Consideraciones Finales}{chapter.110}% 33
+\BOOKMARK [0][-]{chapter.136}{Teor\355a Fractal}{}% 34
+\BOOKMARK [1][-]{section.137}{Consideraciones Iniciales}{chapter.136}% 35
+\BOOKMARK [1][-]{section.141}{Dimensi\363n fractal}{chapter.136}% 36
+\BOOKMARK [1][-]{section.145}{Algoritmo de Calculo de la Dimensi\363n Fractal}{chapter.136}% 37
+\BOOKMARK [1][-]{section.149}{Consideraciones Finales}{chapter.136}% 38
+\BOOKMARK [0][-]{chapter.150}{B\372squeda aproximada v\355a deep hashing: Desempe\361o de m\351todos de representaci\363n y recuperaci\363n}{}% 39
+\BOOKMARK [1][-]{section.151}{Consideraciones Iniciales}{chapter.150}% 40
+\BOOKMARK [2][-]{subsection.153}{Approximate Nearest Neighbors \046 Deep Hashing}{section.151}% 41
+\BOOKMARK [2][-]{subsection.156}{Protocolos de evaluaci\363n de recuperaci\363n}{section.151}% 42
+\BOOKMARK [2][-]{subsection.157}{Dimensi\363n fractal y reducci\363n de dimensionalidad}{section.151}% 43
+\BOOKMARK [2][-]{subsection.159}{Comparaci\363n de representaciones de datos}{section.151}% 44
+\BOOKMARK [2][-]{subsection.167}{Comparaci\363n del rendimiento de recuperaci\363n}{section.151}% 45
+\BOOKMARK [1][-]{section.170}{Conclusions}{chapter.150}% 46
+\BOOKMARK [0][-]{chapter.171}{Deep Fractal based Hashing - DAsH}{}% 47
+\BOOKMARK [1][-]{section.172}{Consideraciones Iniciales}{chapter.171}% 48
+\BOOKMARK [2][-]{subsection.173}{Teoria del Fractal}{section.172}% 49
+\BOOKMARK [1][-]{section.175}{Deep Fractal based Hashing - DAsH}{chapter.171}% 50
+\BOOKMARK [2][-]{subsection.178}{Usando Fractales para estimar los par\341metros LSH}{section.175}% 51
+\BOOKMARK [1][-]{section.184}{Experimentos}{chapter.171}% 52
+\BOOKMARK [2][-]{subsection.185}{Experimento 1: Sintonizaci\363n de par\341metros LSH}{section.184}% 53
+\BOOKMARK [2][-]{subsection.187}{Rendimiento de Recuperaci\363n}{section.184}% 54
+\BOOKMARK [1][-]{section.189}{Conclusions}{chapter.171}% 55
+\BOOKMARK [0][-]{chapter.190}{Conclusiones y Trabajos Futuros}{}% 56
+\BOOKMARK [0][-]{chapter.190}{Referencias Bibliogr\341ficas}{}% 57
