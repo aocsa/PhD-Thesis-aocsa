@@ -1,0 +1,754 @@
+\begin{thebibliography}{100}
+
+\bibitem{citeulike:fractal:encoders}
+Chapter 7 {F}ractal dimension.
+\newblock {\em Mathematics in Science and Engineering}, 209:167 -- 218, 2007.
+\newblock {L}-System Fractals.
+
+\bibitem{aggarwal2015data}
+Charu~C Aggarwal.
+\newblock {\em Data mining: the textbook}.
+\newblock Springer, 2015.
+
+\bibitem{hashing_algoritghms_survey}
+Alexandr Andoni and Piotr Indyk.
+\newblock {Near-optimal hashing algorithms for approximate nearest neighbor in
+  high dimensions}.
+\newblock {\em Communications of the ACM}, 51(1):117--122, 2008.
+
+\bibitem{Arantes_thefractal}
+Adriano~S. Arantes, Marcos~R. Vieira, Agma J.~M. Traina, and Caetano Traina.
+\newblock The fractal dimension making similarity queries more efficient.
+\newblock In {\em Proceedings of the II ACM SIGKDD Workshop on Fractals, Power
+  Laws and Other Next Generation Data Mining Tools}. ACM, 2003.
+
+\bibitem{BabenkoA}
+Lempitsky~V. Babenko, A.
+\newblock Aggregating local deep features for image retrieval.
+\newblock {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 1269--1277, 2015.
+
+\bibitem{Babenko}
+Slesarev A. Chigorin A.-Lempitsky~V. Babenko, A.
+\newblock Neural codes for image retrieval.
+\newblock {\em Proceedings of European Conference on Computer Vision}, pages
+  584--599, 2014.
+
+\bibitem{Barbara2003}
+Daniel Barbar{\'a} and Ping Chen.
+\newblock Using self-similarity to cluster large data sets.
+\newblock {\em Data Mining and Knowledge Discovery}, 7(2):123--152, 2003.
+
+\bibitem{Barbara2004}
+Daniel Barbar{\'a}, Ping Chen, and Zohreh Nazeri.
+\newblock {\em Self-Similar Mining of Time Association Rules}, pages 86--95.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2004.
+
+\bibitem{lshforest}
+Mayank Bawa, Tyson Condie, and Prasanna Ganesan.
+\newblock {L}{S}{H} forest: self-tuning indexes for similarity search.
+\newblock In {\em Proceedings of the 14th international conference on World
+  Wide Web}, pages 651--660, Chiba, Japan, 2005.
+
+\bibitem{rstartree}
+Norbert Beckmann, Hans-Peter Kriegel, Ralf Schneider, and Bernhard Seeger.
+\newblock {The R*-tree: an efficient and robust access method for points and
+  rectangles}.
+\newblock {\em SIGMOD Record}, 19(2):322--331, 1990.
+
+\bibitem{citeulike:Bellman}
+Richard~E. Bellman.
+\newblock {\em Adaptive control processes - A guided tour}, volume 1961,
+  chapter (A RAND Corporation Research Study), pages 255--260.
+\newblock Princeton University Press, 1961.
+
+\bibitem{Belussi:1995:ESS:645921.673166}
+Alberto Belussi and Christos Faloutsos.
+\newblock Estimating the selectivity of spatial queries using the `correlation'
+  fractal dimension.
+\newblock In {\em Proceedings of the 21th International Conference on Very
+  Large Data Bases}, VLDB '95, pages 299--310, San Francisco, CA, USA, 1995.
+  Morgan Kaufmann Publishers Inc.
+
+\bibitem{belussi1998estimating}
+Alberto Belussi and Christos Faloutsos.
+\newblock Estimating the selectivity of spatial queries using
+  thecorrelation'fractal dimension.
+\newblock Technical report, 1998.
+
+\bibitem{kdt}
+Jon~Louis Bentley.
+\newblock {Multidimensional Binary Search Trees in Database Applications.}
+\newblock {\em Transactions on Software Engineering}, 5(4):333--340, 1979.
+
+\bibitem{xtree}
+Stefan Berchtold, Daniel~A. Keim, and Hans-Peter Kriegel.
+\newblock {The X-tree: An Index Structure for High-Dimensional Data}.
+\newblock In {\em Proceedings of the International Conference on Very Large
+  Data Bases}, pages 28--39, San Francisco, CA, USA, 1996.
+
+\bibitem{Bettaiah14}
+Vineetha Bettaiah and Heggere~S. Ranganath.
+\newblock An analysis of time series representation methods: Data mining
+  applications perspective.
+\newblock In {\em Proceedings of the 2014 ACM Southeast Regional Conference},
+  ACM SE '14, pages 16:1--16:6, New York, NY, USA, 2014. ACM.
+
+\bibitem{WhatsWrong}
+Stephen Blott and Roger Weber.
+\newblock What's wrong with high-dimensional similarity search.
+\newblock In {\em Proceedings of the International Conference on Very Large
+  Data Bases}, pages 3--3, Aukland, New Zealand, 2008.
+
+\bibitem{aleman_high_dimensional}
+Christian B\"{o}hm, Stefan Berchtold, and Daniel~A. Keim.
+\newblock {Searching in high-dimensional spaces: Index structures for improving
+  the performance of multimedia databases}.
+\newblock {\em ACM Computing Surveys}, 33(3):322--373, 2001.
+
+\bibitem{DBLP:fractal2016}
+Christian~Cesar Bones, Luciana A.~S. Romani, and Elaine P.~M. de~Sousa.
+\newblock Clustering multivariate data streams by correlating attributes using
+  fractal dimension.
+\newblock {\em {JIDM}}, 7(3):249--264, 2016.
+
+\bibitem{stochastic-gradient-tricks}
+Léon Bottou.
+\newblock {\em Stochastic Gradient Tricks}, volume 7700, page 430–445.
+\newblock Springer, January 2012.
+
+\bibitem{Boureau}
+Ponce J. LeCun~Y. Boureau, Y.L.
+\newblock A theoretical analysis of feature pooling in visual recognition.
+\newblock {\em Proceedings of the 27th International Conference on Machine
+  Learning}, pages 111--–118, 2010.
+
+\bibitem{dlBook}
+Nikhil Buduma.
+\newblock {\em Fundamentals of Deep Learnin}.
+\newblock O'Reilly Media, Inc., 2016.
+
+\bibitem{Chakrabarti:2002:FLA:584792.584797}
+Deepayan Chakrabarti and Christos Faloutsos.
+\newblock F4: Large-scale automated forecasting using fractals.
+\newblock In {\em Proceedings of the Eleventh International Conference on
+  Information and Knowledge Management}, CIKM '02, pages 2--9, New York, NY,
+  USA, 2002. ACM.
+
+\bibitem{cit:avez99searching}
+Edgar Ch\'{a}vez, Gonzalo Navarro, Ricardo Baeza-Yates, and Jos\'{e}~Luis
+  Marroqu\'{\i}n.
+\newblock {Searching in metric spaces}.
+\newblock {\em ACM Computing Surveys}, 33(3):273--321, 2001.
+
+\bibitem{ChenLC}
+Papandreou G. Kokkinos I.-Murphy K. Yuille~A.L. Chen, L.C.
+\newblock Semantic image segmentation with deep convolutional nets and fully
+  connected crfs. arxiv preprint arxiv.
+\newblock page 1412.7062, 2014.
+
+\bibitem{ChenX}
+Yuille~A.L. Chen, X.
+\newblock Articulated pose estimation by a graphical model with image dependent
+  pairwise relations.
+\newblock {\em Advances in Neural Information Processing Systems}, pages
+  1736--1744, 2014.
+
+\bibitem{MTree}
+Paolo Ciaccia, Marco Patella, and Pavel Zezula.
+\newblock {M-tree: An Efficient Access Method for Similarity Search in Metric
+  Spaces}.
+\newblock In {\em Proceedings of the International Conference on Very Large
+  Data Bases}, pages 426--435, San Francisco, CA, USA, 1997.
+
+\bibitem{cit:clarkson_nn_survey}
+Kenneth~L. Clarkson.
+\newblock {\em {Nearest-Neighbor Methods for Learning and Vision: Theory and
+  Practice}}, chapter {Nearest-Neighbor Searching and Metric Space Dimensions},
+  pages 15--59.
+\newblock MIT Press, 2006.
+
+\bibitem{lsh}
+Mayur Datar, Nicole Immorlica, Piotr Indyk, and Vahab~S. Mirrokni.
+\newblock Locality-sensitive hashing scheme based on p-stable distributions.
+\newblock In {\em Proceedings of the Twentieth annual Symposium on
+  Computational Geometry}, pages 253--262, Brooklyn, New York, USA, 2004.
+
+\bibitem{Datar2004}
+Mayur Datar, Nicole Immorlica, Piotr Indyk, and Vahab~S. Mirrokni.
+\newblock {Locality-sensitive hashing scheme based on p-stable distributions}.
+\newblock In {\em Proceedings of the annual symposium on computational
+  geometry}, pages 253--262, New York, NY, USA, 2004.
+
+\bibitem{DelCorso:2005:RSN:1060745.1060764}
+Gianna~M. Del~Corso, Antonio Gull\'{\i}, and Francesco Romani.
+\newblock Ranking a stream of news.
+\newblock In {\em Proceedings of the 14th International Conference on World
+  Wide Web}, WWW '05, pages 97--106, New York, NY, USA, 2005. ACM.
+
+\bibitem{Deng}
+Dong W. Socher R.-Li L.J. Li K. Fei-Fei~L. Deng, J.
+\newblock Imagenet: A large-scale hierarchical image database.
+\newblock {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, page 248–255, 2009.
+
+\bibitem{di2016fractal}
+A.~Di~Ieva.
+\newblock {\em The Fractal Geometry of the Brain}.
+\newblock Springer Series in Computational Neuroscience. Springer New York,
+  2016.
+
+\bibitem{modelinglsh}
+Wei Dong, Zhe Wang, William Josephson, Moses Charikar, and Kai Li.
+\newblock Modeling {L}{S}{H} for performance tuning.
+\newblock In {\em Proceedings of the International Conference on Information
+  and Knowledge Engineering}, pages 669--678, Napa Valley, California, USA,
+  2008.
+
+\bibitem{wekwek}
+Krishna~K. Elena~E. and Matteo Matteucci.
+\newblock Wekwek: A study in fractal dimension and dimensionality reduction.
+\newblock {\em ACM}, 2001.
+
+\bibitem{conf/pods/FaloutsosK94}
+Christos Faloutsos and Ibrahim Kamel.
+\newblock Beyond uniformity and independence: Analysis of r-trees using the
+  concept of fractal dimension.
+\newblock In Victor Vianu, editor, {\em PODS}, pages 4--13. ACM Press, 1994.
+
+\bibitem{GEMINI_Faloutsos}
+Christos Faloutsos, M.~Ranganathan, and Yannis Manolopoulos.
+\newblock {Fast subsequence matching in time-series databases}.
+\newblock In {\em Proceedings of the ACM SIGMOD International Conference on
+  Management of Data Conference}, pages 419--429, New York, NY, USA, 1994.
+
+\bibitem{Faloutsos94}
+Christos Faloutsos, M.~Ranganathan, and Yannis Manolopoulos.
+\newblock Fast subsequence matching in time-series databases.
+\newblock {\em SIGMOD Rec.}, 23(2):419--429, May 1994.
+
+\bibitem{Fan}
+Zheng K. Lin Y.-Wang~S. Fan, X.
+\newblock Combining local appearance and holistic view: Dual-source deep neural
+  networks for human pose estimation.
+\newblock {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 1347--1355, 2015.
+
+\bibitem{Fayyad:1996:DMK:257938.257942}
+Usama~M. Fayyad, Gregory Piatetsky-Shapiro, and Padhraic Smyth.
+\newblock From data mining to knowledge discovery: an overview.
+\newblock In {\em Advances in knowledge discovery and data mining}, pages
+  1--34. American Association for Artificial Intelligence, 1996.
+
+\bibitem{lsh_hamming}
+Aristides Gionis, Piotr Indyk, and Rajeev Motwani.
+\newblock {Similarity Search in High Dimensions via Hashing}.
+\newblock In {\em Proceedings of the International Conference on Very Large
+  Data Bases}, pages 518--529, San Francisco, CA, USA, 1999.
+
+\bibitem{Girshick}
+Donahue J. Darrell T.-Malik~J. Girshick, R.
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation.
+\newblock {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 580--–587, 2014.
+
+\bibitem{GirshickR}
+R.~Girshick.
+\newblock Fast r-cnn.
+\newblock {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 1440–--1448, 2015.
+
+\bibitem{Gong}
+Wang L. Guo R.-Lazebnik~S. Gong, Y.
+\newblock Multi-scale orderless pooling of deep convolutional activation
+  features.
+\newblock {\em Proceedings of European Conference on Computer Vision}, pages
+  392–--407, 2014.
+
+\bibitem{itq}
+Y.~Gong, S.~Lazebnik, A.~Gordo, and F.~Perronnin.
+\newblock Iterative quantization: A procrustean approach to learning binary
+  codes for large-scale image retrieval.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  35(12):2916--2929, Dec 2013.
+
+\bibitem{Gower82}
+John~C. Gower.
+\newblock {Euclidean distance geometry}.
+\newblock {\em The Mathematical Scientist}, 7:1--14, 1982.
+
+\bibitem{Guttman1984}
+Antonin Guttman.
+\newblock R-trees: a dynamic index structure for spatial searching.
+\newblock {\em SIGMOD Record}, 14:47--57, 1984.
+
+\bibitem{han2011data}
+Jiawei Han, Jian Pei, and Micheline Kamber.
+\newblock {\em Data mining: concepts and techniques}.
+\newblock Elsevier, 2011.
+
+\bibitem{Hariharan}
+Arbeláez P. Girshick R.-Malik~J. Hariharan, B.
+\newblock Simultaneous detection and segmentation.
+\newblock {\em Proceedings of European Conference on Computer Vision}, pages
+  297--–312, 2014.
+
+\bibitem{He}
+Zhang X. Ren S.-Sun~J. He, K.
+\newblock : Spatial pyramid pooling in deep convolutional networks for visual
+  recognition.
+\newblock {\em Proceedings of European Conference on Computer Vision}, pages
+  346--–361, 2014.
+
+\bibitem{cit:indexDriven}
+Gisli~R. Hjaltason and Hanan Samet.
+\newblock {Index-driven similarity search in metric spaces}.
+\newblock {\em ACM Transactions on Database Systems}, 28(4):517--580, 2003.
+
+\bibitem{Indyk:1998:ANN:276698.276876}
+Piotr Indyk and Rajeev Motwani.
+\newblock Approximate nearest neighbors: towards removing the curse of
+  dimensionality.
+\newblock In {\em Proceedings of the thirtieth annual ACM symposium on Theory
+  of computing}, pages 604--613, New York, NY, USA, 1998.
+
+\bibitem{journals/jidm/TrainaTF10}
+Caetano~Traina Jr., Agma J.~M. Traina, and Christos Faloutsos.
+\newblock Fast feature selection using fractal dimension - ten years later.
+\newblock {\em JIDM}, 1(1):17--20, 2010.
+
+\bibitem{DBLP:journals/jidm/TrainaTWF10}
+Caetano~Traina Jr., Agma J.~M. Traina, Leejay Wu, and Christos Faloutsos.
+\newblock Fast feature selection using fractal dimension.
+\newblock {\em JIDM}, 1(1):3--16, 2010.
+
+\bibitem{lopq}
+Y.~Kalantidis and Y.~Avrithis.
+\newblock Locally optimized product quantization for approximate nearest
+  neighbor search.
+\newblock In {\em 2014 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pages 2329--2336, June 2014.
+
+\bibitem{kLin:DH}
+J.-H. Hsiao C.-S.~Chen Kelvin~Lin, H.-F.~Yang.
+\newblock Deep learning of binary hash codes for fast image retrieval.
+\newblock In {\em CVPR Workshop (CVPRW) on Deep Learning in Computer Vision},
+  CVPRW'15. IEEE, 2015.
+
+\bibitem{cifar10}
+Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton.
+\newblock Cifar-10 (canadian institute for advanced research).
+
+\bibitem{ImageNet}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E. Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Proceedings of the 25th International Conference on Neural
+  Information Processing Systems}, NIPS'12, pages 1097--1105, USA, 2012. Curran
+  Associates Inc.
+
+\bibitem{Krizhevsky}
+Sutskever-I. Hinton~G.E. Krizhevsky, A.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock {\em Advances in Neural Information Processing Systems}, pages
+  1097--–1105, 2012.
+
+\bibitem{kubat2015introduction}
+Miroslav Kubat.
+\newblock {\em An Introduction to Machine Learning}.
+\newblock Springer, 2015.
+
+\bibitem{5459466}
+B.~Kulis and K.~Grauman.
+\newblock Kernelized locality-sensitive hashing for scalable image search.
+\newblock In {\em Proceedings of the International Conference on Computer
+  Vision}, pages 2130 --2137, Kyoto, Japan, 2009.
+
+\bibitem{Le15atutorial}
+Quoc~V. Le, Google Brain, and Google Inc.
+\newblock A tutorial on deep learning part 2: Autoencoders, convolutional
+  neural networks and recurrent neural networks, 2015.
+
+\bibitem{LeCun}
+Bottou-L. Bengio Y.-Haffner~P. LeCun, Y.
+\newblock Gradient-based learning applied to document recognition.
+\newblock {\em Proceedings of the IEEE}, (86):2278–--2324, 1998.
+
+\bibitem{lecun-mnisthandwrittendigit-2010}
+Yann LeCun and Corinna Cortes.
+\newblock {MNIST} handwritten digit database.
+\newblock 2010.
+
+\bibitem{Li:2015:RSS:2881665.2882186}
+Zechao Li, Jing Liu, Jinhui Tang, and Hanqing Lu.
+\newblock Robust structured subspace learning for data representation.
+\newblock {\em IEEE Trans. Pattern Anal. Mach. Intell.}, 37(10):2085--2098,
+  October 2015.
+
+\bibitem{Lin}
+Chen-Q. Yan~S. Lin, M.
+\newblock Network in network. arxiv preprint arxiv.
+\newblock page 1312.4400, 2013.
+
+\bibitem{LinG}
+Shen-C. Reid I.-et~al. Lin, G.
+\newblock Efficient piecewise training of deep structured models for semantic
+  segmentation. arxiv preprint arxiv.
+\newblock page 1504.01013, 2015.
+
+\bibitem{Liu}
+Guo-Y. Wu S.-Lew~M.S. Liu, Y.
+\newblock Deepindex for accurate and efficient image retrieval.
+\newblock {\em : Proceedings of the 5th ACM on International Conference on
+  Multimedia Retrieval}, pages 43–--50, 2015.
+
+\bibitem{LiuZ}
+Li-X. Luo P.-Loy C.C. Tang-X. Liu, Z.
+\newblock Semantic image segmentation via deep parsing network.
+\newblock {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 1377--1385, 2015.
+
+\bibitem{LiuWJJC12}
+Wei Liu, Jun Wang, Rongrong Ji, Yu-Gang Jiang, and Shih-Fu Chang.
+\newblock Supervised hashing with kernels.
+\newblock In {\em CVPR}, pages 2074--2081. IEEE Computer Society, 2012.
+
+\bibitem{Long}
+Shelhamer-E. Darrell~T. Long, J.
+\newblock Fully convolutional networks for semantic segmentation.
+\newblock {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 3431--3440, 2015.
+
+\bibitem{multiprobe}
+Qin Lv, William Josephson, Zhe Wang, Moses Charikar, and Kai Li.
+\newblock {Multi-probe LSH: efficient indexing for high-dimensional similarity
+  search}.
+\newblock In {\em Proceedings of the International Conference on Very Large
+  Data Bases}, pages 950--961, Vienna, Austria, 2007.
+
+\bibitem{Manning}
+Raghavan~P. Manning, C.~D. and H.~Schutze.
+\newblock Introduction to information retrieval.
+\newblock {\em Cambridge University Press, New York, NY, USA}, 2008.
+
+\bibitem{SATree}
+Gonzalo Navarro.
+\newblock {Searching in metric spaces by spatial approximation}.
+\newblock {\em The VLDB Journal}, 11(1):28--46, 2002.
+
+\bibitem{cit:tspanners02}
+Gonzalo Navarro, Rodrigo Paredes, and Edgar Ch\'{a}vez.
+\newblock {t-Spanners for metric space searching}.
+\newblock {\em Data and Knowledge Engineering}, 63:820--854, 2007.
+
+\bibitem{svhn}
+Yuval Netzer, Tao Wang, Adam Coates, Alessandro Bissacco, Bo~Wu, and Andrew
+  Y~Ng.
+\newblock Reading digits in natural images with unsupervised feature learning.
+\newblock 01 2011.
+
+\bibitem{website:UFLDL}
+Andrew~Y. Ng, Adam Coates, Quoc Le, Honglak Lee, and Andrew Maas.
+\newblock Ufldl tutorial - deep learning, 10 2016.
+
+\bibitem{NIPS2010_0550}
+Jiquan Ngiam, Zhenghao Chen, Daniel Chia, Pang~W. Koh, Quoc~V. Le, and
+  Andrew~Y. Ng.
+\newblock Tiled convolutional neural networks.
+\newblock In J.~Lafferty, C.~Williams, J.~Shawe-taylor, R.s. Zemel, and
+  A.~Culotta, editors, {\em Advances in Neural Information Processing Systems
+  23}, pages 1279--1287. 2010.
+
+\bibitem{hrg}
+Alexander Ocsa, Carlos Bedregal, and Ernesto Cuadros-Vargas.
+\newblock {A new approach for similarity queries using neighborhood graphs}.
+\newblock In {\em Proceedings of the Brazilian Symposium on Databases}, pages
+  131--142, Jo{\~a}o Pessoa, Para\'{\i}ba, Brasil, 2007.
+
+\bibitem{DBLP:journals/jidm/OcsaS10}
+Alexander Ocsa and Elaine P.~M. Sousa.
+\newblock {An Adaptive Multi-level Hashing Structure for Fast Approximate
+  Similarity Search}.
+\newblock {\em Journal of Information and Data Management}, 1(3):359--374,
+  2010.
+
+\bibitem{Oquab}
+Bottou L. Laptev I.-Sivic~J. Oquab, M.
+\newblock Is object localization for free?-weakly-supervised learning with
+  convolutional neural networks.
+\newblock {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 685–--694, 2015.
+
+\bibitem{Ravichandran}
+Pantel~P. Ravichandran, D. and E.~Hovy.
+\newblock Randomized algorithms and nlp: Using locality sensitive hash function
+  for high speed noun clustering.
+\newblock {\em Proceedings of the 43rd Annual Meeting on Association for
+  Computational Linguistics, ACL'05}, page 622–629, 2005.
+
+\bibitem{RazavianAS}
+Sullivan J. Maki A.-Carlsson~S. Razavian, A.S.
+\newblock A baseline for visual instance retrieval with deep convolutional
+  networks. arxiv preprint arxiv.
+\newblock {\em Proceedings of European Conference on Computer Vision}, page
+  1412.6574, 2014.
+
+\bibitem{Ren}
+He~K. Girshick R.-Sun~J. Ren, S.
+\newblock Faster r-cnn: Towards real-time object detection with region proposal
+  networks.
+\newblock {\em Advances in Neural Information Processing Systems}, pages
+  91–--99, 2015.
+
+\bibitem{sablayrolles2016should}
+Alexandre Sablayrolles, Matthijs Douze, Herv{\'e} J{\'e}gou, and Nicolas
+  Usunier.
+\newblock How should we evaluate supervised hashing?
+\newblock 2016.
+
+\bibitem{DBLP:journals/corr/SablayrollesDJU16}
+Alexandre Sablayrolles, Matthijs Douze, Herv{\'{e}} J{\'{e}}gou, and Nicolas
+  Usunier.
+\newblock How should we evaluate supervised hashing?
+\newblock {\em CoRR}, 2016.
+
+\bibitem{Scherer}
+Müller A. Behnke~S. Scherer, D.
+\newblock Evaluation of pooling operations in convolutional architectures for
+  object recognition.
+\newblock {\em International Conference on Artificial Neural Networks}, pages
+  92–--101, 2010.
+
+\bibitem{schroederpower}
+M~Schroeder and Chaos Fractals.
+\newblock Power laws: Minutes from an infinite paradise. 1991.
+
+\bibitem{Schroeder:1991}
+Manfred~Robert Schroeder.
+\newblock {\em Fractals, Chaos, Power Laws: minutes from an infinite paradise}.
+\newblock W. H. Freeman and Company, 1991.
+
+\bibitem{rplustree}
+Timos~K. Sellis, Nick Roussopoulos, and Christos Faloutsos.
+\newblock {The R+-Tree: A Dynamic Index for Multi-Dimensional Objects}.
+\newblock In {\em Proceedings of the International Conference on Very Large
+  Data Bases}, pages 507--518, San Francisco, CA, USA, 1987.
+
+\bibitem{Sermanet}
+Eigen D. Zhang X.-Mathieu M. Fergus-R. LeCun-Y. Sermanet, P.
+\newblock Overfeat: Integrated recognition, localization and detection using
+  convolutional networks. arxiv preprint arxiv.
+\newblock page 1312.6229, 2013.
+
+\bibitem{Sharif}
+Azizpour H. Sullivan-J. Carlsson~S. Sharif~Razavian, A.
+\newblock Cnn features off-the-shelf: an astounding baseline for recognition.
+\newblock {\em : Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition Workshops}, pages 806--813, 2014.
+
+\bibitem{conf/cvpr/ShenSLS15}
+Fumin Shen, Chunhua Shen, Wei Liu, and Heng~Tao Shen.
+\newblock In {\em CVPR}.
+
+\bibitem{Simonyan}
+Zisserman~A. Simonyan, K.
+\newblock Very deep convolutional networks for largescale image recognition.
+  arxiv preprint arxiv.
+\newblock page 1409.1556, 2014.
+
+\bibitem{pmtree}
+Tom{\'a}s Skopal, Jaroslav Pokorn{\'y}, and V{\'a}clav Sn{\'a}sel.
+\newblock {Nearest Neighbours Search Using the PM-Tree}.
+\newblock In {\em In Proceedings of Database Systems for Advanced
+  Applications}, pages 803--815, Beijing, China, 2005.
+
+\bibitem{lshtutorial}
+M.~Slaney and M.~Casey.
+\newblock {Locality-Sensitive Hashing for Finding Nearest Neighbors}.
+\newblock {\em IEEE Signal Processing Magazine}, 25(1):128--131, 2008.
+
+\bibitem{smola2008ml}
+Alexander~Johannes Smola and S.V.N. Vishwanathan.
+\newblock {\em Introduction to Machine Learning}.
+\newblock Cambridge University Press, 2008.
+
+\bibitem{Sun}
+Zhou W. Li H.-Tian~Q. Sun, S.
+\newblock Search by detection: Object-level feature for image retrieval.
+\newblock {\em : Proceedings of International Conference on Internet Multimedia
+  Computing and Service}, page~46, 2014.
+
+\bibitem{sutherland1975introduction}
+W.A. Sutherland.
+\newblock {\em Introduction to Metric and Topological Spaces}.
+\newblock Open university set book. Clarendon Press, 1975.
+
+\bibitem{NIPS2013_5207}
+Christian Szegedy, Alexander Toshev, and Dumitru Erhan.
+\newblock Deep neural networks for object detection.
+\newblock In C.~J.~C. Burges, L.~Bottou, M.~Welling, Z.~Ghahramani, and K.~Q.
+  Weinberger, editors, {\em Advances in Neural Information Processing Systems
+  26}, pages 2553--2561. Curran Associates, Inc., 2013.
+
+\bibitem{Szegedy}
+Liu W. Jia Y.-Sermanet P. Reed-S. Anguelov-D. Erhan D. Vanhoucke V.
+  Rabinovich~A. Szegedy, C.
+\newblock Going deeper with convolutions.
+\newblock {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 1–--9, 2015.
+
+\bibitem{Tan:2005:IDM:1095618}
+Pang-Ning Tan, Michael Steinbach, and Vipin Kumar.
+\newblock {\em {Introduction to Data Mining, (First Edition)}}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA, 2005.
+
+\bibitem{taoLSBLSH}
+Yufei Tao, Ke~Yi, Cheng Sheng, and Panos Kalnis.
+\newblock {Efficient and accurate nearest neighbor and closest pair search in
+  high-dimensional space}.
+\newblock {\em ACM Transactions on Database Systems}, 35(3):1--46, 2010.
+
+\bibitem{Tompson}
+Jain A. LeCun Y.-Bregler~C. Tompson, J.J.
+\newblock Joint training of a convolutional network and a graphical model for
+  human pose estimation.
+\newblock {\em Advances in Neural Information Processing Systems}, pages
+  1799--1807, 2014.
+
+\bibitem{Toshev}
+Szegedy~C. Toshev, A.
+\newblock Deeppose: Human pose estimation via deep neural networks.
+\newblock {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 1653--1660, 2014.
+
+\bibitem{Traina:2001:TST:502512.502538}
+Agma Traina, Caetano Traina, Spiros Papadimitriou, and Christos Faloutsos.
+\newblock Tri-plots: Scalable tools for multidimensional data mining.
+\newblock In {\em Proceedings of the Seventh ACM SIGKDD International
+  Conference on Knowledge Discovery and Data Mining}, KDD '01, pages 184--193,
+  New York, NY, USA, 2001. ACM.
+
+\bibitem{traina2005using}
+C~Traina, Elaine Parros~Machado Sousa, and Agma Juci~Machado Traina.
+\newblock Using fractals in data mining.
+\newblock {\em New Generation of Data Mining Applications}, 1:599--630, 2005.
+
+\bibitem{dftree}
+Caetano Traina, Jr., Agma Traina, Roberto~Santos Filho, and Christos Faloutsos.
+\newblock {How to improve the pruning ability of dynamic metric access
+  methods}.
+\newblock In {\em Proceedings of the International Conference on Information
+  and Knowledge Engineering}, pages 219--226, New York, NY, USA, 2002.
+
+\bibitem{DBLP:journals/jidm/TrainaTF10}
+Caetano Traina, Jr., Agma J.~M. Traina, and Christos Faloutsos.
+\newblock {Fast Feature Selection using Fractal Dimension - Ten Years Later}.
+\newblock {\em Journal of Information and Data Management}, 1(1):17--20, 2010.
+
+\bibitem{SlimTree}
+Jr. Traina~C., Agma Traina, Christos Faloutsos, and Bernhard Seeger.
+\newblock {Fast Indexing and Visualization of Metric Data Sets using
+  Slim-Trees}.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  14(2):244--260, 2002.
+
+\bibitem{traina2010fast}
+Caetano Traina~Jr, Agma Traina, Leejay Wu, and Christos Faloutsos.
+\newblock Fast feature selection using fractal dimension.
+\newblock {\em Journal of Information and data Management}, 1(1):3, 2010.
+
+\bibitem{traina1999distance}
+Caetano Traina~Jr, Agma~J Traina, and Christos Faloutsos.
+\newblock Distance exponent: A new concept for selectivity estimation in metric
+  trees.
+\newblock Technical report, DTIC Document, 1999.
+
+\bibitem{Uijlings}
+van de Sande K.E.-Gevers T. Smeulders-A.W. Uijlings, J.R.
+\newblock Selective search for object recognition.
+\newblock {\em International Journal of Computer Vision}, 104:154–--171,
+  2013.
+
+\bibitem{DBMTree}
+Marcos~R. Vieira, C.~Traina Jr., Fabio Jun~Takada Chino, and Agma J.~M. Traina.
+\newblock {DBM-Tree: A Dynamic Metric Access Method Sensitive to Local Density
+  Data}.
+\newblock In {\em Proceedings of the Brazilian Symposium on Databases}, pages
+  163--177, Bras\'{\i}lia, Brasil, 2004.
+
+\bibitem{DBLP:journals/corr/abs-0906-0391}
+Ilya Volnyansky and Vladimir Pestov.
+\newblock {Curse of Dimensionality in Pivot Based Indexes}.
+\newblock In {\em Proceedings of the International Workshop on Similarity
+  Search and Applications}, Washington, DC, USA, 2009.
+
+\bibitem{Wan}
+Wang D. Hoi S.C.H.-Wu P. Zhu-J. Zhang-Y. Li~J. Wan, J.
+\newblock Deep learning for content-based image retrieval: A comprehensive
+  study.
+\newblock {\em : Proceedings of the 22nd ACM International Conference on
+  Multimedia,ACM}, pages 157--166, 2014.
+
+\bibitem{CiteULike:7399806}
+Jun Wang, Sanjiv Kumar, and Shih-Fu Chang.
+\newblock {Semi-Supervised Hashing for Scalable Image Retrieval}.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 3424 --3431, San Francisco, USA, 2010.
+
+\bibitem{wang13}
+Hui Ding-Goce Trajcevski Peter~Scheuermann Xiaoyue~Wang, Abdullah~Mueen and
+  Eamonn Keogh.
+\newblock Experimental comparison of representation methods and distance
+  measures for time series data.
+\newblock {\em Data Min Knowl Disc}, 26:275–309, 2013.
+
+\bibitem{Li}
+Li-Qian Y, Lin-Zhang W, Bin L, Jian-Hua Z, and Xuan-Dong Z.
+\newblock Combined static and dynamic immutability analysis of java program.
+\newblock {\em hinese Journal of Computers. Vol. 33}, pages 736--746, 2010.
+
+\bibitem{cit:vpt}
+Peter~N. Yianilos.
+\newblock {Data structures and algorithms for nearest neighbor search in
+  general metric spaces}.
+\newblock In {\em Proceedings - Annual Symposium on Discrete Algorithms}, pages
+  311--321, Philadelphia, PA, USA, 1993.
+
+\bibitem{DBLP:journals/corr/YosinskiCBL14}
+Jason Yosinski, Jeff Clune, Yoshua Bengio, and Hod Lipson.
+\newblock How transferable are features in deep neural networks?
+\newblock {\em CoRR}, abs/1411.1792, 2014.
+
+\bibitem{Zeiler}
+M.D. Zeiler.
+\newblock {\em Hierarchical convolutional deep learning in computer vision}.
+\newblock PhD thesis, NEW YORK UNIVERSITY, 2013.
+
+\bibitem{lshHashFile}
+Dongxiang Zhang, D.~Agrawal, Gang Chen, and A.K.H. Tung.
+\newblock {HashFile: An efficient index structure for multimedia data}.
+\newblock In {\em Proceedings of the IEEE International Conference on Data
+  Engineering}, pages 1103 --1114, Hannover, Germany, 2011.
+
+\bibitem{Zhang}
+Sohn K. Villegas R.-Pan G. Lee~H. Zhang, Y.
+\newblock Improving object detection with deep convolutional networks via
+  bayesian optimization and structured prediction.
+\newblock {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 249–--258, 2015.
+
+\bibitem{ZhengS}
+Jayasumana S. Romera-Paredes-B. Vineet V. Su Z.-Du D. Huang C. Torr~P.H. Zheng,
+  S.
+\newblock Conditional random fields as recurrent neural networks.
+\newblock {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 1529--1537, 2015.
+
+\bibitem{Zhu}
+Urtasun R. Salakhutdinov-R.-Fidler~S. Zhu, Y.
+\newblock segdeepm: Exploiting segmentation and context in deep neural networks
+  for object detection.
+\newblock {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 4703--–4711, 2015.
+
+\end{thebibliography}

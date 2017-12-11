@@ -12,7 +12,7 @@ La línea de investigación de los métodos de búsqueda exacta, los Métodos de
 
 Aunque en esta línea, Faloutsos \cite{GEMINI_Faloutsos} propone el \textit{framework} GEMINI \textit{ (GEneric Multimedia INdexIng)}, que utiliza los MAEs junto con los métodos  de reducción de dimensionalidad para lidiar con los datos en alta dimensionalidad.  La idea general de este \textit{framework} consiste en reducir el costo de búsqueda con la utilización de un esquema para a identificada de falsas alarmas, para descartar la mayoría de los objetos que no califican como candidatos.
 
-En la misma dirección de los métodos de búsqueda exacta, los Métodos de Acceso Métricos (MAMs) proporcionar operaciones de búsqueda por similitud, exacta, en espacios métricos. Las estructuras de indexación de los MAMs organizan los datos usando un criterio de similitud, asegurando una repuesta eficiente en las consultas. En la literatura son encontrados MAMs basados en árboles, como \mbox{VP-Tree} \cite{cit:vpt}, SAT \cite{SATree}, \mbox{M-Tree} \cite{MTree}, Slim-Tree \cite{SlimTree}, DBM-Tree \cite{DBMTree}, DF-Tree \cite{dftree} e PM-Tree \cite{pmtree}, y las técnicas basadas en grafos, como \mbox{t-Spanners} \cite{cit:tspanners02} e HRG \cite{hrg}. Estados extensos sobre MAMs poden ser encontrados en \cite{cit:avez99searching, cit:indexDriven, cit:clarkson_nn_survey}.
+En la misma dirección de los métodos de búsqueda exacta, los Métodos de Acceso Métricos (MAMs) proporcionar operaciones de búsqueda por similitud, exacta, en espacios métricos. Las estructuras de indexación de los MAMs organizan los datos usando un criterio de similitud, asegurando una repuesta eficiente en las consultas. En la literatura son encontrados MAMs basados en árboles, como \mbox{VP-Tree} \cite{cit:vpt}, SAT \cite{SATree}, \mbox{M-Tree} \cite{MTree}, Slim-Tree \cite{SlimTree}, DBM-Tree \cite{DBMTree}, DF-Tree \cite{dftree} y las técnicas basadas en grafos, como \mbox{t-Spanners} \cite{cit:tspanners02} e HRG \cite{hrg}. Estados extensos sobre MAMs poden ser encontrados en \cite{cit:avez99searching, cit:indexDriven, cit:clarkson_nn_survey}.
 
 Los MAMs utilizan intensamente la propiedad de la desigualdad triangular para reducir el número de cálculos de distancia. Sin embargo, aunque muchos MAMs han sido propuestos para acelerar la búsqueda por similitud, algunas aún sufren con el problema de sobre posición. Por otra parte, algunos trabajos de investigación discuten la idea de que indexación jerárquica de dados en altas dimensiones pode deteriorar las consultas, al igual en comparación con la búsqueda secuencial \cite{aleman_high_dimensional, WhatsWrong}. Los espacios métricos son definidos a partir de un conjunto de objetos y una función de distancia métrica que mide la disimilitud entre estos objetos, satisfaciendo las siguientes propiedades: positividad, simetría, reflexividad y desigualdades triangular.
 
@@ -378,7 +378,7 @@ La Figura   \ref{fig:HashFile_structure} ilustra un ejemplo de la estructura del
 \label{fig:HashFile_structure}
 \end{figure}
 
-
+\newpage
 \begin{lstlisting}[mathescape, frame=single, label=alg:HashFile,caption=Consulta kNN aproximada usando HashFile]
 algorithm $ApproximateNN$($q, \lambda$)
     $init$ $\delta$

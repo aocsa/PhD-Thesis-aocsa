@@ -1,0 +1,855 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: /Users/aocsa/Documents/GitHub/PhD-Thesis-aocsa/.texpadtmp/thesis.aux
+A level-1 auxiliary file: chapter1.aux
+A level-1 auxiliary file: chapter2.aux
+A level-1 auxiliary file: chapter3.aux
+A level-1 auxiliary file: chapter4.aux
+A level-1 auxiliary file: chapter5.aux
+A level-1 auxiliary file: chapter6.aux
+A level-1 auxiliary file: chapter7.aux
+The style file: plain.bst
+Database file #1: ../references.bib
+I was expecting an "="---line 2441 of file ../references.bib
+ :     
+ :     isbn = {978-1-4673-6964-0},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 2809 of file ../references.bib
+ : @article{Li
+ :            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3178 of file ../references.bib
+ : @article{DBLP:fractal2016
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3209 of file ../references.bib
+ : @inproceedings{Arantes_thefractal
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3263 of file ../references.bib
+ : @misc{schroederpower
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3287 of file ../references.bib
+ : @techreport{traina1999distance
+ :                               ,
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "LiuWJJC12"
+refers to entry "conf/cvpr/2012", which doesn't exist
+A bad cross reference---entry "conf/pods/FaloutsosK94"
+refers to entry "conf/pods/94", which doesn't exist
+Warning--I didn't find a database entry for "conf/cvpr/2012"
+Warning--I didn't find a database entry for "conf/pods/94"
+Name 1 in "Manning, C. D., Raghavan, P., and Schutze, H." has a comma at the end for entry Manning
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Manning, C. D., Raghavan, P., and Schutze, H." for entry Manning
+while executing---line 1049 of file plain.bst
+Name 1 in "Ravichandran, D., Pantel, P., and Hovy, E." has a comma at the end for entry Ravichandran
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Ravichandran, D., Pantel, P., and Hovy, E." for entry Ravichandran
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "LeCun, Y., Bottou, L., Bengio, Y., Haffner, P." for entry LeCun
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "LeCun, Y., Bottou, L., Bengio, Y., Haffner, P." for entry LeCun
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "LeCun, Y., Bottou, L., Bengio, Y., Haffner, P." for entry LeCun
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "LeCun, Y., Bottou, L., Bengio, Y., Haffner, P." for entry LeCun
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "LeCun, Y., Bottou, L., Bengio, Y., Haffner, P." for entry LeCun
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Oquab, M., Bottou, L., Laptev, I., Sivic, J." for entry Oquab
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Oquab, M., Bottou, L., Laptev, I., Sivic, J." for entry Oquab
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Oquab, M., Bottou, L., Laptev, I., Sivic, J." for entry Oquab
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Oquab, M., Bottou, L., Laptev, I., Sivic, J." for entry Oquab
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Oquab, M., Bottou, L., Laptev, I., Sivic, J." for entry Oquab
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Boureau, Y.L., Ponce, J., LeCun, Y." for entry Boureau
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Boureau, Y.L., Ponce, J., LeCun, Y." for entry Boureau
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Boureau, Y.L., Ponce, J., LeCun, Y." for entry Boureau
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Scherer, D., Müller, A., Behnke, S." for entry Scherer
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Scherer, D., Müller, A., Behnke, S." for entry Scherer
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Scherer, D., Müller, A., Behnke, S." for entry Scherer
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Girshick, R., Donahue, J., Darrell, T., Malik, J." for entry Girshick
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Girshick, R., Donahue, J., Darrell, T., Malik, J." for entry Girshick
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Girshick, R., Donahue, J., Darrell, T., Malik, J." for entry Girshick
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Girshick, R., Donahue, J., Darrell, T., Malik, J." for entry Girshick
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Girshick, R., Donahue, J., Darrell, T., Malik, J." for entry Girshick
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Lin, M., Chen, Q., Yan, S." for entry Lin
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Lin, M., Chen, Q., Yan, S." for entry Lin
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Lin, M., Chen, Q., Yan, S." for entry Lin
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Krizhevsky, A., Sutskever, I., Hinton, G.E." for entry Krizhevsky
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Krizhevsky, A., Sutskever, I., Hinton, G.E." for entry Krizhevsky
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Krizhevsky, A., Sutskever, I., Hinton, G.E." for entry Krizhevsky
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Simonyan, K., Zisserman, A." for entry Simonyan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Uijlings, J.R., van de Sande, K.E., Gevers, T., Smeulders, A.W." for entry Uijlings
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Uijlings, J.R., van de Sande, K.E., Gevers, T., Smeulders, A.W." for entry Uijlings
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Uijlings, J.R., van de Sande, K.E., Gevers, T., Smeulders, A.W." for entry Uijlings
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Uijlings, J.R., van de Sande, K.E., Gevers, T., Smeulders, A.W." for entry Uijlings
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Uijlings, J.R., van de Sande, K.E., Gevers, T., Smeulders, A.W." for entry Uijlings
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Hariharan, B., Arbeláez, P., Girshick, R., Malik, J." for entry Hariharan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Hariharan, B., Arbeláez, P., Girshick, R., Malik, J." for entry Hariharan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Hariharan, B., Arbeláez, P., Girshick, R., Malik, J." for entry Hariharan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Hariharan, B., Arbeláez, P., Girshick, R., Malik, J." for entry Hariharan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Hariharan, B., Arbeláez, P., Girshick, R., Malik, J." for entry Hariharan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zhu, Y., Urtasun, R., Salakhutdinov, R., Fidler, S." for entry Zhu
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zhu, Y., Urtasun, R., Salakhutdinov, R., Fidler, S." for entry Zhu
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zhu, Y., Urtasun, R., Salakhutdinov, R., Fidler, S." for entry Zhu
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zhu, Y., Urtasun, R., Salakhutdinov, R., Fidler, S." for entry Zhu
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zhu, Y., Urtasun, R., Salakhutdinov, R., Fidler, S." for entry Zhu
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H." for entry Zhang
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H." for entry Zhang
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H." for entry Zhang
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H." for entry Zhang
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H." for entry Zhang
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H." for entry Zhang
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H." for entry Zhang
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "He, K., Zhang, X., Ren, S., Sun, J." for entry He
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "He, K., Zhang, X., Ren, S., Sun, J." for entry He
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "He, K., Zhang, X., Ren, S., Sun, J." for entry He
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "He, K., Zhang, X., Ren, S., Sun, J." for entry He
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "He, K., Zhang, X., Ren, S., Sun, J." for entry He
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Ren, S., He, K., Girshick, R., Sun, J." for entry Ren
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Ren, S., He, K., Girshick, R., Sun, J." for entry Ren
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Ren, S., He, K., Girshick, R., Sun, J." for entry Ren
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Ren, S., He, K., Girshick, R., Sun, J." for entry Ren
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Ren, S., He, K., Girshick, R., Sun, J." for entry Ren
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Gong, Y., Wang, L., Guo, R., Lazebnik, S." for entry Gong
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Gong, Y., Wang, L., Guo, R., Lazebnik, S." for entry Gong
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Gong, Y., Wang, L., Guo, R., Lazebnik, S." for entry Gong
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Gong, Y., Wang, L., Guo, R., Lazebnik, S." for entry Gong
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Gong, Y., Wang, L., Guo, R., Lazebnik, S." for entry Gong
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Liu, Y., Guo, Y., Wu, S., Lew, M.S." for entry Liu
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Liu, Y., Guo, Y., Wu, S., Lew, M.S." for entry Liu
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Liu, Y., Guo, Y., Wu, S., Lew, M.S." for entry Liu
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Liu, Y., Guo, Y., Wu, S., Lew, M.S." for entry Liu
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Liu, Y., Guo, Y., Wu, S., Lew, M.S." for entry Liu
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sharif Razavian, A., Azizpour, H., Sullivan, J., Carlsson, S." for entry Sharif
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sharif Razavian, A., Azizpour, H., Sullivan, J., Carlsson, S." for entry Sharif
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sharif Razavian, A., Azizpour, H., Sullivan, J., Carlsson, S." for entry Sharif
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sharif Razavian, A., Azizpour, H., Sullivan, J., Carlsson, S." for entry Sharif
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sharif Razavian, A., Azizpour, H., Sullivan, J., Carlsson, S." for entry Sharif
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sun, S., Zhou, W., Li, H., Tian, Q." for entry Sun
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sun, S., Zhou, W., Li, H., Tian, Q." for entry Sun
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sun, S., Zhou, W., Li, H., Tian, Q." for entry Sun
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sun, S., Zhou, W., Li, H., Tian, Q." for entry Sun
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Sun, S., Zhou, W., Li, H., Tian, Q." for entry Sun
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Babenko, A., Slesarev, A., Chigorin, A., Lempitsky, V." for entry Babenko
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Babenko, A., Slesarev, A., Chigorin, A., Lempitsky, V." for entry Babenko
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Babenko, A., Slesarev, A., Chigorin, A., Lempitsky, V." for entry Babenko
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Babenko, A., Slesarev, A., Chigorin, A., Lempitsky, V." for entry Babenko
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Babenko, A., Slesarev, A., Chigorin, A., Lempitsky, V." for entry Babenko
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Razavian, A.S., Sullivan, J., Maki, A., Carlsson, S." for entry RazavianAS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Razavian, A.S., Sullivan, J., Maki, A., Carlsson, S." for entry RazavianAS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Razavian, A.S., Sullivan, J., Maki, A., Carlsson, S." for entry RazavianAS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Razavian, A.S., Sullivan, J., Maki, A., Carlsson, S." for entry RazavianAS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Razavian, A.S., Sullivan, J., Maki, A., Carlsson, S." for entry RazavianAS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Babenko, A., Lempitsky, V." for entry BabenkoA
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X." for entry LiuZ
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X." for entry LiuZ
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X." for entry LiuZ
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X." for entry LiuZ
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X." for entry LiuZ
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X." for entry LiuZ
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X." for entry LiuZ
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Long, J., Shelhamer, E., Darrell, T." for entry Long
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Long, J., Shelhamer, E., Darrell, T." for entry Long
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Long, J., Shelhamer, E., Darrell, T." for entry Long
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L." for entry ChenLC
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L." for entry ChenLC
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L." for entry ChenLC
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L." for entry ChenLC
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L." for entry ChenLC
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L." for entry ChenLC
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L." for entry ChenLC
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Lin, G., Shen, C., Reid, I., et al." for entry LinG
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Lin, G., Shen, C., Reid, I., et al." for entry LinG
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Lin, G., Shen, C., Reid, I., et al." for entry LinG
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Lin, G., Shen, C., Reid, I., et al." for entry LinG
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Toshev, A., Szegedy, C." for entry Toshev
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Chen, X., Yuille, A.L." for entry ChenX
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Tompson, J.J., Jain, A., LeCun, Y., Bregler, C." for entry Tompson
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Tompson, J.J., Jain, A., LeCun, Y., Bregler, C." for entry Tompson
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Tompson, J.J., Jain, A., LeCun, Y., Bregler, C." for entry Tompson
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Tompson, J.J., Jain, A., LeCun, Y., Bregler, C." for entry Tompson
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Tompson, J.J., Jain, A., LeCun, Y., Bregler, C." for entry Tompson
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Fan, X., Zheng, K., Lin, Y., Wang, S." for entry Fan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Fan, X., Zheng, K., Lin, Y., Wang, S." for entry Fan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Fan, X., Zheng, K., Lin, Y., Wang, S." for entry Fan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Fan, X., Zheng, K., Lin, Y., Wang, S." for entry Fan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Fan, X., Zheng, K., Lin, Y., Wang, S." for entry Fan
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Kelvin Lin, H.-F. Yang, J.-H. Hsiao, C.-S. Chen" for entry kLin:DH
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Xiaoyue Wang,Abdullah Mueen, Hui Ding, Goce Trajcevski,Peter Scheuermann and Eamonn Keogh" for entry wang13
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Xiaoyue Wang,Abdullah Mueen, Hui Ding, Goce Trajcevski,Peter Scheuermann and Eamonn Keogh" for entry wang13
+while executing---line 1049 of file plain.bst
+Warning--to sort, need author or key in citeulike:fractal:encoders
+Warning--empty author in citeulike:fractal:encoders
+Too many commas in name 1 of "Babenko, A., Lempitsky, V." for entry BabenkoA
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Babenko, A., Slesarev, A., Chigorin, A., Lempitsky, V." for entry Babenko
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Babenko, A., Slesarev, A., Chigorin, A., Lempitsky, V." for entry Babenko
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Babenko, A., Slesarev, A., Chigorin, A., Lempitsky, V." for entry Babenko
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Babenko, A., Slesarev, A., Chigorin, A., Lempitsky, V." for entry Babenko
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Babenko, A., Slesarev, A., Chigorin, A., Lempitsky, V." for entry Babenko
+while executing---line 1090 of file plain.bst
+Warning--can't use both author and editor fields in Barbara2004
+Warning--empty institution in belussi1998estimating
+Too many commas in name 1 of "Boureau, Y.L., Ponce, J., LeCun, Y." for entry Boureau
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Boureau, Y.L., Ponce, J., LeCun, Y." for entry Boureau
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Boureau, Y.L., Ponce, J., LeCun, Y." for entry Boureau
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L." for entry ChenLC
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L." for entry ChenLC
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L." for entry ChenLC
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L." for entry ChenLC
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L." for entry ChenLC
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L." for entry ChenLC
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L." for entry ChenLC
+while executing---line 1090 of file plain.bst
+Warning--empty journal in ChenLC
+Too many commas in name 1 of "Chen, X., Yuille, A.L." for entry ChenX
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L." for entry Deng
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Fan, X., Zheng, K., Lin, Y., Wang, S." for entry Fan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Fan, X., Zheng, K., Lin, Y., Wang, S." for entry Fan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Fan, X., Zheng, K., Lin, Y., Wang, S." for entry Fan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Fan, X., Zheng, K., Lin, Y., Wang, S." for entry Fan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Fan, X., Zheng, K., Lin, Y., Wang, S." for entry Fan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Girshick, R., Donahue, J., Darrell, T., Malik, J." for entry Girshick
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Girshick, R., Donahue, J., Darrell, T., Malik, J." for entry Girshick
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Girshick, R., Donahue, J., Darrell, T., Malik, J." for entry Girshick
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Girshick, R., Donahue, J., Darrell, T., Malik, J." for entry Girshick
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Girshick, R., Donahue, J., Darrell, T., Malik, J." for entry Girshick
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Gong, Y., Wang, L., Guo, R., Lazebnik, S." for entry Gong
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Gong, Y., Wang, L., Guo, R., Lazebnik, S." for entry Gong
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Gong, Y., Wang, L., Guo, R., Lazebnik, S." for entry Gong
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Gong, Y., Wang, L., Guo, R., Lazebnik, S." for entry Gong
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Gong, Y., Wang, L., Guo, R., Lazebnik, S." for entry Gong
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Hariharan, B., Arbeláez, P., Girshick, R., Malik, J." for entry Hariharan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Hariharan, B., Arbeláez, P., Girshick, R., Malik, J." for entry Hariharan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Hariharan, B., Arbeláez, P., Girshick, R., Malik, J." for entry Hariharan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Hariharan, B., Arbeláez, P., Girshick, R., Malik, J." for entry Hariharan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Hariharan, B., Arbeláez, P., Girshick, R., Malik, J." for entry Hariharan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "He, K., Zhang, X., Ren, S., Sun, J." for entry He
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "He, K., Zhang, X., Ren, S., Sun, J." for entry He
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "He, K., Zhang, X., Ren, S., Sun, J." for entry He
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "He, K., Zhang, X., Ren, S., Sun, J." for entry He
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "He, K., Zhang, X., Ren, S., Sun, J." for entry He
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Kelvin Lin, H.-F. Yang, J.-H. Hsiao, C.-S. Chen" for entry kLin:DH
+while executing---line 1090 of file plain.bst
+Warning--empty journal in cifar10
+Warning--empty year in cifar10
+Too many commas in name 1 of "Krizhevsky, A., Sutskever, I., Hinton, G.E." for entry Krizhevsky
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Krizhevsky, A., Sutskever, I., Hinton, G.E." for entry Krizhevsky
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Krizhevsky, A., Sutskever, I., Hinton, G.E." for entry Krizhevsky
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "LeCun, Y., Bottou, L., Bengio, Y., Haffner, P." for entry LeCun
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "LeCun, Y., Bottou, L., Bengio, Y., Haffner, P." for entry LeCun
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "LeCun, Y., Bottou, L., Bengio, Y., Haffner, P." for entry LeCun
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "LeCun, Y., Bottou, L., Bengio, Y., Haffner, P." for entry LeCun
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "LeCun, Y., Bottou, L., Bengio, Y., Haffner, P." for entry LeCun
+while executing---line 1090 of file plain.bst
+Warning--there's a number but no volume in LeCun
+Warning--empty journal in lecun-mnisthandwrittendigit-2010
+Too many commas in name 1 of "Lin, M., Chen, Q., Yan, S." for entry Lin
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Lin, M., Chen, Q., Yan, S." for entry Lin
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Lin, M., Chen, Q., Yan, S." for entry Lin
+while executing---line 1090 of file plain.bst
+Warning--empty journal in Lin
+Too many commas in name 1 of "Lin, G., Shen, C., Reid, I., et al." for entry LinG
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Lin, G., Shen, C., Reid, I., et al." for entry LinG
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Lin, G., Shen, C., Reid, I., et al." for entry LinG
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Lin, G., Shen, C., Reid, I., et al." for entry LinG
+while executing---line 1090 of file plain.bst
+Warning--empty journal in LinG
+Too many commas in name 1 of "Liu, Y., Guo, Y., Wu, S., Lew, M.S." for entry Liu
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Liu, Y., Guo, Y., Wu, S., Lew, M.S." for entry Liu
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Liu, Y., Guo, Y., Wu, S., Lew, M.S." for entry Liu
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Liu, Y., Guo, Y., Wu, S., Lew, M.S." for entry Liu
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Liu, Y., Guo, Y., Wu, S., Lew, M.S." for entry Liu
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X." for entry LiuZ
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X." for entry LiuZ
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X." for entry LiuZ
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X." for entry LiuZ
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X." for entry LiuZ
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X." for entry LiuZ
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X." for entry LiuZ
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Long, J., Shelhamer, E., Darrell, T." for entry Long
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Long, J., Shelhamer, E., Darrell, T." for entry Long
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Long, J., Shelhamer, E., Darrell, T." for entry Long
+while executing---line 1090 of file plain.bst
+Name 1 in "Manning, C. D., Raghavan, P., and Schutze, H." has a comma at the end for entry Manning
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Manning, C. D., Raghavan, P., and Schutze, H." for entry Manning
+while executing---line 1090 of file plain.bst
+Warning--empty journal in svhn
+Warning--empty publisher in NIPS2010_0550
+Too many commas in name 1 of "Oquab, M., Bottou, L., Laptev, I., Sivic, J." for entry Oquab
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Oquab, M., Bottou, L., Laptev, I., Sivic, J." for entry Oquab
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Oquab, M., Bottou, L., Laptev, I., Sivic, J." for entry Oquab
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Oquab, M., Bottou, L., Laptev, I., Sivic, J." for entry Oquab
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Oquab, M., Bottou, L., Laptev, I., Sivic, J." for entry Oquab
+while executing---line 1090 of file plain.bst
+Name 1 in "Ravichandran, D., Pantel, P., and Hovy, E." has a comma at the end for entry Ravichandran
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Ravichandran, D., Pantel, P., and Hovy, E." for entry Ravichandran
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Razavian, A.S., Sullivan, J., Maki, A., Carlsson, S." for entry RazavianAS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Razavian, A.S., Sullivan, J., Maki, A., Carlsson, S." for entry RazavianAS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Razavian, A.S., Sullivan, J., Maki, A., Carlsson, S." for entry RazavianAS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Razavian, A.S., Sullivan, J., Maki, A., Carlsson, S." for entry RazavianAS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Razavian, A.S., Sullivan, J., Maki, A., Carlsson, S." for entry RazavianAS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Ren, S., He, K., Girshick, R., Sun, J." for entry Ren
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Ren, S., He, K., Girshick, R., Sun, J." for entry Ren
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Ren, S., He, K., Girshick, R., Sun, J." for entry Ren
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Ren, S., He, K., Girshick, R., Sun, J." for entry Ren
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Ren, S., He, K., Girshick, R., Sun, J." for entry Ren
+while executing---line 1090 of file plain.bst
+Warning--empty journal in sablayrolles2016should
+Too many commas in name 1 of "Scherer, D., Müller, A., Behnke, S." for entry Scherer
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Scherer, D., Müller, A., Behnke, S." for entry Scherer
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Scherer, D., Müller, A., Behnke, S." for entry Scherer
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y." for entry Sermanet
+while executing---line 1090 of file plain.bst
+Warning--empty journal in Sermanet
+Too many commas in name 1 of "Sharif Razavian, A., Azizpour, H., Sullivan, J., Carlsson, S." for entry Sharif
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sharif Razavian, A., Azizpour, H., Sullivan, J., Carlsson, S." for entry Sharif
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sharif Razavian, A., Azizpour, H., Sullivan, J., Carlsson, S." for entry Sharif
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sharif Razavian, A., Azizpour, H., Sullivan, J., Carlsson, S." for entry Sharif
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sharif Razavian, A., Azizpour, H., Sullivan, J., Carlsson, S." for entry Sharif
+while executing---line 1090 of file plain.bst
+Warning--empty title in conf/cvpr/ShenSLS15
+Warning--empty year in conf/cvpr/ShenSLS15
+Too many commas in name 1 of "Simonyan, K., Zisserman, A." for entry Simonyan
+while executing---line 1090 of file plain.bst
+Warning--empty journal in Simonyan
+Too many commas in name 1 of "Sun, S., Zhou, W., Li, H., Tian, Q." for entry Sun
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sun, S., Zhou, W., Li, H., Tian, Q." for entry Sun
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sun, S., Zhou, W., Li, H., Tian, Q." for entry Sun
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sun, S., Zhou, W., Li, H., Tian, Q." for entry Sun
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Sun, S., Zhou, W., Li, H., Tian, Q." for entry Sun
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A." for entry Szegedy
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Tompson, J.J., Jain, A., LeCun, Y., Bregler, C." for entry Tompson
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Tompson, J.J., Jain, A., LeCun, Y., Bregler, C." for entry Tompson
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Tompson, J.J., Jain, A., LeCun, Y., Bregler, C." for entry Tompson
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Tompson, J.J., Jain, A., LeCun, Y., Bregler, C." for entry Tompson
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Tompson, J.J., Jain, A., LeCun, Y., Bregler, C." for entry Tompson
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Toshev, A., Szegedy, C." for entry Toshev
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Uijlings, J.R., van de Sande, K.E., Gevers, T., Smeulders, A.W." for entry Uijlings
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Uijlings, J.R., van de Sande, K.E., Gevers, T., Smeulders, A.W." for entry Uijlings
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Uijlings, J.R., van de Sande, K.E., Gevers, T., Smeulders, A.W." for entry Uijlings
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Uijlings, J.R., van de Sande, K.E., Gevers, T., Smeulders, A.W." for entry Uijlings
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Uijlings, J.R., van de Sande, K.E., Gevers, T., Smeulders, A.W." for entry Uijlings
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J." for entry Wan
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Xiaoyue Wang,Abdullah Mueen, Hui Ding, Goce Trajcevski,Peter Scheuermann and Eamonn Keogh" for entry wang13
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Xiaoyue Wang,Abdullah Mueen, Hui Ding, Goce Trajcevski,Peter Scheuermann and Eamonn Keogh" for entry wang13
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H." for entry Zhang
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H." for entry Zhang
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H." for entry Zhang
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H." for entry Zhang
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H." for entry Zhang
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H." for entry Zhang
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H." for entry Zhang
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H." for entry ZhengS
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zhu, Y., Urtasun, R., Salakhutdinov, R., Fidler, S." for entry Zhu
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zhu, Y., Urtasun, R., Salakhutdinov, R., Fidler, S." for entry Zhu
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zhu, Y., Urtasun, R., Salakhutdinov, R., Fidler, S." for entry Zhu
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zhu, Y., Urtasun, R., Salakhutdinov, R., Fidler, S." for entry Zhu
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Zhu, Y., Urtasun, R., Salakhutdinov, R., Fidler, S." for entry Zhu
+while executing---line 1090 of file plain.bst
+You've used 126 entries,
+            2118 wiz_defined-function locations,
+            1357 strings with 29943 characters,
+and the built_in function-call counts, 49122 in all, are:
+= -- 5120
+> -- 1793
+< -- 75
++ -- 716
+- -- 583
+* -- 2943
+:= -- 7397
+add.period$ -- 388
+call.type$ -- 126
+change.case$ -- 651
+chr.to.int$ -- 0
+cite$ -- 144
+duplicate$ -- 2278
+empty$ -- 3894
+format.name$ -- 583
+if$ -- 11044
+int.to.chr$ -- 0
+int.to.str$ -- 126
+missing$ -- 135
+newline$ -- 628
+num.names$ -- 256
+pop$ -- 793
+preamble$ -- 1
+purify$ -- 538
+quote$ -- 0
+skip$ -- 1926
+stack$ -- 0
+substring$ -- 3513
+swap$ -- 913
+text.length$ -- 75
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 476
+warning$ -- 18
+while$ -- 465
+width$ -- 129
+write$ -- 1395
+(There were 384 error messages)

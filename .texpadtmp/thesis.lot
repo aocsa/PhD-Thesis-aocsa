@@ -1,0 +1,14 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Precisión de la clasificación usando KNN-clasificador en conjuntos de datos MNIST, CIFAR-10, SVHN y Agnews utilizando AutoEncoders y PCA como métodos de reducción de dimensionalidad.\relax }}{55}{table.caption.41}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Análisis de precisión de clasificación usando autoencoders para diferentes métricas.\relax }}{55}{table.caption.42}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Mean Average Precision(mAP) y el tiempo acumulado para calcular el mAP para diferentes métodos en los conjuntos de datos MNIST, CIFAR-10, SVHN Y AGNEWS. El número k de los vecinos devueltos se establece en 100.\relax }}{56}{table.caption.43}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Precisión 1000-NN y tiempo acumulado para diferentes métodos en los conjuntos de datos MNIST, CIFAR-10, SVHN y AGNEWS. El número k de los vecinos devueltos se establece en 1000.\relax }}{57}{table.caption.44}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Optimal LSH Params using exhaustive e2lsh and the fractal based method.\relax }}{63}{table.caption.47}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Mean Average Precision(mAP), precision, and cumulative time spent to compute mAP for different methods on the MNIST, SVHN and CIFAR-10 datasets. \relax }}{64}{table.caption.48}
+\addvspace {10\p@ }

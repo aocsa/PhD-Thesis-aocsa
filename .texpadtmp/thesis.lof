@@ -1,0 +1,47 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Unificación del modelo de consulta por similitud. (a) Los Métodos de Acceso Métricos (MAMs). (b) \textit {Locality Sensitive Hashing} (LSH).\relax }}{7}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{7}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{7}{figure.caption.7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces (a) Formas geométricas que ilustran la delimitación de una región de búsqueda de acuerdo con la métrica $L_p$ utilizada. (b) Ejemplo de consulta por rango para diferentes métricas de la familia $L_p$.\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Ejemplo de consulta por rango.\relax }}{10}{figure.caption.9}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Ejemplo de consulta de los k-vecinos más cercanos.\relax }}{10}{figure.caption.10}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Ejemplo de consulta por rango aproximada.\relax }}{11}{figure.caption.11}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Búsqueda aproximada 5-NN. (a) busca exacta. (b) busca aproximada. \relax }}{11}{figure.caption.12}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Interpretación geométrica de proyección de los vectores $\mathaccentV {vec}17E{p_1}$ y $\mathaccentV {vec}17E{p_2}$ en LSH.\relax }}{14}{figure.caption.13}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Estrutura del nodo HashFile. Figura adaptada de \cite {lshHashFile}.\relax }}{19}{figure.caption.14}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Representación de las proyecciones de una consulta por similitud aproximada en HashFile en (a), en (b) se verifica su estructura lógica correspondiente.\relax }}{21}{figure.caption.15}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Etapas del proceso KDD. Figura adaptada de \cite {Fayyad:1996:DMK:257938.257942}.\relax }}{24}{figure.caption.17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Vectorización de una imagen\relax }}{26}{figure.caption.18}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Ejemplo de clasificador lineal\relax }}{27}{figure.caption.19}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces La densidad de conexiones se incrementa según el tamaño de la imagen\relax }}{33}{figure.caption.20}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Capas de una red convolutiva\relax }}{34}{figure.caption.21}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Imagen en blanco y negro\relax }}{34}{figure.caption.22}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Filtros para detectar lineas horizontales y verticales\relax }}{35}{figure.caption.23}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Representación de un filtro y su mapa de características resultante\relax }}{35}{figure.caption.24}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Convolución de una imagen a color RGB\relax }}{36}{figure.caption.25}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Visualización en 3d de una convolución\relax }}{36}{figure.caption.26}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Reducción de parámetros utilizando agrupación máxima\relax }}{37}{figure.caption.27}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Puntos en un plano 2d\relax }}{38}{figure.caption.28}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Arquitectura de auto-codificador no lineal\relax }}{40}{figure.caption.29}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Pasos del proceso de construcción del triangulo de $Sierpinsky$\relax }}{41}{figure.caption.30}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Algunos ejemplos de fractales (a y b) fractales geométricos y (c) fractales algebraicos\relax }}{42}{figure.caption.31}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Una linea embebida en dos o tres dimensiones donde $D=1$.\relax }}{43}{figure.caption.32}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces El gráfico de conteo de cajas para el triangulo de $Sierpinki$.\relax }}{44}{figure.caption.33}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Representación de celdas de cuadrícula en espacios de 2 y 3 dimensiones. \relax }}{46}{figure.caption.34}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Ejemplo de la estructura de datos utilizada para calcular la Suma de Ocupaciones de un conjunto de datos con 5 puntos (con tres niveles de resolución) \relax }}{47}{figure.caption.35}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Hashing para la búsqueda del vecino más cercano. Comprimir un conjunto de vectores $(x_i)^{n}_{i=1}, x_i \in \mathbf {R}^d $ \relax }}{50}{figure.caption.38}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Supervised Hashing: comprime un conjunto de vectores y sus etiquetas $((x_i,y_2))^{n}_{i=1}, x_1\in \mathbb {R}^{d}, y_1 \in \{1,...,L\} $.\relax }}{51}{figure.caption.39}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Dimensiones Fractal para diferentes métodos de reducción de dimensionalidad .\relax }}{54}{figure.caption.40}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Conjunto de datos MNIST}}}{54}{figure.caption.40}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Conjunto de datos CIFAR-10}}}{54}{figure.caption.40}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Conjunto de datos SVHN}}}{54}{figure.caption.40}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Conjunto de datos AGNEWS}}}{54}{figure.caption.40}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces DAsH. Proceso de entrenamiento e indexación. \relax }}{61}{figure.caption.45}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces DAsH. Proceso de recuperación. \relax }}{61}{figure.caption.46}
+\addvspace {10\p@ }

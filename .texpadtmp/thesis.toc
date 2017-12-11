@@ -1,0 +1,76 @@
+\select@language {spanish}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Abstract}{\es@scroman {iii}}{Doc-Start}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Declaration}{\es@scroman {iv}}{chapter*.2}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{\es@scroman {v}}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Consideraciones iniciales}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Definición del problema}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Objetivos}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Principales contribuciones}{4}{section.1.4}
+\contentsline {section}{\numberline {1.5}Organización de la tesis}{4}{section.1.5}
+\contentsline {chapter}{\numberline {2}Consultas por similitud}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Consideraciones iniciales}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Dominio de datos}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Espacios Métricos}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Espacios Multidimensionales}{8}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Consultas por Similitud}{9}{section.2.3}
+\contentsline {paragraph}{Consulta por radio (\textit {range query} Rq (q, r))}{9}{section.2.3}
+\contentsline {paragraph}{Consulta de los k-vecinos más cercanos (\textit {k-Nearest neighbor query} - $kNN (q, k)$)}{10}{figure.caption.9}
+\contentsline {paragraph}{Consulta por rango aproximada - $(1 + \varepsilon ) Rq(q, r)$}{10}{figure.caption.10}
+\contentsline {paragraph}{Consulta Aproximada a los $k$-vecinos más cercanos - $(1 + \varepsilon ) - kNN(q, k)$}{10}{figure.caption.11}
+\contentsline {section}{\numberline {2.4}La Maldición de la alta Dimensionalidad}{11}{section.2.4}
+\contentsline {section}{\numberline {2.5}Búsqueda aproximada de los vecinos más cercanos (ANN)}{12}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}\textit {Locality Sensitive Hashing}}{13}{subsection.2.5.1}
+\contentsline {paragraph}{Definición}{13}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}LSH con Projección Aleatória}{17}{subsection.2.5.2}
+\contentsline {subsubsection}{Projección Aleatória}{17}{subsection.2.5.2}
+\contentsline {subsubsection}{Restricción de la distancia para consultas kNN usando $L_1$}{18}{equation.2.5.12}
+\contentsline {subsubsection}{Construcción del índice}{19}{equation.2.5.14}
+\contentsline {subsubsection}{Consulta kNN Aproximada}{20}{lstnumber.2.3.24}
+\contentsline {section}{\numberline {2.6}Otros métodos de codificación para la búsqueda del vecino más cercano}{21}{section.2.6}
+\contentsline {section}{\numberline {2.7}Consideraciones Finales}{21}{section.2.7}
+\contentsline {chapter}{\numberline {3}Mineria de Datos \& Deep Learning }{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Consideraciones Iniciales}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}KDD y Mineria de Datos}{23}{section.3.2}
+\contentsline {section}{\numberline {3.3}Aprendizaje de Máquina -- \textit {Machine Learning} }{25}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Redes Neuronales}{27}{subsection.3.3.1}
+\contentsline {subsubsection}{Neurona y Red de Neuronas}{27}{subsection.3.3.1}
+\contentsline {subsubsection}{Neuronas Sigmoidales, Tanh y ReLU}{28}{subsection.3.3.1}
+\contentsline {subsubsection}{Capa de salida Softmax}{28}{equation.3.3.3}
+\contentsline {section}{\numberline {3.4}Redes Neuronales Convolutivas (CNN)}{29}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Tipos de capas CNN}{29}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Aplicaciones de {Redes Neuronales Convolutivas (CNN)}}{30}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Sobre las Convoluciones}{33}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Agrupación Máxima o \textit {Max Pooling}}{37}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Auto-codificadores}{38}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Compresión de data}{38}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.6}Consideraciones Finales}{39}{section.3.6}
+\contentsline {chapter}{\numberline {4}Teoría Fractal}{41}{chapter.4}
+\contentsline {section}{\numberline {4.1}Consideraciones Iniciales}{41}{section.4.1}
+\contentsline {section}{\numberline {4.2}Dimensión fractal}{43}{section.4.2}
+\contentsline {section}{\numberline {4.3}Algoritmo de Calculo de la Dimensión Fractal}{45}{section.4.3}
+\contentsline {section}{\numberline {4.4}Consideraciones Finales}{47}{section.4.4}
+\contentsline {chapter}{\numberline {5}Búsqueda aproximada vía \textit {deep hashing}: Desempeño de métodos de representación y recuperación}{48}{chapter.5}
+\contentsline {section}{\numberline {5.1}Consideraciones Iniciales}{48}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Approximate Nearest Neighbors \& Deep Hashing}{49}{subsection.5.1.1}
+\contentsline {subsubsection}{Hashing para la Búsqueda del Vecino más Cercano}{49}{subsection.5.1.1}
+\contentsline {subsubsection}{Supervised Hashing}{50}{figure.caption.38}
+\contentsline {subsection}{\numberline {5.1.2}Protocolos de evaluación de recuperación}{51}{subsection.5.1.2}
+\contentsline {subsubsection}{Protocolos de evaluación de SSH y SH}{51}{subsection.5.1.2}
+\contentsline {subsubsection}{Representación de datos y medidas de similitud}{51}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Dimensión fractal y reducción de dimensionalidad}{52}{subsection.5.1.3}
+\contentsline {subsubsection}{Teoría Fractal}{52}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Comparación de representaciones de datos}{53}{subsection.5.1.4}
+\contentsline {subsubsection}{Dimensión fractal y reducción de dimensionalidad}{53}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Comparación del rendimiento de recuperación}{55}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.2}Conclusions}{57}{section.5.2}
+\contentsline {chapter}{\numberline {6}Deep Fractal based Hashing - DAsH}{58}{chapter.6}
+\contentsline {section}{\numberline {6.1}Consideraciones Iniciales}{58}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Teoria del Fractal}{60}{subsection.6.1.1}
+\contentsline {section}{\numberline {6.2}Deep Fractal based Hashing - DAsH}{60}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Usando Fractales para estimar los parámetros LSH}{62}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}Experimentos}{62}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Experimento 1: Sintonización de parámetros LSH}{63}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Rendimiento de Recuperación}{64}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Conclusions}{64}{section.6.4}
+\contentsline {chapter}{\numberline {7}Conclusiones y Trabajos Futuros}{65}{chapter.7}
