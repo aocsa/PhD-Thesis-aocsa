@@ -111,6 +111,101 @@ En esta seccion presentamos una visión general de los diferentes tipos de capas
 \textbf{Capas completamente conectadas(\textit{Fully-connected layers}):}  Después de varias capas convolucionales y de agrupación máxima, el razonamiento de alto nivel en la red neuronal convolucional se realiza a través de las capas completamente conectadas. Una capa completamente conectada toma todas las neuronas de la capa anterior (ya sea totalmente conectado, agrupación o convolucional) y lo conecta a cada neurona que tiene. Las capas completamente conectadas no estan espacialmente localizados , ya que los mapas de características de entrada se convierten en un vector de características unidimensional. El vector de característica unidimensional podría alimentar el \textit{forward} del vector en una capa de pérdida o tomarlo como una representación característica para el procesamiento de seguimiento \cite{Girshick}. El inconveniente de la capa totalmente conectada es que contiene muchos parámetros, lo que da lugar a grandes costes computacionales y de almacenamiento. Por lo tanto, GoogleNet \cite{Szegedy} diseñó una red profunda y amplia, manteniendo el costo computacional constante, cambiando de arquitectura totalmente conectado a escasamente conectadas. La arquitectura \textit{Network in Network} (NIN) \cite{Lin} reemplaza la capa completamente conectada por una capa de agrupación media \textit{average pooling} global.
 
 
+
+\subsection{Sobre las Convoluciones}
+
+    El objetivo fundamental de un algoritmo de aprendizaje profundo en visión por computador es eliminar el engorroso y limitante proceso de extracción de características. Las redes neuronales profundas son perfectas para este proceso gracias al proceso de convolución, ya que cada capa de una red neuronal es responsable del aprendizaje y la construcción de características que representen mejor a los datos de entrada \cite{dlBook}.
+    \\\\
+    Si se trata de abordar el problema de la clasificación de imágenes utilizando redes neuronales comunes, puede presentarse con rapidez un desafío desalentador, que se puede ver en la Fig.~\ref{fig:fc_dont_scale}. Para datos de entrada de poca dimensión una red neuronal puede funcionar bien, pero para imágenes de mayor dimensión y de mayor complejidad contar con una red totalmente conectada no produce buenos resultados.
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[scale=0.35]{chapter3/fc_dont_scale.png}
+        \caption{La densidad de conexiones se incrementa según el tamaño de la imagen}
+        \label{fig:fc_dont_scale}
+        \source{Fundamentals of Deep Learning, \cite{dlBook}}
+    \end{figure}
+
+    Tomando como base el funcionamiento de la visión humana, capas de una red de convolución tienen neuronas dispuestas en tres dimensiones, por lo que las capas tienen una anchura, altura y profundidad, como se muestra en la Fig.~\ref{fig:convnet_scheme}. Como veremos, las neuronas de una capa única de convolución solo conectan a una región pequeña de la capa precedente, por lo que evitan el derroche de las neuronas totalmente conectadas. El proceso de una convolución puede expresarse fácilmente, procesa un volumen de información de 3 dimensiones para producir un nuevo volumen de 3 dimensiones \cite{dlBook}.
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[scale=0.32]{chapter3/convnet_scheme.png}
+        \caption{Capas de una red convolutiva}
+        \label{fig:convnet_scheme}
+        \source{Fundamentals of Deep Learning, \cite{dlBook}}
+    \end{figure}
+
+    Para entender el proceso de convolución debemos conocer el termino filtro, que es esencialmente un detector de característica, que para entender su funcionamiento, se considerar la Fig.~\ref{fig:image_no_filter}, \cite{dlBook}.
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[scale=0.23]{mteorico/image_no_filter.png}
+        \caption{Imagen en blanco y negro}
+        \label{fig:image_no_filter}
+        \source{Fundamentals of Deep Learning, \cite{dlBook}}
+    \end{figure}
+
+    Dado el caso que se requiera detectar líneas verticales y horizontales en una imagen. Una solución sería el uso de un detector de características, como se muestra en la Fig.~\ref{fig:image_two_filter}. Por ejemplo, para detectar líneas verticales, se puede utilizar el detector de característica de la parte superior de la imagen, es podría deslizarse a través de la totalidad de la imagen para verificar si existe alguna coincidencia, en la matriz de la parte superior derecha de la Fig.~\ref{fig:image_two_filter} se puede verificar el resultado, si hay una coincidencia se sombrea la casilla de negro y si no lo hay se deja en blanco. Este resultado es el mapa de características, que indica el lugar donde se han encontrado las característica que se buscaban en la imagen original. Se puede hacer el mismo tratamiento para el detector de línea horizontal (parte inferior de la imagen), dando como resultado el mapa de características de la esquina inferior derecha, \cite{NIPS2010_0550, dlBook}.
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[scale=0.4]{chapter3/image_two_filter.png}
+        \caption{Filtros para detectar lineas horizontales y verticales}
+        \label{fig:image_two_filter}
+        \source{Fundamentals of Deep Learning, \cite{dlBook}}
+    \end{figure}
+
+    Esta operación es llamada convolución, se toma un filtro para multiplicarlos sobre el área entera de una imagen de entrada. Los filtros representan distintas combinaciones de conexiones (se resalta una de estas combinaciones en la Fig.~\ref{fig:conv_neuron}), en esta figura las conexiones con las mismas tonalidades mantienen sus mismos pesos a través de todas las neuronas de entrada, se puede lograr esto mediante la inicialización de todas las conexiones en un grupo con pesos idénticos y siempre corrigiendo los pequeños cambios de peso, la capa de salida es el mapa de características generado por este filtro \cite{dlBook}.
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[scale=0.3]{chapter3/conv_neuron.png}
+        \caption{Representación de un filtro y su mapa de características resultante}
+        \label{fig:conv_neuron}
+        \source{Fundamentals of Deep Learning, \cite{dlBook}}
+    \end{figure}
+
+    Matemáticamente se define a los $k^{th}$ mapas de características en la capa $m$ como $m^k$, por otra parte, se define un filtro correspondiente conformado por los valores de los pesos $W$, y se asume que las neuronas en el mapa de características tiene un \textit{bias} $b^k$ (el \textit{bias} se mantiene idéntico para todas las neuronas de un mapa de características). Entonces se puede expresar el mapa de características de la siguiente manera:
+
+    \begin{equation}
+		m^k_{ij}=f((W*x)_{ij}+b^k)
+	\end{equation}
+	
+	En concreto, los filtros no sólo operan en un único mapa de características. Operan en todo el volumen de mapas de características que se han generado en una capa particular. Si se considera una situación en la que se desea detectar una cara en una capa particular de una red de convolución, y se han acumulado tres mapas de características, uno para los ojos, uno para la nariz, y uno para la boca. Para tomar tomar una decisión sobre la existencia de una cara, se debe combinar pruebas sobre múltiples mapas de características. Esto es igualmente necesario para una imagen de entrada con tres canales de color (RGB), por lo que requieren tres secciones en el volumen de entrada (una sección para cada canal). Como resultado, los mapas de características deben ser capaces de operar sobre los volúmenes de datos de 3 dimensiones (ancho, alto y profundidad). Esto se muestra a continuación en la Fig.~\ref{fig:color_conv}. Cada célula en el volumen de entrada es una neurona. Una porción local se multiplica con un filtro (que corresponde a los pesos en la capa de convolución) para producir una neurona en la siguiente capa volumétrica de las neuronas, \cite{dlBook}.
+	\begin{figure}[htp]
+        \centering
+        \includegraphics[scale=0.3]{chapter3/color_conv.png}
+        \caption{Convolución de una imagen a color RGB}
+        \label{fig:color_conv}
+        \source{Fundamentals of Deep Learning, \cite{dlBook}}
+    \end{figure}
+
+	Como se ha observado anteriormente, una capa de convolución (que consiste en un conjunto de filtros) convierte un volumen de valores en otro volumen de valores. La profundidad del filtro corresponde a la profundidad del volumen de entrada. Esto es para que el filtro pueda combinar la información de todas las características que se han aprendido. La profundidad de el volumen de salida de una capa convolucional, equivalente al número de filtros en esa capa, debido a que cada filtro produce una porción del volumen de datos. Visualizamos estas relaciones en la Fig.~\ref{fig:conv_depth}
+	\begin{figure}[htp]
+        \centering
+        \includegraphics[scale=0.3]{chapter3/conv_depth.png}
+        \caption{Visualización en 3d de una convolución}
+        \label{fig:conv_depth}
+        \source{Fundamentals of Deep Learning, \cite{dlBook}}
+    \end{figure}
+
+
+    \subsection{Agrupación Máxima o \textit{Max Pooling}}
+
+    Para reducir la dimensionalidad de los mapas de características y afinar las características localizadas, a veces es necesario insertar una capa de agrupación máxima después de una capa de convolución. La idea esencial detrás de la agrupación máxima es dividir cada mapa de características en porciones de igual tamaño. Entonces se crea un mapa de características condensado, en concreto se define una celda que representa a toda una porción del mapa de características, calculando el valor máximo de la porción para propagar este valor máximo en la celda correspondiente del mapa de características condensado. Este proceso se ilustra en la Fig.~\ref{fig:max_pooling}, a continuación \cite{dlBook}:
+	\begin{figure}[htp]
+        \centering
+        \includegraphics[scale=0.4]{chapter3/max_pooling.png}
+        \caption{Reducción de parámetros utilizando agrupación máxima}
+        \label{fig:max_pooling}
+        \source{Fundamentals of Deep Learning, \cite{dlBook}}
+    \end{figure}
+
+    Podemos describir la capa de agrupación con dos parámetros, la dimensión de la ventana $e$ y el salto $s$. Es importante tener en cuenta que sólo se utilizan dos principales variaciones de la capa de agrupación. La primera es la capa que no existe solapamiento con $e=2$, $s=2$. La segunda es la capa con solapamiento, $e=3$, $s=2$. Las dimensiones resultantes de cada mapa de características son las siguientes:
+
+    \begin{itemize}
+		\item Ancho, $w_{out}=\left[\frac{w_{in}-e}{s}\right]+1$.
+		\item Alto, $h_{out}=\left[\frac{h_{in}-e}{s}\right]+1$.
+	\end{itemize}w
+	
+	Una propiedad interesante de la agrupación máxima, es que es invariante a nivel local. Esto significa que incluso si las entradas cambian un poco, la salida de esta capa se mantiene constante. Esto tiene importantes implicaciones para los algoritmos visuales, la invariancia local es una propiedad útil para las características que están siempre presentes en un mismo lugar. Sin embargo, obtener grandes cantidades de invariancias locales puede destruir la capacidad de la red para almacenar información importante. Por eso es recomendable mantener pequeña la dimensión de la ventana de agrupación $e$, \cite{dlBook}.
+	
 \subsection {Aplicaciones de   {Redes Neuronales Convolutivas (CNN)}}
 
 Recientemente, el aprendizaje profundo, especialmente para las CNN, produjo el estado del arte de rendimiento en diversas aplicaciones de visión computacional, tales como clasificación de imágenes, búsqueda de imágenes, detección de objetos, segmentación de imágenes semánticas, estimación de la postura humana, etc.

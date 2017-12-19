@@ -1,10 +1,11 @@
 \chapter{Conclusiones y Trabajos Futuros}
  
+El creciente volumen de datos y su complejidad asociada requieren técnicas de recuperación de información   más eficientes. Se han propuesto muchos algoritmos de búsqueda kNN basados  en  $hashing$  debido a su alto desempeño  y bajo costo de almacenamiento. Estudios recientes promueven el uso de la Redes Neurales Convolucionales (CNNs) con técnicas de $hashing$ para mejorar la precisión en operaciones de búsqueda. Sin embargo, existen desafíos que aún necesitan ser resueltos   para encontrar una solución práctica y eficiente para indexar las características de CNN, como la necesidad de un proceso de entrenamiento intenso para lograr resultados de consulta precisos y la dependencia crítica de los parámetros de datos.
 
+En el Capítulo 5 se presentó un análisis  que compara esquemas recientes de \textit{deep hashing} para  buscar las   representaciones adecuadas del espacio de datos. Hemos explorado las correlaciones entre las salidas de una CNN usando la teoría fractal. Para optimizar estos parámetros, utilizamos diferentes métodos de reducción de dimensionalidad de datos. Presentamos una descripción general de  diferentes técnicas de representación y se analizó  diferentes esquemas  de representación de datos y  su rendimiento en operaciones de búsqueda. 
 
+Luego, en el Capítulo 6  se presentó  un nuevo esquema de indexación y entrenamiento para resolver   búsquedas aproximadas  basados en  hashing supervisado llamado \textit{Deep Fractal base Hashing (DAsH)}. Nuestro enfoque muestra el potencial de impulsar las operaciones de consulta cuando se diseña una estructura de índice especializada de inicio a fin. Debido a las habilidades de la teoría de Fractal para encontrar el sub-espacio óptimo del conjunto de datos y el número óptimo de funciones hash para LSH, se puede encontrar una configuración óptima para el aprendizaje y el proceso de indexación. Además, se definió  un nuevo método de \textit{tunning}, basado en la teoría fractal, que nos permite encontrar el número óptimo de funciones hash para el índice LSH. Podemos estimar estos parámetros en tiempo lineal debido a que depende del calculo de la dimensión fractal .
 
-
-
-
+Se realizó varios  estudios de desempeño en muchos conjuntos de datos reales y sintéticos. Los resultados empíricos para los parámetros LSH muestran que nuestro método basado en la teoría fractal es comparable con los obtenidos con el algoritmo de fuerza bruta utilizando hasta $10X$ menos de tiempo. Por otra parte, en el rendimiento de recuperación, el método DAsH fue significativamente mejor que otros métodos aproximados, proporcionando hasta un 8\% mejor precisión, manteniendo excelentes tiempos de recuperación.
 
 

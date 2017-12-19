@@ -7,6 +7,7 @@
 Un fractal es definido como un objeto que presenta aproximadamente las mismas características independientemente de la escala donde es analizada, es un objeto que se parece a si mismo. Por otro lado, las partes del fractal son similares, exactas o estadísticamente  al  fractal completo. Esto es, a una escala mejor los detalles son similar a las características de una escala mayor \cite{Schroeder:1991,traina2005using}.
  
 Por ejemplo, el triangulo $Sierpinkski$ es un fractal geométrico, que ha sido construido en un proceso iterativo, teóricamente infinito.  En un triangulo equilátero ABC, donde primero se ha removido el triangulo central A', B', C',  de cada uno de los tres triángulos restantes cuyos lados longitud igual a la mitad del lado de ABC, retiramos de nuevo el triángulo central. La figura \ref{fig:ima1} muestra los pasos iniciales del proceso de construcción de un triángulo de $Sierpinski$. El triángulo restante tiene ``agujeros'' independientes de la escala y cada triángulo dentro de la primera es una ``miniatura'' de todo el triángulo.
+
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.75]{chapter4/ima1.png}
@@ -23,7 +24,7 @@ Hay muchas otras estructuras matemáticas definidas como fractal, como las curva
 
 
 Los conceptos de fractal se han aplicado a varias tareas en el análisis de datos y la minería de datos. Una de ellas es la estimación de la dimensión intrínseca (D) de un conjunto de datos, que es relacionado  con el concepto de dimensión embebida (E) \cite{conf/pods/FaloutsosK94}.
-\\\\
+
 \textbf{Definición 3.1 Dimensión embebida  E:} Dado un conjunto finito de datos $A$, la  
 dimensión embebida $E \in N$ es el número de atributos que definen $A$. Es decir, $E$ es la dimensión de el espacio en el que se encaja el conjunto de datos.
 \\\\
@@ -87,6 +88,17 @@ La figura \ref{fig:ima4} muestra un conjunto de $6561$ puntos en el triangulo de
 
 La dimensión fractal fue calculada por el algoritmo box-counting(), el cual tiene un coste lineal respecto al número de elementos en el conjunto de datos  \cite{DBLP:journals/jidm/TrainaTF10}. Este algoritmo es descrito en la siguiente sección. 
 
+
+ 
+\subsection{Teoria Fractal}
+ 
+Un fractal se caracteriza por la propiedad de auto-similitud, es decir, Es un objeto que presenta aproximadamente las mismas características cuando se analiza en una amplia gama de escalas \cite{DBLP:journals/jidm/TrainaTWF10,DBLP:fractal2016}. De la teoría del fractal, la dimensión del fractal de la correlación $\mathfrak{D}$ es particularmente útil para el análisis de datos, ya que puede aplicarse para estimar la dimensión intrínseca de conjuntos de datos reales que muestran un comportamiento fractal, es decir, exactamente o estadísticamente auto-similar \cite{Belussi:1995:ESS:645921.673166}. Se ha demostrado que, dado un conjunto de $N$ objetos en un conjunto de datos con una función de distancia $d(x,y)$, el número medio de $k$ vecinos dentro de una distancia dada $r$ es proporcional a $r$ elevado a $\mathfrak{D}$  \cite{Arantes_thefractal}.Así, la cuenta de pares $PC(r)$ de pares de elementos a distancia $r$ sigue la siguiente ley:
+\begin{equation}\label{eq:fractal}
+	   PC(r) = K_p \times r^{\mathfrak{D}}		
+	\end{equation}
+donde, $K_p$ es una constante proporcional, y $\mathfrak{D}$ es la correlación dimensión fractal del conjunto de datos.     En consecuencia, un fractal es definido por la propiedad de auto-similitud, que es la característica principal que representa exactamente o estadísticamente la similitud entre las partes de todo el fractal.  
+ 
+ 
 \section{Algoritmo de Calculo de la Dimensión Fractal}
  
 Esta sección presenta un algoritmo para calcular la dimensión fractal D de cualquier conjunto dado de puntos en cualquier espacio E-dimensional. Una manera práctica de estimar D a partir de un conjunto de datos espaciales está utilizando el método de "recuento de cajas"  \cite{schroederpower}. Teóricamente, este método da una aproximación cercana a la dimensión fractal  \cite{DBLP:journals/jidm/TrainaTF10} \cite{traina1999distance}. Uno de los mejores algoritmos publicados para calcular D de un conjunto de datos es un algoritmo O (N log (N)), donde N es el número de puntos en el conjunto de datos \cite{belussi1998estimating}.  
@@ -153,5 +165,5 @@ Una vez, por lo que es realmente muy rápido. El algoritmo \ref{alg:algo1} resum
 A medida que aumenta el lado de la cuadrícula, también aumenta el número de punteros a celdas vacías. Por lo tanto, para los conjuntos de datos de alta dimensión vale la pena mantener las celdas como listas enlazadas en lugar de arrays. Implementamos esta estructura como un objeto, usando una matriz para conjuntos de datos con la dimensión de incrustación menos o igual a tres, y usando una lista vinculada para conjuntos de datos con mayor dimensionalidad.	
 
 
-\section{Consideraciones Finales}
+%\section{Consideraciones Finales}
 
