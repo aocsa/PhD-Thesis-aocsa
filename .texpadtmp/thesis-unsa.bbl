@@ -270,13 +270,6 @@ Gong, Y., W. L. G. R.-L.~S. (2014).
 \newblock {\em Proceedings of European Conference on Computer Vision}, pages
   392–--407.
 
-\bibitem[Gong et~al., 2013]{itq}
-Gong, Y., Lazebnik, S., Gordo, A., and Perronnin, F. (2013).
-\newblock Iterative quantization: A procrustean approach to learning binary
-  codes for large-scale image retrieval.
-\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  35(12):2916--2929.
-
 \bibitem[Gower, 1982]{Gower82}
 Gower, J.~C. (1982).
 \newblock {Euclidean distance geometry}.
@@ -326,13 +319,6 @@ Jr., C.~T., Traina, A. J.~M., and Faloutsos, C. (2010a).
 Jr., C.~T., Traina, A. J.~M., Wu, L., and Faloutsos, C. (2010b).
 \newblock Fast feature selection using fractal dimension.
 \newblock {\em JIDM}, 1(1):3--16.
-
-\bibitem[Kalantidis and Avrithis, 2014]{lopq}
-Kalantidis, Y. and Avrithis, Y. (2014).
-\newblock Locally optimized product quantization for approximate nearest
-  neighbor search.
-\newblock In {\em 2014 IEEE Conference on Computer Vision and Pattern
-  Recognition}, pages 2329--2336.
 
 \bibitem[Kelvin~Lin, 2015]{kLin:DH}
 Kelvin~Lin, H.-F.~Yang, J.-H. H. C.-S.~C. (2015).
@@ -445,6 +431,13 @@ Netzer, Y., Wang, T., Coates, A., Bissacco, A., Wu, B., and Y~Ng, A. (2011).
 \bibitem[Ng et~al., 2016]{website:UFLDL}
 Ng, A.~Y., Coates, A., Le, Q., Lee, H., and Maas, A. (2016).
 \newblock Ufldl tutorial - deep learning.
+
+\bibitem[Ngiam et~al., 2010]{NIPS2010_0550}
+Ngiam, J., Chen, Z., Chia, D., Koh, P.~W., Le, Q.~V., and Ng, A.~Y. (2010).
+\newblock Tiled convolutional neural networks.
+\newblock In Lafferty, J., Williams, C., Shawe-taylor, J., Zemel, R., and
+  Culotta, A., editors, {\em Advances in Neural Information Processing Systems
+  23}, pages 1279--1287.
 
 \bibitem[Ocsa et~al., 2007]{hrg}
 Ocsa, A., Bedregal, C., and Cuadros-Vargas, E. (2007).

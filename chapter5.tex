@@ -2,10 +2,11 @@
 
 % Approximate nearest neighbors by  deep  hashing on large-scale search: Comparison of representations and retrieval performance 
 \chapter{Búsqueda aproximada vía \textit{Deep Hashing}}
-
+{\textit{Este capítulo describe un estudio sobre métodos de proyección de datos y su relación con la dimensión fractal. Además se presentará el análisis del desempeño  de desempeño   con distintos  métodos de búsqueda aproximada. }}
+ 
 \section{Consideraciones Iniciales}
  
-\versal{L}a disponibilidad cada vez mayor de datos en diversos dominios ha creado la necesidad de desarrollar técnicas y métodos para descubrir el conocimiento a partir de volúmenes masivos de datos, motivando muchos trabajos de investigación en bases de datos, \textit{machine learning} y comunidades de recuperación de información. Esto ha impulsado el desarrollo de técnicas escalables y eficientes para organizar y recuperar este tipo de datos. \textit{Similarity search} ha sido el enfoque tradicional para la recuperación de información. Aunque se han propuesto varios algoritmos de búsqueda de similitud para acelerar las consultas de similitud, la mayoría de ellos se ven afectados por la maldición de la alta dimensionalidad de los datos. Recuperar datos complejos causa problemas de estabilidad cuando la dimensionalidad de los datos es muy alta \cite{aleman_high_dimensional}.
+\initial{L}a disponibilidad cada vez mayor de datos en diversos dominios ha creado la necesidad de desarrollar técnicas y métodos para descubrir el conocimiento a partir de volúmenes masivos de datos, motivando muchos trabajos de investigación en bases de datos, \textit{machine learning} y comunidades de recuperación de información. Esto ha impulsado el desarrollo de técnicas escalables y eficientes para organizar y recuperar este tipo de datos. \textit{Similarity search} ha sido el enfoque tradicional para la recuperación de información. Aunque se han propuesto varios algoritmos de búsqueda de similitud para acelerar las consultas de similitud, la mayoría de ellos se ven afectados por la maldición de la alta dimensionalidad de los datos. Recuperar datos complejos causa problemas de estabilidad cuando la dimensionalidad de los datos es muy alta \cite{aleman_high_dimensional}.
 
 
 Se han estudiado diferentes enfoques para resolver el problema de de la alta dimensionalidad de los datos. Una de las líneas de investigación es relajar la precisión de la consulta para acelerar el tiempo de consulta. Potencialmente, este enfoque es factible para aplicaciones que no requieren respuestas exactas y cuya velocidad es más importante que la precisión de búsqueda. Además, la definición del espacio métrico ya conduce a una aproximación de la respuesta verdadera, y por lo tanto una segunda aproximación en el tiempo de búsqueda puede ser aceptable \cite{cit:avez99searching}.
@@ -17,9 +18,7 @@ Para responder consultas de similitud, \ac{LSH} busca solo regiones, que están 
 Los métodos de $hashing$ producen una representación compacta  para realizar   tareas de clasificación usando \textit{hash-codes}. Cuando el proceso es supervisado, los códigos $hash$ se entrenan usando etiquetas ($labels$) en los datos de entrenamiento. Inspirado por los avances recientes en \acf{CNN} \cite{ImageNet}, muchos métodos mejoran la precisión de la recuperación de similitud al usar CNN como extractor de características y luego crean un código $hash$ compacto. En un trabajo reciente \cite{kLin:DH}, un método de hashing supervisado entrena el modelo con una capa oculta de tipo \textit{binary-hash} como características para tareas de clasificación de imágenes. Al combinar la extracción de características de imagen y el aprendizaje de códigos binarios, estos métodos han demostrado una alta precisión. Sin embargo, existe un compromiso entre el error de clasificación y el error de cuantificación: las activaciones de las capas inferiores son más comunes \cite{DBLP:journals/corr/YosinskiCBL14}, por lo que el entrenamiento es más efectivo. Sin embargo, las capas inferiores tienen mapas de activación más grandes (muchos nodos), que son más difíciles de codificar lo que lleva a un compromiso.
 
 
-\subsection{Approximate Nearest Neighbors \& Deep Hashing}
-
-\subsubsection{Hashing para la Búsqueda del Vecino más Cercano}
+\section{Deep Hashing para la Búsqueda del Vecino más Cercano}
 
 El problema del vecino más cercano, busca el punto más cercano en un conjunto de datos para un punto de consulta específico y es importante en muchas áreas de Ciencia de la Computación. La figura \ref{searchmodelcap5} ilustra el modelo de búsqueda de similitud para la búsqueda ANN utilizando hashing. Cada objeto del conjunto de datos se comprime utilizando códigos $hash$ que generan el nuevo espacio de búsqueda en el espacio reducido. Por lo general, se usa un índice para organizar el conjunto de datos de manera que los objetos cercanos en el espacio original estén juntos bajo cierta probabilidad en el espacio reducido. En el momento de la consulta, el objeto de consulta se asigna a regiones con alta probabilidad de encontrar objetos similares. Finalmente, las regiones de calificación se analizan para informar solo los objetos que satisfacen la condición de consulta.
 \begin{figure}[htp]
@@ -29,8 +28,7 @@ El problema del vecino más cercano, busca el punto más cercano en un conjunto 
 \label{searchmodelcap5}
 \end{figure}
 
-\subsubsection{Supervised Hashing}
-La figura \ref{supervisedhashingcap5} ilustra un modelo de búsqueda de similitud para Hashing supervisado. Cada objeto del conjunto de datos se comprime utilizando códigos $has$h que generan el nuevo espacio de búsqueda en el espacio reducido. Cuando el proceso es supervisado, los códigos se entrenan usando etiquetas ($labels$) en los datos de entrenamiento.
+ La figura \ref{supervisedhashingcap5} ilustra un modelo de búsqueda de similitud para Hashing supervisado. Cada objeto del conjunto de datos se comprime utilizando códigos $has$h que generan el nuevo espacio de búsqueda en el espacio reducido. Cuando el proceso es supervisado, los códigos se entrenan usando etiquetas ($labels$) en los datos de entrenamiento.
 \begin{figure}[htp]
 \includegraphics[width=0.7\columnwidth]{chapter5/ima2.png}
 \centering
@@ -43,17 +41,17 @@ La figura \ref{supervisedhashingcap5} ilustra un modelo de búsqueda de similitu
 \item [Semi-supervised hashing (SSH)] : etiquetas $ y $ asociados solo a  $ n_{label} $ muestras
 \end{description}
 
-\subsection{Protocolos de evaluación de recuperación}
+\section{Protocolos de evaluación de recuperación}
 
 En esta sección, describimos los protocolos utilizados en la literatura para SSH y SH y explicamos cómo una estrategia simple resuelve eficientemente los problemas similares.
 
-\subsubsection{Protocolos de evaluación de SH y SSH}
+\subsection{Protocolos de evaluación de SH y SSH}
 
 SSH consiste en indexar un conjunto de datos de $ n $ imagenes $ \mathcal{I}_{train} $, de los cuales un subconjunto $ \mathcal{I}_{label} \subseteq \mathcal{I}_{train} $ es etiquetado. Pero, SH es el caso extremo $ \mathcal{I}_{label} = \mathcal{I}_{train} $. Si tenemos una imagen de consulta sin etiqueta $ q $, el sistema debe devolver una lista ordenada de imágenes de $ \mathcal{I}_{train} $. Para evaluar, tenemos un conjunto de datos de consultas; el evaluador conoce todas las etiquetas de las consultas, así como las etiquetas en $ \mathcal{I}_{train} $. El rendimiento se mide por precisión o \textit{mean average precision} (mAP).
 
-Entonces, dada una consulta $ q $, si la imagen $ i^{th} $ es correcta para $ q $ definimos $ \delta(q, i) = 1 $, y $ 0 $ de lo contrario. La precisión en el rango $ k $ para kNN viene dada por $ P(q, k) = \tfrac{1}{k} {\sum}_{i = 1}^{k} \delta(q, i) $. Denotando por $ cl(q) = {\sum}_{i = 1}^{n} \delta(q, i) $ el número total de imágenes correctas en $ \mathcal{I}_{train} $, y la precisión promedio en $ k $ es $ AP(q, k) = \tfrac{1}{cl(q)} {\sum}_{i = 1}^{k} \delta(q, i) P( q, i) $. El mAP en $ k $ (o simplemente mAP cuando $ k = n $) es el AP promedio sobre todas las consultas de prueba \cite{sablayrolles2016should}.
+Entonces, dada una consulta $ q $, si la imagen $ i^{th} $ es correcta para $ q $ definimos $ \delta(q, i) = 1 $, y $ 0 $ de lo contrario. La precisión en el rango $ k $ para kNN viene dada por $ P(q, k) = \tfrac{1}{k} {\sum}_{i = 1}^{k} \delta(q, i) $. Denotando por $ cl(q) = {\sum}_{i = 1}^{n} \delta(q, i) $ el número total de imágenes correctas en $ \mathcal{I}_{train} $, y la precisión promedio en $ k $ es $ AP(q, k) = \tfrac{1}{cl(q)} {\sum}_{i = 1}^{k} \delta(q, i) P( q, i) $. El mAP en $ k $ (o simplemente mAP cuando $ k = n $) es el AP promedio sobre todas las consultas de prueba \cite{DBLP:journals/corr/SablayrollesDJU16}.
 
-\subsubsection{Representación de datos y medidas de similitud}\label{sec:methods_reduce}
+\section{Representación de datos y medidas de similitud}\label{sec:methods_reduce}
 
 Se han propuesto muchos métodos en la bibliografía para representar datos complejos con dimensionalidades reducidas, que admiten búsquedas de similitud y tareas de minería de datos. Estos métodos se pueden representar en dos categorías: representaciones de datos adaptativos y representaciones de datos no adaptativos \cite{wang13}.
 
@@ -63,14 +61,13 @@ Los métodos más comunes utilizados en la representación de datos no adaptativ
 
 Junto con esto, hay más de una docena de medidas de distancia para la búsqueda de similitudes en la literatura. Las medidas de similitud más comunes utilizadas son Euclidean, Manhattan y Minkowski. La distancia euclidiana y la de Manhattan satisfacen algunas propiedades matemáticas: no negatividad, identidad de indiscernibles, simetría, desigualdad de triángulo \cite{han2011data}.
 
-\subsection{Dimensión fractal y reducción de dimensionalidad}
+\section{Dimensión fractal y reducción de dimensionalidad}
 
 Como se mostró \cite{citeulike:fractal:encoders}   un buen algoritmo de reducción de dimensionalidad   proyecta los datos en un espacio de características con dimensión cercana a la dimensión fractal (FD) de los datos en el espacio original y conserva las propiedades topológicas.
 
 Por lo tanto, para encontrar la dimensión objetivo ($ m $), podemos seguir la siguiente heurística. Podemos comenzar con el valor en $ m_1 = 2^2 $, calcular el FD del nuevo espacio con solo eso, luego incrementar el valor en $ m_2 = 2^3 $, recalcular el FD, y continuar haciendo esto hasta que $ t(m_t = 2^t) $ donde podemos ver un aplanamiento en la dimensión fractal, lo que significa que más características no cambian la dimensión fractal del conjunto de datos.
  
-\subsection{Comparación de representaciones de datos}
-\subsubsection{Dimensión fractal y reducción de dimensionalidad}\label{sec:fractal-dimension}
+\section{Comparación de representaciones de datos} \label{sec:fractal-dimension}
 
 Para obtener la representación más general para el aprendizaje, algunos autores sugieren utilizar la salida de la última capa convolucional de la CNN \cite{DBLP:journals/corr/SablayrollesDJU16}. En esta investigación, usamos esta capa  para la extracción de características. Sin embargo, el espacio reducido donde viven estos datos tienen mucha densidad (muchos nodos en la capa convolucional). El objetivo de esta sección es análizar los métodos de reducción de dimensionalidad y buscar un espacio  donde puedan existir estos datos sin perder información.
 \begin{figure}[htbp]

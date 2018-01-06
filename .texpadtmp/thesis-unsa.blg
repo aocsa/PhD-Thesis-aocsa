@@ -975,6 +975,7 @@ while executing---line 1098 of file apalike.bst
 Too many commas in name 1 of "Manning, C. D., Raghavan, P., and Schutze, H." for entry Manning
 while executing---line 1098 of file apalike.bst
 Warning--empty journal in svhn
+Warning--empty publisher in NIPS2010_0550
 Too many commas in name 1 of "Oquab, M., Bottou, L., Laptev, I., Sivic, J." for entry Oquab
 while executing---line 1098 of file apalike.bst
 Too many commas in name 1 of "Oquab, M., Bottou, L., Laptev, I., Sivic, J." for entry Oquab
@@ -1189,45 +1190,45 @@ Too many commas in name 1 of "Zhu, Y., Urtasun, R., Salakhutdinov, R., Fidler, S
 while executing---line 1098 of file apalike.bst
 Too many commas in name 1 of "Zhu, Y., Urtasun, R., Salakhutdinov, R., Fidler, S." for entry Zhu
 while executing---line 1098 of file apalike.bst
-You've used 124 entries,
+You've used 123 entries,
             1935 wiz_defined-function locations,
-            1322 strings with 29286 characters,
-and the built_in function-call counts, 56075 in all, are:
-= -- 5786
-> -- 1735
-< -- 145
-+ -- 582
-- -- 564
-* -- 4055
-:= -- 8845
-add.period$ -- 380
-call.type$ -- 124
-change.case$ -- 886
-chr.to.int$ -- 118
+            1318 strings with 29165 characters,
+and the built_in function-call counts, 55826 in all, are:
+= -- 5753
+> -- 1749
+< -- 144
++ -- 587
+- -- 569
+* -- 4041
+:= -- 8809
+add.period$ -- 377
+call.type$ -- 123
+change.case$ -- 881
+chr.to.int$ -- 117
 cite$ -- 143
-duplicate$ -- 2619
-empty$ -- 4114
-format.name$ -- 731
-if$ -- 11938
+duplicate$ -- 2605
+empty$ -- 4085
+format.name$ -- 733
+if$ -- 11880
 int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 133
-newline$ -- 617
-num.names$ -- 373
-pop$ -- 929
+missing$ -- 132
+newline$ -- 612
+num.names$ -- 372
+pop$ -- 927
 preamble$ -- 1
-purify$ -- 899
+purify$ -- 894
 quote$ -- 0
-skip$ -- 2277
+skip$ -- 2266
 stack$ -- 0
-substring$ -- 4309
-swap$ -- 882
+substring$ -- 4274
+swap$ -- 881
 text.length$ -- 73
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 716
-warning$ -- 18
-while$ -- 455
+type$ -- 710
+warning$ -- 19
+while$ -- 454
 width$ -- 0
-write$ -- 1621
+write$ -- 1608
 (There were 572 error messages)

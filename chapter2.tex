@@ -1,22 +1,22 @@
-\chapter{Consultas por similitud}
-\hrule \bigskip \vspace*{1cm}
-
+\let\textcircled=\pgftextcircled
+\chapter{Consultas por similitud} {\textit{Este capítulo describe la teoría necesaria  sobre consultas por similitud en espacios multidimensionales y espacios métricos para poder entender la propuesta de la investigación}}
+\label{chap:chapter2}
 
 \section{Consideraciones iniciales}
 
-\versal{E}n el área de base de datos, las técnicas de indexación tienen como objetivo auxiliar el almacenamiento y la recuperación eficiente de datos. Muchas de estas técnicas se aplican a tareas de recuperación de información. En general, la organización se lleva a cabo a través de una estructura de indexación, también denominado como Método de Indexación (MI) o Método de acceso (MA). Aplicaciones de base de datos emplean métodos de acceso como Métodos de Acceso Espacial (MAEs) y los Métodos de Acceso Métrico (MAM) debido a su capacidad para construir una estructura de datos para gestionar y organizar grandes cantidades de datos de manera eficiente.
-/**
+\initial{E}n el área de base de datos, las técnicas de indexación tienen como objetivo auxiliar el almacenamiento y la recuperación eficiente de datos. Muchas de estas técnicas se aplican a tareas de recuperación de información. En general, la organización se lleva a cabo a través de una estructura de indexación, también denominado como Método de Indexación (MI) o Método de acceso (MA). Aplicaciones de base de datos emplean métodos de acceso como Métodos de Acceso Espacial (MAEs) y los Métodos de Acceso Métrico (MAM) debido a su capacidad para construir una estructura de datos para gestionar y organizar grandes cantidades de datos de manera eficiente.
+
 Sin embargo, debido a la ``maldición de la alta dimensionalidad'', el tiempo necesario para llevar a cabo la búsqueda por similitud, como kNN, puede crecer exponencialmente con la dimensionalidad de los datos. Aunque no se conoce ningún método para un buen desempeño en todas las instancias del problema, hay muchos algoritmos para acelerar las consultas, por lo general a través de una aproximación a la respuesta correcta. Así, se definen dos tipos de búsqueda: Métodos de búsqueda exactos y métodos de búsqueda aproximada; sobre los métodos de búsqueda de línea Búsqueda exacta de los métodos de acceso espacial (SAMs) y los métodos de acceso Métrico (MAM) son los más conocidos y utilizados en muchas aplicaciones.
 
 La línea de investigación de los métodos de búsqueda exacta, los Métodos de  Acceso Espaciales (MAEs), como Kd-Tree \cite{kdt}, R-Tree \cite{Guttman1984}, R*-Tree \cite{rstartree}, R+-Tree \cite{rplustree}  y , X-Tree \cite{xtree}, describen los datos de entrada como vectores multidimensionales. Estos métodos fueron concebidos para apoyar las operaciones de búsqueda involucrando puntos y objetos geométricos.
 
-Aunque en esta línea, Faloutsos \cite{GEMINI_Faloutsos} propone el \textit{framework} GEMINI \textit{ (GEneric Multimedia INdexIng)}, que utiliza los MAEs junto con los métodos  de reducción de dimensionalidad para lidiar con los datos en alta dimensionalidad.  La idea general de este \textit{framework} consiste en reducir el costo de búsqueda con la utilización de un esquema para a identificada de falsas alarmas, para descartar la mayoría de los objetos que no califican como candidatos.
+Aunque en esta línea, Faloutsos \cite{Faloutsos94} propone el \textit{framework} GEMINI \textit{ (GEneric Multimedia INdexIng)}, que utiliza los MAEs junto con los métodos  de reducción de dimensionalidad para lidiar con los datos en alta dimensionalidad.  La idea general de este \textit{framework} consiste en reducir el costo de búsqueda con la utilización de un esquema para a identificada de falsas alarmas, para descartar la mayoría de los objetos que no califican como candidatos.
 
 En la misma dirección de los métodos de búsqueda exacta, los Métodos de Acceso Métricos (MAMs) proporcionar operaciones de búsqueda por similitud, exacta, en espacios métricos. Las estructuras de indexación de los MAMs organizan los datos usando un criterio de similitud, asegurando una repuesta eficiente en las consultas. En la literatura son encontrados MAMs basados en árboles, como \mbox{VP-Tree} \cite{cit:vpt}, SAT \cite{SATree}, \mbox{M-Tree} \cite{MTree}, Slim-Tree \cite{SlimTree}, DBM-Tree \cite{DBMTree}, DF-Tree \cite{dftree} y las técnicas basadas en grafos, como \mbox{t-Spanners} \cite{cit:tspanners02} e HRG \cite{hrg}. Estados extensos sobre MAMs poden ser encontrados en \cite{cit:avez99searching, cit:indexDriven, cit:clarkson_nn_survey}.
 
 Los MAMs utilizan intensamente la propiedad de la desigualdad triangular para reducir el número de cálculos de distancia. Sin embargo, aunque muchos MAMs han sido propuestos para acelerar la búsqueda por similitud, algunas aún sufren con el problema de sobre posición. Por otra parte, algunos trabajos de investigación discuten la idea de que indexación jerárquica de dados en altas dimensiones pode deteriorar las consultas, al igual en comparación con la búsqueda secuencial \cite{aleman_high_dimensional, WhatsWrong}. Los espacios métricos son definidos a partir de un conjunto de objetos y una función de distancia métrica que mide la disimilitud entre estos objetos, satisfaciendo las siguientes propiedades: positividad, simetría, reflexividad y desigualdades triangular.
 
-En otro enfoque, una técnica promisoria llamada \textit{Locality Sensitive Hashing} (LSH) \cite{Datar2004} fui propuesta para realizar consulta por similitud aproximada en datos en altas dimensiones, de manera eficiente.  LSH, se basa en la idea de que la proximidad entre dos objetos se preserva generalmente por una operación de proyección aleatoria. En otras palabras, si dos objetos están cerca en el espacio original, por lo que permanecen cerca después de la operación de proyección.
+En otro enfoque, una técnica promisoria llamada \textit{Locality Sensitive Hashing} (LSH) \cite{lsh} fui propuesta para realizar consulta por similitud aproximada en datos en altas dimensiones, de manera eficiente.  LSH, se basa en la idea de que la proximidad entre dos objetos se preserva generalmente por una operación de proyección aleatoria. En otras palabras, si dos objetos están cerca en el espacio original, por lo que permanecen cerca después de la operación de proyección.
 
 Un modelo de  LSH es ilustrado en la Figura  \ref{fig:search_model} (b), donde cada uno de los tres sub-índices es definido por un conjunto de funciones \textit{hash} ($H_1, H_2, H_3$), generando tres tipos de particionamiento en el espacio de búsqueda. Así, cada partición está asociada a una tabla \textit{hash} y su correspondiente conjunto de funciones \text{hash}. Cada conjunto de funciones \textit{hash} es utilizado para organizar un conjunto de datos en regiones, de modo que con cierta probabilidad, los objetos en la misma región son considerado lo suficientemente próximos. En tiempo de consulta, el objeto de consulta $q$ es proyectado (usando cada uno de los tres conjuntos de funciones \textit{hash}, uno por cada partición) en regiones donde la probabilidad de encontrar objetos próximos es muy alta (regiones en color gris en la figura). Finalmente, ya que son considerados varios sub-índices, las regiones candidatas son analizadas a fin de retornar solo los objetos que satisfacen la condición de consulta e que no hayan sido retornados antes.
 
@@ -101,13 +101,13 @@ La Figura \ref{fig:lpnorms}(b) representa un conjunto de objetos en un  espacio 
 La \textbf{distancia de coseno} presentada en la Ecuación \ref{eq:2_3} es otra métrica de distancia popular para la búsqueda de $NN$ que ha demostrado ser particularmente eficaz para la recuperación de documentos \cite{Manning,Ravichandran}.
 
 \begin{equation}\label{eq:2_3}
-	    d_{cosine}(X_i,X_j) = 1 - \frac{\sum\nolimits_{k=1}^{D} x_{ik} x_{jk}}{\sqrt{\sum\nolimits_{k=1}^{D} x_{ik}^2}\sqrt{\sum\nolimits_{k=1}^{D} x_{jk}^2}}
+      d_{cosine}(X_i,X_j) = 1 - \frac{\sum\nolimits_{k=1}^{D} x_{ik} x_{jk}}{\sqrt{\sum\nolimits_{k=1}^{D} x_{ik}^2}\sqrt{\sum\nolimits_{k=1}^{D} x_{jk}^2}}
 \end{equation}
 
 También encontraremos la \textbf{distancia de Hamming} ampliamente en esta tesis, ya que es la métrica por defecto para comparar cadenas binarias (Ecuación \ref{eq:2_4})
 
 \begin{equation}\label{eq:2_4}
-	   d_{hamming}(b_i,b_j) = \sum_{k=1}^{D} \delta[b_{ik} \neq b_{jk}]
+     d_{hamming}(b_i,b_j) = \sum_{k=1}^{D} \delta[b_{ik} \neq b_{jk}]
 \end{equation}
 
 La función $\delta(.) = 1$ si su argumento es verdadero, y 0 en caso contrario. Por lo tanto, la distancia de Hamming cuenta el número de dimensiones correspondientes (bits) que no son iguales en los dos \textit{hashcodes}. \\
@@ -214,7 +214,7 @@ En la  sección \ref{sec:lsh}, introduciremos el método \textit{Locality Sensit
 
 \subsection{\textit{Locality Sensitive Hashing}}\label{sec:lsh}
 
-Algunos trabajos de búsqueda aproximada  \cite{lsh_hamming,Datar2004,hashing_algoritghms_survey} exploran la idea de mapear los objetos de un conjunto de datos y agruparlos en  \textit{buckets} con el objetivo de ejecutar consultas por similitud aproximada dentro de los  \textit{buckets} asociados al objeto de consulta. En particular, el método \textit{Locality Sensitive Hashing} (LSH) fue ideado para resolver eficientemente consultas por rango aproximada $((1+\epsilon) Rq(q, r))$. Como fue definido en la Sección  \ref{sec:consultas-similaridade}, este tipo de consulta busca recuperar los objetos que se encuentran dentro de un radio de consulta $(1+\epsilon) \times r$. La idea principal es que, si dos objetos son próximos en el espacio original, esos dos objetos tienden a permanecer próximos después de una operación de proyección escalar randomica. Así, dada una función \textit{hash} $h(x)$ que mapea un objeto ($x$) de dimensión $n$ a un valor unidimensional, la función es sensible a la localidad si la posibilidad de mapeamiento de dos objetos $x_1$, $x_2$ al mismo valor crece a la medida que la distancia  $d(x_1, x_2)$  disminuye. Formalmente:
+Algunos trabajos de búsqueda aproximada  \cite{lsh_hamming,lsh,hashing_algoritghms_survey} exploran la idea de mapear los objetos de un conjunto de datos y agruparlos en  \textit{buckets} con el objetivo de ejecutar consultas por similitud aproximada dentro de los  \textit{buckets} asociados al objeto de consulta. En particular, el método \textit{Locality Sensitive Hashing} (LSH) fue ideado para resolver eficientemente consultas por rango aproximada $((1+\epsilon) Rq(q, r))$. Como fue definido en la Sección  \ref{sec:consultas-similaridade}, este tipo de consulta busca recuperar los objetos que se encuentran dentro de un radio de consulta $(1+\epsilon) \times r$. La idea principal es que, si dos objetos son próximos en el espacio original, esos dos objetos tienden a permanecer próximos después de una operación de proyección escalar randomica. Así, dada una función \textit{hash} $h(x)$ que mapea un objeto ($x$) de dimensión $n$ a un valor unidimensional, la función es sensible a la localidad si la posibilidad de mapeamiento de dos objetos $x_1$, $x_2$ al mismo valor crece a la medida que la distancia  $d(x_1, x_2)$  disminuye. Formalmente:
 
 \paragraph{Definición} Dado un valor de distancia $r$, un factor de aproximación $1+\epsilon$, las probabilidades $P_1$ y $P_2$, tal que $P_1 > P_2$, la función \textit{hash}  $h()$ es sensible a la localidad de los datos si satisface las siguientes condiciones:
 
@@ -229,7 +229,7 @@ Esto quiere decir que para dos objetos $x_1$ y $x_2$ en $R^n$ que están distant
 
 \end{itemize}
 
-El esquema propuesto en \cite{Datar2004} fue proyectado para trabajar con distribuciones p-estables de la siguiente manera: calcular el producto escalar $\vec{a} \cdot \vec{x}$ para atribuir un valor \textit{hash} para cada vector $x$. La función  \textit{hash} precisa de valores randomicos $\vec{a}$ y $b$, en que $\vec{a}$ es un vector n-dimensional con valores independientemente escogidos a partir de distribuciones p-estables (Cauchy o Gaussiana) y $b$ es un número real escogido dentro de un intervalo $[0,\omega]$. Por tanto la función \textit{hash} $h(x)$ esta dada por:
+El esquema propuesto en \cite{lsh} fue proyectado para trabajar con distribuciones p-estables de la siguiente manera: calcular el producto escalar $\vec{a} \cdot \vec{x}$ para atribuir un valor \textit{hash} para cada vector $x$. La función  \textit{hash} precisa de valores randomicos $\vec{a}$ y $b$, en que $\vec{a}$ es un vector n-dimensional con valores independientemente escogidos a partir de distribuciones p-estables (Cauchy o Gaussiana) y $b$ es un número real escogido dentro de un intervalo $[0,\omega]$. Por tanto la función \textit{hash} $h(x)$ esta dada por:
 
 
 \begin{equation}\label{eq:lsh}
@@ -248,13 +248,10 @@ Para amplia a diferencia entra las probabilidades $P_1$ y $P_2$ se puede usar $\
 
 Así usando colecciones diferentes de $\Nhashfunctions$ funciones \textit{hash} $H = \{h_1, h_2, ..., h_\Nhashfunctions\}$, siendo una colección cada sub-indice, cada objeto $x$ de un conjunto de datos es mapeado en \textit{buckets}, efectivamente particionando el conjunto de datos en varios grupos pequeños (los \textit{buckets}) para cada uno de los $L$ subindices. La estructura de datos será entonces formada por $L$ subíndices. LSH divide el espacio de búsqueda empleando $\Nhashfunctions$ funciones \textit{hash} escogidas aleatoriamente de una distribución Gaussiana (o Cauchy). Un número de funciones \textit{hash} $\Nhashfunctions$ determina cuan esparzo o denso será el espacio de búsqueda. Al aumentar el valor de $\Nhashfunctions$, los objetos tiendes a ser distribuidos en \textit{buckets} de manera bastante uniforme, reduciendo la precisión de las consultas ya que es más probable que objetos similares caigan en \textit{buckets} diferentes. Para atenuar ese efecto negativo, son necesarias muchas tablas \textit{hash}. Por otro lado, al disminuir el valor de $\Nhashfunctions$, el número de colisiones aumenta, así como el número de elemento a ser tratados en tiempo de consulta. Así, el desempeño de las consultas disminuye.
 
-
 El proceso de indexación de un conjunto de datos $S$ usando LSH es mostrado en el Algoritmo \ref{alg:lshalgorithm}. Cada elemento $x$ del conjunto de elementos $S$ es proyectado usando   $\Nhashfunctions$  funciones \textit{hash} que transforma el elemeno $x$ en $\Nhashfunctions$  números reales ($x'$, el vector \textit{hash}). Esos $\Nhashfunctions$  números son entonces cuantificados con un único número ($g$).
-
-\newpage 
-\begin{lstlisting}[mathescape, frame=single, label=alg:lshalgorithm,caption=Algoritmo de construcción para LSH]
-Entrada: El conjunto de dados  $S$
-Salida: Todos los objetos mapeados en las $L$ tablas $hash$
+ \begin{lstlisting}[mathescape, frame=single, label=alg:lshalgorithm,caption=Algoritmo de construcción para LSH]
+Input: El conjunto de dados  $S$
+Output: Todos los objetos mapeados en las $L$ tablas $hash$
   for $i = 1$ to $L$ do
     $H_{i} \Leftarrow \{h_1,...,h_\Nhashfunctions\}$       //Inicializar tabla $T_i$ con un conjunto de funciones $hash$ $H_i$
   end for
@@ -272,8 +269,8 @@ Salida: Todos los objetos mapeados en las $L$ tablas $hash$
 Una vez que cada \textit{bucket} es definido en términos de similitud (esto es, elementos semejantes tienden a ser encontrados en el mismo \textit{bucket}, es probable encontrar los vecinos más próximos a un objeto $q$ en los \textit{buckets} recuperados por cada conjunto de funciones \textit{hash}). Así, en vez de hacer comparaciones para reducir el espacio de búsqueda, LSH mapea directamente los objetos a los \textit{buckets}. Luego, es posible obtener un costo sub-linear en las consultas. En una consulta kNN, a fin de retornar los $k$ vecinos más próximos, apenas las distancias entre $q$ y los elementos dentro de los \textit{buckets} son calculados. En una consulta por rango sucede lo mismo, mas la condición de consulta es diferente y solo los elementos dentro del radio de consulta son retornados. El algoritmo de consulta por rango aproximada es descrito en el Algoritmo  \ref{alg:lsh_rq}.
 
 \begin{lstlisting}[mathescape, frame=single, label=alg:lsh_rq,caption=Consulta por rango aproximada usando LSH]
-Entrada: El objeto de consulta $q$ y el radio de consulta $r$
-Salida:  Los objetos que satisfacen las condiciones de consulta.
+Input: El objeto de consulta $q$ y el radio de consulta $r$
+Output:  Los objetos que satisfacen las condiciones de consulta.
   for $i = 1$ to $L$  do
     $q' \Leftarrow $ $<h_1(q),...,h_\Nhashfunctions(q)>$ //Proyectar $x$:  $\Nhashfunctions$ veces usando el conjunto de funciones hash $H_{i}$
     $g \Leftarrow quantize(q')$   //  calcular el valor hash final
@@ -388,14 +385,14 @@ algorithm $ApproximateNN$($q, \lambda$)
 end.
 procedure [$\delta$] = $ApproximateNNInNode$($q, node, \delta, \lambda$)
     $h_q := node.\textit{hash}(q)$
-    for cada nó $child$ do
+    for cada nodo $child$ do
         $wdist := |child.hash\_value - h_q|$
         if $wdist < \lambda$ then
             insertar $child$ en el $heap$ ordenado por $wdist$
         end if
     end for
     for cada página em disco $p_i$ do
-        buscar la lista de paginas de $p_{start}$ a $p_{end}$ en disco entre los intervalor $[h_q - \lambda, h_q + \lambda]$
+        buscar la lista de paginas de $p_{start}$ a $p_{end}$ en disco entre los intervalos $[h_q - \lambda, h_q + \lambda]$
     end for
     cargar las páginas entre $[h_q - \lambda, h_q + \lambda]$ en el bloque $B$
     for cada objeto $o$ en $B$ do
@@ -446,7 +443,7 @@ La Figura \ref{fig:cuda_NN_search} (a) presenta las proyecciones de una consulta
 
 \begin{figure}[ht]
  \centering
-	\includegraphics[width=0.99\columnwidth]{chapter2/cuda_hashfile.pdf}
+  \includegraphics[width=0.99\columnwidth]{chapter2/cuda_hashfile.pdf}
  \caption{Representación de las proyecciones de una consulta por similitud aproximada en HashFile en (a), en (b) se verifica su estructura lógica correspondiente.}
  \label{fig:cuda_NN_search}
 \end{figure}

@@ -1,18 +1,20 @@
-\chapter{Minería de Datos \& \textit{Deep Learning}}\label{cap:deep_learning}
+ 
+\let\textcircled=\pgftextcircled
+\chapter{Minería de Datos \& \textit{Deep Learning}} {\textit{Este capítulo describe la teoría necesaria sobre   minería de datos y \textit{Deep Learning} para poder entender la propuesta de la investigación}}
+\label{cap:deep_learning}
+
+
 
 \section{Consideraciones Iniciales}
 
-\versal{L}os rápidos avances en las tecnologías de recolección y de almacenamiento permitieron el almacenamiento de grandes cantidades de datos. Sin embargo, se probó que extraer conocimiento puede ser extremadamente difícil. En este contexto, la minería de datos combina métodos tradicionales de análisis de datos con algoritmos sofisticados para el procesamiento de grandes volúmenes de datos \cite{Tan:2005:IDM:1095618}.
+\initial{L}os rápidos avances en las tecnologías de recolección y de almacenamiento permitieron el almacenamiento de grandes cantidades de datos. Sin embargo, se probó que extraer conocimiento puede ser extremadamente difícil. En este contexto, la minería de datos combina métodos tradicionales de análisis de datos con algoritmos sofisticados para el procesamiento de grandes volúmenes de datos \cite{Tan:2005:IDM:1095618}.
 
 La Minería de Datos (\textit{Data Mining}) es un área de investigación dentro en un contexto más amplio llamado Descubrimiento del Conocimiento en Bases de Datos (\textit{KDD – Knowledge Discovery in Databases}), cuyo objetivo principal es extraer de un conjunto de datos, el conocimiento a ser utilizado en procesos decisorios. Más específicamente, los principales objetivos de los métodos de minería de datos son una descripción de un conjunto de datos y una predicción de valores futuros de interés basado en conocimiento previo de un banco de datos \cite{Fayyad:1996:DMK:257938.257942}.
 
 
-Como se contrastará   en la siguiente sección,  el enfoque de la minería de datos es  la extracción de patrones, propiedades desconocidas en los datos. En cambio el enfoque del aprendizaje de maquina (\textit{Machine Learning}) es la generación  de modelos de predicción, basado en propiedades conocidas (experiencia) aprendidas de los datos de entrenamiento.   Por otro lado el aprendizaje profundo (\textit{Deep Learning}) es un subconjunto de  del área de Aprendizaje de Maquina. El aprendizaje profundo es un mecanismo de aprendizaje jerárquico (en profundidad) que utiliza un conjunto de algoritmos para diversas tareas de aprendizaje de maquina, mientras que la minería de datos es en su mayoría un proceso de extracción de conocimientos que utiliza varios algoritmos que no necesariamente son ``profundos''. Del mismo modo, el aprendizaje profundo puede ser utilizado para la minería de datos \cite{dlBook}. 
+Como se contrastará   en la siguiente sección,  el enfoque de la minería de datos es  la extracción de patrones, propiedades desconocidas en los datos. En cambio el enfoque del aprendizaje de maquina (\textit{Machine Learning}) es la generación  de modelos de predicción, basado en propiedades conocidas (experiencia) aprendidas de los datos de entrenamiento.   Por otro lado el aprendizaje profundo (\textit{Deep Learning}) es un subconjunto de  del área de Aprendizaje de Maquina. El aprendizaje profundo es un mecanismo de aprendizaje jerárquico (en profundidad) que utiliza un conjunto de algoritmos para diversas tareas de aprendizaje de maquina, mientras que la minería de datos es en su mayoría un proceso de extracción de conocimientos que utiliza varios algoritmos que no necesariamente son ``profundos''. Del mismo modo, el aprendizaje profundo puede ser utilizado para la minería de datos \cite{dlBook, TheDLBook}. 
  
-Para hacer frente a  problemas de aprendizaje basado en la experiencia  tenemos  que utilizar un tipo muy diferente de enfoque. Muchas de las cosas que aprendemos en la escuela tienen mucho en común con los programas informáticos tradicionales. Aprendemos cómo multiplicar números, resolver ecuaciones, y hacer derivadas mediante la guía de un conjunto de instrucciones. Pero las cosas que aprendemos a una edad muy temprana, las cosas que nos parecen naturales, se aprenden con el ejemplo, no por fórmulas \cite{dlBook}.
- 
-Deep Learning es un subconjunto de un campo más amplio de la inteligencia artificial llamado aprendizaje de maquina o \textit{Machine Learning}, que se basa en la idea de aprender con el ejemplo. En lugar de enseñar a una computadora las reglas para resolver un problema, le damos un modelo con el que se puede evaluar ejemplos y un pequeño conjunto de instrucciones para modificar el modelo cuando se comete un error. Esperando que, con el tiempo, un modelo fuera capaz de resolver el problema con gran precisión \cite{dlBook}.
-
+Para hacer frente a  problemas de aprendizaje basado en la experiencia  tenemos  que utilizar un enfoque diferente. Muchas de las cosas que aprendemos en la escuela tienen mucho en común con los programas informáticos tradicionales. Aprendemos cómo multiplicar números, resolver ecuaciones, y hacer derivadas mediante la guía de un conjunto de instrucciones. Pero las cosas que aprendemos a una edad muy temprana, las cosas que nos parecen naturales, se aprenden con el ejemplo, no por fórmulas. Es decir,  en lugar de enseñar a una computadora las reglas para resolver un problema, le damos un modelo con el que se puede evaluar ejemplos y un pequeño conjunto de instrucciones para modificar el modelo cuando se comete un error. Esperando que, con el tiempo, un modelo fuera capaz de resolver el problema con gran precisión \cite{TheDLBook}. 
  
  En la Sección \ref{sec:kdd-datamining} son discutidos los principales conceptos de Minería de Datos y Descubrimiento del Conocimiento en Bases de Datos (KDD). En la Sección \ref{sec:machine-learning}, es  presentado los conceptos de Aprendizaje de Máquina  (\textit{Machine Learning}) y Redes Neuronales. En la Sección \ref{sec:cnn}, se analizan los conceptos de  \acf{CNNs} así como las principales  aplicaciones y casos de éxito. La Sección \ref{sec:autoencoders}, se analiza la teoría de Auto-codificadores y en la Sección \ref{sec:consideraciones-finales} se presentan las consideraciones finales del capítulo.
 
@@ -23,7 +25,7 @@ Deep Learning es un subconjunto de un campo más amplio de la inteligencia artif
 
 \begin{figure}[htp]
 \centering
-\includegraphics[width=0.99\columnwidth]{chapter3/KDD-process.pdf}
+\includegraphics[width=0.9\columnwidth]{chapter3/KDD-process.pdf}
 \caption{Etapas del proceso KDD. Figura adaptada de \cite{Fayyad:1996:DMK:257938.257942}.}
 \label{fig:processoKDD}
 \end{figure}
@@ -49,8 +51,10 @@ La etapa de minería de datos incluye la definición de las tareas de minería a
  
 \section{Aprendizaje de Máquina -- \textit{Machine Learning} }\label{sec:machine-learning}
 
-El Aprendizaje de Máquina es un subconjunto de Inteligencia Artificial  que incluye técnicas estadísticas que permiten a las máquinas generar modelos de predicción  basado en propiedades conocidas aprendidas de los datos de entrenamiento, esta categoría incluye el aprendizaje profundo \cite{smola2008ml}. El Aprendizaje de Máquina se puede clasificar en 3. Aprendizaje Supervisado, Aprendizaje no supervisado, y Aprendizaje Semi supervisado 
-  
+El Aprendizaje de Máquina es un subconjunto de Inteligencia Artificial  que incluye técnicas estadísticas que permiten a las máquinas generar modelos de predicción  basado en propiedades conocidas aprendidas de los datos de entrenamiento, esta categoría incluye el aprendizaje profundo \cite{smola2008ml, TheMLBook}. El Aprendizaje de Máquina se puede clasificar en dos categorías principales. Aprendizaje Supervisado y Aprendizaje no supervisado. 
+
+\subsection{Aprendizaje Supervisado y Redes Neuronales}
+
 El aprendizaje supervisado es una técnica de aprendizaje que utiliza datos de entrenamiento y sobre la observación de estos crea una función capaz de predecir el valor de un nuevo dato y sobre la observación de estos crea una función capaz de predecir el valor de un nuevo dato que la función no haya visto, la supervisión en este tipo de aprendizaje se da mediante instancias etiquetadas en un conjunto de datos de entrenamiento. 
 
 \subsection*{Clasificación}
@@ -59,46 +63,46 @@ La clasificación trabaja con conjunto de datos ya participados en grupos, categ
 
 Para clasificar se pueden usar algoritmos basados en Regresión Logística, en Maquinas de Soporte Vectorial y Redes Neuronales. Nuestro interés son los algoritmos basados en redes neuronales y lo detallamos a continuación.
 
-\subsection{Redes Neuronales}
+\subsection*{Redes Neuronales}
 
-Las redes neuronales son modelos que simulan el sistema nervioso humano. La clave para la eficacia de una red neuronal es la arquitectura usada para organizar las conexiones entre nodos. Existe una amplia variedad de arquitecturas, a partir de una red con una sola capa, y otras redes mas complejas con múltiples capas \cite{aggarwal2015data}.   
+Las redes neuronales son modelos que simulan el sistema nervioso humano. La clave para la eficacia de una red neuronal es la arquitectura usada para organizar las conexiones entre nodos. Existe una amplia variedad de arquitecturas, a partir de una red con una sola capa, y otras redes mas complejas con múltiples capas \cite{aggarwal2015data, TheNNBook}.   
 
- Una arquitectura de red o topología juega un papel importante para la clasificación, la topología óptima dependerá del problema en cuestión. A menudo el conocimiento del dominio del problema que podría ser de carácter informal o heurística puede incorporarse fácilmente en la arquitectura de redes a través de opciones, como número de capas ocultas, unidades, conexiones de retroalimentación. Por lo tanto el establecimiento de la topología de la red es la selección del modelo heurístico. La facilidad práctica en la selección de modelos (topologías de red) y la estimación de parámetros (formación a través de propagación hacia atrás) permiten a los diseñadores de clasificadores probar modelos alternativos de manera bastante simple. \cite{PattClassi}
+ Una arquitectura de red o topología juega un papel importante para la clasificación, la topología óptima dependerá del problema en cuestión. A menudo el conocimiento del dominio del problema que podría ser de carácter informal o heurística puede incorporarse fácilmente en la arquitectura de redes a través de opciones, como número de capas ocultas, unidades, conexiones de retroalimentación. Por lo tanto el establecimiento de la topología de la red es la selección del modelo heurístico. La facilidad práctica en la selección de modelos (topologías de red) y la estimación de parámetros (formación a través de propagación hacia atrás) permiten a los diseñadores de clasificadores probar modelos alternativos de manera bastante simple. \cite{PattClassi, TheNNBook}
 
 
 En la Figura \ref{fig:perceptron} se puede visualizar la arquitectura de un perceptrón. El perceptrón contiene dos capas de nodos, los cuales corresponden a los nodos de entrada y al nodo de salida, el número de nodos de entrada es exactamente igual a la dimensionalidad d de una instancia, cada nodo de entrada recibe y entrega un atributo numérico al nodo de salida. Los nodos de entrada solo transmiten valores de entrada para el nodo de salida, el nodo de salida es el único que realiza una función matemática en sus entradas.
 \begin{figure}[ht]
  \centering
-	\includegraphics[width=0.65\columnwidth]{chapter3/perceptron.png}
- \caption{Perceptrón \cite{aggarwal2015data}.}
+	\includegraphics[width=0.6\columnwidth]{chapter3/perceptron.png}
+ \caption{Perceptrón. Figura adaptada de \cite{TheNNBook}.}
  \label{fig:perceptron}
 \end{figure}
 
 En el caso de una red neuronal de múltiples capas (Figura \ref{fig:mlp}), se tiene una capa de entrada, una capa de salida, y una o más capas intermedias llamadas capas ocultas. Lo mismo que antes, las salidas multiplicadas por sus pesos, es la entrada de la siguiente capa, sin olvidar que en cada nodo se aplica una función de activación, los nodos de salida son quienes dicen si la instancia pertenece a una clase o no, de acuerdo a la función de activación estos tomarán valores de 0 a 1, o de −1 a +1.
 \begin{figure}[ht]
  \centering
-	\includegraphics[width=0.7\columnwidth]{chapter3/mlp.png}
- \caption{Perceptrón Multicapa \cite{aggarwal2015data}.}
+	\includegraphics[width=0.75\columnwidth]{chapter3/mlp.png}
+ \caption{Perceptrón Multicapa. Figura adaptada de \cite{TheNNBook}.}
  \label{fig:mlp}
 \end{figure}
 
-Para entrenar a una neurona se realizan dos fases.
- 
+Para entrenar a una red neuronal se realizan dos fases.
  
  \begin{description}
- \item [Fase Fordward:] en esta fase se introducen los valores de una instancia en la capa de entrada de la red, los pesos se toman de manera aleatoria, esta fase se realiza hacia adelante, comenzando en la capa de entrada y terminando en la capa de salida, los valore de la capa de salida son comparados con la etiqueta de la instancia para ver si se tiene un error.
+ \item [Fase Forward:] en esta fase se introducen los valores de una instancia en la capa de entrada de la red, los pesos se toman de manera aleatoria, esta fase se realiza hacia adelante, comenzando en la capa de entrada y terminando en la capa de salida, los valore de la capa de salida son comparados con la etiqueta de la instancia para ver si se tiene un error.
  
 
  \item [Fase Backward:] el objetivo de esta fase es corregir los errores en cada nodo. Recorre la red desde la capa oculta hacia la capa de entrada, en cada nodo se calcula el error y se actualizan los pesos de entrada que recibieron. 
  \end{description}
  
- El proceso de $Fordward$ y $Backward$ se repiten para cada instancia, al finalizar se vuelve a repetir todo el proceso para toda la base de datos de entrenamiento, hasta un numero $n$ de épocas si es necesario. 
+ El proceso de $Forward$ y $Backward$ se repiten para cada instancia, al finalizar se vuelve a repetir todo el proceso para toda la base de datos de entrenamiento, hasta un numero $n$ de épocas si es necesario. 
  
-\subsection{Redes Neuronales Convolutivas (CNN)}\label{sec:cnn}
+\section{Redes Neuronales Convolutivas (CNN)}\label{sec:cnn}
 
-Una red neuronal convolucional (CNN) es una arquitectura jerárquica \cite{LeCun} que consta de varias capas convolucionales apiladas (opcionalmente seguido por una capa de normalización y una capa de agrupación), capas completamente conectadas y una capa de salida en la parte superior. Las capas convolucionales generan mapas de características por filtros convolucionales lineales seguidos por funciones de activación no lineales (Rectificador, Sigmoide, TanH, etc.). La capa completamente conectada (\textit{fully conected layer}) tiene conexiones completas a todas las activaciones en los mapas de características y el vector unidimensional resultante se puede alimentar en la capa de salida para la optimización de la función de pérdida.
 
-Hay dos etapas principales para entrenar la red neuronal convolucional: una etapa \textit{fordward}  y una etapa de \textit{backward}.  En primer lugar, la etapa de \textit{fordward} es representar la imagen de entrada con los parámetros actuales (pesos y sesgo/bias) en cada capa. A continuación, la salida de la última capa se utiliza para calcular la función de pérdida con las etiquetas de verdad. En segundo lugar, basándose en el costo de la pérdida, la etapa \textit{backward} calcula los gradientes de cada parámetro con reglas de cadena. Todos los parámetros se actualizan en función de los gradientes y se preparan para el siguiente cálculo directo. Después de suficientes iteraciones de las etapas \textit{fordward} y \textit{backward}, la red podría ser optimizada. La red neuronal convolucional ha sido aplicada en diversas aplicaciones de visión por computadora y ha demostrado sus ventajas significativas y alto rendimiento.
+Una red neuronal convolucional (CNN) es una arquitectura jerárquica \cite{LeCun} que consta de varias capas convolucionales apiladas, opcionalmente seguido por una capa de normalización y una capa de agrupación, capas completamente conectadas y una capa de salida en la parte superior. Usan convoluciones en lugar de multiplicación de matrices en al menos una de sus capas \cite{TheDLBook}.  Las capas convolucionales generan mapas de características por filtros convolucionales lineales seguidos por funciones de activación no lineales (Rectificador, Sigmoide, TanH, etc.). La capa completamente conectada (\textit{fully conected layer}) tiene conexiones completas a todas las activaciones en los mapas de características y el vector unidimensional resultante se puede alimentar en la capa de salida para la optimización de la función de pérdida .
+
+Al igual que el entrenamiento de las redes neuronales tradicionales, en la CNN hay dos etapas principales para entrenar la red neuronal convolucional: una etapa \textit{Forward}  y una etapa de \textit{backward}.  En primer lugar, la etapa de \textit{Forward} es representar la imagen de entrada con los parámetros actuales (pesos y sesgo/bias) en cada capa. A continuación, la salida de la última capa se utiliza para calcular la función de pérdida con las etiquetas de verdad. En segundo lugar, basándose en el costo de la pérdida, la etapa \textit{backward} calcula los gradientes de cada parámetro con reglas de cadena. Todos los parámetros se actualizan en función de los gradientes y se preparan para el siguiente cálculo directo. Después de suficientes iteraciones de las etapas \textit{Forward} y \textit{backward}, la red podría ser optimizada. La red neuronal convolucional ha sido aplicada en diversas aplicaciones de visión por computadora y ha demostrado sus ventajas significativas y alto rendimiento \cite{TheDLBook}.
 
 \subsection {Capas CNN}
 
@@ -112,134 +116,27 @@ En esta seccion presentamos una visión general de los diferentes tipos de capas
 
 
 
-\subsection{Sobre las Convoluciones}
-
-    El objetivo fundamental de un algoritmo de aprendizaje profundo en visión por computador es eliminar el engorroso y limitante proceso de extracción de características. Las redes neuronales profundas son perfectas para este proceso gracias al proceso de convolución, ya que cada capa de una red neuronal es responsable del aprendizaje y la construcción de características que representen mejor a los datos de entrada \cite{dlBook}.
-    \\\\
-    Si se trata de abordar el problema de la clasificación de imágenes utilizando redes neuronales comunes, puede presentarse con rapidez un desafío desalentador, que se puede ver en la Fig.~\ref{fig:fc_dont_scale}. Para datos de entrada de poca dimensión una red neuronal puede funcionar bien, pero para imágenes de mayor dimensión y de mayor complejidad contar con una red totalmente conectada no produce buenos resultados.
-    \begin{figure}[htp]
-        \centering
-        \includegraphics[scale=0.35]{chapter3/fc_dont_scale.png}
-        \caption{La densidad de conexiones se incrementa según el tamaño de la imagen}
-        \label{fig:fc_dont_scale}
-        \source{Fundamentals of Deep Learning, \cite{dlBook}}
-    \end{figure}
-
-    Tomando como base el funcionamiento de la visión humana, capas de una red de convolución tienen neuronas dispuestas en tres dimensiones, por lo que las capas tienen una anchura, altura y profundidad, como se muestra en la Fig.~\ref{fig:convnet_scheme}. Como veremos, las neuronas de una capa única de convolución solo conectan a una región pequeña de la capa precedente, por lo que evitan el derroche de las neuronas totalmente conectadas. El proceso de una convolución puede expresarse fácilmente, procesa un volumen de información de 3 dimensiones para producir un nuevo volumen de 3 dimensiones \cite{dlBook}.
-    \begin{figure}[htp]
-        \centering
-        \includegraphics[scale=0.32]{chapter3/convnet_scheme.png}
-        \caption{Capas de una red convolutiva}
-        \label{fig:convnet_scheme}
-        \source{Fundamentals of Deep Learning, \cite{dlBook}}
-    \end{figure}
-
-    Para entender el proceso de convolución debemos conocer el termino filtro, que es esencialmente un detector de característica, que para entender su funcionamiento, se considerar la Fig.~\ref{fig:image_no_filter}, \cite{dlBook}.
-    \begin{figure}[htp]
-        \centering
-        \includegraphics[scale=0.23]{chapter3/image_no_filter.png}
-        \caption{Imagen en blanco y negro}
-        \label{fig:image_no_filter}
-        \source{Fundamentals of Deep Learning, \cite{dlBook}}
-    \end{figure}
-
-    Dado el caso que se requiera detectar líneas verticales y horizontales en una imagen. Una solución sería el uso de un detector de características, como se muestra en la Fig.~\ref{fig:image_two_filter}. Por ejemplo, para detectar líneas verticales, se puede utilizar el detector de característica de la parte superior de la imagen, es podría deslizarse a través de la totalidad de la imagen para verificar si existe alguna coincidencia, en la matriz de la parte superior derecha de la Fig.~\ref{fig:image_two_filter} se puede verificar el resultado, si hay una coincidencia se sombrea la casilla de negro y si no lo hay se deja en blanco. Este resultado es el mapa de características, que indica el lugar donde se han encontrado las característica que se buscaban en la imagen original. Se puede hacer el mismo tratamiento para el detector de línea horizontal (parte inferior de la imagen), dando como resultado el mapa de características de la esquina inferior derecha, \cite{NIPS2010_0550, dlBook}.
-    \begin{figure}[htp]
-        \centering
-        \includegraphics[scale=0.4]{chapter3/image_two_filter.png}
-        \caption{Filtros para detectar lineas horizontales y verticales}
-        \label{fig:image_two_filter}
-        \source{Fundamentals of Deep Learning, \cite{dlBook}}
-    \end{figure}
-
-    Esta operación es llamada convolución, se toma un filtro para multiplicarlos sobre el área entera de una imagen de entrada. Los filtros representan distintas combinaciones de conexiones (se resalta una de estas combinaciones en la Fig.~\ref{fig:conv_neuron}), en esta figura las conexiones con las mismas tonalidades mantienen sus mismos pesos a través de todas las neuronas de entrada, se puede lograr esto mediante la inicialización de todas las conexiones en un grupo con pesos idénticos y siempre corrigiendo los pequeños cambios de peso, la capa de salida es el mapa de características generado por este filtro \cite{dlBook}.
-    \begin{figure}[htp]
-        \centering
-        \includegraphics[scale=0.3]{chapter3/conv_neuron.png}
-        \caption{Representación de un filtro y su mapa de características resultante}
-        \label{fig:conv_neuron}
-        \source{Fundamentals of Deep Learning, \cite{dlBook}}
-    \end{figure}
-
-    Matemáticamente se define a los $k^{th}$ mapas de características en la capa $m$ como $m^k$, por otra parte, se define un filtro correspondiente conformado por los valores de los pesos $W$, y se asume que las neuronas en el mapa de características tiene un \textit{bias} $b^k$ (el \textit{bias} se mantiene idéntico para todas las neuronas de un mapa de características). Entonces se puede expresar el mapa de características de la siguiente manera:
-
-    \begin{equation}
-		m^k_{ij}=f((W*x)_{ij}+b^k)
-	\end{equation}
-	
-	En concreto, los filtros no sólo operan en un único mapa de características. Operan en todo el volumen de mapas de características que se han generado en una capa particular. Si se considera una situación en la que se desea detectar una cara en una capa particular de una red de convolución, y se han acumulado tres mapas de características, uno para los ojos, uno para la nariz, y uno para la boca. Para tomar tomar una decisión sobre la existencia de una cara, se debe combinar pruebas sobre múltiples mapas de características. Esto es igualmente necesario para una imagen de entrada con tres canales de color (RGB), por lo que requieren tres secciones en el volumen de entrada (una sección para cada canal). Como resultado, los mapas de características deben ser capaces de operar sobre los volúmenes de datos de 3 dimensiones (ancho, alto y profundidad). Esto se muestra a continuación en la Fig.~\ref{fig:color_conv}. Cada célula en el volumen de entrada es una neurona. Una porción local se multiplica con un filtro (que corresponde a los pesos en la capa de convolución) para producir una neurona en la siguiente capa volumétrica de las neuronas, \cite{dlBook}.
-	\begin{figure}[htp]
-        \centering
-        \includegraphics[scale=0.3]{chapter3/color_conv.png}
-        \caption{Convolución de una imagen a color RGB}
-        \label{fig:color_conv}
-        \source{Fundamentals of Deep Learning, \cite{dlBook}}
-    \end{figure}
-
-	Como se ha observado anteriormente, una capa de convolución (que consiste en un conjunto de filtros) convierte un volumen de valores en otro volumen de valores. La profundidad del filtro corresponde a la profundidad del volumen de entrada. Esto es para que el filtro pueda combinar la información de todas las características que se han aprendido. La profundidad de el volumen de salida de una capa convolucional, equivalente al número de filtros en esa capa, debido a que cada filtro produce una porción del volumen de datos. Visualizamos estas relaciones en la Fig.~\ref{fig:conv_depth}
-	\begin{figure}[htp]
-        \centering
-        \includegraphics[scale=0.3]{chapter3/conv_depth.png}
-        \caption{Visualización en 3d de una convolución}
-        \label{fig:conv_depth}
-        \source{Fundamentals of Deep Learning, \cite{dlBook}}
-    \end{figure}
-
-
-    \subsection{Agrupación Máxima o \textit{Max Pooling}}
-
-    Para reducir la dimensionalidad de los mapas de características y afinar las características localizadas, a veces es necesario insertar una capa de agrupación máxima después de una capa de convolución. La idea esencial detrás de la agrupación máxima es dividir cada mapa de características en porciones de igual tamaño. Entonces se crea un mapa de características condensado, en concreto se define una celda que representa a toda una porción del mapa de características, calculando el valor máximo de la porción para propagar este valor máximo en la celda correspondiente del mapa de características condensado. Este proceso se ilustra en la Fig.~\ref{fig:max_pooling}, a continuación \cite{dlBook}:
-	\begin{figure}[htp]
-        \centering
-        \includegraphics[scale=0.4]{chapter3/max_pooling.png}
-        \caption{Reducción de parámetros utilizando agrupación máxima}
-        \label{fig:max_pooling}
-        \source{Fundamentals of Deep Learning, \cite{dlBook}}
-    \end{figure}
-
-    Podemos describir la capa de agrupación con dos parámetros, la dimensión de la ventana $e$ y el salto $s$. Es importante tener en cuenta que sólo se utilizan dos principales variaciones de la capa de agrupación. La primera es la capa que no existe solapamiento con $e=2$, $s=2$. La segunda es la capa con solapamiento, $e=3$, $s=2$. Las dimensiones resultantes de cada mapa de características son las siguientes:
-
-    \begin{itemize}
-		\item Ancho, $w_{out}=\left[\frac{w_{in}-e}{s}\right]+1$.
-		\item Alto, $h_{out}=\left[\frac{h_{in}-e}{s}\right]+1$.
-	\end{itemize}w
-	
-	Una propiedad interesante de la agrupación máxima, es que es invariante a nivel local. Esto significa que incluso si las entradas cambian un poco, la salida de esta capa se mantiene constante. Esto tiene importantes implicaciones para los algoritmos visuales, la invariancia local es una propiedad útil para las características que están siempre presentes en un mismo lugar. Sin embargo, obtener grandes cantidades de invariancias locales puede destruir la capacidad de la red para almacenar información importante. Por eso es recomendable mantener pequeña la dimensión de la ventana de agrupación $e$, \cite{dlBook}.
-	
-\subsection {Aplicaciones de   {Redes Neuronales Convolutivas (CNN)}}
-
-Recientemente, el aprendizaje profundo, especialmente para las CNN, produjo el estado del arte de rendimiento en diversas aplicaciones de visión computacional, tales como clasificación de imágenes, búsqueda de imágenes, detección de objetos, segmentación de imágenes semánticas, estimación de la postura humana, etc.
-
-\textbf{Clasificación de imágenes:} Krizhevsky et al. \cite{Krizhevsky} establece un hito para la clasificación de imágenes a gran escala cuando el entrenamiento de una gran CNN en el conjunto de datos ImageNet \cite{Deng}, lo que demuestra que CNN podría funcionar bien en la clasificación de imagen natural. OverFeat \cite{Sermanet} propuso un marco de ventana multi-escala y deslizante, que podría encontrar la escala óptima de la imagen y cumplir tareas diferentes simultáneamente, por ejemplo, clasificación de imágenes, detección de objetos y localización. Debido a que las CNN existentes requieren datos de imagen de tamaño fijo como entrada, el modelo SPP-Net eliminó esta restricción mediante una estrategia espacial de agrupación de pirámides en las CNN y mejoró la precisión de clasificación de una variedad de arquitecturas CNN a pesar de sus diferentes diseños.  La propuesta posterior de VGGNet \cite{Simonyan} y Google Net \cite{Szegedy} mejoró significativamente el rendimiento de la clasificación de imágenes al aumentar el ancho y la profundidad de las arquitecturas de red.
-
-\textbf{Detección de objetos: }Un esquema general para sistemas de detección de objetos de alto rendimiento es generar un gran número de propuestas de la región del objeto candidato y clasificarlas utilizando sus características CNN de alto rendimiento. El enfoque más representativo son las regiones con características CNN (RCNN) \cite{Girshick}. Utiliza la búsqueda selectiva \cite{Uijlings} para generar propuestas de región de objetos y extrae las características de CNN para cada región candidata. Las características se introducen en un clasificador SVM para decidir si las ventanas candidatas relacionadas contienen el objeto o no. RCNNs mejoró el punto de referencia de la detección de objetos por un gran margen, y se convirtió en el modelo base para muchos otros algoritmos prometedores \cite{Hariharan,Zhu,Zhang}. Además, los RCNN originales eran computacionalmente caros, los trabajos recientes \cite{He,GirshickR} emplearon la estrategia de compartir convoluciones en las propuestas de la región para reducir el coste de cálculo. Los últimos frameworks de Fast RCNN \cite{GirshickR} y Faster RCNN \cite{Ren} logran tasas casi en tiempo real utilizando redes muy profundas.
-
-\textbf{Recuperación de imágenes:} :El éxito de AlexNet \cite{Krizhevsky} sugiere que las CNN pueden ser usadas como extractoras de características de alto nivel y universales. Las características emergentes en las capas totalmente conectadas de la CNN pueden servir como una representación de imagen de alto nivel para la clasificación de imágenes. Motivado por esto, muchos estudios recientes hacen uso de las activaciones de las capas superiores totalmente conectadas en CNNs para la recuperación de imágenes \cite{Gong,Liu,Sharif,Wan,Sun,Babenko}. Investigaciones recientes también sugieren explorar las características de las capas convolucionales profundas en CNNs. Estas características tienen propiedades muy útiles: en primer lugar, se pueden extraer eficientemente de una imagen de cualquier tamaño y relación de aspecto. En segundo lugar, las características de las capas convolucionales tienen una interpretación natural como descriptores de regiones de imágenes locales correspondientes a campos receptivos de las características particulares. Por último, las operaciones de agrupación simple puede agregar mapas de características de capas convolucionales profundas en características de baja dimensión y altamente distintivas \cite{Gong,Sharif,Babenko,RazavianAS,BabenkoA}. Las representaciones de imágenes basadas en CNN han demostrado sus resultados competitivos e incluso mejores en comparación con los métodos tradicionales de  \textit{visual words,  BoW, VLAD}, y \textit{Fisher Vector}.
-
-\textbf{Segmentación de imágenes semánticas:} La segmentación de imágenes semánticas puede ser referida como un problema de clasificación o etiquetado a nivel de píxeles. Recientemente, CNNs y modelos gráficos probabilísticos se utilizaron para abordar esta tarea y produjo un progreso prometedor \cite{ZhengS,LiuZ,Long,ChenLC,LinG}. Los métodos de segmentación de imágenes semánticas basados en CNN usualmente convierten una arquitectura CNN existente construida para su clasificación a una red completamente convolucional (FCN). Esto se debe principalmente a que la arquitectura FCN acepta toda una imagen como entrada y realiza una inferencia rápida y precisa. Long et al. \cite{Long} reemplazó las últimas capas completamente conectadas de una CNN por capas convolucionales, y obtuvo un mapa de etiqueta gruesa de la red clasificando cada región local en la imagen, luego realizó una deconvolución simple, que se implementa como interpolación bilineal, para el etiquetado a nivel de pixeles. DeepLab \cite{ChenLC} propuso un modelo similar basado en FCN que obtuvo mapas de puntuación densa dentro del framework FCN  para predecir etiquetas en pixeles y refinado la etiqueta de mapa utilizando el campo aleatorio condicional (CRF) totalmente conectado. En lugar de usar CRF como una etapa de post-procesamiento, Lin et al. \cite{LinG} entrenaron conjuntamente a la FCN y CRFs por medio de un entrenamiento eficiente en piezas.
-
-\textbf{Estimación de la postura humama:}  Estimar la postura humana mediante la localización de las articulaciones del cuerpo humano o hitos faciales es una tarea difícil, debido a los cambios en la pose, iluminación, oclusión y etc. Como las CNNs han demostrado un rendimiento excepcional en la clasificación visual y la localización de objetos, la estimación de pose humano se puede formular como un problema de regresión basado en CNN hacia las articulaciones del cuerpo humano. Los proyectos mas representativos \cite{Toshev,Li} propusieron utilizar una  CNN basados en regresores para razonar las posiciones de las articulaciones del cuerpo o los hitos faciales.  Esta red CNN   puede ser vista como una especie de proceso holístico que toma la imagen completa como la entrada y la salida de la posición final de las articulaciones corporales o puntos de referencia faciales en la imagen sin utilizar ningún modelo gráfico explícito o detectores de partes. Los métodos de procesamiento basados en partes proponen detectar las partes del cuerpo humano individualmente, seguido de un modelo gráfico para incorporar la información espacial. En lugar de capacitar a la red utilizando toda la imagen como entrada, Chen et al.  \cite{ChenX} utilizaron los parches de la parte local para entrenar una CNN, con el fin de aprender probabilidades condicionales de la presencia parcial y las relaciones espaciales. Al incorporarse con modelos gráficos, el algoritmo ganó un rendimiento prometedor. Tompson et al. \cite{Tompson} diseñaron arquitecturas ConvNet multi-resolución para realizar la regresión de probabilidad de mapa de calor para cada parte del cuerpo, seguido de un modelo gráfico implícito para promover aún más la consistencia conjunta. El modelo se amplió y mejoró  \cite{Tompson}, lo que argumenta que las capas de agrupación en la CNN limitaría la exactitud de localización espacial y tratar de recuperar la pérdida de precisión causada por el proceso de agrupación. Además, Fan et al.  \cite{Fan} propuso una red convolucional neutral de doble fuente (DS-CNN) para integrar la visión holística y parcial en una arquitectura de dos CNN. Requiere parches y parches corporales como entradas para combinar la información local y contextual para una estimación más exacta de la postura.
+%%%\subsection{La operación de convolución}
+  
  
- 
-\subsection{Aprendizaje no Supervisado}\label{sec:nosupervisado}
+\section{Aprendizaje no Supervisado}\label{sec:nosupervisado}
 
 En el aprendizaje no supervisado no se tienen instancias etiquetadas, es decir que se tiene un conjunto de datos, en la cual no existe ninguna clase, lo que se trata de hacer es un agrupamiento de estos datos para encontrar o descubrir dichas clases.
 
-\subsubsection{Auto-codificadores}\label{sec:autoencoders}
+\subsection{Auto-codificadores}\label{sec:autoencoders}
 
     %La flexibilidad de cambio de las redes neuronales es una propiedad muy útil. Esta capacidad de cambio conduce a grandes mejoras en la precisión, en comparación con modelos básicos de aprendizaje de maquina. Una de la primeras mejoras realizadas en el aprendizaje profundo fue el pre-entrenamiento de redes profundas. Este enfoque se basa en la observación de que la inicialización aleatoria es una mala idea, y que pre-entrenar cada capa con un algoritmo de aprendizaje no supervisado puede permitir mejores pesos iniciales \cite{Le15atutorial}.
     Los auto-codificadores pertenecen a una clase de algoritmos de aprendizaje conocidos como aprendizaje no supervisado. A diferencia de los algoritmos supervisadas, los algoritmos de aprendizaje sin supervisión no necesitan información de la etiqueta para los datos. En otras palabras, nuestros datos sólo tienen de $x(i)$, pero no tienen los $y(i)$, que vendrían a ser la etiquetas de los datos \cite{Le15atutorial, website:UFLDL}. Un auto-codificador es una técnica muy utilizada en el aprendizaje no supervisado, aunque también haya sido utilizada de distintas maneras y con distintos objetivos.
 
-    \subsection{Compresión de data}
+    \subsubsection{Compresión de data}
 
     En \cite{Le15atutorial}, se considera el siguiente ejemplo, se desea desarrollar un programa para enviar algunos datos del teléfono móvil a la nube. Para limitar el uso de la red, se debe optimizar cada \textit{bit} de datos que vamos a enviar. Los datos son una colección de puntos, cada uno tiene dos dimensiones, como se ve en la Figura \ref{fig:aenco1}
     \begin{figure}[htp]
         \centering
         \includegraphics[scale=0.37]{chapter3/aenco1.png}
-        \caption{Puntos en un plano 2d}
+        \caption{Puntos en un plano 2d. Figura adaptada de \cite{Le15atutorial}.}
         \label{fig:aenco1}
-        \source{\cite{Le15atutorial}}
-    \end{figure}
+     \end{figure}
 
     En la Figura \ref{fig:aenco1}, las cruces rojas son los puntos de datos, el eje horizontal es el valor de la primera dimensión y el eje vertical es el valor de la segunda dimensión. Tras la visualización, notamos que el valor de la segunda dimensión es aproximadamente el doble que de la primera dimensión. Teniendo en cuenta esta observación, se puede enviar sólo la primera dimensión de cada punto de datos a la nube. Luego, en la nube, solo se necesita calcular el valor de la segunda dimensión, duplicando el valor de la primera dimensión. La compresión es con perdida, pero reduce el tráfico de red en un 50\%. Ya que el tráfico de red es lo que tratamos de optimizar, esta idea parece razonable \cite{Le15atutorial}.
     \\\\
@@ -260,6 +157,13 @@ En el aprendizaje no supervisado no se tienen instancias etiquetadas, es decir q
         \tilde{x}{(i)} =W_1z{(i)} + b_1
     \end{equation}
 
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[scale=0.49]{chapter3/aenco2.png}
+        \caption{Arquitectura de auto-codificador no lineal. Figura adaptada de \cite{Le15atutorial}.}
+        \label{fig:aenco2}
+     \end{figure}
+     
     Si $x(i)$ es un vector de dos dimensiones, puede ser posible visualizar los datos para encontrar $W1, W2, b_1, b_2$ analíticamente, donde $W1, W2$ son matrices bidimensionales de pesos y $b_1, b_2$ son el componente \textit{bias}. En casos prácticos, es difícil encontrar esas matrices usando la visualización, por lo que es necesario utilizar el gradiente descendente \cite{stochastic-gradient-tricks}. La meta es tener un $\tilde{x}(i)$ aproximado a $x(i)$, para esto se establece la siguiente función objetivo, que es la suma de diferencia de cuadrados entre $\tilde{x}(i)$ y $x(i)$:
     \begin{equation}
     \begin{aligned}
@@ -269,14 +173,7 @@ En el aprendizaje no supervisado no se tienen instancias etiquetadas, es decir q
     \end{aligned}
     \end{equation}
     En la Figura \ref{fig:aenco2}, Se observa como se trata de comprimir datos de 4 dimensiones a 2 dimensiones utilizando una red neuronal con una capa oculta. La función de activación de la capa oculta es no lineal. Si los datos fueran altamente no lineales, se podría añadir más capas ocultas a la red para tener un auto-codificador profundo.
-    \begin{figure}[htp]
-        \centering
-        \includegraphics[scale=0.49]{chapter3/aenco2.png}
-        \caption{Arquitectura de auto-codificador no lineal}
-        \label{fig:aenco2}
-        \source{\cite{Le15atutorial}}
-    \end{figure}
-
+    
 
 \section{Consideraciones Finales}\label{sec:consideraciones-finales}
 

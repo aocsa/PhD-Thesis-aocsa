@@ -1,14 +1,14 @@
 \BOOKMARK [1][-]{chapter*.2}{Resumen}{}% 1
-\BOOKMARK [1][-]{chapter*.3}{Abstract}{}% 2
-\BOOKMARK [1][-]{chapter*.3}{\315ndice}{}% 3
-\BOOKMARK [1][-]{chapter*.4}{Lista de Figuras}{}% 4
-\BOOKMARK [1][-]{chapter*.6}{Lista de Tabelas}{}% 5
-\BOOKMARK [0][-]{chapter.7}{Introducci\363n}{}% 6
-\BOOKMARK [1][-]{section.8}{Consideraciones iniciales}{chapter.7}% 7
-\BOOKMARK [1][-]{section.10}{Definici\363n del problema}{chapter.7}% 8
-\BOOKMARK [1][-]{section.11}{Objetivos}{chapter.7}% 9
-\BOOKMARK [1][-]{section.12}{Principales contribuciones}{chapter.7}% 10
-\BOOKMARK [1][-]{section.13}{Organizaci\363n de la tesis}{chapter.7}% 11
+\BOOKMARK [1][-]{chapter*.2}{\315ndice}{}% 2
+\BOOKMARK [1][-]{chapter*.4}{Lista de Figuras}{}% 3
+\BOOKMARK [1][-]{chapter*.6}{Lista de Tablas}{}% 4
+\BOOKMARK [1][-]{chapter*.7}{Lista de Algoritmos}{}% 5
+\BOOKMARK [0][-]{chapter.8}{Introducci\363n}{}% 6
+\BOOKMARK [1][-]{section.9}{Consideraciones iniciales}{chapter.8}% 7
+\BOOKMARK [1][-]{section.10}{Definici\363n del problema}{chapter.8}% 8
+\BOOKMARK [1][-]{section.11}{Objetivos}{chapter.8}% 9
+\BOOKMARK [1][-]{section.12}{Principales contribuciones}{chapter.8}% 10
+\BOOKMARK [1][-]{section.13}{Organizaci\363n de la tesis}{chapter.8}% 11
 \BOOKMARK [0][-]{chapter.22}{Consultas por similitud}{}% 12
 \BOOKMARK [1][-]{section.23}{Consideraciones iniciales}{chapter.22}% 13
 \BOOKMARK [1][-]{section.27}{Dominio de datos}{chapter.22}% 14
@@ -27,31 +27,29 @@
 \BOOKMARK [2][-]{subsection.122}{Redes Neuronales}{section.121}% 27
 \BOOKMARK [2][-]{subsection.125}{Redes Neuronales Convolutivas \(CNN\)}{section.121}% 28
 \BOOKMARK [2][-]{subsection.126}{Capas CNN}{section.121}% 29
-\BOOKMARK [2][-]{subsection.127}{Aplicaciones de Redes Neuronales Convolutivas \(CNN\)}{section.121}% 30
-\BOOKMARK [2][-]{subsection.128}{Aprendizaje no Supervisado}{section.121}% 31
-\BOOKMARK [2][-]{subsection.129}{Compresi\363n de data}{section.121}% 32
-\BOOKMARK [1][-]{section.135}{Consideraciones Finales}{chapter.110}% 33
-\BOOKMARK [0][-]{chapter.136}{Teor\355a Fractal}{}% 34
-\BOOKMARK [1][-]{section.137}{Consideraciones Iniciales}{chapter.136}% 35
-\BOOKMARK [1][-]{section.141}{Dimensi\363n fractal}{chapter.136}% 36
-\BOOKMARK [1][-]{section.145}{Algoritmo de Calculo de la Dimensi\363n Fractal}{chapter.136}% 37
-\BOOKMARK [1][-]{section.149}{Consideraciones Finales}{chapter.136}% 38
-\BOOKMARK [0][-]{chapter.150}{B\372squeda aproximada v\355a deep hashing: Desempe\361o de m\351todos de representaci\363n y recuperaci\363n}{}% 39
-\BOOKMARK [1][-]{section.151}{Consideraciones Iniciales}{chapter.150}% 40
-\BOOKMARK [2][-]{subsection.153}{Approximate Nearest Neighbors \046 Deep Hashing}{section.151}% 41
-\BOOKMARK [2][-]{subsection.156}{Protocolos de evaluaci\363n de recuperaci\363n}{section.151}% 42
-\BOOKMARK [2][-]{subsection.157}{Dimensi\363n fractal y reducci\363n de dimensionalidad}{section.151}% 43
-\BOOKMARK [2][-]{subsection.159}{Comparaci\363n de representaciones de datos}{section.151}% 44
-\BOOKMARK [2][-]{subsection.167}{Comparaci\363n del rendimiento de recuperaci\363n}{section.151}% 45
-\BOOKMARK [1][-]{section.170}{Conclusions}{chapter.150}% 46
-\BOOKMARK [0][-]{chapter.171}{Deep Fractal based Hashing - DAsH}{}% 47
-\BOOKMARK [1][-]{section.172}{Consideraciones Iniciales}{chapter.171}% 48
-\BOOKMARK [2][-]{subsection.173}{Teoria del Fractal}{section.172}% 49
-\BOOKMARK [1][-]{section.175}{Deep Fractal based Hashing - DAsH}{chapter.171}% 50
-\BOOKMARK [2][-]{subsection.178}{Usando Fractales para estimar los par\341metros LSH}{section.175}% 51
-\BOOKMARK [1][-]{section.184}{Experimentos}{chapter.171}% 52
-\BOOKMARK [2][-]{subsection.185}{Experimento 1: Sintonizaci\363n de par\341metros LSH}{section.184}% 53
-\BOOKMARK [2][-]{subsection.187}{Rendimiento de Recuperaci\363n}{section.184}% 54
-\BOOKMARK [1][-]{section.189}{Conclusions}{chapter.171}% 55
-\BOOKMARK [0][-]{chapter.190}{Conclusiones y Trabajos Futuros}{}% 56
-\BOOKMARK [0][-]{chapter.190}{Referencias Bibliogr\341ficas}{}% 57
+\BOOKMARK [2][-]{subsection.127}{Sobre las Convoluciones}{section.121}% 30
+\BOOKMARK [2][-]{subsection.136}{Agrupaci\363n M\341xima o Max Pooling}{section.121}% 31
+\BOOKMARK [2][-]{subsection.138}{Aplicaciones de Redes Neuronales Convolutivas \(CNN\)}{section.121}% 32
+\BOOKMARK [2][-]{subsection.139}{Aprendizaje no Supervisado}{section.121}% 33
+\BOOKMARK [2][-]{subsection.140}{Compresi\363n de data}{section.121}% 34
+\BOOKMARK [1][-]{section.146}{Consideraciones Finales}{chapter.110}% 35
+\BOOKMARK [0][-]{chapter.147}{Teor\355a Fractal}{}% 36
+\BOOKMARK [1][-]{section.148}{Consideraciones Iniciales}{chapter.147}% 37
+\BOOKMARK [1][-]{section.152}{Dimensi\363n fractal}{chapter.147}% 38
+\BOOKMARK [2][-]{subsection.156}{Teoria Fractal}{section.152}% 39
+\BOOKMARK [1][-]{section.158}{Algoritmo de Calculo de la Dimensi\363n Fractal}{chapter.147}% 40
+\BOOKMARK [0][-]{chapter.162}{B\372squeda aproximada v\355a Deep Hashing}{}% 41
+\BOOKMARK [1][-]{section.163}{Consideraciones Iniciales}{chapter.162}% 42
+\BOOKMARK [2][-]{subsection.165}{Approximate Nearest Neighbors \046 Deep Hashing}{section.163}% 43
+\BOOKMARK [2][-]{subsection.168}{Protocolos de evaluaci\363n de recuperaci\363n}{section.163}% 44
+\BOOKMARK [2][-]{subsection.169}{Dimensi\363n fractal y reducci\363n de dimensionalidad}{section.163}% 45
+\BOOKMARK [2][-]{subsection.170}{Comparaci\363n de representaciones de datos}{section.163}% 46
+\BOOKMARK [0][-]{chapter.178}{Deep Fractal based Hashing - DAsH}{}% 47
+\BOOKMARK [1][-]{section.179}{Consideraciones Iniciales}{chapter.178}% 48
+\BOOKMARK [1][-]{section.180}{Deep Fractal based Hashing - DAsH}{chapter.178}% 49
+\BOOKMARK [2][-]{subsection.183}{Usando Fractales para estimar los par\341metros LSH}{section.180}% 50
+\BOOKMARK [1][-]{section.189}{Experimentos}{chapter.178}% 51
+\BOOKMARK [2][-]{subsection.190}{Experimento 1: Sintonizaci\363n de par\341metros LSH}{section.189}% 52
+\BOOKMARK [2][-]{subsection.193}{Rendimiento de Recuperaci\363n}{section.189}% 53
+\BOOKMARK [0][-]{chapter.194}{Conclusiones y Trabajos Futuros}{}% 54
+\BOOKMARK [0][-]{chapter.194}{Referencias Bibliogr\341ficas}{}% 55

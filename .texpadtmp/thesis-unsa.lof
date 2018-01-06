@@ -14,20 +14,28 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Etapas del proceso KDD. Figura adaptada de \cite {Fayyad:1996:DMK:257938.257942}.}}{29}{figure.114}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Perceptr\IeC {\'o}n \cite {aggarwal2015data}.}}{31}{figure.123}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Perceptr\IeC {\'o}n Multicapa \cite {aggarwal2015data}.}}{32}{figure.124}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Puntos en un plano 2d}}{37}{figure.130}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Arquitectura de auto-codificador no lineal}}{38}{figure.134}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces La densidad de conexiones se incrementa seg\IeC {\'u}n el tama\IeC {\~n}o de la imagen}}{34}{figure.128}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Capas de una red convolutiva}}{35}{figure.129}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Imagen en blanco y negro}}{35}{figure.130}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Filtros para detectar lineas horizontales y verticales}}{36}{figure.131}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Representaci\IeC {\'o}n de un filtro y su mapa de caracter\IeC {\'\i }sticas resultante}}{36}{figure.132}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Convoluci\IeC {\'o}n de una imagen a color RGB}}{37}{figure.134}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Visualizaci\IeC {\'o}n en 3d de una convoluci\IeC {\'o}n}}{38}{figure.135}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Reducci\IeC {\'o}n de par\IeC {\'a}metros utilizando agrupaci\IeC {\'o}n m\IeC {\'a}xima}}{38}{figure.137}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Puntos en un plano 2d}}{42}{figure.141}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Arquitectura de auto-codificador no lineal}}{44}{figure.145}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Pasos del proceso de construcci\IeC {\'o}n del triangulo de $Sierpinsky$}}{42}{figure.138}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Algunos ejemplos de fractales (a y b) fractales geom\IeC {\'e}tricos y (c) fractales algebraicos}}{42}{figure.139}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Una linea embebida en dos o tres dimensiones donde $D=1$.}}{43}{figure.140}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces El gr\IeC {\'a}fico de conteo de cajas para el triangulo de $Sierpinki$.}}{45}{figure.144}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Representaci\IeC {\'o}n de celdas de cuadr\IeC {\'\i }cula en espacios de 2 y 3 dimensiones. }}{46}{figure.146}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Ejemplo de la estructura de datos utilizada para calcular la Suma de Ocupaciones de un conjunto de datos con 5 puntos (con tres niveles de resoluci\IeC {\'o}n) }}{47}{figure.147}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Pasos del proceso de construcci\IeC {\'o}n del triangulo de $Sierpinsky$}}{46}{figure.149}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Algunos ejemplos de fractales (a y b) fractales geom\IeC {\'e}tricos y (c) fractales algebraicos}}{46}{figure.150}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Una linea embebida en dos o tres dimensiones donde $D=1$.}}{47}{figure.151}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces El gr\IeC {\'a}fico de conteo de cajas para el triangulo de $Sierpinki$.}}{49}{figure.155}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Representaci\IeC {\'o}n de celdas de cuadr\IeC {\'\i }cula en espacios de 2 y 3 dimensiones. }}{51}{figure.159}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Ejemplo de la estructura de datos utilizada para calcular la Suma de Ocupaciones de un conjunto de datos con 5 puntos (con tres niveles de resoluci\IeC {\'o}n) }}{51}{figure.160}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Hashing para la b\IeC {\'u}squeda del vecino m\IeC {\'a}s cercano. Comprimir un conjunto de vectores $(x_i)^{n}_{i=1}, x_i \in \mathbf {R}^d $ }}{51}{figure.154}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Supervised Hashing: comprime un conjunto de vectores y sus etiquetas $((x_i,y_2))^{n}_{i=1}, x_1\in \mathbb {R}^{d}, y_1 \in \{1,...,L\} $.}}{52}{figure.155}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Dimensiones Fractal para diferentes m\IeC {\'e}todos de reducci\IeC {\'o}n de dimensionalidad .}}{55}{figure.164}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Hashing para la b\IeC {\'u}squeda del vecino m\IeC {\'a}s cercano. Comprimir un conjunto de vectores $(x_i)^{n}_{i=1}, x_i \in \mathbf {R}^d $ }}{55}{figure.166}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Supervised Hashing: comprime un conjunto de vectores y sus etiquetas $((x_i,y_2))^{n}_{i=1}, x_1\in \mathbb {R}^{d}, y_1 \in \{1,...,L\} $.}}{56}{figure.167}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Dimensiones Fractal para diferentes m\IeC {\'e}todos de reducci\IeC {\'o}n.}}{58}{figure.175}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces DAsH. Proceso de entrenamiento e indexaci\IeC {\'o}n. }}{64}{figure.176}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces DAsH. Proceso de recuperaci\IeC {\'o}n. }}{65}{figure.177}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces DAsH. Proceso de entrenamiento e indexaci\IeC {\'o}n. }}{63}{figure.181}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces DAsH. Proceso de recuperaci\IeC {\'o}n. }}{64}{figure.182}
 \addvspace {10\p@ }

@@ -1,0 +1,40 @@
+%
+% File: abstract.tex
+% Author: V?ctor Bre?a-Medina
+% Description: Contains the text for thesis abstract
+%
+% UoB guidelines:
+%
+% Each copy must include an abstract or summary of the dissertation in not
+% more than 300 words, on one side of A4, which should be single-spaced in a
+% font size in the range 10 to 12. If the dissertation is in a language other
+% than English, an abstract in that language and an abstract in English must
+% be included.
+
+\chapter*{Resumen}
+\begin{SingleSpace}
+\initial{L}a creciente disponibilidad de datos en diferente dominio de aplicación ha motivado el desarrollo de técnicas de recuperación y descubrimiento de conocimiento en grandes volúmenes de datos.   Recientes trabajos muestran que tanto las técnicas de aprendizaje profundo como  nuevos métodos de búsqueda aproximada en dominio de datos complejos son campos de investigación importantes, donde tanto la eficiencia como la  escalabilidad de los algoritmos son factores críticos. Para resolver el problema de escalabilidad se han propuesto muchos enfoques. En problemas de gran escala con datos en altas dimensiones, una solución de búsqueda aproximada con un análisis teórico solido se muestra más adecuado que una solución exacta con un modelo teórico débil.    Algoritmos de búsqueda aproximada  basados en \textit{hashing} son propuestos para consultar en conjuntos de datos  alta dimensiones debido a su velocidad de recuperación y bajo costo de almacenamiento.  Por otro lado, en problemas donde se tiene grandes volúmenes de datos etiquetados las técnicas de aprendizaje profundo, como las redes convolucionales, se muestran más adecuadas conforme el número de ejemplos por clases crece.
+
+Estudios recientes, promueven el uso de la \acf{CNN} con técnicas de  \textit{hashing} para mejorar la precisión de la búsqueda de los k-vecinos más cercanos - KNN.  Sin embargo, aun hay retos que resolver para encontrar una solución práctica y eficiente para indexar características  CNN, tales como la necesidad de un proceso de entrenamiento intenso para lograr resultados de consulta precisos y la dependencia crítica de los parámetros.   Con el fin de superar estos problemas, se propone un nuevo método de búsqueda por similitud, \textit{Deep frActal based  Hashing (DAsH)}, para calcular los mejores valores de parámetros  para una proyección óptima en un subespacio, explorando las correlaciones entre los atributos de las características  CNN usando la teoría fractal. Además, inspirado por recientes avances  en redes CNN, utilizamos no solo activaciones de capas inferiores que son más generales, sino también el conocimiento previo de los datos semánticos sobre la última capa CNN para mejorar la precisión de la búsqueda.  Así, nuestro método produce una mejor representación del espacio de datos con un coste computacional menor para una mejor precisión. Esta mejora  significativa en velocidad y precisión nos permite evaluar este esquema en conjuntos de datos reales y sintéticos.
+
+ 
+\paragraph{Palabras claves:}
+Recuperación de Información, Búsqueda kNN, LSH, Deep Learning,  CNN, Dimensión Fractal.
+
+
+\end{SingleSpace}
+\clearpage
+
+
+
+\chapter*{Abstract}
+\begin{SingleSpace}
+\initial{T}he increasing availability of data in different application domains has led to the development of techniques for recovering and discovering knowledge in large volumes of data.Recent works shows that both deep learning techniques and new methods of approximate searching in complex data domain are important research fields, where both the efficiency and scalability of algorithms are critical factors. Many approaches have been proposed to solve the problem of scalability. In large scale problems with high dimensional data, an approximate search solution with a solid theoretical analysis is more appropriate than an exact solution with a weak theoretical model.    Approximate search algorithms based on |textittit{hashing} are proposed to query in large datasets due to their speed of retrieval and low storage cost.  On the other hand, in problems where there are large volumes of labelled data, deep learning techniques, such as convolutional networks, are more appropriate as the number of examples per class grows.
+
+Recent studies, promote the use of  \ac{CNN} with hashing techniques to improve the search accuracy for nearest neighbor search. However, there are challenges to solve in order to find a practical and efficient solution to index CNN features, such as the need for heavy training process to achieve accurate query results and the critical dependency on data-parameters.   Aiming to overcome these issues, we propose a new method for scalable similarity search, i.e., Deep frActal based  Hashing (DAsH), by computing the best data-parameters values for optimal sub-space projection  exploring the correlations among CNN features attributes using fractal theory. Moreover, inspired by recent advances in CNNs, we use not only activations of lower layers which are more general-purpose but also previous knowledge of the semantic data on the latest CNN layer to improve the search accuracy.  Thus, our method produces a better representation of the data space with a less computational cost for a better accuracy.  This significant gain in speed and accuracy allows us to evaluate the framework on a  large, realistic, and challenging set of datasets.  
+ 
+\paragraph{Keywords:}
+Information retrieval, kNN search, LSH, Deep Learning, CNN, Fractal dimension. 
+
+\end{SingleSpace}
+\clearpage

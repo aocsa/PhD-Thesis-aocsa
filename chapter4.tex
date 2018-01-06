@@ -1,169 +1,117 @@
+ 
+\let\textcircled=\pgftextcircled
+\chapter{Teoría Fractal} {\textit{Este capítulo describe un estudio sobre Teoría Fractal y su aplicación   al análisis de datos. }}
+\label{cap:teoria_fractal}
 
-\chapter{Teoría Fractal}
-\hrule \bigskip \vspace*{1cm}
 
 \section{Consideraciones Iniciales}
 
-\versal{U}n fractal es definido como un objeto que presenta aproximadamente las mismas características independientemente de la escala donde es analizada, es un objeto que se parece a si mismo. Por otro lado, las partes del fractal son similares, exactas o estadísticamente  al  fractal completo. Esto es, a una escala mejor los detalles son similar a las características de una escala mayor \cite{Schroeder:1991,traina2005using}.
+
+\initial{E}l desarrollo de sistemas informáticos ha generado la necesidad del almacenamiento y procesamiento de tipos de datos complejos, tales como imágenes, vídeos, audio, datos biomédicos, hipertexto, etcétera. Estos datos son típicamente  voluminosos y con alta dimensionalidad. La mayoría de los enfoques utilizados en las técnicas mineras se basan en algoritmos con una complejidad computacional alta, tanto en el número de muestras como en el número de atributos (dimensiones) del conjunto de datos \cite{DMFractalsBook}.
+
+ Un reto para la nueva generación de técnicas de minería de datos es descubrir hechos interesantes utilizando algoritmos escalables, es decir, algoritmos lineales o sublineales al menos tanto en el número de elementos como en el número de atributos del conjunto de datos. Por lo tanto, los investigadores de  base de  datos se esfuerzan en técnicas rápidas para la reducción de la dimensionalidad, el agrupamiento y la clasificación, así como las operaciones de indexación y recuperación asociados con otros procesos de minería de datos. Este capítulo aborda estos temas, específicamente el uso de la dimensionalidad intrínseca (o fractal) al análisis de los conjuntos de datos. Las técnicas basadas en fractales se adaptan bien a una muestra inicial de un conjuntos de datos, desde donde se pueden ejecutar analizadores más específicos y costosos. Además, las técnicas fractales tienden a seguir la percepción humana natural de las características del conjunto de datos mejor que la definición geométrica de los datos \cite{journals/jidm/TrainaTF10}. 
  
-Por ejemplo, el triangulo $Sierpinkski$ es un fractal geométrico, que ha sido construido en un proceso iterativo, teóricamente infinito.  En un triangulo equilátero ABC, donde primero se ha removido el triangulo central A', B', C',  de cada uno de los tres triángulos restantes cuyos lados longitud igual a la mitad del lado de ABC, retiramos de nuevo el triángulo central. La figura \ref{fig:ima1} muestra los pasos iniciales del proceso de construcción de un triángulo de $Sierpinski$. El triángulo restante tiene ``agujeros'' independientes de la escala y cada triángulo dentro de la primera es una ``miniatura'' de todo el triángulo.
+  
+ En este capítulo presentamos los principales conceptos relacionados con la teoría fractal que son usados en algunos de los métodos propuestos en esta tesis. Presentamos un estudio de varias técnicas de análisis basadas en un conjunto de gráficos obtenidos a partir de conjuntos de datos mediante algoritmos de complejidad lineal basados en la teoría de fractales. Los gráficos proporcionan estimaciones sobre características significativas, tales como la dimensionalidad intrínseca   y la correlación  del conjunto de datos.  
+ 
+ 
+ \section{Fractales}
+Un fractal es definido como un objeto que presenta aproximadamente las mismas características independientemente de la escala donde es analizada, es un objeto que se parece a si mismo. Por otro lado, las partes del fractal son similares, exactas o estadísticamente  al  fractal completo. Esto es, a una escala mejor los detalles son similar a las características de una escala mayor \cite{Schroeder:1991,DMFractalsBook}.
+ 
+Por ejemplo, el triangulo \textit{Sierpinkski} es un fractal geométrico, que ha sido construido en un proceso iterativo, teóricamente infinito.  En un triangulo equilátero ABC, donde primero se ha removido el triangulo central A', B', C',  de cada uno de los tres triángulos restantes cuyos lados longitud igual a la mitad del lado de ABC, retiramos de nuevo el triángulo central. La figura \ref{fig:ima1} muestra los pasos iniciales del proceso de construcción de un triángulo de $Sierpinski$. El triángulo restante tiene ``agujeros'' independientes de la escala y cada triángulo dentro de la primera es una ``miniatura'' de todo el triángulo.
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.75]{chapter4/ima1.png}
-\caption{Pasos del proceso de construcción del triangulo de $Sierpinsky$}
+\includegraphics[scale=0.85]{chapter4/ima1.png}
+\caption{Pasos del proceso de construcción del triangulo de $Sierpinsky$ \cite{DMFractalsBook}.}
 \label{fig:ima1}
 \end{figure}
 Hay muchas otras estructuras matemáticas definidas como fractal, como las curvas de   $Koch$,  el conjunto de $Cantor$ y el conjunto de $Mandelbrot$ que son presentados en la figura \ref{fig:ima2}. Son también ejemplos de fractales en la naturaleza, por ejemplo: nubes, montañas, hortalizas, árboles, La costa de continentes, islas entre otros.
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1.2]{chapter4/ima2.png}
-\caption{Algunos ejemplos de fractales (a y b) fractales geométricos y (c) fractales algebraicos}
+\includegraphics[scale=1.3]{chapter4/ima2.png}
+\caption{Algunos ejemplos de fractales (a y b) fractales geométricos y (c) fractales algebraicos \cite{DMFractalsBook}.}
 \label{fig:ima2}
 \end{figure}
 
 
-Los conceptos de fractal se han aplicado a varias tareas en el análisis de datos y la minería de datos. Una de ellas es la estimación de la dimensión intrínseca (D) de un conjunto de datos, que es relacionado  con el concepto de dimensión embebida (E) \cite{conf/pods/FaloutsosK94}.
+\section{Dimensión embebida y dimensión fractal}
 
-\textbf{Definición 3.1 Dimensión embebida  E:} Dado un conjunto finito de datos $A$, la  
-dimensión embebida $E \in N$ es el número de atributos que definen $A$. Es decir, $E$ es la dimensión de el espacio en el que se encaja el conjunto de datos.
-\\\\
-\textbf{Definición 3.2 Dimensión intrínseca D:} Dado un conjunto de datos finitos $A$, su dimensión intrínseca
-$D \in R^+$, es la dimensionalidad del objeto representado por los datos, independientemente de la
-dimensión del espacio en el que está embebido.
-\\\\
-La dimensión intrínseca (D) es una medida de la cantidad de información que el conjunto de datos representa. Por ejemplo, la dimensión intrínseca de un conjunto de puntos distribuidos a lo largo de una linea  es igual a uno; si el conjunto está embebido  en un espacio dimensional superior, la dimensionalidad intrínseca   continúa igual a uno tal como se ilustra en la Figura \ref{fig:ima3}.
+Los conceptos de fractal se han aplicado a varias tareas en el análisis de datos y la minería de datos. Una de ellas es la estimación de la dimensión intrínseca (\mathfrak{D}) de un conjunto de datos, que es relacionado  con el concepto de dimensión embebida ($E$) \cite{conf/pods/FaloutsosK94}.
+
+\begin{definition}{Dimensión embebida  $E$:} Dado un conjunto finito de datos $S$, la  
+dimensión embebida $E \in N$ es el número de atributos que definen $S$. Es decir, $E$ es la dimensión de el espacio en el que se encaja el conjunto de datos.
+\end{definition}}
+
+\begin{definition}{Dimensión intrínseca $\mathfrak{D}$:} Dado un conjunto de datos finitos $S$, su dimensión intrínseca$\mathfrak{D} \in R^+$, es la dimensionalidad del objeto, independientemente de la
+dimensión del espacio en el que está embebido.	
+\end{definition}
+
+La dimensión intrínseca ($\mathfrak{D}$) es una medida de la cantidad de información que el conjunto de datos representa. Por ejemplo, la dimensión intrínseca de un conjunto de puntos distribuidos a lo largo de una linea  es igual a uno; si el conjunto está embebido  en un espacio dimensional superior, la dimensionalidad intrínseca   continúa igual a uno tal como se ilustra en la Figura \ref{fig:ima3}.
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1.2]{chapter4/ima3.png}
-\caption{Una linea embebida en dos o tres dimensiones donde $D=1$.}
+\includegraphics[scale=1.3]{chapter4/ima3.png}
+\caption{Una linea embebida en dos o tres dimensiones donde $\mathfrak{D}=1$ \cite{DMFractalsBook}.}
 \label{fig:ima3}
 \end{figure}
 
 
-Faloutsos & Kamel (1994) \cite{conf/pods/FaloutsosK94} propusieron el uso de la dimensión intrínseca como una herramienta para medir el comportamiento no uniforme de conjuntos de datos reales. Además, los autores presentaron estudios empíricos para demostrar que los datos reales suelen tener un comportamiento de auto-similitud, que es  una   característica fundamental de los objetos fractales. Por lo tanto, la dimensión intrínseca $D$ de un conjunto de datos real puede calcularse usando la dimensión fractal.
-
-La dimensión intrínseca basada en la dimensión fractal ha sido empleada como una herramienta para el análisis de agrupamiento \cite{Barbara2003},  reglas de asociación temporal \cite{Barbara2004}, selección de atributos \cite{journals/jidm/TrainaTF10}, series cronológicas \cite{Chakrabarti:2002:FLA:584792.584797} y la minería de datos espaciales \cite{Traina:2001:TST:502512.502538}.
-
-En este capítulo presentamos los principales conceptos relacionados con la teoría fractal que son usados en algunos de los métodos propuestos en esta tesis. La sección 2 muestra diferentes maneras de Calcular la dimensión fractal. El cálculo de correlación indicado por la correlación por la dimensión fractal se detalla en la Sección 3. La teoría fractal empleada para analizar   datos en la sección 3.
-
 \section{Dimensión fractal}
 
-Los fractales suelen tener características inusuales que pueden considerarse paradojas. Por ejemplo, el triángulo de $Sierpinski$ tiene un perímetro infinito (proporcional a $lim_{i\rightarrow\infty} (1+1/2)^i  $ ) y nulo (proporcional a $lim_{i\rightarrow\infty} (3/4)^i $) ya que a cada iteración de su proceso de construcción, que  teóricamente  es infinito, su perímetro aumenta y su área disminuye. Debido a estas propiedades, este fractal no puede ser considerado un objeto euclidiano unidimensional  (ya que su perímetro no es finito) ni un objeto euclidiano bidimensional (puesto que su área es nula). Así, es posible considerar una dimensionalidad de fraccionamiento llamada fractal \cite{di2016fractal}. Intuitivamente, la dimensión fractal del triángulo de $Sierpinski$ esta entre un valor de 1 y 2. Matemáticamente, el valor preciso es 1,58.
+Faloutsos & Kamel (1994) \cite{conf/pods/FaloutsosK94} propusieron el uso de la dimensión intrínseca como una herramienta para medir el comportamiento no uniforme de conjuntos de datos reales. Además, los autores presentaron estudios empíricos para demostrar que los datos reales suelen tener un comportamiento de auto-similitud, que es  una   característica fundamental de los objetos fractales. Por lo tanto, la dimensión intrínseca $\mathfrak{D}$ de un conjunto de datos real puede calcularse usando la dimensión fractal \cite{journals/jidm/TrainaTWF10,DBLP:fractal2016}. La dimensión intrínseca basada en la dimensión fractal ha sido empleada como una herramienta para el análisis de agrupamiento \cite{Barbara2003},  reglas de asociación temporal \cite{Barbara2004}, selección de atributos \cite{journals/jidm/TrainaTF10}, series cronológicas \cite{Chakrabarti:2002:FLA:584792.584797} y la minería de datos espaciales \cite{Traina:2001:TST:502512.502538}.
+ 
+Hay varias definiciones de la dimensión fractal, como veremos brevemente. En esta sección presentamos una visión general de algunos de ellos, introduciendo primero la dimensión fractal de fractales exactamente auto-similares.
 
-Hay varias definiciones para la dimensión fractal, que se presentan brevemente en este sección. La medida básica de la dimensión fractal se dedica a los fractales denominados exactamente auto-similares. Este tipo de fractal se compone de $M$ réplicas que son   una  versión reducida $1:s$ del fractal original.
-
-\textbf{Definición 3.3 Dimensión fractal D:} Sea $M$ el número de réplicas y $s$ el factor de  escala
- por el que se reduce cada réplica, la dimensión fractal D de un fractal auto-similar es   definido en un espacio E-dimensional como:
-
+\begin{definition}{Hausdorff Fractal Dimension $\mathfrak{D}_H$}
+	
+ Sea $M$ el número de réplicas y $s$ el factor de  escala
+ por el que se reduce cada réplica, la dimensión fractal Hausdorff $\mathfrak{D}_H$ de un fractal auto-similar es   definido en un espacio $E$-dimensional como:
 \begin{equation}
-D \equiv \frac{log M}{log s}
+\mathfrak{D}_H = \lim_{s \to 0} (\frac{log M}{log (1/s)})
 \label{eq:ec1}
 \end{equation}
 
-El triángulo de $Sierpinski$, por ejemplo, es un fractal exactamente auto-similar, porque su regla de construcción genera tres réplicas en escala $1:2$ en cada iteración. Por lo tanto, la dimensión fractal de $Sierpinski$ es $D = \frac{log 3}{log 2} \approx 1.58$. Similarmente, en la Figura \ref{fig:ima2}
-el conjunto de Cantor conjunto y la curva de Koch son  fractales auto-similares con la dimensión fractal $ D = \frac{log2}{log3} \approx 0.63$ y $ D = \frac{log4}{log3} \approx 1.26$ respectivamente.
+\end{definition}
 
-Esta definición de la dimensión fractal D es adecuada para Fractales  auto-similares matemáticamente  exactos. Sin embargo, para conjuntos de datos llamados  Fractales auto-similares estadísticamente, que no tienen reglas de construcción bien definidas, es más apropiado  calcular la dimensión fractal mediante el método de recuento de cajas (box-counting) \cite{Schroeder:1991}, que define la Correlación de Dimensión Fractal   $D_2$ tal como se presenta en Ecuación \ref{eq:ec2}
+Considere, por ejemplo, la dimensión fractal del triángulo de Sierpinsky, para la cual cada triángulo produce tres nuevos triángulos a media escala en cada paso, es decir, M = 3 y s = 1/2. Así,
 
-\textbf{Definición 3.4 Correlación de Dimensión Fractal $D_2$:} Dado un conjunto de datos auto-similar en el rango de escalas $[r1, r2]$, su dimensión fractal de correlación $D_2 \rightarrow \left[ \mathbb{R}^{+} \right]$ se mide como
+$$	\mathfrak{D}_H = (\frac{log 3}{log 2}) = 1.58496  $$
 
-\begin{equation}
-D_2 \equiv  \frac{\partial log (\sum_i C_{r,1}^2)}{\partial (r)} \qquad \:r \epsilon [r1,r2 ]
-\label{eq:ec2}
-\end{equation}
-donde $r$ es el lado de las celdas en una (hiper) cuadrícula  que divide el espacio del  conjunto de datos, y $C_r,i$, es el recuento de puntos en la i-ésima celda.
-
-De forma práctica, el valor derivado que define la dimensión fractal $D_2$ puede se obtiene mediante la construcción de la gráfica de recuento de bloques, que representa los valores de $\sum_i C_{r,1}^2$  y $log (r)$ en un gráfico. Para los conjuntos fractales, la curva resultante es lineal en un intervalo $(r1, r2)$ y la dimensión fractal $D_2$ se estima por la pendiente de la línea que mejor se ajusta al intervalo analizado.
-
-La figura \ref{fig:ima4} muestra un conjunto de $6561$ puntos en el triangulo de $Sierpinski$  y la gráfico en la escala log-log de la suma de la ocupación cuadrada $\sum_i C_{r,1}^2$ contra el tamaño de la celda  (radio) $r$.
-
-\begin{figure}[h]
-\centering
-\includegraphics[scale=1.4]{chapter4/ima4.png}
-\caption{El gráfico de conteo de cajas para el triangulo de $Sierpinki$.}
-\label{fig:ima4}
-\end{figure}
-
-La dimensión fractal fue calculada por el algoritmo box-counting(), el cual tiene un coste lineal respecto al número de elementos en el conjunto de datos  \cite{DBLP:journals/jidm/TrainaTF10}. Este algoritmo es descrito en la siguiente sección. 
-
-
+La definición presentada en la Ecuación \ref{eq:ec1} se basa en la regla de construcción del fractal. Sin embargo, al medir la dimensión fractal de fractales estadísticamente autosimilares, que no presentan reglas de construcción explícitas, es necesario emplear un enfoque diferente, como el método de recuento de cajas (\textit{box-counting()}) \cite{journals/jidm/TrainaTF10}.
  
-\subsection{Teoria Fractal}
- 
-Un fractal se caracteriza por la propiedad de auto-similitud, es decir, Es un objeto que presenta aproximadamente las mismas características cuando se analiza en una amplia gama de escalas \cite{DBLP:journals/jidm/TrainaTWF10,DBLP:fractal2016}. De la teoría del fractal, la dimensión del fractal de la correlación $\mathfrak{D}$ es particularmente útil para el análisis de datos, ya que puede aplicarse para estimar la dimensión intrínseca de conjuntos de datos reales que muestran un comportamiento fractal, es decir, exactamente o estadísticamente auto-similar \cite{Belussi:1995:ESS:645921.673166}. Se ha demostrado que, dado un conjunto de $N$ objetos en un conjunto de datos con una función de distancia $d(x,y)$, el número medio de $k$ vecinos dentro de una distancia dada $r$ es proporcional a $r$ elevado a $\mathfrak{D}$  \cite{Arantes_thefractal}.Así, la cuenta de pares $PC(r)$ de pares de elementos a distancia $r$ sigue la siguiente ley:
+\section{Usando Gráficos  para estimar la Dimensión Fractal}
+
+  De la teoría del fractal, la dimensión del fractal $\mathfrak{D}$ es particularmente útil para el análisis de datos, ya que puede aplicarse para estimar la dimensión intrínseca de conjuntos de datos reales que muestran un comportamiento fractal, es decir, exactamente o estadísticamente auto-similar \cite{Belussi:1995:ESS:645921.673166}. Se ha demostrado que, dado un conjunto de $N$ objetos en un conjunto de datos con una función de distancia $d(x,y)$, el número medio de $k$ vecinos dentro de una distancia dada $r$ es proporcional a $r$ elevado a $\mathfrak{D}$  \cite{Arantes_thefractal}.Así, la cuenta de pares $PC(r)$ de pares de elementos a distancia $r$ sigue la siguiente ley:
 \begin{equation}\label{eq:fractal}
 	   PC(r) = K_p \times r^{\mathfrak{D}}		
 	\end{equation}
-donde, $K_p$ es una constante proporcional, y $\mathfrak{D}$ es la correlación dimensión fractal del conjunto de datos.     En consecuencia, un fractal es definido por la propiedad de auto-similitud, que es la característica principal que representa exactamente o estadísticamente la similitud entre las partes de todo el fractal.  
- 
- 
-\section{Algoritmo de Calculo de la Dimensión Fractal}
- 
-Esta sección presenta un algoritmo para calcular la dimensión fractal D de cualquier conjunto dado de puntos en cualquier espacio E-dimensional. Una manera práctica de estimar D a partir de un conjunto de datos espaciales está utilizando el método de "recuento de cajas"  \cite{schroederpower}. Teóricamente, este método da una aproximación cercana a la dimensión fractal  \cite{DBLP:journals/jidm/TrainaTF10} \cite{traina1999distance}. Uno de los mejores algoritmos publicados para calcular D de un conjunto de datos es un algoritmo O (N log (N)), donde N es el número de puntos en el conjunto de datos \cite{belussi1998estimating}.  
+donde, $K_p$ es una constante proporcional  y $\mathfrak{D}$ es la dimensión fractal del conjunto de datos.     En consecuencia, un fractal es definido por la propiedad de auto-similitud, que es la característica principal que representa exactamente o estadísticamente la similitud entre las partes de todo el fractal.  
 
+Si un conjunto de datos tiene un métrica para comparar cada par de sus elementos, se  puede dibujar un gráfico que lo represente, aunque el conjunto de datos no se encuentre en un dominio dimensional.  El trazado de este gráfico en escalas $log-log$, para la mayoría de los conjuntos de datos reales resulta en una línea casi recta para un rango significativo de distancias. Esta gráfica en la escala $log-log$   se llama la Diagrama de Distancia \cite{traina1999distance}. La pendiente de la recta en la gráfica de distancia es el exponente de la Ecuación \ref{eq:fractal}, por lo que se le llama Distancia Exponente. Es interesante notar que la dimensión intrínseca $\mathfrak{D}$ se aproxima mucho a la dimensión fractal  de un conjunto de datos.
 
-Sin embargo, hemos desarrollado un nuevo, muy rápido, O (N) algoritmo para su implementación, que se presenta a continuación. Considere el espacio de direcciones de un conjunto de puntos en un espacio E-dimensional e imponga una E-rejilla con cuadrículas de tamaño de lado r. Centrándose en la i-ésima célula, sea $C r, i$ el recuento ('ocupaciones') de los puntos 2 en cada celda. Luego, calcule el valor $S (r) = i C r, i$. La dimensión fractal es la derivada de log $(S (r))$ con respecto al logaritmo del radio. \\
-
-Al asumir conjuntos de datos auto-similares, esperamos que esta derivada resulte en un valor constante. Así, podemos obtener la dimensión fractal D de un conjunto de datos que traza $S (r)$ en escalas log-log para diferentes valores del radio r, y calcular la pendiente de la línea resultante. Es necesario procesar $S (r)$ para una cantidad R de valores de r, por lo que podemos lograr una aproximación estadística adecuada de la recta. Para evitar la lectura del conjunto de datos de nuevo para cada valor del radio, proponemos crear una estructura de cuadrícula de niveles múltiples, donde cada nivel tiene un radio de la mitad del tamaño del nivel anterior $(r = 1, 1/2, 1 / 4, 1/8, etc.)$. Cada nivel de la estructura corresponde a un radio diferente, por lo que la profundidad de la estructura es igual al número de puntos en el gráfico resultante. \\
-
-La estructura se crea en la memoria principal, por lo que el número de puntos en el gráfico está limitado por la cantidad de memoria principal disponible. Si este gráfico es lineal para un rango adecuado de radios, el conjunto de datos es un fractal y su dimensión fractal D es la pendiente de la línea de ajuste de este gráfico. El algoritmo propuesto es lineal en el número de puntos en el conjunto de datos. La complejidad computacional del algoritmo es $O (N * E * R)$, donde N es el número de objetos en el conjunto de datos, E es la dimensionalidad de inclusión y R es el número de puntos utilizados para representar la función $S (r)$. Esto muestra que el algoritmo es escalable a conjuntos de datos de cualquier tamaño.\\
-
-Para cada lado de celda dado r, sólo se mantienen las celdas que tienen al menos un punto ya procesado, contando la suma de ocupaciones $C r, i $ de esta celda. De esta manera, cada nuevo punto está directamente asociado a una célula en cada nivel, sin necesidad de ser comparado con los puntos de lectura anteriores. La figura 2 muestra la estructura utilizada en el algoritmo para conjuntos de datos bidimensionales y tridimensionales.\\
-
-El lado de celda más grande del espacio de puntos genera $2 n$ células. En el siguiente nivel, cada célula se divide en otras 2 n células, y así sucesivamente. Dado que siempre se conoce la posición de cada célula en el espacio, cada célula está representada por: la suma de ocupaciones $C r, i$ en esta celda, y los punteros a las celdas en el siguiente nivel cubierto por esta celda (véase la Figura 2 ). Esta estructura es una especie de multi-dimensional "quad-árbol" (oct-tree para un espacio 3D, o E-dim-árbol). La Figura 3 muestra un ejemplo de esta estructura para un conjunto de datos con cinco puntos en tres niveles en un espacio bidimensional.\\
-
-
+    La Figura \ref{fig:mgcounty} muestra la gráfica de distancia de un conjunto de datos cuyos elementos son las coordenadas geográficas de las calles y carreteras del condado de Montgomery. Como se puede observar, las gráficas son lineales para el rango de tamaños más buscado en las consultas.  
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1.0]{chapter4/ima5.png}
-\caption{ Representación de celdas de cuadrícula en espacios de 2 y 3 dimensiones. }
-\label{fig:ima5}
+\includegraphics[scale=0.4]{chapter4/mgcounty.png}
+\caption{Diagrama de Distancia para el conjunto de datos MgCounty mostrando una Dimensión Fractal $\mathfrak{D} \approx 1.81$ .}
+\label{fig:mgcounty}
 \end{figure}
-\\\\
+	Utilizando gráficos como este, La Distancia Exponente $\mathfrak{D}$ de cualquier conjunto de datos puede calcularse como la pendiente de la recta que mejor se ajuste a la curva resultante en el Diagrama de Distancia. Por lo tanto, considerando la Figura \ref{fig:mgcounty}, la Ecuación \ref{eq:fractal} puede ser expresada como:
+	
+	\begin{equation}\label{eq:logpc_fractal}
+	   log(PC(r)) = \mathfrak{D} \times log (r) + K_p 		
+	\end{equation}
+		La Distancia Exponente tiene muchas propiedades interesantes, derivadas de   la Dimensión Fractal. La propiedad principal es que la   dimensión fractal $\mathfrak{D}$ es invariante al tamaño del conjunto de datos, siempre que se utilice un número razonable de elementos de una muestra representativa  \cite{Faloutsos:2000:SJS:335191.335412}. Esto permite mantener el Distancia Exponente    para un conjunto de datos incluso después de que se haya actualizado el conjunto de datos con inserciones y eliminaciones.
 
-Observe que se agregan nuevas celdas a la estructura cuando se solicita. Así, sólo se crean células ocupadas por al menos un punto $(C r, i> 0)$. El algoritmo procesa los puntos establecidos sólo una vez, por lo que es realmente muy rápido. El algoritmo 1 resume este proceso de cálculo.\\
-
-
-\begin{figure}[h]
-\centering
-\includegraphics[scale=1.2]{chapter4/ima6.png}
-\caption{Ejemplo de la estructura de datos utilizada para calcular la Suma de Ocupaciones de un conjunto de datos con 5 puntos (con tres niveles de resolución) }
-\label{fig:ima6}
-\end{figure}
  
-
-\\\\
-Observe que se agregan nuevas celdas a la estructura bajo demanda. Así, sólo las células ocupadas
-Por al menos un punto $(C_{r,i}> 0)$. El algoritmo procesa sólo los puntos establecidos
-Una vez, por lo que es realmente muy rápido. El algoritmo \ref{alg:algo1} resume este proceso de cálculo.
-\\\\
-\begin{algorithm}
-\begin{algorithmic}[1]
-\REQUIRE Normalizar el Dataset A(N filas, con E dimensiones/cada atributo)
-\label{lin:lineaRara}
-\ENSURE  Dimension fractal D
-\FOR{Cada tamaño de grid deseaada $r = 1/2^j , j = 1,2, ...,l$}
-
-    \FOR{Cada punto en el dataset}
-    \STATE Decide cual celda del grid cae en (la i-esima celda)
-    \STATE Incrementa la cuenta $C_i$
-    \ENDFOR
-    \STATE Procesa la sumatoria de los ocupados $S(r) = \sum C_i^2$
-\ENDFOR
-
-\STATE Imprime los valores de $log(r)$ y $log(S(r))$ generando un gráfico
-
-\STATE Retorna la parte linear del gráfico cuesta abajo(regresión linear) de las dimensiones fractales D del dataset A
-
-\end{algorithmic}
-\caption{Procesar la dimensión fractal D del dataset A(conteo de cajas aproximadas)}
-\label{alg:algo1}
-\end{algorithm}
+\subsection*{Algoritmo de Calculo de la Dimensión Fractal}
  
-A medida que aumenta el lado de la cuadrícula, también aumenta el número de punteros a celdas vacías. Por lo tanto, para los conjuntos de datos de alta dimensión vale la pena mantener las celdas como listas enlazadas en lugar de arrays. Implementamos esta estructura como un objeto, usando una matriz para conjuntos de datos con la dimensión de incrustación menos o igual a tres, y usando una lista vinculada para conjuntos de datos con mayor dimensionalidad.	
+ Una manera práctica de estimar $\mathfrak{D}$  a partir de un conjunto de datos espaciales está utilizando el método de  \textit{box-counting()} \cite{Faloutsos:2000:SJS:335191.335412}. Teóricamente, este método da una aproximación cercana a la dimensión fractal   \cite{traina1999distance}. Uno de los mejores algoritmos publicados para calcular la dimensión fractal  de un conjunto de datos es un algoritmo $O (N log (N))$, donde $N$ es el número de puntos en el conjunto de datos \cite{Belussi:1995:ESS:645921.673166}.   Sin embargo, existe un algoritmo aún más  rápido  de costo  $O (N)$  llamado \textit{box-counting()} \cite{journals/jidm/TrainaTF10}.
+ 
+\section{Consideraciones Finales}
 
+Las técnicas de minería de datos incluyen una amplia gama de herramientas de análisis, desde enfoques muy puntuales que intentan localizar características específicas de los datos, hasta herramientas muy amplias que sólo proporcionan una visión general de alto nivel de los datos. Sin embargo, la mayoría de los enfoques utilizados, independientemente de que sean específicos o amplios, se basan en técnicas basadas en algoritmos con una complejidad computacional  alta, tanto en el número de muestras como en el número de atributos (dimensiones) del conjunto de datos. Las técnicas presentadas en este capítulo, basadas en la teoría fractal, proporcionan algoritmos que pueden analizar datos en una complejidad computacional lineal tanto en el número de muestras como en el número de dimensiones. Estas técnicas están bien adaptadas a procesos amplios, por lo que pueden ser utilizadas como una muestra inicial en conjuntos de datos, desde los cuales se pueden ejecutar analizadores más específicos y costosos.
 
-%\section{Consideraciones Finales}
+ 
 
