@@ -4,11 +4,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Precisi\IeC {\'o}n de la clasificaci\IeC {\'o}n usando KNN-clasificador en conjuntos de datos MNIST, CIFAR-10, SVHN y Agnews utilizando AutoEncoders y PCA como m\IeC {\'e}todos de reducci\IeC {\'o}n de dimensionalidad.}}{56}{table.165}
-\contentsline {table}{\numberline {5.2}{\ignorespaces An\IeC {\'a}lisis de precisi\IeC {\'o}n de clasificaci\IeC {\'o}n usando autoencoders para diferentes m\IeC {\'e}tricas.}}{57}{table.166}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Mean Average Precision(mAP) y el tiempo acumulado para calcular el mAP para diferentes m\IeC {\'e}todos en los conjuntos de datos MNIST, CIFAR-10, SVHN Y AGNEWS. El n\IeC {\'u}mero k de los vecinos devueltos se establece en 100.}}{58}{table.168}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Precisi\IeC {\'o}n 1000-NN y tiempo acumulado para diferentes m\IeC {\'e}todos en los conjuntos de datos MNIST, CIFAR-10, SVHN y AGNEWS. El n\IeC {\'u}mero k de los vecinos devueltos se establece en 1000.}}{59}{table.169}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Precisi\IeC {\'o}n (P) de la clasificaci\IeC {\'o}n usando el clasificador KNN en los conjuntos de datos MNIST, CIFAR-10, SVHN y Agnews utilizando AutoEncoders y PCA como m\IeC {\'e}todos de reducci\IeC {\'o}n de dimensionalidad.}}{59}{table.176}
+\contentsline {table}{\numberline {5.2}{\ignorespaces An\IeC {\'a}lisis de precisi\IeC {\'o}n de clasificaci\IeC {\'o}n usando autoencoders para diferentes m\IeC {\'e}tricas.}}{59}{table.177}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Optimal LSH Params using exhaustive e2lsh and the fractal based method.}}{67}{table.186}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Mean Average Precision(mAP), precision, and cumulative time spent to compute mAP for different methods on the MNIST, SVHN and CIFAR-10 datasets. }}{67}{table.188}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Optimal LSH Params using exhaustive e2lsh and the fractal based method.}}{66}{table.191}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Mean Average Precision(mAP), precision, and cumulative time spent to compute mAP for different methods on the MNIST, SVHN and CIFAR-10 datasets. }}{66}{table.192}
 \addvspace {10\p@ }

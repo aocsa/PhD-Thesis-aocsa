@@ -1,0 +1,17 @@
+\select@language {spanish}
+\select@language {english}
+\select@language {spanish}
+\par \penalty \@M \textbf {{\scshape Figura} \hfill P\IeC {\'a}gina}\par \penalty \@M 
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Unificaci\IeC {\'o}n del modelo de consulta por similitud. (a) Los M\IeC {\'e}todos de Acceso M\IeC {\'e}tricos (MAMs). (b) \textit {Locality Sensitive Hashing} (LSH).\relax }}{7}{figure.caption.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{7}{figure.caption.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{7}{figure.caption.11}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces (a) Formas geom\IeC {\'e}tricas que ilustran la delimitaci\IeC {\'o}n de una regi\IeC {\'o}n de b\IeC {\'u}squeda de acuerdo con la m\IeC {\'e}trica $L_p$ utilizada. (b) Ejemplo de consulta por rango para diferentes m\IeC {\'e}tricas de la familia $L_p$.\relax }}{9}{figure.caption.12}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Ejemplo de consulta por rango.\relax }}{10}{figure.caption.14}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Ejemplo de consulta de los k-vecinos m\IeC {\'a}s cercanos.\relax }}{10}{figure.caption.16}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Ejemplo de consulta por rango aproximada.\relax }}{11}{figure.caption.18}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces B\IeC {\'u}squeda aproximada 5-NN. (a) busca exacta. (b) busca aproximada. \relax }}{12}{figure.caption.20}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Interpretaci\IeC {\'o}n geom\IeC {\'e}trica de proyecci\IeC {\'o}n de los vectores $\mathaccentV {vec}17E{p_1}$ y $\mathaccentV {vec}17E{p_2}$ en LSH.\relax }}{14}{figure.caption.22}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Estrutura del nodo HashFile. Figura adaptada de \cite {lshHashFile}.\relax }}{20}{figure.caption.25}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Representaci\IeC {\'o}n de las proyecciones de una consulta por similitud aproximada en HashFile en (a), en (b) se verifica su estructura l\IeC {\'o}gica correspondiente.\relax }}{21}{figure.caption.26}

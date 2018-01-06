@@ -1,0 +1,72 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: memoirthesis.aux
+The style file: siam.bst
+Database file #1: biblio.bib
+Warning--string name "cvpr" is undefined
+--line 18 of file biblio.bib
+Warning--string name "icde" is undefined
+--line 711 of file biblio.bib
+A bad cross reference---entry "LiuWJJC12"
+refers to entry "conf/cvpr/2012", which doesn't exist
+Warning--I didn't find a database entry for "conf/cvpr/2012"
+Name 1 in "Manning, C. D., Raghavan, P., and Schutze, H." has a comma at the end for entry Manning
+while executing---line 991 of file siam.bst
+Too many commas in name 1 of "Manning, C. D., Raghavan, P., and Schutze, H." for entry Manning
+while executing---line 991 of file siam.bst
+Name 1 in "Ravichandran, D., Pantel, P., and Hovy, E." has a comma at the end for entry Ravichandran
+while executing---line 991 of file siam.bst
+Too many commas in name 1 of "Ravichandran, D., Pantel, P., and Hovy, E." for entry Ravichandran
+while executing---line 991 of file siam.bst
+Name 1 in "Manning, C. D., Raghavan, P., and Schutze, H." has a comma at the end for entry Manning
+while executing---line 1034 of file siam.bst
+Too many commas in name 1 of "Manning, C. D., Raghavan, P., and Schutze, H." for entry Manning
+while executing---line 1034 of file siam.bst
+Name 1 in "Ravichandran, D., Pantel, P., and Hovy, E." has a comma at the end for entry Ravichandran
+while executing---line 1034 of file siam.bst
+Too many commas in name 1 of "Ravichandran, D., Pantel, P., and Hovy, E." for entry Ravichandran
+while executing---line 1034 of file siam.bst
+Warning--empty booktitle in CiteULike:7399806
+Warning--empty booktitle in lshHashFile
+You've used 42 entries,
+            2030 wiz_defined-function locations,
+            787 strings with 11570 characters,
+and the built_in function-call counts, 17925 in all, are:
+= -- 1760
+> -- 721
+< -- 0
++ -- 281
+- -- 239
+* -- 1312
+:= -- 2590
+add.period$ -- 42
+call.type$ -- 42
+change.case$ -- 240
+chr.to.int$ -- 0
+cite$ -- 44
+duplicate$ -- 870
+empty$ -- 1428
+format.name$ -- 239
+if$ -- 4019
+int.to.chr$ -- 0
+int.to.str$ -- 42
+missing$ -- 45
+newline$ -- 129
+num.names$ -- 86
+pop$ -- 286
+preamble$ -- 1
+purify$ -- 201
+quote$ -- 0
+skip$ -- 746
+stack$ -- 0
+substring$ -- 1370
+swap$ -- 400
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 162
+warning$ -- 2
+while$ -- 186
+width$ -- 44
+write$ -- 398
+(There were 9 error messages)

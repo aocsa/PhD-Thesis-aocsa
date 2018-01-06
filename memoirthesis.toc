@@ -1,0 +1,37 @@
+\select@language {spanish}
+\select@language {english}
+\select@language {spanish}
+\contentsline {paragraph}{Palabras claves:}{iii}{section*.3}
+\contentsline {paragraph}{Keywords:}{v}{section*.5}
+\par \penalty \@M \unhbox \voidb@x \hbox {}\hfill {\bfseries P\IeC {\'a}gina}\par \penalty \@M 
+\contentsline {chapter}{\IeC {\'I}ndice de tablas}{xi}{section*.7}
+\contentsline {chapter}{\'{I}ndice de figuras}{xiii}{section*.8}
+\contentsline {chapter}{Siglas}{xv}{section*.8}
+\contentsline {chapter}{Lista de s\IeC {\'\i }mbolos}{xvii}{chapter*.9}
+\contentsline {chapter}{\chapternumberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Consideraciones iniciales}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Definici\IeC {\'o}n del problema}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Objetivos}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Principales contribuciones}{4}{section.1.4}
+\contentsline {section}{\numberline {1.5}Organizaci\IeC {\'o}n de la tesis}{4}{section.1.5}
+\contentsline {chapter}{\chapternumberline {2}Consultas por similitud}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Consideraciones iniciales}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Dominio de datos}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Espacios M\IeC {\'e}tricos}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Espacios Multidimensionales}{8}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Consultas por Similitud}{9}{section.2.3}
+\contentsline {paragraph}{Consulta por radio (\textit {range query} Rq (q, r))}{9}{section*.13}
+\contentsline {paragraph}{Consulta de los k-vecinos m\IeC {\'a}s cercanos (\textit {k-Nearest neighbor query} - $kNN (q, k)$)}{10}{section*.15}
+\contentsline {paragraph}{Consulta por rango aproximada - $(1 + \varepsilon ) Rq(q, r)$}{10}{section*.17}
+\contentsline {paragraph}{Consulta Aproximada a los $k$-vecinos m\IeC {\'a}s cercanos - $(1 + \varepsilon ) - kNN(q, k)$}{11}{section*.19}
+\contentsline {section}{\numberline {2.4}La Maldici\IeC {\'o}n de la alta Dimensionalidad}{11}{section.2.4}
+\contentsline {section}{\numberline {2.5}B\IeC {\'u}squeda aproximada de los vecinos m\IeC {\'a}s cercanos (ANN)}{12}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}\textit {Locality Sensitive Hashing}}{13}{subsection.2.5.1}
+\contentsline {paragraph}{Definici\IeC {\'o}n}{13}{section*.21}
+\contentsline {subsection}{\numberline {2.5.2}LSH con Projecci\IeC {\'o}n Aleat\IeC {\'o}ria}{17}{subsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.2.1}Projecci\IeC {\'o}n Aleat\IeC {\'o}ria}{18}{subsubsection.2.5.2.1}
+\contentsline {subsubsection}{\numberline {2.5.2.2}Restricci\IeC {\'o}n de la distancia para consultas kNN usando $L_1$}{18}{subsubsection.2.5.2.2}
+\contentsline {subsubsection}{\numberline {2.5.2.3}Construcci\IeC {\'o}n del \IeC {\'\i }ndice}{19}{subsubsection.2.5.2.3}
+\contentsline {subsubsection}{\numberline {2.5.2.4}Consulta kNN Aproximada}{21}{subsubsection.2.5.2.4}
+\contentsline {section}{\numberline {2.6}Consideraciones Finales}{22}{section.2.6}
+\contentsline {chapter}{Bibliograf\'{\i }a}{23}{section*.28}

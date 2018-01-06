@@ -1,0 +1,214 @@
+\begin{thebibliography}{10}
+
+\bibitem{aggarwal2015data}
+{\sc C.~C. Aggarwal}, {\em Data Mining: The Textbook}, Springer Publishing
+  Company, Incorporated, 2015.
+
+\bibitem{hashing_algoritghms_survey}
+{\sc A.~Andoni and P.~Indyk}, {\em {Near-optimal hashing algorithms for
+  approximate nearest neighbor in high dimensions}}, Communications of the ACM,
+  51 (2008), pp.~117--122.
+
+\bibitem{lshforest}
+{\sc M.~Bawa, T.~Condie, and P.~Ganesan}, {\em {L}{S}{H} forest: self-tuning
+  indexes for similarity search}, in Proceedings of the 14th international
+  conference on World Wide Web, Chiba, Japan, 2005, pp.~651--660.
+
+\bibitem{rstartree}
+{\sc N.~Beckmann, H.-P. Kriegel, R.~Schneider, and B.~Seeger}, {\em {The
+  R*-tree: an efficient and robust access method for points and rectangles}},
+  SIGMOD Record, 19 (1990), pp.~322--331.
+
+\bibitem{citeulike:Bellman}
+{\sc R.~E. Bellman}, {\em Adaptive control processes - A guided tour},
+  vol.~1961, Princeton University Press, 1961, ch.~(A RAND Corporation Research
+  Study), pp.~255--260.
+
+\bibitem{kdt}
+{\sc J.~L. Bentley}, {\em {Multidimensional Binary Search Trees in Database
+  Applications.}}, Transactions on Software Engineering, 5 (1979),
+  pp.~333--340.
+
+\bibitem{xtree}
+{\sc S.~Berchtold, D.~A. Keim, and H.-P. Kriegel}, {\em {The X-tree: An Index
+  Structure for High-Dimensional Data}}, in Proceedings of the International
+  Conference on Very Large Data Bases, San Francisco, CA, USA, 1996,
+  pp.~28--39.
+
+\bibitem{WhatsWrong}
+{\sc S.~Blott and R.~Weber}, {\em What's wrong with high-dimensional similarity
+  search}, in Proceedings of the International Conference on Very Large Data
+  Bases, Aukland, New Zealand, 2008, pp.~3--3.
+
+\bibitem{aleman_high_dimensional}
+{\sc C.~B\"{o}hm, S.~Berchtold, and D.~A. Keim}, {\em {Searching in
+  high-dimensional spaces: Index structures for improving the performance of
+  multimedia databases}}, ACM Computing Surveys, 33 (2001), pp.~322--373.
+
+\bibitem{cit:avez99searching}
+{\sc E.~Ch\'{a}vez, G.~Navarro, R.~Baeza-Yates, and J.~L. Marroqu\'{\i}n}, {\em
+  {Searching in metric spaces}}, ACM Computing Surveys, 33 (2001),
+  pp.~273--321.
+
+\bibitem{MTree}
+{\sc P.~Ciaccia, M.~Patella, and P.~Zezula}, {\em {M-tree: An Efficient Access
+  Method for Similarity Search in Metric Spaces}}, in Proceedings of the
+  International Conference on Very Large Data Bases, San Francisco, CA, USA,
+  1997, pp.~426--435.
+
+\bibitem{cit:clarkson_nn_survey}
+{\sc K.~L. Clarkson}, {\em {Nearest-Neighbor Methods for Learning and Vision:
+  Theory and Practice}}, MIT Press, 2006, ch.~{Nearest-Neighbor Searching and
+  Metric Space Dimensions}, pp.~15--59.
+
+\bibitem{lsh}
+{\sc M.~Datar, N.~Immorlica, P.~Indyk, and V.~S. Mirrokni}, {\em
+  Locality-sensitive hashing scheme based on p-stable distributions}, in
+  Proceedings of the Twentieth annual Symposium on Computational Geometry,
+  Brooklyn, New York, USA, 2004, pp.~253--262.
+
+\bibitem{modelinglsh}
+{\sc W.~Dong, Z.~Wang, W.~Josephson, M.~Charikar, and K.~Li}, {\em Modeling
+  {L}{S}{H} for performance tuning}, in Proceedings of the International
+  Conference on Information and Knowledge Engineering, Napa Valley, California,
+  USA, 2008, pp.~669--678.
+
+\bibitem{Faloutsos94}
+{\sc C.~Faloutsos, M.~Ranganathan, and Y.~Manolopoulos}, {\em Fast subsequence
+  matching in time-series databases}, SIGMOD Rec., 23 (1994), pp.~419--429.
+
+\bibitem{lsh_hamming}
+{\sc A.~Gionis, P.~Indyk, and R.~Motwani}, {\em {Similarity Search in High
+  Dimensions via Hashing}}, in Proceedings of the International Conference on
+  Very Large Data Bases, San Francisco, CA, USA, 1999, pp.~518--529.
+
+\bibitem{Guttman1984}
+{\sc A.~Guttman}, {\em R-trees: a dynamic index structure for spatial
+  searching}, SIGMOD Record, 14 (1984), pp.~47--57.
+
+\bibitem{cit:indexDriven}
+{\sc G.~R. Hjaltason and H.~Samet}, {\em {Index-driven similarity search in
+  metric spaces}}, ACM Transactions on Database Systems, 28 (2003),
+  pp.~517--580.
+
+\bibitem{Indyk:1998:ANN:276698.276876}
+{\sc P.~Indyk and R.~Motwani}, {\em Approximate nearest neighbors: towards
+  removing the curse of dimensionality}, in Proceedings of the thirtieth annual
+  ACM symposium on Theory of computing, New York, NY, USA, 1998, pp.~604--613.
+
+\bibitem{ImageNet}
+{\sc A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton}, {\em Imagenet
+  classification with deep convolutional neural networks}, in Proceedings of
+  the 25th International Conference on Neural Information Processing Systems,
+  NIPS'12, USA, 2012, Curran Associates Inc., pp.~1097--1105.
+
+\bibitem{5459466}
+{\sc B.~Kulis and K.~Grauman}, {\em Kernelized locality-sensitive hashing for
+  scalable image search}, in Proceedings of the International Conference on
+  Computer Vision, Kyoto, Japan, 2009, pp.~2130 --2137.
+
+\bibitem{Li:2015:RSS:2881665.2882186}
+{\sc Z.~Li, J.~Liu, J.~Tang, and H.~Lu}, {\em Robust structured subspace
+  learning for data representation}, IEEE Trans. Pattern Anal. Mach. Intell.,
+  37 (2015), pp.~2085--2098.
+
+\bibitem{LiuWJJC12}
+{\sc W.~Liu, J.~Wang, R.~Ji, Y.-G. Jiang, and S.-F. Chang}, {\em Supervised
+  hashing with kernels.}, in CVPR, IEEE Computer Society, 2012, pp.~2074--2081.
+
+\bibitem{Manning}
+{\sc R.~P. Manning, C.~D. and H.~Schutze}, {\em Introduction to information
+  retrieval.}, Cambridge University Press, New York, NY, USA,  (2008).
+
+\bibitem{SATree}
+{\sc G.~Navarro}, {\em {Searching in metric spaces by spatial approximation}},
+  The VLDB Journal, 11 (2002), pp.~28--46.
+
+\bibitem{cit:tspanners02}
+{\sc G.~Navarro, R.~Paredes, and E.~Ch\'{a}vez}, {\em {t-Spanners for metric
+  space searching}}, Data and Knowledge Engineering, 63 (2007), pp.~820--854.
+
+\bibitem{hrg}
+{\sc A.~Ocsa, C.~Bedregal, and E.~Cuadros-Vargas}, {\em {A new approach for
+  similarity queries using neighborhood graphs}}, in Proceedings of the
+  Brazilian Symposium on Databases, Jo{\~a}o Pessoa, Para\'{\i}ba, Brasil,
+  2007, pp.~131--142.
+
+\bibitem{DBLP:journals/jidm/OcsaS10}
+{\sc A.~Ocsa and E.~P.~M. Sousa}, {\em {An Adaptive Multi-level Hashing
+  Structure for Fast Approximate Similarity Search}}, Journal of Information
+  and Data Management, 1 (2010), pp.~359--374.
+
+\bibitem{Ravichandran}
+{\sc P.~P. Ravichandran, D. and E.~Hovy}, {\em Randomized algorithms and nlp:
+  Using locality sensitive hash function for high speed noun clustering},
+  Proceedings of the 43rd Annual Meeting on Association for Computational
+  Linguistics, ACL'05,  (2005), p.~622–629.
+
+\bibitem{rplustree}
+{\sc T.~K. Sellis, N.~Roussopoulos, and C.~Faloutsos}, {\em {The R+-Tree: A
+  Dynamic Index for Multi-Dimensional Objects}}, in Proceedings of the
+  International Conference on Very Large Data Bases, San Francisco, CA, USA,
+  1987, pp.~507--518.
+
+\bibitem{conf/cvpr/ShenSLS15}
+{\sc F.~Shen, C.~Shen, W.~Liu, and H.~T. Shen}, {\em Supervised discrete
+  hashing.}, in CVPR, IEEE Computer Society, 2015, pp.~37--45.
+
+\bibitem{lshtutorial}
+{\sc M.~Slaney and M.~Casey}, {\em {Locality-Sensitive Hashing for Finding
+  Nearest Neighbors}}, IEEE Signal Processing Magazine, 25 (2008),
+  pp.~128--131.
+
+\bibitem{NIPS2013_5207}
+{\sc C.~Szegedy, A.~Toshev, and D.~Erhan}, {\em Deep neural networks for object
+  detection}, in Advances in Neural Information Processing Systems 26, C.~J.~C.
+  Burges, L.~Bottou, M.~Welling, Z.~Ghahramani, and K.~Q. Weinberger, eds.,
+  Curran Associates, Inc., 2013, pp.~2553--2561.
+
+\bibitem{taoLSBLSH}
+{\sc Y.~Tao, K.~Yi, C.~Sheng, and P.~Kalnis}, {\em {Efficient and accurate
+  nearest neighbor and closest pair search in high-dimensional space}}, ACM
+  Transactions on Database Systems, 35 (2010), pp.~1--46.
+
+\bibitem{dftree}
+{\sc C.~Traina, Jr., A.~Traina, R.~S. Filho, and C.~Faloutsos}, {\em {How to
+  improve the pruning ability of dynamic metric access methods}}, in
+  Proceedings of the International Conference on Information and Knowledge
+  Engineering, New York, NY, USA, 2002, pp.~219--226.
+
+\bibitem{SlimTree}
+{\sc J.~Traina~C., A.~Traina, C.~Faloutsos, and B.~Seeger}, {\em {Fast Indexing
+  and Visualization of Metric Data Sets using Slim-Trees}}, IEEE Transactions
+  on Knowledge and Data Engineering, 14 (2002), pp.~244--260.
+
+\bibitem{DBMTree}
+{\sc M.~R. Vieira, C.~T. Jr., F.~J.~T. Chino, and A.~J.~M. Traina}, {\em
+  {DBM-Tree: A Dynamic Metric Access Method Sensitive to Local Density Data}},
+  in Proceedings of the Brazilian Symposium on Databases, Bras\'{\i}lia,
+  Brasil, 2004, pp.~163--177.
+
+\bibitem{DBLP:journals/corr/abs-0906-0391}
+{\sc I.~Volnyansky and V.~Pestov}, {\em {Curse of Dimensionality in Pivot Based
+  Indexes}}, in Proceedings of the International Workshop on Similarity Search
+  and Applications, Washington, DC, USA, 2009.
+
+\bibitem{CiteULike:7399806}
+{\sc J.~Wang, S.~Kumar, and S.-F. Chang}, {\em {Semi-Supervised Hashing for
+  Scalable Image Retrieval}}, San Francisco, USA, 2010, pp.~3424 --3431.
+
+\bibitem{cit:vpt}
+{\sc P.~N. Yianilos}, {\em {Data structures and algorithms for nearest neighbor
+  search in general metric spaces}}, in Proceedings - Annual Symposium on
+  Discrete Algorithms, Philadelphia, PA, USA, 1993, pp.~311--321.
+
+\bibitem{DBLP:journals/corr/YosinskiCBL14}
+{\sc J.~Yosinski, J.~Clune, Y.~Bengio, and H.~Lipson}, {\em How transferable
+  are features in deep neural networks?}, CoRR, abs/1411.1792 (2014).
+
+\bibitem{lshHashFile}
+{\sc D.~Zhang, D.~Agrawal, G.~Chen, and A.~Tung}, {\em {HashFile: An efficient
+  index structure for multimedia data}}, Hannover, Germany, 2011, pp.~1103
+  --1114.
+
+\end{thebibliography}

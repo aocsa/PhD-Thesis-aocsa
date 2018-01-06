@@ -1,6 +1,6 @@
 \chapter{Conclusiones y Trabajos Futuros}
  
-El creciente volumen de datos y su complejidad asociada requieren técnicas de recuperación de información   más eficientes. Se han propuesto muchos algoritmos de búsqueda kNN basados  en  $hashing$  debido a su alto desempeño  y bajo costo de almacenamiento. Estudios recientes promueven el uso de la Redes Neurales Convolucionales (CNNs) con técnicas de $hashing$ para mejorar la precisión en operaciones de búsqueda. Sin embargo, existen desafíos que aún necesitan ser resueltos   para encontrar una solución práctica y eficiente para indexar las características de CNN, como la necesidad de un proceso de entrenamiento intenso para lograr resultados de consulta precisos y la dependencia crítica de los parámetros de datos.
+\initial{E}l creciente volumen de datos y su complejidad asociada requieren técnicas de recuperación de información   más eficientes. Se han propuesto muchos algoritmos de búsqueda kNN basados  en  $hashing$  debido a su alto desempeño  y bajo costo de almacenamiento. Estudios recientes promueven el uso de la Redes Neurales Convolucionales (CNNs) con técnicas de $hashing$ para mejorar la precisión en operaciones de búsqueda. Sin embargo, existen desafíos que aún necesitan ser resueltos   para encontrar una solución práctica y eficiente para indexar las características de CNN, como la necesidad de un proceso de entrenamiento intenso para lograr resultados de consulta precisos y la dependencia crítica de los parámetros de datos.
 
 En el Capítulo 5 se presentó un análisis  que compara esquemas recientes de \textit{deep hashing} para  buscar las   representaciones adecuadas del espacio de datos. Hemos explorado las correlaciones entre las salidas de una CNN usando la teoría fractal. Para optimizar estos parámetros, utilizamos diferentes métodos de reducción de dimensionalidad de datos. Presentamos una descripción general de  diferentes técnicas de representación y se analizó  diferentes esquemas  de representación de datos y  su rendimiento en operaciones de búsqueda. 
 
@@ -8,4 +8,13 @@ Luego, en el Capítulo 6  se presentó  un nuevo esquema de indexación y entren
 
 Se realizó varios  estudios de desempeño en muchos conjuntos de datos reales y sintéticos. Los resultados empíricos para los parámetros LSH muestran que nuestro método basado en la teoría fractal es comparable con los obtenidos con el algoritmo de fuerza bruta utilizando hasta $10X$ menos de tiempo. Por otra parte, en el rendimiento de recuperación, el método DAsH fue significativamente mejor que otros métodos aproximados, proporcionando hasta un 8\% mejor precisión, manteniendo excelentes tiempos de recuperación.
 
+En cuanto a los trabajos futuros, actualmente ya se esta trabajando en los siguientes problemas. 
 
+\begin{itemize}
+\item Nuevo algoritmo para el cálculo de la dimensión fractal: la idea es optimizar el algoritmo de box-counting para el cálculo de la dimensión fractal usando  la información de correlación de datos que retorno no solo la ecuación de la Distancia Exponente sino la configuración de la familia de funciones hash. 
+
+\item Nuevo algoritmo para la obtención del número optimo de funciones hash: La idea es aprovechar los resultados de nuestro algoritmo calcular la dimensión fractal sobre varias muestras del conjunto de datos y aproximar de mejor manera el número de funciones hash.  Esto no solo reducirá el costo computacional, si no que, es susceptible a ser paralelizado debido a que es posible determinar una aproximación por separado.
+ 
+\item Búsqueda de similitud semi-supervisada: Dado que nuestro método $DAsH$ ya permite consultas por similitud en esquemas de \textit{hashing} supervisado podemos extender el método para esquemas de \textit{hashing} semi-supervisados.
+
+\end{itemize}
