@@ -5,7 +5,7 @@
 
 \section{Consideraciones iniciales}
 
-La creciente disponibilidad de datos en diversos dominios, tales  como multimedia, internet, la biología, entre  otros,  ha creado  la necesidad  de desarrollar  técnicas y métodos capaces de descubrir  conocimientos  en grandes volúmenes de datos complejos, motivando  varios  trabajos en las áreas  de base  de datos,  minería de datos  y recuperación  de la información. Esto ha impulsado el desarrollo de técnicas escalables y eficientes para organizar y recuperar estos tipos de datos complejos. Las búsquedas por similitud han sido el enfoque tradicional para la recuperación de la información. Considerando que la similitud es el criterio instintivo por el cual las personas hacen comparaciones, las comunidades de recuperación de información usan la similitud para organizar y recuperar estos datos.    Sin embargo, causa algunas dificultades en representar datos complejos y también con la escalabilidad de los algoritmos cuando la dimensionalidad de los datos es muy alta (más conocido como la ``maldición de la alta dimensionalidad''). Aunque muchos trabajos de investigación se han llevado a cabo en el desarrollo de estructuras y algoritmos eficientes de búsqueda sólo unos pocos presentan una garantía teórica de estabilidad asintótica para datos de alta dimensión \cite{5459466,CiteULike:7399806}.
+\versal{L}a creciente disponibilidad de datos en diversos dominios, tales  como multimedia, internet, la biología, entre  otros,  ha creado  la necesidad  de desarrollar  técnicas y métodos capaces de descubrir  conocimientos  en grandes volúmenes de datos complejos, motivando  varios  trabajos en las áreas  de base  de datos,  minería de datos  y recuperación  de la información. Esto ha impulsado el desarrollo de técnicas escalables y eficientes para organizar y recuperar estos tipos de datos complejos. Las búsquedas por similitud han sido el enfoque tradicional para la recuperación de la información. Considerando que la similitud es el criterio instintivo por el cual las personas hacen comparaciones, las comunidades de recuperación de información usan la similitud para organizar y recuperar estos datos.    Sin embargo, causa algunas dificultades en representar datos complejos y también con la escalabilidad de los algoritmos cuando la dimensionalidad de los datos es muy alta (más conocido como la ``maldición de la alta dimensionalidad''). Aunque muchos trabajos de investigación se han llevado a cabo en el desarrollo de estructuras y algoritmos eficientes de búsqueda sólo unos pocos presentan una garantía teórica de estabilidad asintótica para datos de alta dimensión \cite{5459466,CiteULike:7399806}.
 
 Muchas soluciones responden a consultas por similitud aprovechando estructuras de índices. Los árboles son las estructuras de índice más comunes para estos dominios. Estas soluciones basadas en jerarquías pueden ser superadas mediante búsqueda secuencial en casos particulares, pues sucede que cuando los datos están en altas  dimensiones  la mayor parte del tiempo pasado se usa en la etapa de filtrado  \cite{WhatsWrong}. No todas las aplicaciones requieren respuestas precisas. Por lo tanto,  soluciones aproximadas son preferibles para reducir los efectos de la ``maldición de la alta dimensionalidad''. Estas soluciones aproximadas se aplican en problemas a gran escala donde la velocidad es más importante que la exactitud. En este contexto, necesitamos optimizar el equilibrio entre el tiempo y la calidad de los resultados.
 
@@ -17,9 +17,8 @@ En la linea de \textit{Machine Learning} las imágenes se describen a menudo med
 
 \section{Definición del problema}
 
- 
-Los  algoritmos de búsqueda aproximada  basados en \textit{hashing} son propuestos para consultar en conjuntos de datos  alta dimensiones debido a su velocidad de recuperación y bajo costo de almacenamiento.  Por otro lado, en problemas donde se tiene grandes volúmenes de datos etiquetados las técnicas de aprendizaje profundo, como las redes convolucionales, se muestran más adecuadas conforme el número de ejemplos por clases crece. Estudios recientes, promueven el uso de la \acf{CNN} con técnicas de  \textit{hashing} para mejorar la precisión de la búsqueda de los k-vecinos más cercanos - KNN.  Sin embargo, aun hay retos que resolver para encontrar una solución práctica y eficiente para indexar características  CNN:
 
+Los  algoritmos de búsqueda aproximada  basados en \textit{hashing} son propuestos para consultar en conjuntos de datos  alta dimensiones debido a su velocidad de recuperación y bajo costo de almacenamiento.  Por otro lado, en problemas donde se tiene grandes volúmenes de datos etiquetados las técnicas de aprendizaje profundo, como las redes convolucionales, se muestran más adecuadas conforme el número de ejemplos por clases crece. Estudios recientes, promueven el uso de la \acf{CNN} con técnicas de  \textit{hashing} para mejorar la precisión de la búsqueda de los k-vecinos más cercanos - KNN.  Sin embargo, aun hay retos que resolver para encontrar una solución práctica y eficiente para indexar características  CNN:
 \begin{itemize}
   \item La necesidad de un proceso de entrenamiento intenso para lograr resultados precisos.
 
@@ -31,14 +30,14 @@ Los  algoritmos de búsqueda aproximada  basados en \textit{hashing} son propues
  
 \end{itemize}
 
-Por otro lado, en problemas de gran escala con grandes volúmenes de datos las técnicas de aprendizaje profundo,  se muestran más adecuadas conforme el número de ejemplos por clases crece. Además, para tareas de procesamiento y clasificación de los datos  ahora se puede usar el alto rendimiento de las GPUs.   En problemas de gran escala, arquitecturas secuenciales (CPUs) imponen limitaciones de desempeño. Por lo tanto, recurrir a las soluciones basadas en GPU es una manera de superar tales limitaciones de desempeño.
+%Por otro lado, en problemas de gran escala con grandes volúmenes de datos las técnicas de aprendizaje profundo,  se muestran más adecuadas conforme el número de ejemplos por clases crece. Además, para tareas de procesamiento y clasificación de los datos  ahora se puede usar el alto rendimiento de las GPUs.   En problemas de gran escala, arquitecturas secuenciales (CPUs) imponen limitaciones de desempeño. Por lo tanto, recurrir a las soluciones basadas en GPU es una manera de superar tales limitaciones de desempeño.
  
 
 \section{Objetivos}\label{objs}
 
 
 \begin{itemize}
-  \item  Estudiar y desarrollar  m\'etodos óptimos de proyección  en subespacios usando la teoría fractal.  El objetivo es   mostrar que un buen algoritmo de reducción de dimensionalidad  proyecta los datos en un espacio de características con dimensionalidad cercana a la dimensionalidad fractal (FD).
+  \item  Estudiar  m\'etodos óptimos de proyección  en subespacios usando la teoría fractal.  El objetivo es   mostrar que un buen algoritmo de reducción de dimensionalidad  proyecta los datos en un espacio de características con dimensionalidad cercana a la dimensionalidad fractal (FD).
 
   \item  Estudiar y desarrollar un nuevo m\'etodo de \textit{hashing} supervisado que sea independiente de los parámetros dominio y  diseñado para realizar una búsqueda  aproximada escalable.    La idea es usar análisis fractal para la optimización de parámetros de dominio para poder integrar los métodos de aprendizaje profundo, vía redes convolucionales como extractor de características y las técnicas de búsqueda aproximada como esquema de recuperación de información.
 \end{itemize}
@@ -58,20 +57,37 @@ Las contribuciones de nuestro trabajo son las siguientes:
 
 \section{Organización de la tesis}
 
-El presente trabajo está organizado de la siguiente manera: 
+El presente trabajo está organizado en 7 capítulos, incluyendo la presente introducción, y tiene la  siguiente estructura:
 
-\bigskip
-\begin{enumerate}
-	\item Introducción
-	\item Fundamentos Teóricos
-	\begin{enumerate}
-		\item Consultas por similitud
-		\item Minería de Datos \& Deep Learning
-		\item Teoría Fractal
-	\end{enumerate}
-	\item Búsqueda aproximada vía \textit{deep hashing} 
-	\item \textit{Deep Fractal based Hashing - DAsH}
-	\item Conclusiones y Trabajos Futuros
-\end{enumerate}
+\begin{itemize}
+    \item En el \textbf{Capítulo 2} se describirá los principales conceptos relacionados a consultas por similitud en espacios multidimensionales y espacios métricos. 
+    \item En el \textbf{Capítulo 3} se describirá los principales conceptos relacionados a minería de datos y \textit{Deep Learning}, siendo los mismos de interés para este trabajo.
+    
+    \item En el \textbf{Capítulo 4} se describirá los principales conceptos relacionados a la Teoría Fractal y sus aplicaciones   al análisis de datos.
+    
+    \item En el \textbf{Capítulo 5} se presentará  un estudio sobre métodos de proyección de datos y su relación con la dimensión fractal. Además se presentará el análisis del desempeño  de desempeño sobre estos datos con distintos  métodos de búsqueda aproximada. 
+
+
+     \item En el \textbf{Capítulo 6} se presentará nuestra propuesta llamado \textit{Deep Fractal based  Hashing} (DAsH) diseñado para realizar una búsqueda aproximada escalable mediante un esquema de \textit{hash} supervisado..
+     
+    
+    \item En el \textbf{Capítulo 7} se presentarán las consideraciones finales, incluyendo nuestras principales contribuciones y propuestas para trabajos futuros.
+    
+\end{itemize}
+
+
+%\bigskip
+%\begin{enumerate}
+%	\item Introducción
+%	\item Fundamentos Teóricos
+%	\begin{enumerate}
+%		\item Consultas por similitud
+%		\item Minería de Datos \& Deep Learning
+%		\item Teoría Fractal
+%	\end{enumerate}
+%	\item Búsqueda aproximada vía \textit{deep hashing} 
+%	\item \textit{Deep Fractal based Hashing - DAsH}
+%	\item Conclusiones y Trabajos Futuros
+%\end{enumerate}
 
 

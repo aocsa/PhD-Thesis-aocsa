@@ -1,3 +1,4 @@
+% Encoding: UTF-8
 % THIS LIST PRESENTS STANDARDIZED NAMES FOR PROCEEDINGS AND JOURNALS.
 % IT DOES NOT, IN ANY WAY, LIMIT THE REFERENCES TO VENUES ON THIS LIST.
 % IT IS MERE A SUGGESTION ON HOW TO WRITE THE VENUES IN THE BIB FILES,
@@ -21,6 +22,7 @@
 @STRING{computernetw = {Computer Networks}}
 
 @STRING{computingsurveys = {ACM Computing Surveys}}
+@STRING{cvpr = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition}}
 
 @STRING{dasfaa = {Proceedings of the International Conference on Database Systems for Advanced Applications}}
 
@@ -46,6 +48,8 @@
 
 @STRING{ecir = {Proceedings of the European Conference on Information Retrieval}}
 
+@STRING{ecml = {European Conference on Machine Learning}}
+
 @STRING{edbt = {Proceedings of the International Conference on Extending Database Technology}}
 
 @STRING{eextt = {Proceedings of the VLDB Workshop on Efficiency and Effectiveness of XML Tools, and Techniques}}
@@ -56,15 +60,18 @@
 
 @STRING{geoinfo = {Proceedings of the Brazilian Symposium on GeoInformatics}}
 
+@STRING{iccv = {Proceedings  of the International Conference on Computer Vision}}
+
 @STRING{icde = {Proceedings of the IEEE International Conference on Data Engineering}}
-@STRING{cvpr = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition}}
 
 
 @STRING{icdebulletin = {IEEE Data Engineering Bulletin}}
 
+@STRING{icdm = {Proceedings of the IEEE International Conference on Data Mining}}
+
 @STRING{icdt = {Proceedings of the International Conference on Database Theory}}
 
-@STRING{icdm = {Proceedings of the IEEE International Conference on Data Mining}}
+@STRING{icfdoa = {Proceedings of the 4th International Conference on Foundations of Data Organization and Algorithms}}
 
 @STRING{icml = {Proceedings of the International Conference on Machine Learning}}
 
@@ -85,8 +92,6 @@
 @STRING{jucs = {Journal of Universal Computer Science}}
 
 @STRING{kdd = {Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}}
-
-@STRING{iccv = {Proceedings  of the International Conference on Computer Vision}}
 
 
 @STRING{mobilesearch = {Proceedings of the WWW Workshop on Mobile Search}}
@@ -145,15 +150,71 @@
 
 @STRING{xsym = {Proceedings of XML Database Symposium}}
 
-@STRING{icfdoa = {Proceedings of the 4th International Conference on Foundations of Data Organization and Algorithms}}
+@InProceedings{Deng2014,
+  author    = {Deng, Jia and Ding, Nan and Jia, Yangqing and Frome, Andrea and Murphy, Kevin and Bengio, Samy and Li, Yuan and Neven, Hartmut and Adam, Hartwig},
+  title     = {Large-Scale Object Classification Using Label Relation Graphs.},
+  booktitle = {ECCV (1)},
+  year      = {2014},
+  editor    = {Fleet, David J. and Pajdla, Tomás and Schiele, Bernt and Tuytelaars, Tinne},
+  volume    = {8689},
+  series    = {Lecture Notes in Computer Science},
+  publisher = {Springer},
+  isbn      = {978-3-319-10589-5},
+  pages     = {48-64},
+  url       = {http://dblp.uni-trier.de/db/conf/eccv/eccv2014-1.html#DengDJFMBLNA14},
+  added-at  = {2016-01-08T00:00:00.000+0100},
+  biburl    = {https://www.bibsonomy.org/bibtex/23ca3d96e3bc069cdc75822c72f43f71b/dblp},
+  crossref  = {conf/eccv/2014-1},
+  ee        = {http://dx.doi.org/10.1007/978-3-319-10590-1_4},
+  interhash = {39ae8bff8e9f795c7436e31c1ecf00ae},
+  intrahash = {3ca3d96e3bc069cdc75822c72f43f71b},
+  keywords  = {dblp},
+  timestamp = {2016-01-13T12:25:01.000+0100},
+}
 
-@STRING{ecml = {European Conference on Machine Learning}}
+
+
+@inproceedings{LiuWJJC12,
+  added-at = {2016-05-30T00:00:00.000+0200},
+  author = {Liu, Wei and Wang, Jun and Ji, Rongrong and Jiang, Yu-Gang and Chang, Shih-Fu},
+  biburl = {http://www.bibsonomy.org/bibtex/2a481213d8c2b96f63bac067855649fcb/dblp},
+  booktitle = {CVPR},
+  crossref = {conf/cvpr/2012},
+  isbn = {978-1-4673-1226-4},
+  keywords = {dblp},
+  pages = {2074-2081},
+  publisher = {IEEE Computer Society},
+  timestamp = {2016-05-31T13:22:08.000+0200},
+  title = {Supervised hashing with kernels.},
+  year = 2012
+}
+
+@inproceedings{conf/pods/FaloutsosK94,
+  added-at = {2015-01-22T00:00:00.000+0100},
+  author = {Faloutsos, Christos and Kamel, Ibrahim},
+  biburl = {http://www.bibsonomy.org/bibtex/27481a26fb49d2882833a0aa9a77dbd4b/dblp},
+  booktitle = {PODS},
+  cite = {books/aw/Zipf49},
+  crossref = {conf/pods/94},
+  editor = {Vianu, Victor},
+  ee = {http://doi.acm.org/10.1145/182591.182593},
+  interhash = {c0d1e432da405a327a151bdc7b04cef7},
+  intrahash = {7481a26fb49d2882833a0aa9a77dbd4b},
+  isbn = {0-89791-642-5},
+  keywords = {dblp},
+  pages = {4-13},
+  publisher = {ACM Press},
+  timestamp = {2015-06-20T01:20:46.000+0200},
+  title = {Beyond Uniformity and Independence: Analysis of R-trees Using the Concept of Fractal Dimension.},
+  url = {http://dblp.uni-trier.de/db/conf/pods/pods94.html#FaloutsosK94},
+  year = 1994
+}
 
 
 @article{lshtutorial,
  author = {M. Slaney and M. Casey},
  title = {{Locality-Sensitive Hashing for Finding Nearest Neighbors}},
- journal = {IEEE Signal Processing Magazine},
+ journaltitle = {IEEE Signal Processing Magazine},
  year = {2008},
  pages = {128-131},
  volume = {25},
@@ -463,7 +524,7 @@
 @article{KeoghIndMTS,
  author = {Vlachos, Michail and Hadjieleftheriou, Marios and Gunopulos, Dimitrios and Keogh, Eamonn},
  title = {{Indexing Multidimensional Time-Series}},
- journal = vldbj,
+ journaltitle = vldbj,
  volume = {15},
  number = {1},
  year = {2006},
@@ -473,7 +534,7 @@
  @article{wekwek,
   title={WEKWEK: A Study in Fractal Dimension and Dimensionality Reduction},
   author={Elena E., Krishna K. and Matteo Matteucci},
-  journal={ACM},
+  journaltitle ={ACM},
   volume={},
   number={},
   pages={},
@@ -507,7 +568,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article{Faloutsos94,
  author = {Faloutsos, Christos and Ranganathan, M. and Manolopoulos, Yannis},
  title = {Fast Subsequence Matching in Time-series Databases},
- journal = {SIGMOD Rec.},
+ journaltitle = {SIGMOD Rec.},
  issue_date = {June 1994},
  volume = {23},
  number = {2},
@@ -526,7 +587,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
  @article{wang13,
   title={Experimental comparison of representation methods and distance measures for time series data},
   author={Xiaoyue Wang,Abdullah Mueen, Hui Ding, Goce Trajcevski,Peter Scheuermann and Eamonn Keogh},
-  journal={Data Min Knowl Disc},
+  journaltitle ={Data Min Knowl Disc},
   volume={26},
   number={},
   pages={275–309},
@@ -542,7 +603,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article{cit:tspanners02,
  author = {Navarro, Gonzalo and Paredes, Rodrigo and Ch\'{a}vez, Edgar},
  title = {{t-Spanners for metric space searching}},
- journal = {Data and Knowledge Engineering},
+ journaltitle = {Data and Knowledge Engineering},
  volume = {63},
  issue = {3},
  year = {2007},
@@ -553,7 +614,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @ARTICLE{SATree,
   author = {Gonzalo Navarro},
   title = {{Searching in metric spaces by spatial approximation}},
-  journal = vldbj,
+  journaltitle = vldbj,
   year = {2002},
   volume = {11},
   pages = {28--46},
@@ -563,7 +624,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article {SAX,
    author = {Lin, Jessica and Keogh, Eamonn and Wei, Li and Lonardi, Stefano},
    title = {{Experiencing SAX: a novel symbolic representation of time series}},
-   journal = {Data Mining and Knowledge Discovery},
+   journaltitle = {Data Mining and Knowledge Discovery},
    pages = {107-144},
    volume = {15},
    number = {2},
@@ -573,7 +634,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article{Korn:1997:ESA:253262.253332,
  author = {Korn, Flip and Jagadish, H. V. and Faloutsos, Christos},
  title = {{Efficiently supporting ad hoc queries in large datasets of time sequences}},
- journal = sigmodrecord,
+ journaltitle = sigmodrecord,
  volume = {26},
  number = {2},
  year = {1997},
@@ -596,7 +657,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
  @article{cit:indexDriven,
  author = {Hjaltason, Gisli R. and Samet, Hanan},
  title = {{Index-driven similarity search in metric spaces}},
- journal = tods,
+ journaltitle = tods,
  volume = {28},
  number = {4},
  year = {2003},
@@ -607,7 +668,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article{LSHClustering1,
  author = {Hisashi Koga ,Tetsuo Ishibashi, Toshinori Watanabe},
  title = {{Fast Hierarchical Clustering Algorithm Using Locality-Sensitive Hashing}},
- journal = {Discovery Science},
+ journaltitle = {Discovery Science},
  volume = {12},
  number = {1},
  year = {2004},
@@ -617,7 +678,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article{LSHClustering2,
  author = {Hisashi Koga, Tetsuo Ishibashi, Toshinori Watanabe},
  title = {{Fast agglomerative hierarchical clustering algorithm using Locality-Sensitive Hashing}},
- journal = {Knowledge and Information Systems},
+ journaltitle = {Knowledge and Information Systems},
  volume = {12},
  number = {1},
  year = {2007},
@@ -629,7 +690,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
  @article{ScalingTimeSeriesQuerying,
  author = {Fu, Ada Wai-Chee and Keogh, Eamonn and Lau, Leo Yung and Ratanamahatana, Chotirat Ann and Wong, Raymond Chi-Wing},
  title = {{Scaling and time warping in time series querying}},
- journal = vldbj,
+ journaltitle = vldbj,
  volume = {17},
  number = {4},
  year = {2008},
@@ -640,7 +701,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
  author  = {Volker Gaede and Oliver Gunther},
  title   = {{Multidimensional Access Methods}},
  year    = {1998},
- journal = computingsurveys,
+ journaltitle = computingsurveys,
  volume  = {30},
  number  = {2},
  pages   = {170--231},
@@ -649,7 +710,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article{SlimTree,
  author = { Traina C., Jr. and Agma Traina and Christos Faloutsos and Bernhard Seeger},
  title = {{Fast Indexing and Visualization of Metric Data Sets using Slim-Trees}},
- journal = tkde,
+ journaltitle = tkde,
  volume = {14},
  number = {2},
  year = {2002},
@@ -660,7 +721,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article{taoLSBLSH,
  author = {Tao, Yufei and Yi, Ke and Sheng, Cheng and Kalnis, Panos},
  title = {{Efficient and accurate nearest neighbor and closest pair search in high-dimensional space}},
- journal = tods,
+ journaltitle = tods,
  volume = {35},
  number = {3},
  year = {2010},
@@ -670,7 +731,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article{Ding:2008:QMT:1454159.1454226,
  author = {Ding, Hui and Trajcevski, Goce and Scheuermann, Peter and Wang, Xiaoyue and Keogh, Eamonn},
  title = {{Querying and mining of time series data: experimental comparison of representations and distance measures}},
- journal = pvldb,
+ journaltitle = pvldb,
  volume = {1},
  number = {2},
  year = {2008},
@@ -680,7 +741,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article{cite:graycodes,
  author = {Faloutsos, Christos},
  title = {{Multiattribute hashing using Gray codes}},
- journal = sigmodrecord,
+ journaltitle = sigmodrecord,
  volume = {15},
  number = {2},
  year = {1986},
@@ -692,7 +753,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
   author = {Edgar Ch\'{a}vez and Gonzalo Navarro and Ricardo Baeza-Yates and
   Jos\'{e} Luis Marroqu\'{\i}n},
   title = {{Searching in metric spaces}},
-  journal = computingsurveys,
+  journaltitle = computingsurveys,
   year = {2001},
   volume = {33},
   pages = {273--321},
@@ -702,7 +763,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article{KeoghSigmod2001,
  author = {Keogh, Eamonn and Chakrabarti, Kaushik and Pazzani, Michael and Mehrotra, Sharad},
  title = {{Locally adaptive dimensionality reduction for indexing large time series databases}},
- journal = sigmodrecord,
+ journaltitle = sigmodrecord,
  volume = {30},
  number = {2},
  year = {2001},
@@ -722,7 +783,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article{aleman_high_dimensional,
  author = {Christian B\"{o}hm and Stefan Berchtold and Daniel A. Keim},
  title = {{Searching in high-dimensional spaces: Index structures for improving the performance of multimedia databases}},
- journal = computingsurveys,
+ journaltitle = computingsurveys,
  volume = {33},
  number = {3},
  year = {2001},
@@ -733,7 +794,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article{hashing_algoritghms_survey,
  author = {Alexandr Andoni and Piotr Indyk},
  title = {{Near-optimal hashing algorithms for approximate nearest neighbor in high dimensions}},
- journal = cacm,
+ journaltitle = cacm,
  volume = {51},
  number = {1},
  year = {2008},
@@ -743,7 +804,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article{rstartree,
  author = {Norbert Beckmann and Hans-Peter Kriegel and Ralf Schneider and Bernhard Seeger},
  title = {{The R*-tree: an efficient and robust access method for points and rectangles}},
- journal = sigmodrecord,
+ journaltitle = sigmodrecord,
  volume = {19},
  number = {2},
  year = {1990},
@@ -804,7 +865,7 @@ keywords = {data mining, time series analysis, time series data, time series rep
 @article{NNinLearningandVision,
  author = {Liu, Ting and Moore, Andrew W. and Gray, Alexander},
  title = {New Algorithms for Efficient High-Dimensional Nonparametric Classification},
- journal = {Journal of Machine Learning Research},
+ journaltitle = {Journal of Machine Learning Research},
  volume = {7},
  year = {2006},
  issn = {1532-4435},
@@ -853,22 +914,20 @@ keywords = {data mining, time series analysis, time series data, time series rep
   pages={665--676}
 }
 
-
-
-@proceedings{citeulike:3978028,
-    title = {{Detecting Subdimensional Motifs: An Efficient Algorithm for Generalized Multivariate Pattern Discovery}},
-    author = {Minnen, D. and Isbell, C. and Essa, M. and Starner, T.},
-    booktitle = icdm,
-    address = {Omaha NE, USA},
-    pages = {601--606},
-    year = {2007}
+@Proceedings{Minnen2007,
+  title     = {{Detecting Subdimensional Motifs: An Efficient Algorithm for Generalized Multivariate Pattern Discovery}},
+  year      = {2007},
+  pages     = {601--606},
+  address   = {Omaha NE, USA},
+  author    = {Minnen, D. and Isbell, C. and Essa, M. and Starner, T.},
+  booktitle = icdm,
 }
 
 
 @article{GPGPU-Survey,
     address = {University of California},
     author = {Owens J.,, Luebke D.,,  Govindaraju N.,, Harris M.,,  KrugerJ.,, Lefohn  A.E.,, and  Purcell},
-    journal = {Computer Graphics Forum},
+    journaltitle = {Computer Graphics Forum},
     number = {1},
     pages = {80--113},
     publisher = {Blackwell Publishing Ltd},
@@ -905,15 +964,6 @@ year={2011},
 pages={1103 -1114},
 address={Hannover, Germany}
 }
-
-@inproceedings{lsh,
- author = {Datar, Mayur and Immorlica, Nicole and Indyk, Piotr and Mirrokni, Vahab S.},
- title = {Locality-sensitive hashing scheme based on p-stable distributions},
- booktitle = {Proceedings of the Twentieth annual Symposium on Computational Geometry},
- year = {2004},
- pages = {253--262},
- address = {Brooklyn, New York, USA}
- }
  @inproceedings{modelinglsh,
  author = {Dong, Wei and Wang, Zhe and Josephson, William and Charikar, Moses and Li, Kai},
  title = {Modeling {L}{S}{H} for performance tuning},
@@ -954,7 +1004,7 @@ address = {Anchorage, UK, USA}
 @article{Zhou:2008:RKC:1409060.1409079,
  author = {Zhou, Kun and Hou, Qiming and Wang, Rui and Guo, Baining},
  title = {Real-time KD-tree construction on graphics hardware},
- journal = {ACM Transactions on Graphics},
+ journaltitle = {ACM Transactions on Graphics},
  volume = {27},
  number = {5},
  year = {2008},
@@ -983,7 +1033,7 @@ address = {Anchorage, UK, USA}
 @article{Che:2008:PSG:1412749.1412827,
  author = {Che, Shuai and Boyer, Michael and Meng, Jiayuan and Tarjan, David and Sheaffer, Jeremy W. and Skadron, Kevin},
  title = {{A performance study of general-purpose applications on graphics processors using CUDA}},
- journal = {Journal of Parallel and Distributed Computing},
+ journaltitle = {Journal of Parallel and Distributed Computing},
  volume = {68},
  year = {2008},
  pages = {1370--1380},
@@ -994,7 +1044,7 @@ address = {Anchorage, UK, USA}
 @article {MEME,
    author = {Bailey, Timothy L. and Elkan, Charles},
    title = {Unsupervised learning of multiple motifs in biopolymers using expectation maximization},
-   journal = {Machine Learning},
+   journaltitle = {Machine Learning},
    publisher = {Springer Netherlands},
    keyword = {Computer Science},
    pages = {51-80},
@@ -1004,7 +1054,7 @@ address = {Anchorage, UK, USA}
 @article{cudameme,
  author = {Liu, Yongchao and Schmidt, Bertil and Liu, Weiguo and Maskell, Douglas L.},
  title = {{CUDA-MEME: Accelerating motif discovery in biological sequences using CUDA-enabled graphics processing units}},
- journal = {Pattern Recognition Letters},
+ journaltitle = {Pattern Recognition Letters},
  volume = {31},
  year = {2010},
  pages = {2170--2177},
@@ -1015,7 +1065,7 @@ address = {Anchorage, UK, USA}
 @article{Guttman1984,
  author = {Guttman, Antonin},
  title = {R-trees: a dynamic index structure for spatial searching},
- journal = sigmodrecord,
+ journaltitle = sigmodrecord,
  volume = {14},
  year = {1984},
  pages = {47--57},
@@ -1106,7 +1156,7 @@ address = {Kyoto, Japan}
 
 @ARTICLE{tesla,
 author={Lindholm, E. and Nickolls, J. and Oberman, S. and Montrym, J.},
-journal={Micro, IEEE},
+journaltitle ={Micro, IEEE},
 title={NVIDIA Tesla: A Unified Graphics and Computing Architecture},
 year={2008},
 volume={28},
@@ -1117,7 +1167,7 @@ pages={39 -55},
 @article{CUDA,
  author = {Nickolls, John and Buck, Ian and Garland, Michael and Skadron, Kevin},
  title = {{Scalable Parallel Programming with CUDA}},
- journal = {Queue},
+ journaltitle = {Queue},
  volume = {6},
  year = {2008},
  pages = {40--53},
@@ -1128,7 +1178,7 @@ pages={39 -55},
 
 @ARTICLE{OPENCL,
 author={Stone, J.E. and Gohara, D. and Guochun Shi},
-journal={Computing in Science Engineering},
+journaltitle ={Computing in Science Engineering},
 title={{OpenCL: A Parallel Programming Standard for Heterogeneous Computing Systems}},
 year={2010},
 volume={12},
@@ -1206,7 +1256,7 @@ pages={2272-2290}
 author = { Cazella S C and Reategui E B and Nunes M A},
 title = {Estado da arte em Sistemas de Recomendação},
  year = {2010},
-  JOURNAL={Jornada de Atualização em Informática da SBC. Rio de Janeiro},
+  journaltitle ={Jornada de Atualização em Informática da SBC. Rio de Janeiro},
  PAGES={ 161–216}
  }
 
@@ -1229,7 +1279,7 @@ author = { Bishop C M},
 title = {Pattern Recognition and Machine
 Learning. Springer},
  year = {2010},
- JOURNAL={Springer. ISBN },
+ journaltitle ={Springer. ISBN },
  PAGES={ 0-387-31073-8}
  }
 
@@ -1237,7 +1287,7 @@ Learning. Springer},
 author = {Wernick Yang and Brankov Yourganov and Strother},
 title = {Machine Learning in Medical Imaging},
  year = {2010},
- JOURNAL={ IEEE Signal Processing
+ journaltitle ={ IEEE Signal Processing
 Magazine},
  PAGES={ 25-38}
  }
@@ -1254,7 +1304,7 @@ author = {Friedman  Jerome H},
 title = {Data Mining and Statistics: What’s the connection},
 
  year = {2010},
- JOURNAL={ Computing Science and Statistics},
+ journaltitle ={ Computing Science and Statistics},
   PAGES={ 3–9}
  }
 
@@ -1310,7 +1360,7 @@ title = {Systems and methods for combining static and dynamic code analysis},
 author = { Li-Qian Y and Lin-Zhang W and Bin L and  Jian-Hua Z and Xuan-Dong Z},
 title = {Combined Static and Dynamic Immutability Analysis of Java Program},
  year = {2010},
-  JOURNAL={hinese Journal of Computers. Vol. 33},
+  journaltitle ={hinese Journal of Computers. Vol. 33},
  PAGES={ 736-746}
  }
 
@@ -1321,7 +1371,7 @@ title = {Combined Static and Dynamic Immutability Analysis of Java Program},
 author = { Huajie C and Tian Z  Lei B and Xuandong L},
 title = {An Instrumentation Tool for Program Dynamic Analysis in Java},
  year = {2011},
-  JOURNAL={Fifth International Conference on Secure Software Integration and Reliability Improvement - Companion. IEEE Computer Siciety}
+  journaltitle ={Fifth International Conference on Secure Software Integration and Reliability Improvement - Companion. IEEE Computer Siciety}
 
  }
 
@@ -1390,7 +1440,7 @@ title = {Instrumentation technique and its applications in software analysis and
 author = { Bessey A and Block K and Chelf B and  Chou A and  Fulton B and Hallem S},
 title = {A few billion lines of code later: Using static analysis to find bugs in the real world},
  year = {2010},
-  JOURNAL={Communications of the ACM},
+  journaltitle ={Communications of the ACM},
  PAGES={ 66-75}
  }
 
@@ -1400,7 +1450,7 @@ title = {A few billion lines of code later: Using static analysis to find bugs i
 author = { Ayewah N and Hovemeyer D and Morgenthaler D and Penix J and Pugh W},
 title = {Experiences Using Static Analysis to Find Bugs},
  year = {2008},
-  JOURNAL={IEEE Software},
+  journaltitle ={IEEE Software},
  PAGES={ 22-29.}
  }
 
@@ -1410,7 +1460,7 @@ title = {Experiences Using Static Analysis to Find Bugs},
 author = { Ashcraft K and Engler D},
 title = {Using programmer-written compiler extensions to catch security holes},
  year = {2011},
-  JOURNAL={IEEE Symposium on Security and Privacy},
+  journaltitle ={IEEE Symposium on Security and Privacy},
 
  }
 
@@ -1425,7 +1475,7 @@ title = {Incorporating Domain-Specific Information into the Compilation Process}
 author = { Wasserman G and Su Z},
 title = {Sound and precise analysis of web applications for injection vulnerabilities},
  year = {2007},
-  JOURNAL={ACM SIGPLAN Conference on Programming Language Design and Implementation}
+  journaltitle ={ACM SIGPLAN Conference on Programming Language Design and Implementation}
 
  }
 
@@ -1436,7 +1486,7 @@ title = {Sound and precise analysis of web applications for injection vulnerabil
 author = { Shankar U K and Talwar J S and Foster and  Wagner D},
 title = {Detecting format string vulnerabilities with type qualifiers},
  year = {2010},
-  JOURNAL={USENIX Security Symposium}
+  journaltitle ={USENIX Security Symposium}
 
  }
 
@@ -1447,7 +1497,7 @@ title = {Detecting format string vulnerabilities with type qualifiers},
 author = { Enrique José Altuna Castillo and Lisandra Guibert Estrada},
 title = {Generación de pistas durante el aprendizaje de la programación para concursos usando el análisis estático y dinámico de las soluciones},
  year = {2013},
-  JOURNAL={Ingeniare. Rev. chil. ing. vol.21},
+  journaltitle ={Ingeniare. Rev. chil. ing. vol.21},
  PAGES={ 161–216}
  }
 
@@ -1455,7 +1505,7 @@ title = {Generación de pistas durante el aprendizaje de la programación para c
 author = {  Vekariya V and Kulkarni},
 title = {Hybrid recommender systems: Survey and experiments},
  year = {2012},
-  JOURNAL={Second International Conference on Digital Information and Communication Technology and it’s Applications (DICTAP)},
+  journaltitle ={Second International Conference on Digital Information and Communication Technology and it’s Applications (DICTAP)},
  PAGES={ 469–473}
  }
 
@@ -1464,7 +1514,7 @@ title = {Hybrid recommender systems: Survey and experiments},
 author = { Marcelo Worsley and Paulo Blikstein},
 title = {Programming Pathways: A Technique for Analyzing Novice Programmers’ Learning Trajectories},
  year = {2013},
-  JOURNAL={Artificial Intelligence Education},
+  journaltitle ={Artificial Intelligence Education},
  PAGES={ 843-850}
  }
 
@@ -1475,7 +1525,7 @@ author = { Turkle S and Papert S},
 title = {Epistemological Pluralism and Revaluation of the Concrete. In: I. H.
 a. S. Papert (eds.)},
  year = {2010},
-  JOURNAL={Constructionism.},
+  journaltitle ={Constructionism.},
  PAGES={ 161-192}
  }
 
@@ -1484,7 +1534,7 @@ a. S. Papert (eds.)},
 author = {Zulema Beatriz Rosanigo and Pedro Bramati},
 title = {Objetos de Aprendizaje},
  year = {2011},
-  JOURNAL={Departamento de Ingeniería
+  journaltitle ={Departamento de Ingeniería
 Facultad de Ingeniería}
  }
 
@@ -1499,7 +1549,7 @@ year = {2010},
 author = {  Rodríguez P A and Tabares V and Duque N D and Ovalle D A  and  Vicari R M},
 title = {Multi-agent Model for Searching, Recovering, Recommendation and Evaluation of Learning Objects from Repository Federations},
  year = {2012},
-  JOURNAL={Advances in Artificial Intelligence – IBERAMIA},
+  journaltitle ={Advances in Artificial Intelligence – IBERAMIA},
  PAGES={ 631–640}
  }
 
@@ -1509,7 +1559,7 @@ title = {Multi-agent Model for Searching, Recovering, Recommendation and Evaluat
 author = { Hdioud F and Frikh B and Ouhbi B},
 title = {A comparison study of some algorithms in Recommender Systems},
  year = {2012},
-  JOURNAL={Information Science and Technology (CIST), Colloquium},
+  journaltitle ={Information Science and Technology (CIST), Colloquium},
  PAGES={ 130–135}
  }
 
@@ -1519,7 +1569,7 @@ title = {A comparison study of some algorithms in Recommender Systems},
 author = { Betancur D and Moreno J and Ovalle D},
 title = {Modelo para la recomendación y recuperación de objetos de aprendizaje en entornos virtuales de enseñanza/aprendizaje. Revista Avances en Sistemas e Informática},
  year = {2010},
-  JOURNAL={Revista Avances en Sistemas e Informática},
+  journaltitle ={Revista Avances en Sistemas e Informática},
  PAGES={ 45–56}
  }
 
@@ -1535,7 +1585,7 @@ title = {Modelo de recomendación adaptativa de objetos de aprendizaje en el mar
   @article{Mizhquero,
  author = {  Mizhquero K },
  title = {Diseño e Implementación de un Sistema Adaptivo de Recomendación de Información Basado en Mashups},
- JOURNAL={Tecnológica ESPOL},
+ journaltitle ={Tecnológica ESPOL},
  year = {2009}
  }
 
@@ -1562,12 +1612,11 @@ title = {Modelo de recomendación adaptativa de objetos de aprendizaje en el mar
      year = {2012}
     }
 
-@article{cit:benjamin,
- author = { Benjamín Maraza Q. },
- title = {Modelo Inteligente de Gestión de Aprendizaje Personalizado en un Ambiente de Simulación Virtual Basado en Instancias de Objetos de Aprendizaje},
- year = {2013}
-
- }
+@Article{BenjaminMaraza2013,
+  author = {Benjamín Maraza Q.},
+  title  = {Modelo Inteligente de Gestión de Aprendizaje Personalizado en un Ambiente de Simulación Virtual Basado en Instancias de Objetos de Aprendizaje},
+  year   = {2013},
+}
 
 @article{cit:jane,
   author =   {Jane O. },
@@ -1716,7 +1765,7 @@ Xers and millennials: Understanding the new students.  },
 @article{calderon2011factores,
   title={Factores de riesgo y detección temprana del melanoma maligno en pacientes con nevus melanocíticos},
   author={Calderón, Mar Burgués and Martín, Rafael Llamas},
-  journal={Más dermatología},
+  journaltitle ={Más dermatología},
   number={14},
   pages={5--13},
   year={2011},
@@ -1725,7 +1774,7 @@ Xers and millennials: Understanding the new students.  },
 
 @article{ABCDrule,
     title = "The ABCD rule of dermatoscopy",
-    journal = "Journal of the American Academy of Dermatology",
+    journaltitle = "Journal of the American Academy of Dermatology",
     volume = "30",
     number = "4",
     pages = "551-559",
@@ -1738,7 +1787,7 @@ Xers and millennials: Understanding the new students.  },
 
 @article{ComparaSegmentation,
     author={M. Silveira and J. C. Nascimento and J. S. Marques and A. R. S. Marcal and T. Mendonca and S. Yamauchi and J. Maeda and J. Rozeira},
-    journal={IEEE Journal of Selected Topics in Signal Processing},
+    journaltitle ={IEEE Journal of Selected Topics in Signal Processing},
     title={Comparison of Segmentation Methods for Melanoma Diagnosis in Dermoscopy Images},
     year={2009},
     volume={3},
@@ -1752,7 +1801,7 @@ Xers and millennials: Understanding the new students.  },
 @article{Premaladha2016,
     author="Premaladha, J. and Ravichandran, K. S.",
     title="Novel Approaches for Diagnosing Melanoma Skin Lesions Through Supervised and Deep Learning Algorithms",
-    journal="Journal of Medical Systems",
+    journaltitle ="Journal of Medical Systems",
     year="2016",
     volume="40",
     number="4",
@@ -1767,7 +1816,7 @@ Xers and millennials: Understanding the new students.  },
   author={Sharma, Deepti and Srivastava, Swati},
   issn={2321-0869},
   year={2015},
-  journal={International Journal of Engineering & Technical Research}
+  journaltitle ={International Journal of Engineering & Technical Research}
 }
 
 @inproceedings{Liao2015Csc4,
@@ -1834,7 +1883,7 @@ Xers and millennials: Understanding the new students.  },
 @article{abbas2013melanoma,
   title={Melanoma recognition framework based on expert definition of ABCD for dermoscopic images},
   author={Abbas, Qaisar and Emre Celebi, M and Garcia, Irene Fondón and Ahmad, Waqar},
-  journal={Skin Research and Technology},
+  journaltitle ={Skin Research and Technology},
   volume={19},
   number={1},
   pages={e93--e102},
@@ -1846,7 +1895,7 @@ Xers and millennials: Understanding the new students.  },
 @article{Capdehourat2011,
  author = {Capdehourat, Germán and Corez, Andrés and Bazzano, Anabella and Alonso, Rodrigo and Musé, Pablo},
  title = {Toward a Combined Tool to Assist Dermatologists in Melanoma Detection from Dermoscopic Images of Pigmented Skin Lesions},
- journal = {Pattern Recogn. Lett.},
+ journaltitle = {Pattern Recogn. Lett.},
  issue_date = {December, 2011},
  volume = {32},
  number = {16},
@@ -1861,7 +1910,7 @@ Xers and millennials: Understanding the new students.  },
 
 @article{Mete2012,
     title = "Dermoscopic diagnosis of melanoma in a 4D space constructed by active contour extracted features ",
-    journal = "Computerized Medical Imaging and Graphics ",
+    journaltitle = "Computerized Medical Imaging and Graphics ",
     volume = "36",
     number = "7",
     pages = "572 - 579",
@@ -1876,7 +1925,7 @@ Xers and millennials: Understanding the new students.  },
 @article{Bandyopadhyay,
   title={Pre-processing of Mammogram Images},
   author={Samir Kumar Bandyopadhyay},
-  journal={International Journal of Engineering Science and Technology},
+  journaltitle ={International Journal of Engineering Science and Technology},
   isnn={6753-6758},
   volume={11},
   number={2},
@@ -1887,7 +1936,7 @@ Xers and millennials: Understanding the new students.  },
 @article{MessadiExtra,
   title={Extraction of specific parameters for skin tumour classification},
   author={Messadi M., Bessaid A. and Taleb-Ahmed A.  },
-  journal={International Journal of Engineering Science and Technology},
+  journaltitle ={International Journal of Engineering Science and Technology},
   isnn={0309-1902},
   volume={33},
   page = {288-295},
@@ -1899,7 +1948,7 @@ Xers and millennials: Understanding the new students.  },
 @article{JamaClinical,
     author = {Whited JD and Grichnik JM},
     title = {Does this patient have a mole or a melanoma?},
-    journal = {JAMA},
+    journaltitle = {JAMA},
     volume = {279},
     number = {9},
     pages = {696-701},
@@ -1945,14 +1994,6 @@ Xers and millennials: Understanding the new students.  },
     ISSN={1063-6919}
 }
 
-
-@INPROCEEDINGS{alexnet,
-    author = {Alex Krizhevsky and Ilya Sutskever and Geoffrey E. Hinton},
-    title = {Imagenet classification with deep convolutional neural networks},
-    booktitle = {Advances in Neural Information Processing Systems},
-    year = {2012}
-}
-
 @article{DBLP:SimonyanZ14a,
   author    = {Karen Simonyan and Andrew Zisserman},
   title     = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
@@ -1966,7 +2007,7 @@ Xers and millennials: Understanding the new students.  },
 @article{maiMLP,
 	author = {Mai S.mabrouk and Mariam A.sheha and Amr Sharawy},
 	title = {Article: Automatic Detection of Melanoma Skin Cancer using Texture Analysis},
-	journal = {International Journal of Computer Applications},
+	journaltitle = {International Journal of Computer Applications},
 	year = {2012},
 	volume = {42},
 	number = {20},
@@ -1977,7 +2018,7 @@ Xers and millennials: Understanding the new students.  },
 @article{autoencoderOthman,
     author = {Esam Othman and Yakoub Bazi and Naif Alajlan and Haikel Alhichri and Farid Melgani},
     title = {Using convolutional features and a sparse autoencoder for land-use scene classification},
-    journal = {International Journal of Remote Sensing},
+    journaltitle = {International Journal of Remote Sensing},
     volume = {37},
     number = {10},
     pages = {2149-2167},
@@ -2012,7 +2053,7 @@ Xers and millennials: Understanding the new students.  },
 @article{bengio2007greedy,
   title={Greedy layer-wise training of deep networks},
   author={Bengio, Yoshua and Lamblin, Pascal and Popovici, Dan and Larochelle, Hugo and others},
-  journal={Advances in neural information processing systems},
+  journaltitle ={Advances in neural information processing systems},
   volume={19},
   pages={153},
   year={2007},
@@ -2056,7 +2097,7 @@ Xers and millennials: Understanding the new students.  },
 @article{2016arXiv160902374J,
     author = {Jafari, Mohammad H. and Nasr-Esfahani, Ebrahim and Karimi, Nader and Soroushmehr, S. M. Reza and Samavi, Shadrokh and Najarian, Kayvan},
     title = "{Extraction of Skin Lesions from Non-Dermoscopic Images Using Deep Learning}",
-    journal = {ArXiv e-prints},
+    journaltitle = {ArXiv e-prints},
     archivePrefix = "arXiv",
     eprint = {1609.02374},
     year = 2016,
@@ -2068,7 +2109,7 @@ Xers and millennials: Understanding the new students.  },
 @article{Silva20081302,
     author = "Luís M. Silva and J. Marques de Sá and Luís A. Alexandre",
     title = "Data classification with multilayer perceptrons using a generalized error function",
-    journal = "Neural Networks",
+    journaltitle = "Neural Networks",
     volume = "21",
     number = "9",
     pages = "1302-1310",
@@ -2109,7 +2150,7 @@ Xers and millennials: Understanding the new students.  },
 
 @article{roc,
     author={Jin Huang and C. X. Ling},
-    journal={IEEE Transactions on Knowledge and Data Engineering},
+    journaltitle ={IEEE Transactions on Knowledge and Data Engineering},
     title={Using AUC and accuracy in evaluating learning algorithms},
     year={2005},
     volume={17},
@@ -2123,7 +2164,7 @@ Xers and millennials: Understanding the new students.  },
 
 @article{TDLS6701329,
     author={J. Glaister and A. Wong and D. A. Clausi},
-    journal={IEEE Transactions on Biomedical Engineering},
+    journaltitle ={IEEE Transactions on Biomedical Engineering},
     title={Segmentation of Skin Lesions From Digital Images Using Joint Statistical Texture Distinctiveness},
     year={2014},
     volume={61},
@@ -2137,7 +2178,7 @@ Xers and millennials: Understanding the new students.  },
 
 @article{esfhaniCnn,
     author={Ebrahim Nasr-Esfahani and Shadrokh Samavi and Nader Karimi and S.M. Reza Soroushmehr and M. Hossein Jafari and Kevin Ward and Kayvan Najarian},
-    journal={38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
+    journaltitle ={38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
     title={Melanoma Detection by Analysis of Clinical Images Using Convolutional Neural Network},
     adress = {Orlando, Florida, USA},
     year={2016},
@@ -2222,24 +2263,10 @@ Xers and millennials: Understanding the new students.  },
   }
 
 
-@article{DBLP:fractal2016,
-  author    = {Christian Cesar Bones and
-               Luciana A. S. Romani and
-               Elaine P. M. de Sousa},
-  title     = {Clustering Multivariate Data Streams by Correlating Attributes using
-               Fractal Dimension},
-  journal   = {{JIDM}},
-  volume    = {7},
-  number    = {3},
-  pages     = {249--264},
-  year      = {2016}
-}
-
-
 @article{Li:2015:RSS:2881665.2882186,
  author = {Li, Zechao and Liu, Jing and Tang, Jinhui and Lu, Hanqing},
  title = {Robust Structured Subspace Learning for Data Representation},
- journal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+ journaltitle = {IEEE Trans. Pattern Anal. Mach. Intell.},
  issue_date = {October 2015},
  volume = {37},
  number = {10},
@@ -2357,72 +2384,6 @@ publisher = {Curran Associates, Inc.}
  address = {USA},
 }
 
-
-@inproceedings{DengDJFMBLNA14,
-  added-at = {2016-01-08T00:00:00.000+0100},
-  author = {Deng, Jia and Ding, Nan and Jia, Yangqing and Frome, Andrea and Murphy, Kevin and Bengio, Samy and Li, Yuan and Neven, Hartmut and Adam, Hartwig},
-  biburl = {https://www.bibsonomy.org/bibtex/23ca3d96e3bc069cdc75822c72f43f71b/dblp},
-  booktitle = {ECCV (1)},
-  crossref = {conf/eccv/2014-1},
-  editor = {Fleet, David J. and Pajdla, Tomás and Schiele, Bernt and Tuytelaars, Tinne},
-  ee = {http://dx.doi.org/10.1007/978-3-319-10590-1_4},
-  interhash = {39ae8bff8e9f795c7436e31c1ecf00ae},
-  intrahash = {3ca3d96e3bc069cdc75822c72f43f71b},
-  isbn = {978-3-319-10589-5},
-  keywords = {dblp},
-  pages = {48-64},
-  publisher = {Springer},
-  series = {Lecture Notes in Computer Science},
-  timestamp = {2016-01-13T12:25:01.000+0100},
-  title = {Large-Scale Object Classification Using Label Relation Graphs.},
-  url = {http://dblp.uni-trier.de/db/conf/eccv/eccv2014-1.html#DengDJFMBLNA14},
-  volume = 8689,
-  year = 2014
-}
-
-
-
-
-
-@inproceedings{DengDJFMBLNA14,
-  added-at = {2016-01-08T00:00:00.000+0100},
-  author = {Deng, Jia and Ding, Nan and Jia, Yangqing and Frome, Andrea and Murphy, Kevin and Bengio, Samy and Li, Yuan and Neven, Hartmut and Adam, Hartwig},
-  biburl = {https://www.bibsonomy.org/bibtex/23ca3d96e3bc069cdc75822c72f43f71b/dblp},
-  booktitle = {ECCV (1)},
-  crossref = {conf/eccv/2014-1},
-  editor = {Fleet, David J. and Pajdla, Tomás and Schiele, Bernt and Tuytelaars, Tinne},
-  ee = {http://dx.doi.org/10.1007/978-3-319-10590-1_4},
-  interhash = {39ae8bff8e9f795c7436e31c1ecf00ae},
-  intrahash = {3ca3d96e3bc069cdc75822c72f43f71b},
-  isbn = {978-3-319-10589-5},
-  keywords = {dblp},
-  pages = {48-64},
-  publisher = {Springer},
-  series = {Lecture Notes in Computer Science},
-  timestamp = {2016-01-13T12:25:01.000+0100},
-  title = {Large-Scale Object Classification Using Label Relation Graphs.},
-  url = {http://dblp.uni-trier.de/db/conf/eccv/eccv2014-1.html#DengDJFMBLNA14},
-  volume = 8689,
-  year = 2014
-}
-
-
-
-@inproceedings{LiuWJJC12,
-  added-at = {2016-05-30T00:00:00.000+0200},
-  author = {Liu, Wei and Wang, Jun and Ji, Rongrong and Jiang, Yu-Gang and Chang, Shih-Fu},
-  biburl = {http://www.bibsonomy.org/bibtex/2a481213d8c2b96f63bac067855649fcb/dblp},
-  booktitle = {CVPR},
-  crossref = {conf/cvpr/2012},
-  isbn = {978-1-4673-1226-4},
-  keywords = {dblp},
-  pages = {2074-2081},
-  publisher = {IEEE Computer Society},
-  timestamp = {2016-05-31T13:22:08.000+0200},
-  title = {Supervised hashing with kernels.},
-  year = 2012
-}
-
 @INPROCEEDINGS{fractalkNN,
 author={B. B. Chaudhuri and N. Sarkar},
 booktitle={[1992] Proceedings. 11th IAPR International Conference on Pattern Recognition},
@@ -2433,30 +2394,6 @@ keywords={fractals;picture processing;differential box-counting approach;fractal
 doi={10.1109/ICPR.1992.201575},
 month={Aug}}
 
-@inproceedings{conf/cvpr/ShenSLS15,
-  added-at = {2016-04-28T00:00:00.000+0200},
-  author = {Shen, Fumin and Shen, Chunhua and Liu, Wei and Shen, Heng Tao},
-  biburl = {https://www.bibsonomy.org/bibtex/276cc8029b4df0ea9b046066a1668c485/dblp},
-  booktitle = {CVPR},]
-    isbn = {978-1-4673-6964-0},
-  keywords = {dblp},
-  pages = {37-45},
-  publisher = {IEEE Computer Society},
-  timestamp = {2016-04-29T11:54:14.000+0200},
-  title = {Supervised Discrete Hashing.},
-  year = 2015
-}
-@article{LeCun,
-  author =       "LeCun, Y., Bottou, L., Bengio, Y., Haffner, P.",
-  title =        "Gradient-based learning applied to document recognition",
-  journal =      " Proceedings of the IEEE",
-  volume =       "",
-  number =       "86",
-  pages =        "2278–-2324",
-  year =         "1998",
-  DOI =          " "
-}
-
 @book{Zeiler,
     author    = "Zeiler, M.D.",
     title     = "Hierarchical convolutional deep learning in computer vision",
@@ -2465,398 +2402,13 @@ month={Aug}}
     address   = "NEW YORK UNIVERSITY"
 }
 
-@article{Szegedy,
-  author =       "Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan,D., Vanhoucke, V., Rabinovich, A.",
-  title =        "Going deeper with convolutions",
-  journal =      "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
-  volume =       "",
-  number =       "",
-  pages =        "1–-9",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{Oquab,
-  author =       "Oquab, M., Bottou, L., Laptev, I., Sivic, J.",
-  title =        "Is object localization for free?-weakly-supervised learning with convolutional neural networks",
-  journal =      " Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
-  volume =       "",
-  number =       "",
-  pages =        "685–-694",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{Boureau,
-  author =       "Boureau, Y.L., Ponce, J., LeCun, Y.",
-  title =        " A theoretical analysis of feature pooling in visual recognition",
-  journal =      " Proceedings of the 27th International Conference on Machine Learning",
-  volume =       "",
-  number =       "",
-  pages =        "111-–118",
-  year =         "2010",
-  DOI =          " "
-}
-
-@article{Scherer,
-  author =       " Scherer, D., Müller, A., Behnke, S.",
-  title =        " Evaluation of pooling operations in convolutional architectures for object recognition",
-  journal =      " International Conference on Artificial Neural Networks",
-  volume =       "",
-  number =       "",
-  pages =        "92–-101",
-  year =         "2010",
-  DOI =          " "
-}
-
 @article{Girshick,
   author =       " Girshick, R., Donahue, J., Darrell, T., Malik, J.",
   title =        " Rich feature hierarchies for accurate object detection and semantic segmentation",
-  journal =      " Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+  journaltitle =      " Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
   volume =       "",
   number =       "",
   pages =        "580-–587",
-  year =         "2014",
-  DOI =          " "
-}
-
-@article{Lin,
-  author =       " Lin, M., Chen, Q., Yan, S.",
-  title =        " Network in network. arXiv preprint arXiv",
-  journal =      " ",
-  volume =       "",
-  number =       "",
-  pages =        "1312.4400",
-  year =         "2013",
-  DOI =          " "
-}
-
-@article{Krizhevsky,
-  author =       " Krizhevsky, A., Sutskever, I., Hinton, G.E.",
-  title =        " ImageNet classification with deep convolutional neural networks",
-  journal =      " Advances in Neural Information Processing Systems",
-  volume =       "",
-  number =       "",
-  pages =        " 1097-–1105",
-  year =         "2012",
-  DOI =          " "
-}
-
-@article{Sermanet,
-  author =       " Sermanet, P., Eigen, D., Zhang, X., Mathieu, M., Fergus, R., LeCun, Y.",
-  title =        " Overfeat: Integrated recognition, localization and detection using convolutional networks. arXiv preprint arXiv",
-  journal =      "",
-  volume =       "",
-  number =       "",
-  pages =        "1312.6229",
-  year =         "2013",
-  DOI =          " "
-}
-
-@article{Deng,
-  author =       " Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L.",
-  title =        " ImageNet: A large-scale hierarchical image database",
-  journal =      "  Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
-  volume =       "",
-  number =       "",
-  pages =        "248–255",
-  year =         "2009",
-  DOI =          " "
-}
-
-@article{Simonyan,
-  author =       " Simonyan, K., Zisserman, A.",
-  title =        " Very deep convolutional networks for largescale image recognition. arXiv preprint arXiv",
-  journal =      " ",
-  volume =       "",
-  number =       "",
-  pages =        "1409.1556",
-  year =         "2014",
-  DOI =          " "
-}
-
-@article{Uijlings,
-  author =       " Uijlings, J.R., van de Sande, K.E., Gevers, T., Smeulders, A.W.",
-  title =        " Selective search for object recognition",
-  journal =      " International Journal of Computer Vision",
-  volume =       "104",
-  number =       "",
-  pages =        "154–-171",
-  year =         "2013",
-  DOI =          " "
-}
-
-@article{He,
-  author =       " He, K., Zhang, X., Ren, S., Sun, J.",
-  title =        " : Spatial pyramid pooling in deep convolutional networks for visual recognition",
-  journal =      "  Proceedings of European Conference on Computer Vision",
-  volume =       " ",
-  number =       "",
-  pages =        " 346-–361",
-  year =         "2014",
-  DOI =          " "
-}
-
-@article{Hariharan,
-  author =       " Hariharan, B., Arbeláez, P., Girshick, R., Malik, J.",
-  title =        " Simultaneous detection and segmentation",
-  journal =      "  Proceedings of European Conference on Computer Vision",
-  volume =       " ",
-  number =       "",
-  pages =        " 297-–312",
-  year =         "2014",
-  DOI =          " "
-}
-
-@article{Zhu,
-  author =       " Zhu, Y., Urtasun, R., Salakhutdinov, R., Fidler, S.",
-  title =        " segdeepm: Exploiting segmentation and context in deep neural networks for object detection.",
-  journal =      "  Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
-  volume =       " ",
-  number =       "",
-  pages =        " 4703-–4711",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{Zhang,
-  author =       " Zhang, Y., Sohn, K., Villegas, R., Pan, G., Lee, H.",
-  title =        "Improving object detection with deep convolutional networks via bayesian optimization and structured prediction",
-  journal =      "  Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
-  volume =       " ",
-  number =       "",
-  pages =        " 249–-258",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{GirshickR,
-  author =       " Girshick, R.",
-  title =        "Fast R-CNN",
-  journal =      "  Proceedings of the IEEE International Conference on Computer Vision",
-  volume =       " ",
-  number =       "",
-  pages =        " 1440–-1448",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{Ren,
-  author =       " Ren, S., He, K., Girshick, R., Sun, J.",
-  title =        " Faster R-CNN: Towards real-time object detection with region proposal networks",
-  journal =      "  Advances in Neural Information Processing Systems",
-  volume =       " ",
-  number =       "",
-  pages =        " 91–-99",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{Gong,
-  author =       " Gong, Y., Wang, L., Guo, R., Lazebnik, S.",
-  title =        " Multi-scale orderless pooling of deep convolutional activation features",
-  journal =      " Proceedings of European Conference on Computer Vision",
-  volume =       " ",
-  number =       "",
-  pages =        "392–-407",
-  year =         "2014",
-  DOI =          " "
-}
-
-@article{Liu,
-  author =       " Liu, Y., Guo, Y., Wu, S., Lew, M.S.",
-  title =        " Deepindex for accurate and efficient image retrieval",
-  journal =      " : Proceedings of the 5th ACM on International Conference on Multimedia Retrieval",
-  volume =       " ",
-  number =       "",
-  pages =        "43–-50",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{Sharif,
-  author =       " Sharif Razavian, A., Azizpour, H., Sullivan, J., Carlsson, S.",
-  title =        " Cnn features off-the-shelf: an astounding baseline for recognition",
-  journal =      " : Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops",
-  volume =       " ",
-  number =       "",
-  pages =        "806--813",
-  year =         "2014",
-  DOI =          " "
-}
-
-@article{Wan,
-  author =       " Wan, J., Wang, D., Hoi, S.C.H., Wu, P., Zhu, J., Zhang, Y., Li, J.",
-  title =        " Deep learning for content-based image retrieval: A comprehensive study",
-  journal =      " : Proceedings of the 22nd ACM International Conference on Multimedia,ACM",
-  volume =       " ",
-  number =       "",
-  pages =        "157--166",
-  year =         "2014",
-  DOI =          " "
-}
-
-@article{Sun,
-  author =       " Sun, S., Zhou, W., Li, H., Tian, Q.",
-  title =        " Search by detection: Object-level feature for image retrieval",
-  journal =      " : Proceedings of International Conference on Internet Multimedia Computing and Service",
-  volume =       " ",
-  number =       "",
-  pages =        "46",
-  year =         "2014",
-  DOI =          " "
-}
-
-@article{Babenko,
-  author =       " Babenko, A., Slesarev, A., Chigorin, A., Lempitsky, V.",
-  title =        "Neural codes for image retrieval",
-  journal =      " Proceedings of European Conference on Computer Vision",
-  volume =       " ",
-  number =       "",
-  pages =        " 584--599",
-  year =         "2014",
-  DOI =          " "
-}
-
-@article{RazavianAS,
-  author =       " Razavian, A.S., Sullivan, J., Maki, A., Carlsson, S.",
-  title =        " A baseline for visual instance retrieval with deep convolutional networks. arXiv preprint arXiv",
-  journal =      " Proceedings of European Conference on Computer Vision",
-  volume =       " ",
-  number =       "",
-  pages =        " 1412.6574",
-  year =         "2014",
-  DOI =          " "
-}
-
-@article{BabenkoA,
-  author =       " Babenko, A., Lempitsky, V.",
-  title =        " Aggregating local deep features for image retrieval",
-  journal =      " Proceedings of the IEEE International Conference on Computer Vision",
-  volume =       " ",
-  number =       "",
-  pages =        " 1269--1277",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{ZhengS,
-  author =       " Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,Huang, C., Torr, P.H.",
-  title =        " Conditional random fields as recurrent neural networks",
-  journal =      " Proceedings of the IEEE International Conference on Computer Vision",
-  volume =       " ",
-  number =       "",
-  pages =        " 1529--1537",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{LiuZ,
-  author =       " Liu, Z., Li, X., Luo, P., Loy, C.C., Tang, X.",
-  title =        " Semantic image segmentation via deep parsing network",
-  journal =      " Proceedings of the IEEE International Conference on Computer Vision",
-  volume =       " ",
-  number =       "",
-  pages =        " 1377--1385",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{Long,
-  author =       "Long, J., Shelhamer, E., Darrell, T.",
-  title =        " Fully convolutional networks for semantic segmentation",
-  journal =      " Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
-  volume =       " ",
-  number =       "",
-  pages =        " 3431--3440",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{ChenLC,
-  author =       "Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L.",
-  title =        " Semantic image segmentation with deep convolutional nets and fully connected crfs. arXiv preprint arXiv",
-  journal =      "",
-  volume =       " ",
-  number =       "",
-  pages =        "1412.7062",
-  year =         "2014",
-  DOI =          " "
-}
-
-@article{LinG,
-  author =       " Lin, G., Shen, C., Reid, I., et al.",
-  title =        "  Efficient piecewise training of deep structured models for semantic segmentation. arXiv preprint arXiv",
-  journal =      "",
-  volume =       " ",
-  number =       "",
-  pages =        "1504.01013",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{Toshev,
-  author =       " Toshev, A., Szegedy, C.",
-  title =        "  Deeppose: Human pose estimation via deep neural networks",
-  journal =      " Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
-  volume =       " ",
-  number =       "",
-  pages =        " 1653--1660",
-  year =         "2014",
-  DOI =          " "
-}
-
-@article{Li,
-  author =       " Li, H., Lin, Z., Shen, X., Brandt, J., Hua, G.",
-  title =        " A convolutional neural network cascade for face detection",
-  journal =      " Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
-  volume =       " ",
-  number =       "",
-  pages =        " 5325--5334",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{Tompson,
-  author =       " Tompson, J.J., Jain, A., LeCun, Y., Bregler, C.",
-  title =        " Joint training of a convolutional network and a graphical model for human pose estimation",
-  journal =      " Advances in Neural Information Processing Systems",
-  volume =       " ",
-  number =       "",
-  pages =        " 1799--1807",
-  year =         "2014",
-  DOI =          " "
-}
-
-@article{TompsonJ,
-  author =       " Tompson, J., Goroshin, R., Jain, A., LeCun, Y., Bregler, C.",
-  title =        " Efficient object localization using convolutional networks",
-  journal =      "  Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
-  volume =       " ",
-  number =       "",
-  pages =        " 648--656",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{Fan,
-  author =       "Fan, X., Zheng, K., Lin, Y., Wang, S.",
-  title =        " Combining local appearance and holistic view: Dual-source deep neural networks for human pose estimation",
-  journal =      "  Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
-  volume =       " ",
-  number =       "",
-  pages =        " 1347--1355",
-  year =         "2015",
-  DOI =          " "
-}
-
-@article{ChenX,
-  author =       "Chen, X., Yuille, A.L.",
-  title =        " Articulated pose estimation by a graphical model with image dependent pairwise relations",
-  journal =      "  Advances in Neural Information Processing Systems",
-  volume =       " ",
-  number =       "",
-  pages =        " 1736--1744",
   year =         "2014",
   DOI =          " "
 }
@@ -2879,31 +2431,10 @@ YEAR = 1991}
 @article{traina2005using,
   title={Using fractals in data mining},
   author={Traina, C and Sousa, Elaine Parros Machado and Traina, Agma Juci Machado},
-  journal={New Generation of Data Mining Applications},
+  journaltitle ={New Generation of Data Mining Applications},
   volume={1},
   pages={599--630},
   year={2005}
-}
-
-@inproceedings{conf/pods/FaloutsosK94,
-  added-at = {2015-01-22T00:00:00.000+0100},
-  author = {Faloutsos, Christos and Kamel, Ibrahim},
-  biburl = {http://www.bibsonomy.org/bibtex/27481a26fb49d2882833a0aa9a77dbd4b/dblp},
-  booktitle = {PODS},
-  cite = {books/aw/Zipf49},
-  crossref = {conf/pods/94},
-  editor = {Vianu, Victor},
-  ee = {http://doi.acm.org/10.1145/182591.182593},
-  interhash = {c0d1e432da405a327a151bdc7b04cef7},
-  intrahash = {7481a26fb49d2882833a0aa9a77dbd4b},
-  isbn = {0-89791-642-5},
-  keywords = {dblp},
-  pages = {4-13},
-  publisher = {ACM Press},
-  timestamp = {2015-06-20T01:20:46.000+0200},
-  title = {Beyond Uniformity and Independence: Analysis of R-trees Using the Concept of Fractal Dimension.},
-  url = {http://dblp.uni-trier.de/db/conf/pods/pods94.html#FaloutsosK94},
-  year = 1994
 }
 
 
@@ -2912,7 +2443,7 @@ YEAR = 1991}
 author="Barbar{\'a}, Daniel
 and Chen, Ping",
 title="Using Self-Similarity to Cluster Large Data Sets",
-journal="Data Mining and Knowledge Discovery",
+journaltitle ="Data Mining and Knowledge Discovery",
 year="2003",
 volume="7",
 number="2",
@@ -2949,7 +2480,7 @@ url="http://dx.doi.org/10.1007/978-3-540-24775-3_11"
   ee = {http://seer.lcc.ufmg.br/index.php/jidm/article/view/29},
   interhash = {48ca3a3e6d8aa1686956bece5d049c0f},
   intrahash = {5faef4cf1314907e9a6e63095b492dd2},
-  journal = {JIDM},
+  journaltitle = {JIDM},
   keywords = {dblp},
   number = 1,
   pages = {17-20},
@@ -3010,7 +2541,7 @@ url="http://dx.doi.org/10.1007/978-3-540-24775-3_11"
 @article{Manning,
   author =       "Manning, C. D., Raghavan, P., and Schutze, H.",
   title =        "Introduction to Information Retrieval.",
-  journal =      " Cambridge University Press, New York, NY, USA",
+  journaltitle =      " Cambridge University Press, New York, NY, USA",
   volume =       "",
   number =       "",
   pages =        "",
@@ -3021,7 +2552,7 @@ url="http://dx.doi.org/10.1007/978-3-540-24775-3_11"
 @article{Ravichandran,
   author =       "Ravichandran, D., Pantel, P., and Hovy, E.",
   title =        "Randomized Algorithms and NLP: Using Locality Sensitive Hash Function for High Speed Noun Clustering",
-  journal =      "Proceedings of the 43rd Annual Meeting on Association for Computational Linguistics, ACL'05",
+  journaltitle =      "Proceedings of the 43rd Annual Meeting on Association for Computational Linguistics, ACL'05",
   volume =       "",
   number =       "",
   pages =        "622–629",
@@ -3032,7 +2563,7 @@ url="http://dx.doi.org/10.1007/978-3-540-24775-3_11"
 
 @article{citeulike:fractal:encoders,
 title = "Chapter 7 {F}ractal dimension",
-journal = "Mathematics in Science and Engineering",
+journaltitle = "Mathematics in Science and Engineering",
 volume = "209",
 number = "",
 pages = "167 - 218",
@@ -3047,7 +2578,7 @@ author = "",
 @article{Faloutsos:2000:SJS:335191.335412,
  author = {Faloutsos, Christos and Seeger, Bernhard and Traina, Agma and Traina,Jr., Caetano},
  title = {Spatial Join Selectivity Using Power Laws},
- journal = {SIGMOD Rec.},
+ journaltitle = {SIGMOD Rec.},
  issue_date = {June 2000},
  volume = {29},
  number = {2},
@@ -3063,7 +2594,7 @@ author = "",
 @article{traina2010fast,
   title={Fast feature selection using fractal dimension},
   author={Traina Jr, Caetano and Traina, Agma and Wu, Leejay and Faloutsos, Christos},
-  journal={Journal of Information and data Management},
+  journaltitle ={Journal of Information and data Management},
   volume={1},
   number={1},
   pages={3},
@@ -3072,7 +2603,7 @@ author = "",
 
 @article{cifar10,
 title= {CIFAR-10 (Canadian Institute for Advanced Research)},
-journal= {},
+journaltitle = {},
 author= {Alex Krizhevsky and Vinod Nair and Geoffrey Hinton},
 year= {},
 url= {http://www.cs.toronto.edu/~kriz/cifar.html},
@@ -3099,7 +2630,7 @@ terms= {}
     author = {Gower, John C.},
     citeulike-article-id = {6653612},
     citeulike-linkout-0 = {http://www.convexoptimization.com/TOOLS/Gower2.pdf},
-    journal = {The Mathematical Scientist},
+    journaltitle = {The Mathematical Scientist},
     keywords = {1982, distances, euclidean\_structure, geometry, tesis},
     pages = {1--14},
     posted-at = {2010-02-11 12:07:06},
@@ -3153,16 +2684,6 @@ booktitle = {NIPS}
   year = 2010
 }
 
-@article{DBLP:journals/corr/SablayrollesDJU16,
-  author    = {Alexandre Sablayrolles and
-               Matthijs Douze and
-               Herv{\'{e}} J{\'{e}}gou and
-               Nicolas Usunier},
-  title     = {How should we evaluate supervised hashing?},
-  journal   = {CoRR},
-  year      = {2016},
-}
-
 @article{DBLP:journals/jidm/TrainaTWF10,
   author    = {Caetano Traina Jr. and
                Agma J. M. Traina and
@@ -3175,50 +2696,22 @@ booktitle = {NIPS}
   year      = {2010},
   pages     = {3-16}
 }
-@article{DBLP:fractal2016,
-  author    = {Christian Cesar Bones and
-               Luciana A. S. Romani and
-               Elaine P. M. de Sousa},
-  title     = {Clustering Multivariate Data Streams by Correlating Attributes using
-               Fractal Dimension},
-  journal   = {{JIDM}},
-  volume    = {7},
-  number    = {3},
-  pages     = {249--264},
-  year      = {2016}
+
+@Article{Bones2016,
+  author  = {Christian Cesar Bones and Luciana A. S. Romani and Elaine P. M. de Sousa},
+  title   = {Clustering Multivariate Data Streams by Correlating Attributes using Fractal Dimension},
+  journaltitle = {{JIDM}},
+  year    = {2016},
+  volume  = {7},
+  number  = {3},
+  pages   = {249--264},
 }
-
-
-@article{Faloutsos:2000:SJS:335191.335412,
- author = {Faloutsos, Christos and Seeger, Bernhard and Traina, Agma and Traina,Jr., Caetano},
- title = {Spatial Join Selectivity Using Power Laws},
- journal = {SIGMOD Rec.},
- issue_date = {June 2000},
- volume = {29},
- number = {2},
- month = may,
- year = {2000},
- issn = {0163-5808},
- pages = {177--188},
- numpages = {12},
- publisher = {ACM},
- address = {New York, NY, USA},
-} 
-
-
-@inproceedings{Arantes_thefractal,
-    author = {Adriano S. Arantes and Marcos R. Vieira and Agma J. M. Traina and Caetano Traina},
-    title = {The Fractal Dimension Making Similarity Queries More Efficient},
- booktitle = {Proceedings of the II ACM SIGKDD Workshop on Fractals, Power Laws and Other Next Generation Data Mining Tools},
- year = {2003}, 
-  publisher = {ACM} 
-  } 
 
 
 
 @ARTICLE{itq, 
 author={Y. Gong and S. Lazebnik and A. Gordo and F. Perronnin}, 
-journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+journaltitle ={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
 title={Iterative Quantization: A Procrustean Approach to Learning Binary Codes for Large-Scale Image Retrieval}, 
 year={2013}, 
 volume={35}, 
@@ -3260,16 +2753,10 @@ month={June},}
   publisher={ACM}
 }
 
-@misc{schroederpower,
-  title={Power Laws: Minutes from an Infinite Paradise. 1991},
-  author={Schroeder, M and Fractals, Chaos},
-  publisher={WH Freeman and Company, New York}
-}
-
 @article{turk1991eigenfaces,
   title={Eigenfaces for recognition},
   author={Turk, Matthew and Pentland, Alex},
-  journal={Journal of cognitive neuroscience},
+  journaltitle ={Journal of cognitive neuroscience},
   volume={3},
   number={1},
   pages={71--86},
@@ -3284,20 +2771,14 @@ month={June},}
   institution={DTIC Document}
 }
 
-@techreport{traina1999distance,
-  title={Distance exponent: A new concept for selectivity estimation in metric trees},
-  author={Traina Jr, Caetano and Traina, Agma J and Faloutsos, Christos},
-  year={1999},
-  institution={DTIC Document}
-}
-
 @article{wactlar1996intelligent,
   title={Intelligent access to digital video: Informedia project},
   author={Wactlar, Howard D and Kanade, Takeo and Smith, Michael A and Stevens, Scott M},
-  journal={Computer},
+  journaltitle ={Computer},
   volume={29},
   number={5},
   pages={46--52},
   year={1996},
   publisher={IEEE}
 }
+@Comment{jabref-meta: databaseType:biblatex;}
